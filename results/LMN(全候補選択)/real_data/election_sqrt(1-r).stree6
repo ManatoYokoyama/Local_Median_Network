@@ -1,0 +1,1901 @@
+#nexus [SplitsTree6]
+
+BEGIN SPLITSTREE6;
+DIMENSIONS nDataNodes=6 nAlgorithms=3;
+PROGRAM version='SplitsTree App (version 6.7.2, built 17 Jan 2026)';
+WORKFLOW creationDate='1769322829899'; [Sun Jan 25 15:33:49 JST 2026]
+END; [SPLITSTREE6]
+
+[
+Methods:
+Analysis was performed using SplitsTree App 6.0.0 (Huson and Bryant 2024).
+The original input consisted of 185 taxa and 185 nodes and 348 edges.
+
+References:
+Huson and Bryant 2024: D.H. Huson and D. Bryant. The SplitsTree App: interactive analysis and visualization using phylogenetic trees and networks. Nature Methods, 2024.
+]
+
+BEGIN TAXA;
+TITLE 'Input Taxa';
+DIMENSIONS ntax=185;
+TAXLABELS
+	[1] 'Romney'
+	[2] 'm1'
+	[3] 'Clinton'
+	[4] 'm2'
+	[5] 'Trump'
+	[6] 'm3'
+	[7] 'Black'
+	[8] 'm4'
+	[9] 'Obama'
+	[10] 'm5'
+	[11] 'High_School'
+	[12] 'm6'
+	[13] 'm7'
+	[14] 'm8'
+	[15] 'Poverty'
+	[16] 'm10'
+	[17] 'm12'
+	[18] 'm13'
+	[19] 'm14'
+	[20] 'm15'
+	[21] 'm16'
+	[22] 'm17'
+	[23] 'White'
+	[24] 'Hispanic'
+	[25] 'm18'
+	[26] 'm19'
+	[27] 'm20'
+	[28] 'Bachelors'
+	[29] 'm22'
+	[30] 'm23'
+	[31] 'm24'
+	[32] 'm25'
+	[33] 'm26'
+	[34] 'm27'
+	[35] 'm28'
+	[36] 'm29'
+	[37] 'm30'
+	[38] 'm31'
+	[39] 'm32'
+	[40] 'm33'
+	[41] 'm34'
+	[42] 'm35'
+	[43] 'm36'
+	[44] 'm37'
+	[45] 'm38'
+	[46] 'm39'
+	[47] 'm40'
+	[48] 'm41'
+	[49] 'm42'
+	[50] 'm43'
+	[51] 'Density'
+	[52] 'm44'
+	[53] 'm45'
+	[54] 'm46'
+	[55] 'm47'
+	[56] 'm48'
+	[57] 'm49'
+	[58] 'm50'
+	[59] 'm51'
+	[60] 'm52'
+	[61] 'm53'
+	[62] 'm54'
+	[63] 'm55'
+	[64] 'm56'
+	[65] 'm57'
+	[66] 'm58'
+	[67] 'm59'
+	[68] 'm60'
+	[69] 'm61'
+	[70] 'm62'
+	[71] 'm63'
+	[72] 'm64'
+	[73] 'm65'
+	[74] 'm66'
+	[75] 'm67'
+	[76] 'm68'
+	[77] 'm69'
+	[78] 'm70'
+	[79] 'm71'
+	[80] 'm72'
+	[81] 'm73'
+	[82] 'm74'
+	[83] 'm75'
+	[84] 'm76'
+	[85] 'm77'
+	[86] 'm78'
+	[87] 'm79'
+	[88] 'm80'
+	[89] 'm81'
+	[90] 'm82'
+	[91] 'm83'
+	[92] 'm84'
+	[93] 'm85'
+	[94] 'm86'
+	[95] 'm87'
+	[96] 'm88'
+	[97] 'm89'
+	[98] 'm90'
+	[99] 'm91'
+	[100] 'm92'
+	[101] 'm93'
+	[102] 'm94'
+	[103] 'm95'
+	[104] 'm96'
+	[105] 'm97'
+	[106] 'm98'
+	[107] 'm99'
+	[108] 'm100'
+	[109] 'm101'
+	[110] 'm102'
+	[111] 'm103'
+	[112] 'm104'
+	[113] 'm105'
+	[114] 'm106'
+	[115] 'm107'
+	[116] 'm108'
+	[117] 'm109'
+	[118] 'm110'
+	[119] 'm111'
+	[120] 'm112'
+	[121] 'm113'
+	[122] 'm114'
+	[123] 'm115'
+	[124] 'm116'
+	[125] 'm117'
+	[126] 'm118'
+	[127] 'm119'
+	[128] 'm120'
+	[129] 'm121'
+	[130] 'm122'
+	[131] 'm123'
+	[132] 'm124'
+	[133] 'm125'
+	[134] 'm126'
+	[135] 'm127'
+	[136] 'm128'
+	[137] 'm129'
+	[138] 'm130'
+	[139] 'm131'
+	[140] 'm132'
+	[141] 'm133'
+	[142] 'm134'
+	[143] 'm135'
+	[144] 'm136'
+	[145] 'm137'
+	[146] 'm138'
+	[147] 'm139'
+	[148] 'm140'
+	[149] 'm141'
+	[150] 'm142'
+	[151] 'm143'
+	[152] 'm144'
+	[153] 'm146'
+	[154] 'm147'
+	[155] 'm148'
+	[156] 'm150'
+	[157] 'm151'
+	[158] 'm152'
+	[159] 'm153'
+	[160] 'm154'
+	[161] 'm155'
+	[162] 'm156'
+	[163] 'm157'
+	[164] 'm158'
+	[165] 'm159'
+	[166] 'm160'
+	[167] 'm161'
+	[168] 'm162'
+	[169] 'm163'
+	[170] 'm164'
+	[171] 'm165'
+	[172] 'm166'
+	[173] 'm167'
+	[174] 'm168'
+	[175] 'm169'
+	[176] 'm170'
+	[177] 'm171'
+	[178] 'm172'
+	[179] 'm173'
+	[180] 'm174'
+	[181] 'm175'
+	[182] 'm176'
+	[183] 'm177'
+	[184] 'm178'
+	[185] 'm179'
+;
+DISPLAYLABELS
+	[1] '<bg red><b><c white>Romney'
+	[2] '<c white><size "1.0">m1'
+	[3] '<b><bg blue><c white>Clinton'
+	[4] '<c white><size "1.0">m2'
+	[5] '<bg red><b><c white>Trump'
+	[6] '<c white><size "1.0">m3'
+	[7] '<bg 0x6680e6ff><b><c white>Black'
+	[8] '<c white><size "1.0">m4'
+	[9] '<b><bg blue><c white>Obama'
+	[10] '<c white><size "1.0">m5'
+	[11] '<bg black><c white><b>High_School'
+	[12] '<c white><size "1.0">m6'
+	[13] '<c white><size "1.0">m7'
+	[14] '<c white><size "1.0">m8'
+	[15] '<b><bg 0xcce6ffff><c black>Poverty'
+	[16] '<c white><size "1.0">m10'
+	[17] '<c white><size "1.0">m12'
+	[18] '<c white><size "1.0">m13'
+	[19] '<c white><size "1.0">m14'
+	[20] '<c white><size "1.0">m15'
+	[21] '<c white><size "1.0">m16'
+	[22] '<c white><size "1.0">m17'
+	[23] '<bg 0xff6666ff><b><c white>White'
+	[24] '<bg black><c white><b>Hispanic'
+	[25] '<c white><size "1.0">m18'
+	[26] '<c white><size "1.0">m19'
+	[27] '<c white><size "1.0">m20'
+	[28] '<bg 0xb3ccffff><b>Bachelors'
+	[29] '<c white><size "1.0">m22'
+	[30] '<c white><size "1.0">m23'
+	[31] '<c white><size "1.0">m24'
+	[32] '<c white><size "1.0">m25'
+	[33] '<c white><size "1.0">m26'
+	[34] '<c white><size "1.0">m27'
+	[35] '<c white><size "1.0">m28'
+	[36] '<c white><size "1.0">m29'
+	[37] '<c white><size "1.0">m30'
+	[38] '<c white><size "1.0">m31'
+	[39] '<c white><size "1.0">m32'
+	[40] '<c white><size "1.0">m33'
+	[41] '<c white><size "1.0">m34'
+	[42] '<c white><size "1.0">m35'
+	[43] '<c white><size "1.0">m36'
+	[44] '<c white><size "1.0">m37'
+	[45] '<c white><size "1.0">m38'
+	[46] '<c white><size "1.0">m39'
+	[47] '<c white><size "1.0">m40'
+	[48] '<c white><size "1.0">m41'
+	[49] '<c white><size "1.0">m42'
+	[50] '<c white><size "1.0">m43'
+	[51] '<b><bg 0xcce6ffff><c black>Density'
+	[52] '<c white><size "1.0">m44'
+	[53] '<c white><size "1.0">m45'
+	[54] '<c white><size "1.0">m46'
+	[55] '<c white><size "1.0">m47'
+	[56] '<c white><size "1.0">m48'
+	[57] '<c white><size "1.0">m49'
+	[58] '<c white><size "1.0">m50'
+	[59] '<c white><size "1.0">m51'
+	[60] '<c white><size "1.0">m52'
+	[61] '<c white><size "1.0">m53'
+	[62] '<c white><size "1.0">m54'
+	[63] '<c white><size "1.0">m55'
+	[64] '<c white><size "1.0">m56'
+	[65] '<c white><size "1.0">m57'
+	[66] '<c white><size "1.0">m58'
+	[67] '<c white><size "1.0">m59'
+	[68] '<c white><size "1.0">m60'
+	[69] '<c white><size "1.0">m61'
+	[70] '<c white><size "1.0">m62'
+	[71] '<c white><size "1.0">m63'
+	[72] '<c white><size "1.0">m64'
+	[73] '<c white><size "1.0">m65'
+	[74] '<c white><size "1.0">m66'
+	[75] '<c white><size "1.0">m67'
+	[76] '<c white><size "1.0">m68'
+	[77] '<c white><size "1.0">m69'
+	[78] '<c white><size "1.0">m70'
+	[79] '<c white><size "1.0">m71'
+	[80] '<c white><size "1.0">m72'
+	[81] '<c white><size "1.0">m73'
+	[82] '<c white><size "1.0">m74'
+	[83] '<c white><size "1.0">m75'
+	[84] '<c white><size "1.0">m76'
+	[85] '<c white><size "1.0">m77'
+	[86] '<c white><size "1.0">m78'
+	[87] '<c white><size "1.0">m79'
+	[88] '<c white><size "1.0">m80'
+	[89] '<c white><size "1.0">m81'
+	[90] '<c white><size "1.0">m82'
+	[91] '<c white><size "1.0">m83'
+	[92] '<c white><size "1.0">m84'
+	[93] '<c white><size "1.0">m85'
+	[94] '<c white><size "1.0">m86'
+	[95] '<c white><size "1.0">m87'
+	[96] '<c white><size "1.0">m88'
+	[97] '<c white><size "1.0">m89'
+	[98] '<c white><size "1.0">m90'
+	[99] '<c white><size "1.0">m91'
+	[100] '<c white><size "1.0">m92'
+	[101] '<c white><size "1.0">m93'
+	[102] '<c white><size "1.0">m94'
+	[103] '<c white><size "1.0">m95'
+	[104] '<c white><size "1.0">m96'
+	[105] '<c white><size "1.0">m97'
+	[106] '<c white><size "1.0">m98'
+	[107] '<c white><size "1.0">m99'
+	[108] '<c white><size "1.0">m100'
+	[109] '<c white><size "1.0">m101'
+	[110] '<c white><size "1.0">m102'
+	[111] '<c white><size "1.0">m103'
+	[112] '<c white><size "1.0">m104'
+	[113] '<c white><size "1.0">m105'
+	[114] '<c white><size "1.0">m106'
+	[115] '<c white><size "1.0">m107'
+	[116] '<c white><size "1.0">m108'
+	[117] '<c white><size "1.0">m109'
+	[118] '<c white><size "1.0">m110'
+	[119] '<c white><size "1.0">m111'
+	[120] '<c white><size "1.0">m112'
+	[121] '<c white><size "1.0">m113'
+	[122] '<c white><size "1.0">m114'
+	[123] '<c white><size "1.0">m115'
+	[124] '<c white><size "1.0">m116'
+	[125] '<c white><size "1.0">m117'
+	[126] '<c white><size "1.0">m118'
+	[127] '<c white><size "1.0">m119'
+	[128] '<c white><size "1.0">m120'
+	[129] '<c white><size "1.0">m121'
+	[130] '<c white><size "1.0">m122'
+	[131] '<c white><size "1.0">m123'
+	[132] '<c white><size "1.0">m124'
+	[133] '<c white><size "1.0">m125'
+	[134] '<c white><size "1.0">m126'
+	[135] '<c white><size "1.0">m127'
+	[136] '<c white><size "1.0">m128'
+	[137] '<c white><size "1.0">m129'
+	[138] '<c white><size "1.0">m130'
+	[139] '<c white><size "1.0">m131'
+	[140] '<c white><size "1.0">m132'
+	[141] '<c white><size "1.0">m133'
+	[142] '<c white><size "1.0">m134'
+	[143] '<c white><size "1.0">m135'
+	[144] '<c white><size "1.0">m136'
+	[145] '<c white><size "1.0">m137'
+	[146] '<c white><size "1.0">m138'
+	[147] '<c white><size "1.0">m139'
+	[148] '<c white><size "1.0">m140'
+	[149] '<c white><size "1.0">m141'
+	[150] '<c white><size "1.0">m142'
+	[151] '<c white><size "1.0">m143'
+	[152] '<c white><size "1.0">m144'
+	[153] '<c white><size "1.0">m146'
+	[154] '<c white><size "1.0">m147'
+	[155] '<c white><size "1.0">m148'
+	[156] '<c white><size "1.0">m150'
+	[157] '<c white><size "1.0">m151'
+	[158] '<c white><size "1.0">m152'
+	[159] '<c white><size "1.0">m153'
+	[160] '<c white><size "1.0">m154'
+	[161] '<c white><size "1.0">m155'
+	[162] '<c white><size "1.0">m156'
+	[163] '<c white><size "1.0">m157'
+	[164] '<c white><size "1.0">m158'
+	[165] '<c white><size "1.0">m159'
+	[166] '<c white><size "1.0">m160'
+	[167] '<c white><size "1.0">m161'
+	[168] '<c white><size "1.0">m162'
+	[169] '<c white><size "1.0">m163'
+	[170] '<c white><size "1.0">m164'
+	[171] '<c white><size "1.0">m165'
+	[172] '<c white><size "1.0">m166'
+	[173] '<c white><size "1.0">m167'
+	[174] '<c white><size "1.0">m168'
+	[175] '<c white><size "1.0">m169'
+	[176] '<c white><size "1.0">m170'
+	[177] '<c white><size "1.0">m171'
+	[178] '<c white><size "1.0">m172'
+	[179] '<c white><size "1.0">m173'
+	[180] '<c white><size "1.0">m174'
+	[181] '<c white><size "1.0">m175'
+	[182] '<c white><size "1.0">m176'
+	[183] '<c white><size "1.0">m177'
+	[184] '<c white><size "1.0">m178'
+	[185] '<c white><size "1.0">m179'
+;
+[TAXINFO;]
+END; [TAXA]
+
+BEGIN ALGORITHM;
+TITLE 'Taxa Filter';
+NAME 'Taxa Filter';
+OPTIONS
+;
+END; [ALGORITHM]
+
+BEGIN TAXA;
+TITLE 'Working Taxa';
+LINK ALGORITHM = 'Taxa Filter';
+DIMENSIONS ntax=185;
+TAXLABELS
+	[1] 'Romney'
+	[2] 'm1'
+	[3] 'Clinton'
+	[4] 'm2'
+	[5] 'Trump'
+	[6] 'm3'
+	[7] 'Black'
+	[8] 'm4'
+	[9] 'Obama'
+	[10] 'm5'
+	[11] 'High_School'
+	[12] 'm6'
+	[13] 'm7'
+	[14] 'm8'
+	[15] 'Poverty'
+	[16] 'm10'
+	[17] 'm12'
+	[18] 'm13'
+	[19] 'm14'
+	[20] 'm15'
+	[21] 'm16'
+	[22] 'm17'
+	[23] 'White'
+	[24] 'Hispanic'
+	[25] 'm18'
+	[26] 'm19'
+	[27] 'm20'
+	[28] 'Bachelors'
+	[29] 'm22'
+	[30] 'm23'
+	[31] 'm24'
+	[32] 'm25'
+	[33] 'm26'
+	[34] 'm27'
+	[35] 'm28'
+	[36] 'm29'
+	[37] 'm30'
+	[38] 'm31'
+	[39] 'm32'
+	[40] 'm33'
+	[41] 'm34'
+	[42] 'm35'
+	[43] 'm36'
+	[44] 'm37'
+	[45] 'm38'
+	[46] 'm39'
+	[47] 'm40'
+	[48] 'm41'
+	[49] 'm42'
+	[50] 'm43'
+	[51] 'Density'
+	[52] 'm44'
+	[53] 'm45'
+	[54] 'm46'
+	[55] 'm47'
+	[56] 'm48'
+	[57] 'm49'
+	[58] 'm50'
+	[59] 'm51'
+	[60] 'm52'
+	[61] 'm53'
+	[62] 'm54'
+	[63] 'm55'
+	[64] 'm56'
+	[65] 'm57'
+	[66] 'm58'
+	[67] 'm59'
+	[68] 'm60'
+	[69] 'm61'
+	[70] 'm62'
+	[71] 'm63'
+	[72] 'm64'
+	[73] 'm65'
+	[74] 'm66'
+	[75] 'm67'
+	[76] 'm68'
+	[77] 'm69'
+	[78] 'm70'
+	[79] 'm71'
+	[80] 'm72'
+	[81] 'm73'
+	[82] 'm74'
+	[83] 'm75'
+	[84] 'm76'
+	[85] 'm77'
+	[86] 'm78'
+	[87] 'm79'
+	[88] 'm80'
+	[89] 'm81'
+	[90] 'm82'
+	[91] 'm83'
+	[92] 'm84'
+	[93] 'm85'
+	[94] 'm86'
+	[95] 'm87'
+	[96] 'm88'
+	[97] 'm89'
+	[98] 'm90'
+	[99] 'm91'
+	[100] 'm92'
+	[101] 'm93'
+	[102] 'm94'
+	[103] 'm95'
+	[104] 'm96'
+	[105] 'm97'
+	[106] 'm98'
+	[107] 'm99'
+	[108] 'm100'
+	[109] 'm101'
+	[110] 'm102'
+	[111] 'm103'
+	[112] 'm104'
+	[113] 'm105'
+	[114] 'm106'
+	[115] 'm107'
+	[116] 'm108'
+	[117] 'm109'
+	[118] 'm110'
+	[119] 'm111'
+	[120] 'm112'
+	[121] 'm113'
+	[122] 'm114'
+	[123] 'm115'
+	[124] 'm116'
+	[125] 'm117'
+	[126] 'm118'
+	[127] 'm119'
+	[128] 'm120'
+	[129] 'm121'
+	[130] 'm122'
+	[131] 'm123'
+	[132] 'm124'
+	[133] 'm125'
+	[134] 'm126'
+	[135] 'm127'
+	[136] 'm128'
+	[137] 'm129'
+	[138] 'm130'
+	[139] 'm131'
+	[140] 'm132'
+	[141] 'm133'
+	[142] 'm134'
+	[143] 'm135'
+	[144] 'm136'
+	[145] 'm137'
+	[146] 'm138'
+	[147] 'm139'
+	[148] 'm140'
+	[149] 'm141'
+	[150] 'm142'
+	[151] 'm143'
+	[152] 'm144'
+	[153] 'm146'
+	[154] 'm147'
+	[155] 'm148'
+	[156] 'm150'
+	[157] 'm151'
+	[158] 'm152'
+	[159] 'm153'
+	[160] 'm154'
+	[161] 'm155'
+	[162] 'm156'
+	[163] 'm157'
+	[164] 'm158'
+	[165] 'm159'
+	[166] 'm160'
+	[167] 'm161'
+	[168] 'm162'
+	[169] 'm163'
+	[170] 'm164'
+	[171] 'm165'
+	[172] 'm166'
+	[173] 'm167'
+	[174] 'm168'
+	[175] 'm169'
+	[176] 'm170'
+	[177] 'm171'
+	[178] 'm172'
+	[179] 'm173'
+	[180] 'm174'
+	[181] 'm175'
+	[182] 'm176'
+	[183] 'm177'
+	[184] 'm178'
+	[185] 'm179'
+;
+DISPLAYLABELS
+	[1] '<bg red><b><c white>Romney'
+	[2] '<c white><size "1.0">m1'
+	[3] '<b><bg blue><c white>Clinton'
+	[4] '<c white><size "1.0">m2'
+	[5] '<bg red><b><c white>Trump'
+	[6] '<c white><size "1.0">m3'
+	[7] '<bg 0x6680e6ff><b><c white>Black'
+	[8] '<c white><size "1.0">m4'
+	[9] '<b><bg blue><c white>Obama'
+	[10] '<c white><size "1.0">m5'
+	[11] '<bg black><c white><b>High_School'
+	[12] '<c white><size "1.0">m6'
+	[13] '<c white><size "1.0">m7'
+	[14] '<c white><size "1.0">m8'
+	[15] '<b><bg 0xcce6ffff><c black>Poverty'
+	[16] '<c white><size "1.0">m10'
+	[17] '<c white><size "1.0">m12'
+	[18] '<c white><size "1.0">m13'
+	[19] '<c white><size "1.0">m14'
+	[20] '<c white><size "1.0">m15'
+	[21] '<c white><size "1.0">m16'
+	[22] '<c white><size "1.0">m17'
+	[23] '<bg 0xff6666ff><b><c white>White'
+	[24] '<bg black><c white><b>Hispanic'
+	[25] '<c white><size "1.0">m18'
+	[26] '<c white><size "1.0">m19'
+	[27] '<c white><size "1.0">m20'
+	[28] '<bg 0xb3ccffff><b>Bachelors'
+	[29] '<c white><size "1.0">m22'
+	[30] '<c white><size "1.0">m23'
+	[31] '<c white><size "1.0">m24'
+	[32] '<c white><size "1.0">m25'
+	[33] '<c white><size "1.0">m26'
+	[34] '<c white><size "1.0">m27'
+	[35] '<c white><size "1.0">m28'
+	[36] '<c white><size "1.0">m29'
+	[37] '<c white><size "1.0">m30'
+	[38] '<c white><size "1.0">m31'
+	[39] '<c white><size "1.0">m32'
+	[40] '<c white><size "1.0">m33'
+	[41] '<c white><size "1.0">m34'
+	[42] '<c white><size "1.0">m35'
+	[43] '<c white><size "1.0">m36'
+	[44] '<c white><size "1.0">m37'
+	[45] '<c white><size "1.0">m38'
+	[46] '<c white><size "1.0">m39'
+	[47] '<c white><size "1.0">m40'
+	[48] '<c white><size "1.0">m41'
+	[49] '<c white><size "1.0">m42'
+	[50] '<c white><size "1.0">m43'
+	[51] '<b><bg 0xcce6ffff><c black>Density'
+	[52] '<c white><size "1.0">m44'
+	[53] '<c white><size "1.0">m45'
+	[54] '<c white><size "1.0">m46'
+	[55] '<c white><size "1.0">m47'
+	[56] '<c white><size "1.0">m48'
+	[57] '<c white><size "1.0">m49'
+	[58] '<c white><size "1.0">m50'
+	[59] '<c white><size "1.0">m51'
+	[60] '<c white><size "1.0">m52'
+	[61] '<c white><size "1.0">m53'
+	[62] '<c white><size "1.0">m54'
+	[63] '<c white><size "1.0">m55'
+	[64] '<c white><size "1.0">m56'
+	[65] '<c white><size "1.0">m57'
+	[66] '<c white><size "1.0">m58'
+	[67] '<c white><size "1.0">m59'
+	[68] '<c white><size "1.0">m60'
+	[69] '<c white><size "1.0">m61'
+	[70] '<c white><size "1.0">m62'
+	[71] '<c white><size "1.0">m63'
+	[72] '<c white><size "1.0">m64'
+	[73] '<c white><size "1.0">m65'
+	[74] '<c white><size "1.0">m66'
+	[75] '<c white><size "1.0">m67'
+	[76] '<c white><size "1.0">m68'
+	[77] '<c white><size "1.0">m69'
+	[78] '<c white><size "1.0">m70'
+	[79] '<c white><size "1.0">m71'
+	[80] '<c white><size "1.0">m72'
+	[81] '<c white><size "1.0">m73'
+	[82] '<c white><size "1.0">m74'
+	[83] '<c white><size "1.0">m75'
+	[84] '<c white><size "1.0">m76'
+	[85] '<c white><size "1.0">m77'
+	[86] '<c white><size "1.0">m78'
+	[87] '<c white><size "1.0">m79'
+	[88] '<c white><size "1.0">m80'
+	[89] '<c white><size "1.0">m81'
+	[90] '<c white><size "1.0">m82'
+	[91] '<c white><size "1.0">m83'
+	[92] '<c white><size "1.0">m84'
+	[93] '<c white><size "1.0">m85'
+	[94] '<c white><size "1.0">m86'
+	[95] '<c white><size "1.0">m87'
+	[96] '<c white><size "1.0">m88'
+	[97] '<c white><size "1.0">m89'
+	[98] '<c white><size "1.0">m90'
+	[99] '<c white><size "1.0">m91'
+	[100] '<c white><size "1.0">m92'
+	[101] '<c white><size "1.0">m93'
+	[102] '<c white><size "1.0">m94'
+	[103] '<c white><size "1.0">m95'
+	[104] '<c white><size "1.0">m96'
+	[105] '<c white><size "1.0">m97'
+	[106] '<c white><size "1.0">m98'
+	[107] '<c white><size "1.0">m99'
+	[108] '<c white><size "1.0">m100'
+	[109] '<c white><size "1.0">m101'
+	[110] '<c white><size "1.0">m102'
+	[111] '<c white><size "1.0">m103'
+	[112] '<c white><size "1.0">m104'
+	[113] '<c white><size "1.0">m105'
+	[114] '<c white><size "1.0">m106'
+	[115] '<c white><size "1.0">m107'
+	[116] '<c white><size "1.0">m108'
+	[117] '<c white><size "1.0">m109'
+	[118] '<c white><size "1.0">m110'
+	[119] '<c white><size "1.0">m111'
+	[120] '<c white><size "1.0">m112'
+	[121] '<c white><size "1.0">m113'
+	[122] '<c white><size "1.0">m114'
+	[123] '<c white><size "1.0">m115'
+	[124] '<c white><size "1.0">m116'
+	[125] '<c white><size "1.0">m117'
+	[126] '<c white><size "1.0">m118'
+	[127] '<c white><size "1.0">m119'
+	[128] '<c white><size "1.0">m120'
+	[129] '<c white><size "1.0">m121'
+	[130] '<c white><size "1.0">m122'
+	[131] '<c white><size "1.0">m123'
+	[132] '<c white><size "1.0">m124'
+	[133] '<c white><size "1.0">m125'
+	[134] '<c white><size "1.0">m126'
+	[135] '<c white><size "1.0">m127'
+	[136] '<c white><size "1.0">m128'
+	[137] '<c white><size "1.0">m129'
+	[138] '<c white><size "1.0">m130'
+	[139] '<c white><size "1.0">m131'
+	[140] '<c white><size "1.0">m132'
+	[141] '<c white><size "1.0">m133'
+	[142] '<c white><size "1.0">m134'
+	[143] '<c white><size "1.0">m135'
+	[144] '<c white><size "1.0">m136'
+	[145] '<c white><size "1.0">m137'
+	[146] '<c white><size "1.0">m138'
+	[147] '<c white><size "1.0">m139'
+	[148] '<c white><size "1.0">m140'
+	[149] '<c white><size "1.0">m141'
+	[150] '<c white><size "1.0">m142'
+	[151] '<c white><size "1.0">m143'
+	[152] '<c white><size "1.0">m144'
+	[153] '<c white><size "1.0">m146'
+	[154] '<c white><size "1.0">m147'
+	[155] '<c white><size "1.0">m148'
+	[156] '<c white><size "1.0">m150'
+	[157] '<c white><size "1.0">m151'
+	[158] '<c white><size "1.0">m152'
+	[159] '<c white><size "1.0">m153'
+	[160] '<c white><size "1.0">m154'
+	[161] '<c white><size "1.0">m155'
+	[162] '<c white><size "1.0">m156'
+	[163] '<c white><size "1.0">m157'
+	[164] '<c white><size "1.0">m158'
+	[165] '<c white><size "1.0">m159'
+	[166] '<c white><size "1.0">m160'
+	[167] '<c white><size "1.0">m161'
+	[168] '<c white><size "1.0">m162'
+	[169] '<c white><size "1.0">m163'
+	[170] '<c white><size "1.0">m164'
+	[171] '<c white><size "1.0">m165'
+	[172] '<c white><size "1.0">m166'
+	[173] '<c white><size "1.0">m167'
+	[174] '<c white><size "1.0">m168'
+	[175] '<c white><size "1.0">m169'
+	[176] '<c white><size "1.0">m170'
+	[177] '<c white><size "1.0">m171'
+	[178] '<c white><size "1.0">m172'
+	[179] '<c white><size "1.0">m173'
+	[180] '<c white><size "1.0">m174'
+	[181] '<c white><size "1.0">m175'
+	[182] '<c white><size "1.0">m176'
+	[183] '<c white><size "1.0">m177'
+	[184] '<c white><size "1.0">m178'
+	[185] '<c white><size "1.0">m179'
+;
+[TAXINFO;]
+END; [TAXA]
+
+BEGIN NETWORK;
+TITLE 'Input Network';
+LINK ALGORITHM = 'Taxa Filter';
+DIMENSIONS nVertices=185 nEdges=348;
+TYPE Other;
+VERTICES
+	id=1 label='Romney' label='Romney',
+	id=2 label='m1' label='m1',
+	id=3 label='Clinton' label='Clinton',
+	id=4 label='m2' label='m2',
+	id=5 label='Trump' label='Trump',
+	id=6 label='m3' label='m3',
+	id=7 label='Black' label='Black',
+	id=8 label='m4' label='m4',
+	id=9 label='Obama' label='Obama',
+	id=10 label='m5' label='m5',
+	id=11 label='High_School' label='High_School',
+	id=12 label='m6' label='m6',
+	id=13 label='m7' label='m7',
+	id=14 label='m8' label='m8',
+	id=15 label='Poverty' label='Poverty',
+	id=16 label='m10' label='m10',
+	id=17 label='m12' label='m12',
+	id=18 label='m13' label='m13',
+	id=19 label='m14' label='m14',
+	id=20 label='m15' label='m15',
+	id=21 label='m16' label='m16',
+	id=22 label='m17' label='m17',
+	id=23 label='White' label='White',
+	id=24 label='Hispanic' label='Hispanic',
+	id=25 label='m18' label='m18',
+	id=26 label='m19' label='m19',
+	id=27 label='m20' label='m20',
+	id=28 label='Bachelors' label='Bachelors',
+	id=29 label='m22' label='m22',
+	id=30 label='m23' label='m23',
+	id=31 label='m24' label='m24',
+	id=32 label='m25' label='m25',
+	id=33 label='m26' label='m26',
+	id=34 label='m27' label='m27',
+	id=35 label='m28' label='m28',
+	id=36 label='m29' label='m29',
+	id=37 label='m30' label='m30',
+	id=38 label='m31' label='m31',
+	id=39 label='m32' label='m32',
+	id=40 label='m33' label='m33',
+	id=41 label='m34' label='m34',
+	id=42 label='m35' label='m35',
+	id=43 label='m36' label='m36',
+	id=44 label='m37' label='m37',
+	id=45 label='m38' label='m38',
+	id=46 label='m39' label='m39',
+	id=47 label='m40' label='m40',
+	id=48 label='m41' label='m41',
+	id=49 label='m42' label='m42',
+	id=50 label='m43' label='m43',
+	id=51 label='Density' label='Density',
+	id=52 label='m44' label='m44',
+	id=53 label='m45' label='m45',
+	id=54 label='m46' label='m46',
+	id=55 label='m47' label='m47',
+	id=56 label='m48' label='m48',
+	id=57 label='m49' label='m49',
+	id=58 label='m50' label='m50',
+	id=59 label='m51' label='m51',
+	id=60 label='m52' label='m52',
+	id=61 label='m53' label='m53',
+	id=62 label='m54' label='m54',
+	id=63 label='m55' label='m55',
+	id=64 label='m56' label='m56',
+	id=65 label='m57' label='m57',
+	id=66 label='m58' label='m58',
+	id=67 label='m59' label='m59',
+	id=68 label='m60' label='m60',
+	id=69 label='m61' label='m61',
+	id=70 label='m62' label='m62',
+	id=71 label='m63' label='m63',
+	id=72 label='m64' label='m64',
+	id=73 label='m65' label='m65',
+	id=74 label='m66' label='m66',
+	id=75 label='m67' label='m67',
+	id=76 label='m68' label='m68',
+	id=77 label='m69' label='m69',
+	id=78 label='m70' label='m70',
+	id=79 label='m71' label='m71',
+	id=80 label='m72' label='m72',
+	id=81 label='m73' label='m73',
+	id=82 label='m74' label='m74',
+	id=83 label='m75' label='m75',
+	id=84 label='m76' label='m76',
+	id=85 label='m77' label='m77',
+	id=86 label='m78' label='m78',
+	id=87 label='m79' label='m79',
+	id=88 label='m80' label='m80',
+	id=89 label='m81' label='m81',
+	id=90 label='m82' label='m82',
+	id=91 label='m83' label='m83',
+	id=92 label='m84' label='m84',
+	id=93 label='m85' label='m85',
+	id=94 label='m86' label='m86',
+	id=95 label='m87' label='m87',
+	id=96 label='m88' label='m88',
+	id=97 label='m89' label='m89',
+	id=98 label='m90' label='m90',
+	id=99 label='m91' label='m91',
+	id=100 label='m92' label='m92',
+	id=101 label='m93' label='m93',
+	id=102 label='m94' label='m94',
+	id=103 label='m95' label='m95',
+	id=104 label='m96' label='m96',
+	id=105 label='m97' label='m97',
+	id=106 label='m98' label='m98',
+	id=107 label='m99' label='m99',
+	id=108 label='m100' label='m100',
+	id=109 label='m101' label='m101',
+	id=110 label='m102' label='m102',
+	id=111 label='m103' label='m103',
+	id=112 label='m104' label='m104',
+	id=113 label='m105' label='m105',
+	id=114 label='m106' label='m106',
+	id=115 label='m107' label='m107',
+	id=116 label='m108' label='m108',
+	id=117 label='m109' label='m109',
+	id=118 label='m110' label='m110',
+	id=119 label='m111' label='m111',
+	id=120 label='m112' label='m112',
+	id=121 label='m113' label='m113',
+	id=122 label='m114' label='m114',
+	id=123 label='m115' label='m115',
+	id=124 label='m116' label='m116',
+	id=125 label='m117' label='m117',
+	id=126 label='m118' label='m118',
+	id=127 label='m119' label='m119',
+	id=128 label='m120' label='m120',
+	id=129 label='m121' label='m121',
+	id=130 label='m122' label='m122',
+	id=131 label='m123' label='m123',
+	id=132 label='m124' label='m124',
+	id=133 label='m125' label='m125',
+	id=134 label='m126' label='m126',
+	id=135 label='m127' label='m127',
+	id=136 label='m128' label='m128',
+	id=137 label='m129' label='m129',
+	id=138 label='m130' label='m130',
+	id=139 label='m131' label='m131',
+	id=140 label='m132' label='m132',
+	id=141 label='m133' label='m133',
+	id=142 label='m134' label='m134',
+	id=143 label='m135' label='m135',
+	id=144 label='m136' label='m136',
+	id=145 label='m137' label='m137',
+	id=146 label='m138' label='m138',
+	id=147 label='m139' label='m139',
+	id=148 label='m140' label='m140',
+	id=149 label='m141' label='m141',
+	id=150 label='m142' label='m142',
+	id=151 label='m143' label='m143',
+	id=152 label='m144' label='m144',
+	id=153 label='m146' label='m146',
+	id=154 label='m147' label='m147',
+	id=155 label='m148' label='m148',
+	id=156 label='m150' label='m150',
+	id=157 label='m151' label='m151',
+	id=158 label='m152' label='m152',
+	id=159 label='m153' label='m153',
+	id=160 label='m154' label='m154',
+	id=161 label='m155' label='m155',
+	id=162 label='m156' label='m156',
+	id=163 label='m157' label='m157',
+	id=164 label='m158' label='m158',
+	id=165 label='m159' label='m159',
+	id=166 label='m160' label='m160',
+	id=167 label='m161' label='m161',
+	id=168 label='m162' label='m162',
+	id=169 label='m163' label='m163',
+	id=170 label='m164' label='m164',
+	id=171 label='m165' label='m165',
+	id=172 label='m166' label='m166',
+	id=173 label='m167' label='m167',
+	id=174 label='m168' label='m168',
+	id=175 label='m169' label='m169',
+	id=176 label='m170' label='m170',
+	id=177 label='m171' label='m171',
+	id=178 label='m172' label='m172',
+	id=179 label='m173' label='m173',
+	id=180 label='m174' label='m174',
+	id=181 label='m175' label='m175',
+	id=182 label='m176' label='m176',
+	id=183 label='m177' label='m177',
+	id=184 label='m178' label='m178',
+	id=185 label='m179' label='m179'
+;
+EDGES
+	id=1 sid=1 tid=12 w='10.646720254999995' weight='10.646720254999995',
+	id=2 sid=2 tid=3 w='6.798763194999998' weight='6.798763194999998',
+	id=3 sid=2 tid=16 w='13.988884730000006' weight='13.988884730000006',
+	id=4 sid=2 tid=19 w='4.381576690000001' weight='4.381576690000001',
+	id=5 sid=4 tid=5 w='11.4515168' weight='11.4515168',
+	id=6 sid=4 tid=18 w='14.974903899999997' weight='14.974903899999997',
+	id=7 sid=4 tid=12 w='4.359276055000006' weight='4.359276055000006',
+	id=8 sid=6 tid=7 w='24.307189200000003' weight='24.307189200000003',
+	id=9 sid=6 tid=32 w='2.7137973900000087' weight='2.7137973900000087',
+	id=10 sid=6 tid=33 w='3.292359344999994' weight='3.292359344999994',
+	id=11 sid=8 tid=9 w='9.369982385000007' weight='9.369982385000007',
+	id=12 sid=8 tid=19 w='1.810357499999995' weight='1.810357499999995',
+	id=13 sid=8 tid=20 w='20.17517252499998' weight='20.17517252499998',
+	id=14 sid=10 tid=11 w='22.791531050000003' weight='22.791531050000003',
+	id=15 sid=10 tid=41 w='13.66986275' weight='13.66986275',
+	id=16 sid=10 tid=42 w='6.97683370999999' weight='6.97683370999999',
+	id=17 sid=12 tid=17 w='33.812857245' weight='33.812857245',
+	id=18 sid=13 tid=35 w='16.203316694999984' weight='16.203316694999984',
+	id=19 sid=13 tid=67 w='4.14871154499998' weight='4.14871154499998',
+	id=20 sid=13 tid=81 w='7.364723789999994' weight='7.364723789999994',
+	id=21 sid=13 tid=99 w='17.823616750000017' weight='17.823616750000017',
+	id=22 sid=14 tid=15 w='27.750514399999993' weight='27.750514399999993',
+	id=23 sid=14 tid=56 w='3.721295000000005' weight='3.721295000000005',
+	id=24 sid=14 tid=57 w='18.26122196' weight='18.26122196',
+	id=25 sid=16 tid=36 w='5.652204980000008' weight='5.652204980000008',
+	id=26 sid=16 tid=37 w='2.6060901950000073' weight='2.6060901950000073',
+	id=27 sid=17 tid=34 w='9.791611404999987' weight='9.791611404999987',
+	id=28 sid=17 tid=35 w='1.4419705499999775' weight='1.4419705499999775',
+	id=29 sid=17 tid=54 w='1.909858050000004' weight='1.909858050000004',
+	id=30 sid=17 tid=21 w='7.414788000000009' weight='7.414788000000009',
+	id=31 sid=17 tid=26 w='31.866962459999982' weight='31.866962459999982',
+	id=32 sid=18 tid=29 w='16.355267049999995' weight='16.355267049999995',
+	id=33 sid=18 tid=34 w='13.405617994999997' weight='13.405617994999997',
+	id=34 sid=19 tid=25 w='27.166463499999992' weight='27.166463499999992',
+	id=35 sid=20 tid=58 w='1.659886055000019' weight='1.659886055000019',
+	id=36 sid=20 tid=72 w='16.218238270000015' weight='16.218238270000015',
+	id=37 sid=21 tid=68 w='5.315596214999992' weight='5.315596214999992',
+	id=38 sid=21 tid=69 w='13.66986274999999' weight='13.66986274999999',
+	id=39 sid=22 tid=23 w='24.207489314999986' weight='24.207489314999986',
+	id=40 sid=22 tid=30 w='1.8458072850000207' weight='1.8458072850000207',
+	id=41 sid=22 tid=31 w='8.176353805000009' weight='8.176353805000009',
+	id=42 sid=24 tid=26 w='27.59650854' weight='27.59650854',
+	id=43 sid=25 tid=78 w='5.519301414999999' weight='5.519301414999999',
+	id=44 sid=25 tid=75 w='2.6813895449999876' weight='2.6813895449999876',
+	id=45 sid=25 tid=80 w='3.0357733700000082' weight='3.0357733700000082',
+	id=46 sid=25 tid=91 w='14.076481350000005' weight='14.076481350000005',
+	id=47 sid=26 tid=81 w='9.740892524999994' weight='9.740892524999994',
+	id=48 sid=26 tid=82 w='1.8677412999999827' weight='1.8677412999999827',
+	id=49 sid=27 tid=28 w='19.622576920000007' weight='19.622576920000007',
+	id=50 sid=27 tid=52 w='3.012870935000013' weight='3.012870935000013',
+	id=51 sid=27 tid=53 w='5.493425105000023' weight='5.493425105000023',
+	id=52 sid=29 tid=54 w='4.932104299999999' weight='4.932104299999999',
+	id=53 sid=29 tid=55 w='16.4791862' weight='16.4791862',
+	id=54 sid=30 tid=34 w='2.671210705' weight='2.671210705',
+	id=55 sid=30 tid=35 w='11.02085156000001' weight='11.02085156000001',
+	id=56 sid=31 tid=45 w='1.4409279349999906' weight='1.4409279349999906',
+	id=57 sid=31 tid=46 w='14.748569309999983' weight='14.748569309999983',
+	id=58 sid=32 tid=38 w='8.502583009999974' weight='8.502583009999974',
+	id=59 sid=32 tid=39 w='6.90614635499999' weight='6.90614635499999',
+	id=60 sid=33 tid=43 w='1.522445395000009' weight='1.522445395000009',
+	id=61 sid=33 tid=44 w='3.2957615050000157' weight='3.2957615050000157',
+	id=62 sid=35 tid=45 w='3.249377105000029' weight='3.249377105000029',
+	id=63 sid=36 tid=58 w='2.4555816399999735' weight='2.4555816399999735',
+	id=64 sid=36 tid=59 w='1.3966303849999768' weight='1.3966303849999768',
+	id=65 sid=37 tid=47 w='9.88298788999997' weight='9.88298788999997',
+	id=66 sid=37 tid=48 w='3.9751100899999727' weight='3.9751100899999727',
+	id=67 sid=38 tid=74 w='3.0357733700000136' weight='3.0357733700000136',
+	id=68 sid=38 tid=88 w='2.5416481499999755' weight='2.5416481499999755',
+	id=69 sid=39 tid=66 w='1.7670276299999834' weight='1.7670276299999834',
+	id=70 sid=39 tid=79 w='1.5738195450000099' weight='1.5738195450000099',
+	id=71 sid=39 tid=80 w='8.502583009999988' weight='8.502583009999988',
+	id=72 sid=40 tid=139 w='2.3244327300000105' weight='2.3244327300000105',
+	id=73 sid=40 tid=153 w='2.6471394299999855' weight='2.6471394299999855',
+	id=74 sid=40 tid=162 w='3.915885170000008' weight='3.915885170000008',
+	id=75 sid=40 tid=173 w='3.6602539649999963' weight='3.6602539649999963',
+	id=76 sid=41 tid=52 w='4.14871154499998' weight='4.14871154499998',
+	id=77 sid=41 tid=73 w='5.535905774999982' weight='5.535905774999982',
+	id=78 sid=42 tid=64 w='2.297931404999982' weight='2.297931404999982',
+	id=79 sid=42 tid=65 w='13.669862749999986' weight='13.669862749999986',
+	id=80 sid=43 tid=79 w='3.2313194599999875' weight='3.2313194599999875',
+	id=81 sid=43 tid=85 w='3.0424396249999743' weight='3.0424396249999743',
+	id=82 sid=44 tid=79 w='1.4580033499999807' weight='1.4580033499999807',
+	id=83 sid=44 tid=86 w='8.42498453999999' weight='8.42498453999999',
+	id=84 sid=45 tid=49 w='26.977504124999967' weight='26.977504124999967',
+	id=85 sid=46 tid=64 w='5.062789135000017' weight='5.062789135000017',
+	id=86 sid=46 tid=49 w='13.669862749999968' weight='13.669862749999968',
+	id=87 sid=47 tid=53 w='17.105616314999985' weight='17.105616314999985',
+	id=88 sid=47 tid=62 w='3.9751100899999727' weight='3.9751100899999727',
+	id=89 sid=48 tid=58 w='1.827603445000058' weight='1.827603445000058',
+	id=90 sid=48 tid=62 w='9.88298788999997' weight='9.88298788999997',
+	id=91 sid=49 tid=73 w='8.801648474999986' weight='8.801648474999986',
+	id=92 sid=49 tid=109 w='1.4409279349999995' weight='1.4409279349999995',
+	id=93 sid=49 tid=116 w='1.4409279350000013' weight='1.4409279350000013',
+	id=94 sid=50 tid=51 w='28.48864312499999' weight='28.48864312499999',
+	id=95 sid=50 tid=139 w='1.8661438500000092' weight='1.8661438500000092',
+	id=96 sid=50 tid=140 w='5.431595670000007' weight='5.431595670000007',
+	id=97 sid=52 tid=71 w='6.455664259999979' weight='6.455664259999979',
+	id=98 sid=53 tid=71 w='3.9751100899999674' weight='3.9751100899999674',
+	id=99 sid=54 tid=63 w='14.911445450000002' weight='14.911445450000002',
+	id=100 sid=55 tid=57 w='1.4981721900000053' weight='1.4981721900000053',
+	id=101 sid=55 tid=77 w='4.932104299999995' weight='4.932104299999995',
+	id=102 sid=56 tid=60 w='4.332900895000005' weight='4.332900895000005',
+	id=103 sid=56 tid=61 w='19.472031259999994' weight='19.472031259999994',
+	id=104 sid=57 tid=90 w='1.8661913599999949' weight='1.8661913599999949',
+	id=105 sid=58 tid=78 w='3.932067424999987' weight='3.932067424999987',
+	id=106 sid=59 tid=74 w='3.6041737400000056' weight='3.6041737400000056',
+	id=107 sid=59 tid=75 w='7.8289305499999955' weight='7.8289305499999955',
+	id=108 sid=60 tid=66 w='1.985821410000014' weight='1.985821410000014',
+	id=109 sid=60 tid=67 w='24.413712205000003' weight='24.413712205000003',
+	id=110 sid=61 tid=103 w='1.4828721349999991' weight='1.4828721349999991',
+	id=111 sid=61 tid=63 w='3.065912939999997' weight='3.065912939999997',
+	id=112 sid=61 tid=83 w='1.9098580500000129' weight='1.9098580500000129',
+	id=113 sid=62 tid=95 w='3.688410615000027' weight='3.688410615000027',
+	id=114 sid=62 tid=96 w='3.9415962900000228' weight='3.9415962900000228',
+	id=115 sid=63 tid=77 w='1.5677407499999951' weight='1.5677407499999951',
+	id=116 sid=63 tid=67 w='6.208668900000006' weight='6.208668900000006',
+	id=117 sid=64 tid=70 w='7.312465635000024' weight='7.312465635000024',
+	id=118 sid=65 tid=73 w='1.4409279349999977' weight='1.4409279349999977',
+	id=119 sid=65 tid=97 w='1.4409279349999977' weight='1.4409279349999977',
+	id=120 sid=65 tid=111 w='1.423419994999989' weight='1.423419994999989',
+	id=121 sid=65 tid=112 w='1.4673219999999656' weight='1.4673219999999656',
+	id=122 sid=66 tid=69 w='26.785450645000004' weight='26.785450645000004',
+	id=123 sid=67 tid=69 w='4.357559850000019' weight='4.357559850000019',
+	id=124 sid=67 tid=94 w='4.564885019999986' weight='4.564885019999986',
+	id=125 sid=67 tid=110 w='6.290627915000009' weight='6.290627915000009',
+	id=126 sid=68 tid=70 w='5.900784184999985' weight='5.900784184999985',
+	id=127 sid=68 tid=76 w='15.093282744999975' weight='15.093282744999975',
+	id=128 sid=69 tid=76 w='6.739016209999974' weight='6.739016209999974',
+	id=129 sid=69 tid=116 w='12.025128964999983' weight='12.025128964999983',
+	id=130 sid=70 tid=87 w='8.607073614999962' weight='8.607073614999962',
+	id=131 sid=71 tid=97 w='3.228953059999988' weight='3.228953059999988',
+	id=132 sid=71 tid=98 w='4.564885019999972' weight='4.564885019999972',
+	id=133 sid=71 tid=99 w='7.881889990000001' weight='7.881889990000001',
+	id=134 sid=72 tid=111 w='7.863537334999997' weight='7.863537334999997',
+	id=135 sid=72 tid=102 w='3.609078919999977' weight='3.609078919999977',
+	id=136 sid=72 tid=101 w='4.14871154499997' weight='4.14871154499997',
+	id=137 sid=72 tid=132 w='7.91158250000002' weight='7.91158250000002',
+	id=138 sid=74 tid=78 w='3.6964513599999815' weight='3.6964513599999815',
+	id=139 sid=75 tid=89 w='6.239359190000005' weight='6.239359190000005',
+	id=140 sid=76 tid=134 w='5.417677685000024' weight='5.417677685000024',
+	id=141 sid=76 tid=137 w='5.900784184999989' weight='5.900784184999989',
+	id=142 sid=76 tid=153 w='3.2957615050000117' weight='3.2957615050000117',
+	id=143 sid=76 tid=158 w='3.295761505000028' weight='3.295761505000028',
+	id=144 sid=77 tid=103 w='2.981044325000001' weight='2.981044325000001',
+	id=145 sid=77 tid=94 w='5.170131960000008' weight='5.170131960000008',
+	id=146 sid=77 tid=110 w='5.019836995000002' weight='5.019836995000002',
+	id=147 sid=78 tid=85 w='10.091360765000001' weight='10.091360765000001',
+	id=148 sid=80 tid=88 w='4.364498205000022' weight='4.364498205000022',
+	id=149 sid=80 tid=100 w='13.656258229999992' weight='13.656258229999992',
+	id=150 sid=81 tid=105 w='1.8677412999999863' weight='1.8677412999999863',
+	id=151 sid=81 tid=106 w='12.255432049999989' weight='12.255432049999989',
+	id=152 sid=82 tid=83 w='12.021862769999998' weight='12.021862769999998',
+	id=153 sid=82 tid=84 w='2.2809702450000042' weight='2.2809702450000042',
+	id=154 sid=83 tid=105 w='2.2809702450000016' weight='2.2809702450000016',
+	id=155 sid=83 tid=94 w='2.799838770000015' weight='2.799838770000015',
+	id=156 sid=84 tid=93 w='8.678641350000005' weight='8.678641350000005',
+	id=157 sid=84 tid=94 w='12.540731295000006' weight='12.540731295000006',
+	id=158 sid=85 tid=88 w='5.9007841849999885' weight='5.9007841849999885',
+	id=159 sid=85 tid=92 w='19.75185850500001' weight='19.75185850500001',
+	id=160 sid=86 tid=107 w='3.796393170000009' weight='3.796393170000009',
+	id=161 sid=86 tid=108 w='13.151009224999983' weight='13.151009224999983',
+	id=162 sid=87 tid=88 w='30.56798473500002' weight='30.56798473500002',
+	id=163 sid=87 tid=116 w='5.871537700000022' weight='5.871537700000022',
+	id=164 sid=87 tid=137 w='6.486209130000016' weight='6.486209130000016',
+	id=165 sid=89 tid=121 w='3.601148030000008' weight='3.601148030000008',
+	id=166 sid=89 tid=122 w='2.031250564999967' weight='2.031250564999967',
+	id=167 sid=90 tid=103 w='1.5830408050000049' weight='1.5830408050000049',
+	id=168 sid=90 tid=104 w='12.26654006999997' weight='12.26654006999997',
+	id=169 sid=91 tid=142 w='4.148711544999979' weight='4.148711544999979',
+	id=170 sid=91 tid=140 w='1.4061203399999904' weight='1.4061203399999904',
+	id=171 sid=91 tid=182 w='1.625702555000031' weight='1.625702555000031',
+	id=172 sid=91 tid=183 w='3.3927301850000067' weight='3.3927301850000067',
+	id=173 sid=92 tid=124 w='3.5336202349999954' weight='3.5336202349999954',
+	id=174 sid=92 tid=133 w='2.359919044999998' weight='2.359919044999998',
+	id=175 sid=92 tid=145 w='2.40203579500002' weight='2.40203579500002',
+	id=176 sid=92 tid=185 w='2.7411416299999702' weight='2.7411416299999702',
+	id=177 sid=93 tid=113 w='4.996263855000033' weight='4.996263855000033',
+	id=178 sid=93 tid=120 w='8.603033304999993' weight='8.603033304999993',
+	id=179 sid=94 tid=128 w='3.5188835349999934' weight='3.5188835349999934',
+	id=180 sid=95 tid=101 w='3.609078919999983' weight='3.609078919999983',
+	id=181 sid=95 tid=102 w='4.148711544999976' weight='4.148711544999976',
+	id=182 sid=96 tid=113 w='3.9402936999999687' weight='3.9402936999999687',
+	id=183 sid=96 tid=114 w='2.742591204999986' weight='2.742591204999986',
+	id=184 sid=97 tid=109 w='7.360720539999987' weight='7.360720539999987',
+	id=185 sid=98 tid=117 w='2.7998387700000116' weight='2.7998387700000116',
+	id=186 sid=98 tid=118 w='4.232948419999991' weight='4.232948419999991',
+	id=187 sid=98 tid=119 w='7.334326475000022' weight='7.334326475000022',
+	id=188 sid=99 tid=109 w='2.7077836099999875' weight='2.7077836099999875',
+	id=189 sid=99 tid=119 w='5.112448534999945' weight='5.112448534999945',
+	id=190 sid=99 tid=148 w='5.85805237499995' weight='5.85805237499995',
+	id=191 sid=100 tid=143 w='3.4559964900000235' weight='3.4559964900000235',
+	id=192 sid=100 tid=123 w='3.455996490000043' weight='3.455996490000043',
+	id=193 sid=100 tid=161 w='3.3927301850000156' weight='3.3927301850000156',
+	id=194 sid=100 tid=162 w='2.1872507499999987' weight='2.1872507499999987',
+	id=195 sid=101 tid=117 w='2.443402989999991' weight='2.443402989999991',
+	id=196 sid=101 tid=144 w='7.417810420000011' weight='7.417810420000011',
+	id=197 sid=102 tid=126 w='5.682912799999999' weight='5.682912799999999',
+	id=198 sid=102 tid=147 w='3.2914573100000015' weight='3.2914573100000015',
+	id=199 sid=104 tid=107 w='3.0357733700000082' weight='3.0357733700000082',
+	id=200 sid=104 tid=124 w='2.7580879250000176' weight='2.7580879250000176',
+	id=201 sid=105 tid=115 w='12.769374665' weight='12.769374665',
+	id=202 sid=106 tid=117 w='13.450074690000012' weight='13.450074690000012',
+	id=203 sid=106 tid=120 w='1.7097800649999897' weight='1.7097800649999897',
+	id=204 sid=106 tid=134 w='2.79983877000001' weight='2.79983877000001',
+	id=205 sid=106 tid=115 w='2.3816839150000035' weight='2.3816839150000035',
+	id=206 sid=107 tid=110 w='8.71473569499998' weight='8.71473569499998',
+	id=207 sid=107 tid=123 w='10.361637125000028' weight='10.361637125000028',
+	id=208 sid=108 tid=114 w='2.117460980000006' weight='2.117460980000006',
+	id=209 sid=108 tid=122 w='2.1174609800000077' weight='2.1174609800000077',
+	id=210 sid=108 tid=149 w='3.2681874950000207' weight='3.2681874950000207',
+	id=211 sid=109 tid=130 w='1.7670276300000118' weight='1.7670276300000118',
+	id=212 sid=109 tid=131 w='9.524943885000003' weight='9.524943885000003',
+	id=213 sid=110 tid=127 w='4.456902465000001' weight='4.456902465000001',
+	id=214 sid=111 tid=118 w='2.5360586999999786' weight='2.5360586999999786',
+	id=215 sid=112 tid=125 w='2.5354759500000394' weight='2.5354759500000394',
+	id=216 sid=112 tid=126 w='5.745801450000004' weight='5.745801450000004',
+	id=217 sid=113 tid=121 w='1.4673219999999887' weight='1.4673219999999887',
+	id=218 sid=113 tid=119 w='13.088294809999965' weight='13.088294809999965',
+	id=219 sid=114 tid=141 w='1.9213829850000206' weight='1.9213829850000206',
+	id=220 sid=114 tid=142 w='4.338549595000038' weight='4.338549595000038',
+	id=221 sid=115 tid=161 w='1.7670276299999799' weight='1.7670276299999799',
+	id=222 sid=115 tid=159 w='1.7670276300000118' weight='1.7670276300000118',
+	id=223 sid=115 tid=131 w='3.7340642999999965' weight='3.7340642999999965',
+	id=224 sid=116 tid=125 w='4.7988505249999935' weight='4.7988505249999935',
+	id=225 sid=116 tid=129 w='2.5763935700000165' weight='2.5763935700000165',
+	id=226 sid=117 tid=126 w='4.51828065499995' weight='4.51828065499995',
+	id=227 sid=118 tid=126 w='3.2536447550000016' weight='3.2536447550000016',
+	id=228 sid=118 tid=148 w='2.355774215000027' weight='2.355774215000027',
+	id=229 sid=119 tid=151 w='2.3816839149999955' weight='2.3816839149999955',
+	id=230 sid=119 tid=170 w='4.389722444999993' weight='4.389722444999993',
+	id=231 sid=119 tid=144 w='5.203287555000001' weight='5.203287555000001',
+	id=232 sid=119 tid=172 w='1.8091443800000033' weight='1.8091443800000033',
+	id=233 sid=120 tid=163 w='1.9670366700000201' weight='1.9670366700000201',
+	id=234 sid=121 tid=122 w='3.404672714999972' weight='3.404672714999972',
+	id=235 sid=121 tid=138 w='2.1185131499999903' weight='2.1185131499999903',
+	id=236 sid=122 tid=141 w='2.3135389749999904' weight='2.3135389749999904',
+	id=237 sid=123 tid=138 w='4.798850524999987' weight='4.798850524999987',
+	id=238 sid=123 tid=149 w='3.101612664999992' weight='3.101612664999992',
+	id=239 sid=123 tid=163 w='4.342701844999986' weight='4.342701844999986',
+	id=240 sid=123 tid=175 w='1.7908843250000084' weight='1.7908843250000084',
+	id=241 sid=124 tid=143 w='4.567775829999983' weight='4.567775829999983',
+	id=242 sid=125 tid=135 w='1.4061203399999815' weight='1.4061203399999815',
+	id=243 sid=125 tid=148 w='2.8403321800000274' weight='2.8403321800000274',
+	id=244 sid=126 tid=157 w='2.5354759500000323' weight='2.5354759500000323',
+	id=245 sid=127 tid=145 w='1.9699980549999792' weight='1.9699980549999792',
+	id=246 sid=127 tid=146 w='1.7676463199999732' weight='1.7676463199999732',
+	id=247 sid=128 tid=133 w='2.7998387700000062' weight='2.7998387700000062',
+	id=248 sid=128 tid=134 w='4.587836970000008' weight='4.587836970000008',
+	id=249 sid=129 tid=150 w='1.7670276300000118' weight='1.7670276300000118',
+	id=250 sid=129 tid=151 w='1.767027629999979' weight='1.767027629999979',
+	id=251 sid=129 tid=152 w='3.169407879999981' weight='3.169407879999981',
+	id=252 sid=130 tid=135 w='1.6257025549999913' weight='1.6257025549999913',
+	id=253 sid=130 tid=136 w='5.745801449999991' weight='5.745801449999991',
+	id=254 sid=131 tid=138 w='6.702620889999982' weight='6.702620889999982',
+	id=255 sid=131 tid=160 w='3.7791424350000082' weight='3.7791424350000082',
+	id=256 sid=131 tid=168 w='1.4889598200000154' weight='1.4889598200000154',
+	id=257 sid=131 tid=144 w='2.359919045' weight='2.359919045',
+	id=258 sid=131 tid=181 w='1.903770364999989' weight='1.903770364999989',
+	id=259 sid=131 tid=179 w='3.7761810500000053' weight='3.7761810500000053',
+	id=260 sid=132 tid=166 w='1.6018458599999925' weight='1.6018458599999925',
+	id=261 sid=132 tid=175 w='1.9627531500000037' weight='1.9627531500000037',
+	id=262 sid=132 tid=169 w='1.9627531500000117' weight='1.9627531500000117',
+	id=263 sid=132 tid=178 w='3.670797994999994' weight='3.670797994999994',
+	id=264 sid=133 tid=159 w='5.20249325499999' weight='5.20249325499999',
+	id=265 sid=134 tid=160 w='7.095051879999992' weight='7.095051879999992',
+	id=266 sid=134 tid=159 w='3.4144950549999873' weight='3.4144950549999873',
+	id=267 sid=134 tid=170 w='1.7260257700000037' weight='1.7260257700000037',
+	id=268 sid=135 tid=142 w='12.184695609999963' weight='12.184695609999963',
+	id=269 sid=136 tid=150 w='3.16940787999998' weight='3.16940787999998',
+	id=270 sid=136 tid=160 w='1.767027630000015' weight='1.767027630000015',
+	id=271 sid=136 tid=152 w='1.767027630000011' weight='1.767027630000011',
+	id=272 sid=136 tid=154 w='3.4454197999999625' weight='3.4454197999999625',
+	id=273 sid=136 tid=171 w='1.4859984350000124' weight='1.4859984350000124',
+	id=274 sid=136 tid=165 w='3.7761810500000434' weight='3.7761810500000434',
+	id=275 sid=136 tid=181 w='4.472020789999982' weight='4.472020789999982',
+	id=276 sid=137 tid=154 w='1.6988145399999866' weight='1.6988145399999866',
+	id=277 sid=137 tid=176 w='2.401326489999974' weight='2.401326489999974',
+	id=278 sid=138 tid=141 w='1.7670276300000038' weight='1.7670276300000038',
+	id=279 sid=139 tid=149 w='9.49586610500001' weight='9.49586610500001',
+	id=280 sid=140 tid=178 w='1.4889598200000105' weight='1.4889598200000105',
+	id=281 sid=141 tid=144 w='6.109729474999984' weight='6.109729474999984',
+	id=282 sid=142 tid=147 w='1.4061203399999855' weight='1.4061203399999855',
+	id=283 sid=142 tid=174 w='1.6615966249999667' weight='1.6615966249999667',
+	id=284 sid=143 tid=163 w='4.342701844999995' weight='4.342701844999995',
+	id=285 sid=143 tid=166 w='1.4299770350000007' weight='1.4299770350000007',
+	id=286 sid=144 tid=174 w='2.0309662400000006' weight='2.0309662400000006',
+	id=287 sid=144 tid=163 w='4.798850524999983' weight='4.798850524999983',
+	id=288 sid=144 tid=156 w='3.829305690000009' weight='3.829305690000009',
+	id=289 sid=145 tid=158 w='2.251645939999934' weight='2.251645939999934',
+	id=290 sid=146 tid=158 w='1.485998435000015' weight='1.485998435000015',
+	id=291 sid=146 tid=153 w='1.4859984350000315' weight='1.4859984350000315',
+	id=292 sid=147 tid=149 w='1.7817027400000462' weight='1.7817027400000462',
+	id=293 sid=147 tid=155 w='3.035773370000011' weight='3.035773370000011',
+	id=294 sid=148 tid=150 w='3.295761504999996' weight='3.295761504999996',
+	id=295 sid=148 tid=154 w='3.019749585000014' weight='3.019749585000014',
+	id=296 sid=148 tid=155 w='6.836467279999957' weight='6.836467279999957',
+	id=297 sid=151 tid=160 w='1.402380249999997' weight='1.402380249999997',
+	id=298 sid=152 tid=167 w='2.3796156500000034' weight='2.3796156500000034',
+	id=299 sid=152 tid=168 w='2.290182614999996' weight='2.290182614999996',
+	id=300 sid=153 tid=165 w='3.6737593799999777' weight='3.6737593799999777',
+	id=301 sid=154 tid=169 w='5.900784184999981' weight='5.900784184999981',
+	id=302 sid=155 tid=157 w='3.4031207899999494' weight='3.4031207899999494',
+	id=303 sid=155 tid=180 w='1.5458244599999715' weight='1.5458244599999715',
+	id=304 sid=155 tid=169 w='2.084066490000046' weight='2.084066490000046',
+	id=305 sid=156 tid=166 w='2.657093604999989' weight='2.657093604999989',
+	id=306 sid=156 tid=175 w='2.2961863149999777' weight='2.2961863149999777',
+	id=307 sid=156 tid=170 w='5.720174569999997' weight='5.720174569999997',
+	id=308 sid=156 tid=178 w='2.6155502499999983' weight='2.6155502499999983',
+	id=309 sid=156 tid=176 w='4.096829470000001' weight='4.096829470000001',
+	id=310 sid=156 tid=179 w='2.4130436850000017' weight='2.4130436850000017',
+	id=311 sid=156 tid=183 w='2.1179002249999925' weight='2.1179002249999925',
+	id=312 sid=156 tid=185 w='4.133137865000016' weight='4.133137865000016',
+	id=313 sid=157 tid=171 w='1.5458244599999729' weight='1.5458244599999729',
+	id=314 sid=158 tid=164 w='1.9067317499999912' weight='1.9067317499999912',
+	id=315 sid=159 tid=163 w='3.062160450000036' weight='3.062160450000036',
+	id=316 sid=159 tid=164 w='1.9699980549999672' weight='1.9699980549999672',
+	id=317 sid=159 tid=179 w='2.6495906199999943' weight='2.6495906199999943',
+	id=318 sid=161 tid=163 w='2.938722300000004' weight='2.938722300000004',
+	id=319 sid=161 tid=179 w='2.6495906200000254' weight='2.6495906200000254',
+	id=320 sid=161 tid=183 w='3.4559964900000306' weight='3.4559964900000306',
+	id=321 sid=162 tid=166 w='3.3649230149999942' weight='3.3649230149999942',
+	id=322 sid=162 tid=178 w='1.9077208399999925' weight='1.9077208399999925',
+	id=323 sid=162 tid=179 w='2.930390314999988' weight='2.930390314999988',
+	id=324 sid=163 tid=177 w='2.4692525750000573' weight='2.4692525750000573',
+	id=325 sid=164 tid=177 w='2.6471394299999833' weight='2.6471394299999833',
+	id=326 sid=164 tid=171 w='7.029207115000033' weight='7.029207115000033',
+	id=327 sid=164 tid=176 w='4.88848745000004' weight='4.88848745000004',
+	id=328 sid=165 tid=184 w='1.3965654000000285' weight='1.3965654000000285',
+	id=329 sid=165 tid=179 w='2.012114805000021' weight='2.012114805000021',
+	id=330 sid=167 tid=170 w='3.1682765299999907' weight='3.1682765299999907',
+	id=331 sid=167 tid=173 w='2.2901826149999964' weight='2.2901826149999964',
+	id=332 sid=167 tid=184 w='1.7670276299999959' weight='1.7670276299999959',
+	id=333 sid=168 tid=182 w='1.7670276299999743' weight='1.7670276299999743',
+	id=334 sid=168 tid=173 w='2.3796156500000034' weight='2.3796156500000034',
+	id=335 sid=169 tid=183 w='1.6018458599999814' weight='1.6018458599999814',
+	id=336 sid=171 tid=172 w='2.423185349999996' weight='2.423185349999996',
+	id=337 sid=171 tid=180 w='3.40312078999995' weight='3.40312078999995',
+	id=338 sid=172 tid=176 w='3.0830896550000144' weight='3.0830896550000144',
+	id=339 sid=173 tid=179 w='2.885525220000008' weight='2.885525220000008',
+	id=340 sid=173 tid=183 w='4.014393679999996' weight='4.014393679999996',
+	id=341 sid=174 tid=180 w='1.5138808650000493' weight='1.5138808650000493',
+	id=342 sid=174 tid=181 w='2.4871149200000104' weight='2.4871149200000104',
+	id=343 sid=176 tid=184 w='1.7248944200000143' weight='1.7248944200000143',
+	id=344 sid=177 tid=185 w='0.6943404549999928' weight='0.6943404549999928',
+	id=345 sid=178 tid=181 w='2.895080160000017' weight='2.895080160000017',
+	id=346 sid=178 tid=184 w='5.453660559999969' weight='5.453660559999969',
+	id=347 sid=181 tid=182 w='1.6257025550000272' weight='1.6257025550000272',
+	id=348 sid=181 tid=183 w='0.4148105449999768' weight='0.4148105449999768'
+;
+END; [NETWORK]
+
+BEGIN ALGORITHM;
+TITLE 'Input Data Filter';
+LINK NETWORK = 'Input Network';
+NAME 'Network Taxa Filter';
+END; [ALGORITHM]
+
+BEGIN NETWORK;
+TITLE 'Working Network';
+LINK ALGORITHM = 'Input Data Filter';
+DIMENSIONS nVertices=185 nEdges=348;
+TYPE Other;
+VERTICES
+	id=1 label='Romney' label='Romney',
+	id=2 label='m1' label='m1',
+	id=3 label='Clinton' label='Clinton',
+	id=4 label='m2' label='m2',
+	id=5 label='Trump' label='Trump',
+	id=6 label='m3' label='m3',
+	id=7 label='Black' label='Black',
+	id=8 label='m4' label='m4',
+	id=9 label='Obama' label='Obama',
+	id=10 label='m5' label='m5',
+	id=11 label='High_School' label='High_School',
+	id=12 label='m6' label='m6',
+	id=13 label='m7' label='m7',
+	id=14 label='m8' label='m8',
+	id=15 label='Poverty' label='Poverty',
+	id=16 label='m10' label='m10',
+	id=17 label='m12' label='m12',
+	id=18 label='m13' label='m13',
+	id=19 label='m14' label='m14',
+	id=20 label='m15' label='m15',
+	id=21 label='m16' label='m16',
+	id=22 label='m17' label='m17',
+	id=23 label='White' label='White',
+	id=24 label='Hispanic' label='Hispanic',
+	id=25 label='m18' label='m18',
+	id=26 label='m19' label='m19',
+	id=27 label='m20' label='m20',
+	id=28 label='Bachelors' label='Bachelors',
+	id=29 label='m22' label='m22',
+	id=30 label='m23' label='m23',
+	id=31 label='m24' label='m24',
+	id=32 label='m25' label='m25',
+	id=33 label='m26' label='m26',
+	id=34 label='m27' label='m27',
+	id=35 label='m28' label='m28',
+	id=36 label='m29' label='m29',
+	id=37 label='m30' label='m30',
+	id=38 label='m31' label='m31',
+	id=39 label='m32' label='m32',
+	id=40 label='m33' label='m33',
+	id=41 label='m34' label='m34',
+	id=42 label='m35' label='m35',
+	id=43 label='m36' label='m36',
+	id=44 label='m37' label='m37',
+	id=45 label='m38' label='m38',
+	id=46 label='m39' label='m39',
+	id=47 label='m40' label='m40',
+	id=48 label='m41' label='m41',
+	id=49 label='m42' label='m42',
+	id=50 label='m43' label='m43',
+	id=51 label='Density' label='Density',
+	id=52 label='m44' label='m44',
+	id=53 label='m45' label='m45',
+	id=54 label='m46' label='m46',
+	id=55 label='m47' label='m47',
+	id=56 label='m48' label='m48',
+	id=57 label='m49' label='m49',
+	id=58 label='m50' label='m50',
+	id=59 label='m51' label='m51',
+	id=60 label='m52' label='m52',
+	id=61 label='m53' label='m53',
+	id=62 label='m54' label='m54',
+	id=63 label='m55' label='m55',
+	id=64 label='m56' label='m56',
+	id=65 label='m57' label='m57',
+	id=66 label='m58' label='m58',
+	id=67 label='m59' label='m59',
+	id=68 label='m60' label='m60',
+	id=69 label='m61' label='m61',
+	id=70 label='m62' label='m62',
+	id=71 label='m63' label='m63',
+	id=72 label='m64' label='m64',
+	id=73 label='m65' label='m65',
+	id=74 label='m66' label='m66',
+	id=75 label='m67' label='m67',
+	id=76 label='m68' label='m68',
+	id=77 label='m69' label='m69',
+	id=78 label='m70' label='m70',
+	id=79 label='m71' label='m71',
+	id=80 label='m72' label='m72',
+	id=81 label='m73' label='m73',
+	id=82 label='m74' label='m74',
+	id=83 label='m75' label='m75',
+	id=84 label='m76' label='m76',
+	id=85 label='m77' label='m77',
+	id=86 label='m78' label='m78',
+	id=87 label='m79' label='m79',
+	id=88 label='m80' label='m80',
+	id=89 label='m81' label='m81',
+	id=90 label='m82' label='m82',
+	id=91 label='m83' label='m83',
+	id=92 label='m84' label='m84',
+	id=93 label='m85' label='m85',
+	id=94 label='m86' label='m86',
+	id=95 label='m87' label='m87',
+	id=96 label='m88' label='m88',
+	id=97 label='m89' label='m89',
+	id=98 label='m90' label='m90',
+	id=99 label='m91' label='m91',
+	id=100 label='m92' label='m92',
+	id=101 label='m93' label='m93',
+	id=102 label='m94' label='m94',
+	id=103 label='m95' label='m95',
+	id=104 label='m96' label='m96',
+	id=105 label='m97' label='m97',
+	id=106 label='m98' label='m98',
+	id=107 label='m99' label='m99',
+	id=108 label='m100' label='m100',
+	id=109 label='m101' label='m101',
+	id=110 label='m102' label='m102',
+	id=111 label='m103' label='m103',
+	id=112 label='m104' label='m104',
+	id=113 label='m105' label='m105',
+	id=114 label='m106' label='m106',
+	id=115 label='m107' label='m107',
+	id=116 label='m108' label='m108',
+	id=117 label='m109' label='m109',
+	id=118 label='m110' label='m110',
+	id=119 label='m111' label='m111',
+	id=120 label='m112' label='m112',
+	id=121 label='m113' label='m113',
+	id=122 label='m114' label='m114',
+	id=123 label='m115' label='m115',
+	id=124 label='m116' label='m116',
+	id=125 label='m117' label='m117',
+	id=126 label='m118' label='m118',
+	id=127 label='m119' label='m119',
+	id=128 label='m120' label='m120',
+	id=129 label='m121' label='m121',
+	id=130 label='m122' label='m122',
+	id=131 label='m123' label='m123',
+	id=132 label='m124' label='m124',
+	id=133 label='m125' label='m125',
+	id=134 label='m126' label='m126',
+	id=135 label='m127' label='m127',
+	id=136 label='m128' label='m128',
+	id=137 label='m129' label='m129',
+	id=138 label='m130' label='m130',
+	id=139 label='m131' label='m131',
+	id=140 label='m132' label='m132',
+	id=141 label='m133' label='m133',
+	id=142 label='m134' label='m134',
+	id=143 label='m135' label='m135',
+	id=144 label='m136' label='m136',
+	id=145 label='m137' label='m137',
+	id=146 label='m138' label='m138',
+	id=147 label='m139' label='m139',
+	id=148 label='m140' label='m140',
+	id=149 label='m141' label='m141',
+	id=150 label='m142' label='m142',
+	id=151 label='m143' label='m143',
+	id=152 label='m144' label='m144',
+	id=153 label='m146' label='m146',
+	id=154 label='m147' label='m147',
+	id=155 label='m148' label='m148',
+	id=156 label='m150' label='m150',
+	id=157 label='m151' label='m151',
+	id=158 label='m152' label='m152',
+	id=159 label='m153' label='m153',
+	id=160 label='m154' label='m154',
+	id=161 label='m155' label='m155',
+	id=162 label='m156' label='m156',
+	id=163 label='m157' label='m157',
+	id=164 label='m158' label='m158',
+	id=165 label='m159' label='m159',
+	id=166 label='m160' label='m160',
+	id=167 label='m161' label='m161',
+	id=168 label='m162' label='m162',
+	id=169 label='m163' label='m163',
+	id=170 label='m164' label='m164',
+	id=171 label='m165' label='m165',
+	id=172 label='m166' label='m166',
+	id=173 label='m167' label='m167',
+	id=174 label='m168' label='m168',
+	id=175 label='m169' label='m169',
+	id=176 label='m170' label='m170',
+	id=177 label='m171' label='m171',
+	id=178 label='m172' label='m172',
+	id=179 label='m173' label='m173',
+	id=180 label='m174' label='m174',
+	id=181 label='m175' label='m175',
+	id=182 label='m176' label='m176',
+	id=183 label='m177' label='m177',
+	id=184 label='m178' label='m178',
+	id=185 label='m179' label='m179'
+;
+EDGES
+	id=1 sid=1 tid=12 w='10.646720254999995' weight='10.646720254999995',
+	id=2 sid=2 tid=3 w='6.798763194999998' weight='6.798763194999998',
+	id=3 sid=2 tid=16 w='13.988884730000006' weight='13.988884730000006',
+	id=4 sid=2 tid=19 w='4.381576690000001' weight='4.381576690000001',
+	id=5 sid=4 tid=5 w='11.4515168' weight='11.4515168',
+	id=6 sid=4 tid=18 w='14.974903899999997' weight='14.974903899999997',
+	id=7 sid=4 tid=12 w='4.359276055000006' weight='4.359276055000006',
+	id=8 sid=6 tid=7 w='24.307189200000003' weight='24.307189200000003',
+	id=9 sid=6 tid=32 w='2.7137973900000087' weight='2.7137973900000087',
+	id=10 sid=6 tid=33 w='3.292359344999994' weight='3.292359344999994',
+	id=11 sid=8 tid=9 w='9.369982385000007' weight='9.369982385000007',
+	id=12 sid=8 tid=19 w='1.810357499999995' weight='1.810357499999995',
+	id=13 sid=8 tid=20 w='20.17517252499998' weight='20.17517252499998',
+	id=14 sid=10 tid=11 w='22.791531050000003' weight='22.791531050000003',
+	id=15 sid=10 tid=41 w='13.66986275' weight='13.66986275',
+	id=16 sid=10 tid=42 w='6.97683370999999' weight='6.97683370999999',
+	id=17 sid=12 tid=17 w='33.812857245' weight='33.812857245',
+	id=18 sid=13 tid=35 w='16.203316694999984' weight='16.203316694999984',
+	id=19 sid=13 tid=67 w='4.14871154499998' weight='4.14871154499998',
+	id=20 sid=13 tid=81 w='7.364723789999994' weight='7.364723789999994',
+	id=21 sid=13 tid=99 w='17.823616750000017' weight='17.823616750000017',
+	id=22 sid=14 tid=15 w='27.750514399999993' weight='27.750514399999993',
+	id=23 sid=14 tid=56 w='3.721295000000005' weight='3.721295000000005',
+	id=24 sid=14 tid=57 w='18.26122196' weight='18.26122196',
+	id=25 sid=16 tid=36 w='5.652204980000008' weight='5.652204980000008',
+	id=26 sid=16 tid=37 w='2.6060901950000073' weight='2.6060901950000073',
+	id=27 sid=17 tid=34 w='9.791611404999987' weight='9.791611404999987',
+	id=28 sid=17 tid=35 w='1.4419705499999775' weight='1.4419705499999775',
+	id=29 sid=17 tid=54 w='1.909858050000004' weight='1.909858050000004',
+	id=30 sid=17 tid=21 w='7.414788000000009' weight='7.414788000000009',
+	id=31 sid=17 tid=26 w='31.866962459999982' weight='31.866962459999982',
+	id=32 sid=18 tid=29 w='16.355267049999995' weight='16.355267049999995',
+	id=33 sid=18 tid=34 w='13.405617994999997' weight='13.405617994999997',
+	id=34 sid=19 tid=25 w='27.166463499999992' weight='27.166463499999992',
+	id=35 sid=20 tid=58 w='1.659886055000019' weight='1.659886055000019',
+	id=36 sid=20 tid=72 w='16.218238270000015' weight='16.218238270000015',
+	id=37 sid=21 tid=68 w='5.315596214999992' weight='5.315596214999992',
+	id=38 sid=21 tid=69 w='13.66986274999999' weight='13.66986274999999',
+	id=39 sid=22 tid=23 w='24.207489314999986' weight='24.207489314999986',
+	id=40 sid=22 tid=30 w='1.8458072850000207' weight='1.8458072850000207',
+	id=41 sid=22 tid=31 w='8.176353805000009' weight='8.176353805000009',
+	id=42 sid=24 tid=26 w='27.59650854' weight='27.59650854',
+	id=43 sid=25 tid=78 w='5.519301414999999' weight='5.519301414999999',
+	id=44 sid=25 tid=75 w='2.6813895449999876' weight='2.6813895449999876',
+	id=45 sid=25 tid=80 w='3.0357733700000082' weight='3.0357733700000082',
+	id=46 sid=25 tid=91 w='14.076481350000005' weight='14.076481350000005',
+	id=47 sid=26 tid=81 w='9.740892524999994' weight='9.740892524999994',
+	id=48 sid=26 tid=82 w='1.8677412999999827' weight='1.8677412999999827',
+	id=49 sid=27 tid=28 w='19.622576920000007' weight='19.622576920000007',
+	id=50 sid=27 tid=52 w='3.012870935000013' weight='3.012870935000013',
+	id=51 sid=27 tid=53 w='5.493425105000023' weight='5.493425105000023',
+	id=52 sid=29 tid=54 w='4.932104299999999' weight='4.932104299999999',
+	id=53 sid=29 tid=55 w='16.4791862' weight='16.4791862',
+	id=54 sid=30 tid=34 w='2.671210705' weight='2.671210705',
+	id=55 sid=30 tid=35 w='11.02085156000001' weight='11.02085156000001',
+	id=56 sid=31 tid=45 w='1.4409279349999906' weight='1.4409279349999906',
+	id=57 sid=31 tid=46 w='14.748569309999983' weight='14.748569309999983',
+	id=58 sid=32 tid=38 w='8.502583009999974' weight='8.502583009999974',
+	id=59 sid=32 tid=39 w='6.90614635499999' weight='6.90614635499999',
+	id=60 sid=33 tid=43 w='1.522445395000009' weight='1.522445395000009',
+	id=61 sid=33 tid=44 w='3.2957615050000157' weight='3.2957615050000157',
+	id=62 sid=35 tid=45 w='3.249377105000029' weight='3.249377105000029',
+	id=63 sid=36 tid=58 w='2.4555816399999735' weight='2.4555816399999735',
+	id=64 sid=36 tid=59 w='1.3966303849999768' weight='1.3966303849999768',
+	id=65 sid=37 tid=47 w='9.88298788999997' weight='9.88298788999997',
+	id=66 sid=37 tid=48 w='3.9751100899999727' weight='3.9751100899999727',
+	id=67 sid=38 tid=74 w='3.0357733700000136' weight='3.0357733700000136',
+	id=68 sid=38 tid=88 w='2.5416481499999755' weight='2.5416481499999755',
+	id=69 sid=39 tid=66 w='1.7670276299999834' weight='1.7670276299999834',
+	id=70 sid=39 tid=79 w='1.5738195450000099' weight='1.5738195450000099',
+	id=71 sid=39 tid=80 w='8.502583009999988' weight='8.502583009999988',
+	id=72 sid=40 tid=139 w='2.3244327300000105' weight='2.3244327300000105',
+	id=73 sid=40 tid=153 w='2.6471394299999855' weight='2.6471394299999855',
+	id=74 sid=40 tid=162 w='3.915885170000008' weight='3.915885170000008',
+	id=75 sid=40 tid=173 w='3.6602539649999963' weight='3.6602539649999963',
+	id=76 sid=41 tid=52 w='4.14871154499998' weight='4.14871154499998',
+	id=77 sid=41 tid=73 w='5.535905774999982' weight='5.535905774999982',
+	id=78 sid=42 tid=64 w='2.297931404999982' weight='2.297931404999982',
+	id=79 sid=42 tid=65 w='13.669862749999986' weight='13.669862749999986',
+	id=80 sid=43 tid=79 w='3.2313194599999875' weight='3.2313194599999875',
+	id=81 sid=43 tid=85 w='3.0424396249999743' weight='3.0424396249999743',
+	id=82 sid=44 tid=79 w='1.4580033499999807' weight='1.4580033499999807',
+	id=83 sid=44 tid=86 w='8.42498453999999' weight='8.42498453999999',
+	id=84 sid=45 tid=49 w='26.977504124999967' weight='26.977504124999967',
+	id=85 sid=46 tid=64 w='5.062789135000017' weight='5.062789135000017',
+	id=86 sid=46 tid=49 w='13.669862749999968' weight='13.669862749999968',
+	id=87 sid=47 tid=53 w='17.105616314999985' weight='17.105616314999985',
+	id=88 sid=47 tid=62 w='3.9751100899999727' weight='3.9751100899999727',
+	id=89 sid=48 tid=58 w='1.827603445000058' weight='1.827603445000058',
+	id=90 sid=48 tid=62 w='9.88298788999997' weight='9.88298788999997',
+	id=91 sid=49 tid=73 w='8.801648474999986' weight='8.801648474999986',
+	id=92 sid=49 tid=109 w='1.4409279349999995' weight='1.4409279349999995',
+	id=93 sid=49 tid=116 w='1.4409279350000013' weight='1.4409279350000013',
+	id=94 sid=50 tid=51 w='28.48864312499999' weight='28.48864312499999',
+	id=95 sid=50 tid=139 w='1.8661438500000092' weight='1.8661438500000092',
+	id=96 sid=50 tid=140 w='5.431595670000007' weight='5.431595670000007',
+	id=97 sid=52 tid=71 w='6.455664259999979' weight='6.455664259999979',
+	id=98 sid=53 tid=71 w='3.9751100899999674' weight='3.9751100899999674',
+	id=99 sid=54 tid=63 w='14.911445450000002' weight='14.911445450000002',
+	id=100 sid=55 tid=57 w='1.4981721900000053' weight='1.4981721900000053',
+	id=101 sid=55 tid=77 w='4.932104299999995' weight='4.932104299999995',
+	id=102 sid=56 tid=60 w='4.332900895000005' weight='4.332900895000005',
+	id=103 sid=56 tid=61 w='19.472031259999994' weight='19.472031259999994',
+	id=104 sid=57 tid=90 w='1.8661913599999949' weight='1.8661913599999949',
+	id=105 sid=58 tid=78 w='3.932067424999987' weight='3.932067424999987',
+	id=106 sid=59 tid=74 w='3.6041737400000056' weight='3.6041737400000056',
+	id=107 sid=59 tid=75 w='7.8289305499999955' weight='7.8289305499999955',
+	id=108 sid=60 tid=66 w='1.985821410000014' weight='1.985821410000014',
+	id=109 sid=60 tid=67 w='24.413712205000003' weight='24.413712205000003',
+	id=110 sid=61 tid=103 w='1.4828721349999991' weight='1.4828721349999991',
+	id=111 sid=61 tid=63 w='3.065912939999997' weight='3.065912939999997',
+	id=112 sid=61 tid=83 w='1.9098580500000129' weight='1.9098580500000129',
+	id=113 sid=62 tid=95 w='3.688410615000027' weight='3.688410615000027',
+	id=114 sid=62 tid=96 w='3.9415962900000228' weight='3.9415962900000228',
+	id=115 sid=63 tid=77 w='1.5677407499999951' weight='1.5677407499999951',
+	id=116 sid=63 tid=67 w='6.208668900000006' weight='6.208668900000006',
+	id=117 sid=64 tid=70 w='7.312465635000024' weight='7.312465635000024',
+	id=118 sid=65 tid=73 w='1.4409279349999977' weight='1.4409279349999977',
+	id=119 sid=65 tid=97 w='1.4409279349999977' weight='1.4409279349999977',
+	id=120 sid=65 tid=111 w='1.423419994999989' weight='1.423419994999989',
+	id=121 sid=65 tid=112 w='1.4673219999999656' weight='1.4673219999999656',
+	id=122 sid=66 tid=69 w='26.785450645000004' weight='26.785450645000004',
+	id=123 sid=67 tid=69 w='4.357559850000019' weight='4.357559850000019',
+	id=124 sid=67 tid=94 w='4.564885019999986' weight='4.564885019999986',
+	id=125 sid=67 tid=110 w='6.290627915000009' weight='6.290627915000009',
+	id=126 sid=68 tid=70 w='5.900784184999985' weight='5.900784184999985',
+	id=127 sid=68 tid=76 w='15.093282744999975' weight='15.093282744999975',
+	id=128 sid=69 tid=76 w='6.739016209999974' weight='6.739016209999974',
+	id=129 sid=69 tid=116 w='12.025128964999983' weight='12.025128964999983',
+	id=130 sid=70 tid=87 w='8.607073614999962' weight='8.607073614999962',
+	id=131 sid=71 tid=97 w='3.228953059999988' weight='3.228953059999988',
+	id=132 sid=71 tid=98 w='4.564885019999972' weight='4.564885019999972',
+	id=133 sid=71 tid=99 w='7.881889990000001' weight='7.881889990000001',
+	id=134 sid=72 tid=111 w='7.863537334999997' weight='7.863537334999997',
+	id=135 sid=72 tid=102 w='3.609078919999977' weight='3.609078919999977',
+	id=136 sid=72 tid=101 w='4.14871154499997' weight='4.14871154499997',
+	id=137 sid=72 tid=132 w='7.91158250000002' weight='7.91158250000002',
+	id=138 sid=74 tid=78 w='3.6964513599999815' weight='3.6964513599999815',
+	id=139 sid=75 tid=89 w='6.239359190000005' weight='6.239359190000005',
+	id=140 sid=76 tid=134 w='5.417677685000024' weight='5.417677685000024',
+	id=141 sid=76 tid=137 w='5.900784184999989' weight='5.900784184999989',
+	id=142 sid=76 tid=153 w='3.2957615050000117' weight='3.2957615050000117',
+	id=143 sid=76 tid=158 w='3.295761505000028' weight='3.295761505000028',
+	id=144 sid=77 tid=103 w='2.981044325000001' weight='2.981044325000001',
+	id=145 sid=77 tid=94 w='5.170131960000008' weight='5.170131960000008',
+	id=146 sid=77 tid=110 w='5.019836995000002' weight='5.019836995000002',
+	id=147 sid=78 tid=85 w='10.091360765000001' weight='10.091360765000001',
+	id=148 sid=80 tid=88 w='4.364498205000022' weight='4.364498205000022',
+	id=149 sid=80 tid=100 w='13.656258229999992' weight='13.656258229999992',
+	id=150 sid=81 tid=105 w='1.8677412999999863' weight='1.8677412999999863',
+	id=151 sid=81 tid=106 w='12.255432049999989' weight='12.255432049999989',
+	id=152 sid=82 tid=83 w='12.021862769999998' weight='12.021862769999998',
+	id=153 sid=82 tid=84 w='2.2809702450000042' weight='2.2809702450000042',
+	id=154 sid=83 tid=105 w='2.2809702450000016' weight='2.2809702450000016',
+	id=155 sid=83 tid=94 w='2.799838770000015' weight='2.799838770000015',
+	id=156 sid=84 tid=93 w='8.678641350000005' weight='8.678641350000005',
+	id=157 sid=84 tid=94 w='12.540731295000006' weight='12.540731295000006',
+	id=158 sid=85 tid=88 w='5.9007841849999885' weight='5.9007841849999885',
+	id=159 sid=85 tid=92 w='19.75185850500001' weight='19.75185850500001',
+	id=160 sid=86 tid=107 w='3.796393170000009' weight='3.796393170000009',
+	id=161 sid=86 tid=108 w='13.151009224999983' weight='13.151009224999983',
+	id=162 sid=87 tid=88 w='30.56798473500002' weight='30.56798473500002',
+	id=163 sid=87 tid=116 w='5.871537700000022' weight='5.871537700000022',
+	id=164 sid=87 tid=137 w='6.486209130000016' weight='6.486209130000016',
+	id=165 sid=89 tid=121 w='3.601148030000008' weight='3.601148030000008',
+	id=166 sid=89 tid=122 w='2.031250564999967' weight='2.031250564999967',
+	id=167 sid=90 tid=103 w='1.5830408050000049' weight='1.5830408050000049',
+	id=168 sid=90 tid=104 w='12.26654006999997' weight='12.26654006999997',
+	id=169 sid=91 tid=142 w='4.148711544999979' weight='4.148711544999979',
+	id=170 sid=91 tid=140 w='1.4061203399999904' weight='1.4061203399999904',
+	id=171 sid=91 tid=182 w='1.625702555000031' weight='1.625702555000031',
+	id=172 sid=91 tid=183 w='3.3927301850000067' weight='3.3927301850000067',
+	id=173 sid=92 tid=124 w='3.5336202349999954' weight='3.5336202349999954',
+	id=174 sid=92 tid=133 w='2.359919044999998' weight='2.359919044999998',
+	id=175 sid=92 tid=145 w='2.40203579500002' weight='2.40203579500002',
+	id=176 sid=92 tid=185 w='2.7411416299999702' weight='2.7411416299999702',
+	id=177 sid=93 tid=113 w='4.996263855000033' weight='4.996263855000033',
+	id=178 sid=93 tid=120 w='8.603033304999993' weight='8.603033304999993',
+	id=179 sid=94 tid=128 w='3.5188835349999934' weight='3.5188835349999934',
+	id=180 sid=95 tid=101 w='3.609078919999983' weight='3.609078919999983',
+	id=181 sid=95 tid=102 w='4.148711544999976' weight='4.148711544999976',
+	id=182 sid=96 tid=113 w='3.9402936999999687' weight='3.9402936999999687',
+	id=183 sid=96 tid=114 w='2.742591204999986' weight='2.742591204999986',
+	id=184 sid=97 tid=109 w='7.360720539999987' weight='7.360720539999987',
+	id=185 sid=98 tid=117 w='2.7998387700000116' weight='2.7998387700000116',
+	id=186 sid=98 tid=118 w='4.232948419999991' weight='4.232948419999991',
+	id=187 sid=98 tid=119 w='7.334326475000022' weight='7.334326475000022',
+	id=188 sid=99 tid=109 w='2.7077836099999875' weight='2.7077836099999875',
+	id=189 sid=99 tid=119 w='5.112448534999945' weight='5.112448534999945',
+	id=190 sid=99 tid=148 w='5.85805237499995' weight='5.85805237499995',
+	id=191 sid=100 tid=143 w='3.4559964900000235' weight='3.4559964900000235',
+	id=192 sid=100 tid=123 w='3.455996490000043' weight='3.455996490000043',
+	id=193 sid=100 tid=161 w='3.3927301850000156' weight='3.3927301850000156',
+	id=194 sid=100 tid=162 w='2.1872507499999987' weight='2.1872507499999987',
+	id=195 sid=101 tid=117 w='2.443402989999991' weight='2.443402989999991',
+	id=196 sid=101 tid=144 w='7.417810420000011' weight='7.417810420000011',
+	id=197 sid=102 tid=126 w='5.682912799999999' weight='5.682912799999999',
+	id=198 sid=102 tid=147 w='3.2914573100000015' weight='3.2914573100000015',
+	id=199 sid=104 tid=107 w='3.0357733700000082' weight='3.0357733700000082',
+	id=200 sid=104 tid=124 w='2.7580879250000176' weight='2.7580879250000176',
+	id=201 sid=105 tid=115 w='12.769374665' weight='12.769374665',
+	id=202 sid=106 tid=117 w='13.450074690000012' weight='13.450074690000012',
+	id=203 sid=106 tid=120 w='1.7097800649999897' weight='1.7097800649999897',
+	id=204 sid=106 tid=134 w='2.79983877000001' weight='2.79983877000001',
+	id=205 sid=106 tid=115 w='2.3816839150000035' weight='2.3816839150000035',
+	id=206 sid=107 tid=110 w='8.71473569499998' weight='8.71473569499998',
+	id=207 sid=107 tid=123 w='10.361637125000028' weight='10.361637125000028',
+	id=208 sid=108 tid=114 w='2.117460980000006' weight='2.117460980000006',
+	id=209 sid=108 tid=122 w='2.1174609800000077' weight='2.1174609800000077',
+	id=210 sid=108 tid=149 w='3.2681874950000207' weight='3.2681874950000207',
+	id=211 sid=109 tid=130 w='1.7670276300000118' weight='1.7670276300000118',
+	id=212 sid=109 tid=131 w='9.524943885000003' weight='9.524943885000003',
+	id=213 sid=110 tid=127 w='4.456902465000001' weight='4.456902465000001',
+	id=214 sid=111 tid=118 w='2.5360586999999786' weight='2.5360586999999786',
+	id=215 sid=112 tid=125 w='2.5354759500000394' weight='2.5354759500000394',
+	id=216 sid=112 tid=126 w='5.745801450000004' weight='5.745801450000004',
+	id=217 sid=113 tid=121 w='1.4673219999999887' weight='1.4673219999999887',
+	id=218 sid=113 tid=119 w='13.088294809999965' weight='13.088294809999965',
+	id=219 sid=114 tid=141 w='1.9213829850000206' weight='1.9213829850000206',
+	id=220 sid=114 tid=142 w='4.338549595000038' weight='4.338549595000038',
+	id=221 sid=115 tid=161 w='1.7670276299999799' weight='1.7670276299999799',
+	id=222 sid=115 tid=159 w='1.7670276300000118' weight='1.7670276300000118',
+	id=223 sid=115 tid=131 w='3.7340642999999965' weight='3.7340642999999965',
+	id=224 sid=116 tid=125 w='4.7988505249999935' weight='4.7988505249999935',
+	id=225 sid=116 tid=129 w='2.5763935700000165' weight='2.5763935700000165',
+	id=226 sid=117 tid=126 w='4.51828065499995' weight='4.51828065499995',
+	id=227 sid=118 tid=126 w='3.2536447550000016' weight='3.2536447550000016',
+	id=228 sid=118 tid=148 w='2.355774215000027' weight='2.355774215000027',
+	id=229 sid=119 tid=151 w='2.3816839149999955' weight='2.3816839149999955',
+	id=230 sid=119 tid=170 w='4.389722444999993' weight='4.389722444999993',
+	id=231 sid=119 tid=144 w='5.203287555000001' weight='5.203287555000001',
+	id=232 sid=119 tid=172 w='1.8091443800000033' weight='1.8091443800000033',
+	id=233 sid=120 tid=163 w='1.9670366700000201' weight='1.9670366700000201',
+	id=234 sid=121 tid=122 w='3.404672714999972' weight='3.404672714999972',
+	id=235 sid=121 tid=138 w='2.1185131499999903' weight='2.1185131499999903',
+	id=236 sid=122 tid=141 w='2.3135389749999904' weight='2.3135389749999904',
+	id=237 sid=123 tid=138 w='4.798850524999987' weight='4.798850524999987',
+	id=238 sid=123 tid=149 w='3.101612664999992' weight='3.101612664999992',
+	id=239 sid=123 tid=163 w='4.342701844999986' weight='4.342701844999986',
+	id=240 sid=123 tid=175 w='1.7908843250000084' weight='1.7908843250000084',
+	id=241 sid=124 tid=143 w='4.567775829999983' weight='4.567775829999983',
+	id=242 sid=125 tid=135 w='1.4061203399999815' weight='1.4061203399999815',
+	id=243 sid=125 tid=148 w='2.8403321800000274' weight='2.8403321800000274',
+	id=244 sid=126 tid=157 w='2.5354759500000323' weight='2.5354759500000323',
+	id=245 sid=127 tid=145 w='1.9699980549999792' weight='1.9699980549999792',
+	id=246 sid=127 tid=146 w='1.7676463199999732' weight='1.7676463199999732',
+	id=247 sid=128 tid=133 w='2.7998387700000062' weight='2.7998387700000062',
+	id=248 sid=128 tid=134 w='4.587836970000008' weight='4.587836970000008',
+	id=249 sid=129 tid=150 w='1.7670276300000118' weight='1.7670276300000118',
+	id=250 sid=129 tid=151 w='1.767027629999979' weight='1.767027629999979',
+	id=251 sid=129 tid=152 w='3.169407879999981' weight='3.169407879999981',
+	id=252 sid=130 tid=135 w='1.6257025549999913' weight='1.6257025549999913',
+	id=253 sid=130 tid=136 w='5.745801449999991' weight='5.745801449999991',
+	id=254 sid=131 tid=138 w='6.702620889999982' weight='6.702620889999982',
+	id=255 sid=131 tid=160 w='3.7791424350000082' weight='3.7791424350000082',
+	id=256 sid=131 tid=168 w='1.4889598200000154' weight='1.4889598200000154',
+	id=257 sid=131 tid=144 w='2.359919045' weight='2.359919045',
+	id=258 sid=131 tid=181 w='1.903770364999989' weight='1.903770364999989',
+	id=259 sid=131 tid=179 w='3.7761810500000053' weight='3.7761810500000053',
+	id=260 sid=132 tid=166 w='1.6018458599999925' weight='1.6018458599999925',
+	id=261 sid=132 tid=175 w='1.9627531500000037' weight='1.9627531500000037',
+	id=262 sid=132 tid=169 w='1.9627531500000117' weight='1.9627531500000117',
+	id=263 sid=132 tid=178 w='3.670797994999994' weight='3.670797994999994',
+	id=264 sid=133 tid=159 w='5.20249325499999' weight='5.20249325499999',
+	id=265 sid=134 tid=160 w='7.095051879999992' weight='7.095051879999992',
+	id=266 sid=134 tid=159 w='3.4144950549999873' weight='3.4144950549999873',
+	id=267 sid=134 tid=170 w='1.7260257700000037' weight='1.7260257700000037',
+	id=268 sid=135 tid=142 w='12.184695609999963' weight='12.184695609999963',
+	id=269 sid=136 tid=150 w='3.16940787999998' weight='3.16940787999998',
+	id=270 sid=136 tid=160 w='1.767027630000015' weight='1.767027630000015',
+	id=271 sid=136 tid=152 w='1.767027630000011' weight='1.767027630000011',
+	id=272 sid=136 tid=154 w='3.4454197999999625' weight='3.4454197999999625',
+	id=273 sid=136 tid=171 w='1.4859984350000124' weight='1.4859984350000124',
+	id=274 sid=136 tid=165 w='3.7761810500000434' weight='3.7761810500000434',
+	id=275 sid=136 tid=181 w='4.472020789999982' weight='4.472020789999982',
+	id=276 sid=137 tid=154 w='1.6988145399999866' weight='1.6988145399999866',
+	id=277 sid=137 tid=176 w='2.401326489999974' weight='2.401326489999974',
+	id=278 sid=138 tid=141 w='1.7670276300000038' weight='1.7670276300000038',
+	id=279 sid=139 tid=149 w='9.49586610500001' weight='9.49586610500001',
+	id=280 sid=140 tid=178 w='1.4889598200000105' weight='1.4889598200000105',
+	id=281 sid=141 tid=144 w='6.109729474999984' weight='6.109729474999984',
+	id=282 sid=142 tid=147 w='1.4061203399999855' weight='1.4061203399999855',
+	id=283 sid=142 tid=174 w='1.6615966249999667' weight='1.6615966249999667',
+	id=284 sid=143 tid=163 w='4.342701844999995' weight='4.342701844999995',
+	id=285 sid=143 tid=166 w='1.4299770350000007' weight='1.4299770350000007',
+	id=286 sid=144 tid=174 w='2.0309662400000006' weight='2.0309662400000006',
+	id=287 sid=144 tid=163 w='4.798850524999983' weight='4.798850524999983',
+	id=288 sid=144 tid=156 w='3.829305690000009' weight='3.829305690000009',
+	id=289 sid=145 tid=158 w='2.251645939999934' weight='2.251645939999934',
+	id=290 sid=146 tid=158 w='1.485998435000015' weight='1.485998435000015',
+	id=291 sid=146 tid=153 w='1.4859984350000315' weight='1.4859984350000315',
+	id=292 sid=147 tid=149 w='1.7817027400000462' weight='1.7817027400000462',
+	id=293 sid=147 tid=155 w='3.035773370000011' weight='3.035773370000011',
+	id=294 sid=148 tid=150 w='3.295761504999996' weight='3.295761504999996',
+	id=295 sid=148 tid=154 w='3.019749585000014' weight='3.019749585000014',
+	id=296 sid=148 tid=155 w='6.836467279999957' weight='6.836467279999957',
+	id=297 sid=151 tid=160 w='1.402380249999997' weight='1.402380249999997',
+	id=298 sid=152 tid=167 w='2.3796156500000034' weight='2.3796156500000034',
+	id=299 sid=152 tid=168 w='2.290182614999996' weight='2.290182614999996',
+	id=300 sid=153 tid=165 w='3.6737593799999777' weight='3.6737593799999777',
+	id=301 sid=154 tid=169 w='5.900784184999981' weight='5.900784184999981',
+	id=302 sid=155 tid=157 w='3.4031207899999494' weight='3.4031207899999494',
+	id=303 sid=155 tid=180 w='1.5458244599999715' weight='1.5458244599999715',
+	id=304 sid=155 tid=169 w='2.084066490000046' weight='2.084066490000046',
+	id=305 sid=156 tid=166 w='2.657093604999989' weight='2.657093604999989',
+	id=306 sid=156 tid=175 w='2.2961863149999777' weight='2.2961863149999777',
+	id=307 sid=156 tid=170 w='5.720174569999997' weight='5.720174569999997',
+	id=308 sid=156 tid=178 w='2.6155502499999983' weight='2.6155502499999983',
+	id=309 sid=156 tid=176 w='4.096829470000001' weight='4.096829470000001',
+	id=310 sid=156 tid=179 w='2.4130436850000017' weight='2.4130436850000017',
+	id=311 sid=156 tid=183 w='2.1179002249999925' weight='2.1179002249999925',
+	id=312 sid=156 tid=185 w='4.133137865000016' weight='4.133137865000016',
+	id=313 sid=157 tid=171 w='1.5458244599999729' weight='1.5458244599999729',
+	id=314 sid=158 tid=164 w='1.9067317499999912' weight='1.9067317499999912',
+	id=315 sid=159 tid=163 w='3.062160450000036' weight='3.062160450000036',
+	id=316 sid=159 tid=164 w='1.9699980549999672' weight='1.9699980549999672',
+	id=317 sid=159 tid=179 w='2.6495906199999943' weight='2.6495906199999943',
+	id=318 sid=161 tid=163 w='2.938722300000004' weight='2.938722300000004',
+	id=319 sid=161 tid=179 w='2.6495906200000254' weight='2.6495906200000254',
+	id=320 sid=161 tid=183 w='3.4559964900000306' weight='3.4559964900000306',
+	id=321 sid=162 tid=166 w='3.3649230149999942' weight='3.3649230149999942',
+	id=322 sid=162 tid=178 w='1.9077208399999925' weight='1.9077208399999925',
+	id=323 sid=162 tid=179 w='2.930390314999988' weight='2.930390314999988',
+	id=324 sid=163 tid=177 w='2.4692525750000573' weight='2.4692525750000573',
+	id=325 sid=164 tid=177 w='2.6471394299999833' weight='2.6471394299999833',
+	id=326 sid=164 tid=171 w='7.029207115000033' weight='7.029207115000033',
+	id=327 sid=164 tid=176 w='4.88848745000004' weight='4.88848745000004',
+	id=328 sid=165 tid=184 w='1.3965654000000285' weight='1.3965654000000285',
+	id=329 sid=165 tid=179 w='2.012114805000021' weight='2.012114805000021',
+	id=330 sid=167 tid=170 w='3.1682765299999907' weight='3.1682765299999907',
+	id=331 sid=167 tid=173 w='2.2901826149999964' weight='2.2901826149999964',
+	id=332 sid=167 tid=184 w='1.7670276299999959' weight='1.7670276299999959',
+	id=333 sid=168 tid=182 w='1.7670276299999743' weight='1.7670276299999743',
+	id=334 sid=168 tid=173 w='2.3796156500000034' weight='2.3796156500000034',
+	id=335 sid=169 tid=183 w='1.6018458599999814' weight='1.6018458599999814',
+	id=336 sid=171 tid=172 w='2.423185349999996' weight='2.423185349999996',
+	id=337 sid=171 tid=180 w='3.40312078999995' weight='3.40312078999995',
+	id=338 sid=172 tid=176 w='3.0830896550000144' weight='3.0830896550000144',
+	id=339 sid=173 tid=179 w='2.885525220000008' weight='2.885525220000008',
+	id=340 sid=173 tid=183 w='4.014393679999996' weight='4.014393679999996',
+	id=341 sid=174 tid=180 w='1.5138808650000493' weight='1.5138808650000493',
+	id=342 sid=174 tid=181 w='2.4871149200000104' weight='2.4871149200000104',
+	id=343 sid=176 tid=184 w='1.7248944200000143' weight='1.7248944200000143',
+	id=344 sid=177 tid=185 w='0.6943404549999928' weight='0.6943404549999928',
+	id=345 sid=178 tid=181 w='2.895080160000017' weight='2.895080160000017',
+	id=346 sid=178 tid=184 w='5.453660559999969' weight='5.453660559999969',
+	id=347 sid=181 tid=182 w='1.6257025550000272' weight='1.6257025550000272',
+	id=348 sid=181 tid=183 w='0.4148105449999768' weight='0.4148105449999768'
+;
+END; [NETWORK]
+
+BEGIN ALGORITHM;
+TITLE 'Show Network';
+LINK NETWORK = 'Working Network';
+NAME 'Show Network';
+OPTIONS
+	View = 'Network';
+END; [ALGORITHM]
+
+BEGIN VIEW;
+TITLE 'Network';
+LINK ALGORITHM = 'Show Network';
+NAME 'NetworkView';
+INPUT 'NETWORK';
+OPTIONS
+	Diagram = 'Network',
+	FontScaleFactor = 2.48832,
+	TraitLegend = 'False',
+	TraitSize = 32,
+	SitesStyle = 'None',
+	Edits = 'ml:51:24,1' 'ml:24:17,-5' 'ml:9:29,7' 'ml:5:-2,0' 'ml:1:-13,-80' 'ml:11:-2,-2' 'mn:1:-340.23,22.93' 'mn:2:270.01,-15.72' 'mn:3:313.92,-14.48' 'mn:4:-319.33,65.31' 'mn:5:-373.29,76.14' 'mn:6:143.21,177.65' 'mn:7:176.96,248.43' 'mn:8:259.2,-45.26' 'mn:9:293.34,-62.59' 'mn:10:-107.38,-211.84' 'mn:11:-130.52,-286.7' 'mn:12:-287.45,61.65' 'mn:13:-79.14,43.78' 'mn:14:-45.33,227.75' 'mn:15:-44.78,313.13' 'mn:16:227.92,-60.44' 'mn:17:-192.48,30.81' 'mn:18:-267.78,89.61' 'mn:19:236.38,-9.78' 'mn:20:165.89,-48.4' 'mn:21:-168.97,26.94' 'mn:22:-245.81,-50.73' 'mn:23:-315.21,-98.65' 'mn:24:-38.85,126.85' 'mn:25:134.75,43.81' 'mn:26:-53.38,91.3' 'mn:27:18.88,-220.64' 'mn:28:33.11,-292.83' 'mn:29:-203.08,109.84' 'mn:30:-241.41,-19.53' 'mn:31:-197.98,-65.46' 'mn:32:135.86,147.18' 'mn:33:120.14,165.35' 'mn:34:-244.8,15.34' 'mn:35:-186.41,-1.29' 'mn:36:207.58,-6.14' 'mn:37:202.9,-87.58' 'mn:38:154.5,89.53' 'mn:39:54.85,143.36' 'mn:40:17.44,41.53' 'mn:41:-53.11,-195.31' 'mn:42:-104.12,-162.74' 'mn:43:117.75,137.87' 'mn:44:84.95,170.57' 'mn:45:-178.02,-43.19' 'mn:46:-142.56,-107.77' 'mn:47:140.48,-130.97' 'mn:48:205.91,-57.01' 'mn:49:-82.47,-85.33' 'mn:50:91.97,34.2' 'mn:51:132.92,6.33' 'mn:52:-15.85,-200.01' 'mn:53:38.94,-178.37' 'mn:54:-192.63,65.68' 'mn:55:-120.11,155.75' 'mn:56:-27.63,195.74' 'mn:57:-94.89,178.21' 'mn:58:194.87,-19.16' 'mn:59:202.26,25.12' 'mn:60:-1.85,176.6' 'mn:61:-127.06,137.72' 'mn:62:134,-91.31' 'mn:63:-146.75,123.71' 'mn:64:-127.36,-133.99' 'mn:65:-23.24,-154.53' 'mn:66:37.95,157.41' 'mn:67:-124.72,97.38' 'mn:68:-137.75,-18.79' 'mn:69:-92.9,23.83' 'mn:70:-130.06,-67.76' 'mn:71:-4.89,-153.6' 'mn:72:75.92,-90.02' 'mn:73:-56.61,-150.08' 'mn:74:184.25,61.73' 'mn:75:164.83,50.39' 'mn:76:-66.9,18.12' 'mn:77:-81.1,125.47' 'mn:78:184.06,9.21' 'mn:79:96.54,154.81' 'mn:80:98.4,83.94' 'mn:81:-50.69,79.62' 'mn:82:-69.33,61.3' 'mn:83:-90.82,74.34' 'mn:84:-53.04,117.89' 'mn:85:113.23,102.71' 'mn:86:69.04,107.59' 'mn:87:-104.75,-32.97' 'mn:88:120.35,79.5' 'mn:89:103.48,54.91' 'mn:90:-64.4,165.98' 'mn:91:77.44,-28.16' 'mn:92:12.25,86.65' 'mn:93:34.55,69.5' 'mn:94:-77.87,89.87' 'mn:95:105.28,-99.5' 'mn:96:98.89,-62.92' 'mn:97:-37.63,-142.14' 'mn:98:14.92,-118.6' 'mn:99:-40.78,-94.37' 'mn:100:55.18,61.05' 'mn:101:63.14,-92.92' 'mn:102:82.52,-105' 'mn:103:-94.9,149.24' 'mn:104:4.06,118.49' 'mn:105:-87.79,56.72' 'mn:106:-34.19,8.07' 'mn:107:20.99,104.74' 'mn:108:113.31,-20.82' 'mn:109:-55.62,-79.29' 'mn:110:-87.59,99.84' 'mn:111:16.47,-146.35' 'mn:112:-19.97,-136.86' 'mn:113:69.15,-14.2' 'mn:114:105.31,-42.43' 'mn:115:-10.67,11.65' 'mn:116:-81.44,-63.23' 'mn:117:36.09,-101.46' 'mn:118:-2.52,-125.77' 'mn:119:-7.08,-55.52' 'mn:120:-6.5,37.63' 'mn:121:96.26,11.16' 'mn:122:116.82,7.77' 'mn:123:60.47,28.47' 'mn:124:46.53,117.72' 'mn:125:-40.89,-110.87' 'mn:126:31.86,-120.39' 'mn:127:-41.64,91.97' 'mn:128:-64.49,36.49' 'mn:129:-62.73,-63.43' 'mn:130:-28.84,-95.42' 'mn:131:5.39,-27.34' 'mn:132:54.31,-19.46' 'mn:133:-15.31,76.47' 'mn:134:-50.47,10.49' 'mn:135:-9.79,-107.79' 'mn:136:-16.66,-43.18' 'mn:137:-51.01,-30.61' 'mn:138:69.78,2.05' 'mn:139:70.79,45.98' 'mn:140:84.85,-5.42' 'mn:141:93.55,-22.35' 'mn:142:72.98,-61.44' 'mn:143:38.54,57.27' 'mn:144:33.97,-32.38' 'mn:145:-20.89,86.24' 'mn:146:-41.29,65.85' 'mn:147:84.49,-66.97' 'mn:148:-15.65,-96.97' 'mn:149:103.54,-22.8' 'mn:150:-41.79,-79.65' 'mn:151:-47.16,-53.84' 'mn:152:-30.09,-50.69' 'mn:153:-30.55,38.02' 'mn:154:-16.68,-77.88' 'mn:155:47.52,-84.98' 'mn:156:24.95,0.23' 'mn:157:20.11,-99.19' 'mn:158:-48.52,42.65' 'mn:159:-20.61,35.27' 'mn:160:-35.61,-34.95' 'mn:161:30.81,15.42' 'mn:162:38.88,28.59' 'mn:163:7.34,26.63' 'mn:164:-24.08,49.6' 'mn:165:-24.49,-2.62' 'mn:166:47.25,15.95' 'mn:167:-31.6,-19.69' 'mn:168:12.85,-43.87' 'mn:169:29.08,-54.84' 'mn:170:-33.37,-6.11' 'mn:171:4.57,-63.39' 'mn:172:-4.63,-86.97' 'mn:173:9.71,-9.36' 'mn:174:53.81,-57.04' 'mn:175:53.83,1.01' 'mn:176:-11.23,-23.9' 'mn:177:5.87,46.27' 'mn:178:45.55,-6.46' 'mn:179:4.2,8.22' 'mn:180:28.15,-71.08' 'mn:181:18.99,-29.23' 'mn:182:59.82,-41.6' 'mn:183:41.32,-19.29' 'mn:184:-7.38,-11.79' 'mn:185:24.06,53.98',
+	LayoutSeed = 1;
+END; [VIEW]

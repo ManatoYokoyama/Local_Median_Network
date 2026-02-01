@@ -1,0 +1,1211 @@
+#nexus [SplitsTree6]
+
+BEGIN SPLITSTREE6;
+DIMENSIONS nDataNodes=6 nAlgorithms=4;
+PROGRAM version='SplitsTree App (version 6.7.2, built 17 Jan 2026)';
+WORKFLOW creationDate='1769285897553'; [Sun Jan 25 05:18:17 JST 2026]
+END; [SPLITSTREE6]
+
+[
+Methods:
+Analysis was performed using SplitsTree App 6.0.0 (Huson and Bryant 2024).
+The original input consisted of 117 taxa and 117 nodes and 206 edges.
+
+References:
+Huson and Bryant 2024: D.H. Huson and D. Bryant. The SplitsTree App: interactive analysis and visualization using phylogenetic trees and networks. Nature Methods, 2024.
+]
+
+BEGIN TAXA;
+TITLE 'Input Taxa';
+LINK ALGORITHM = 'Input Data Loader';
+DIMENSIONS ntax=117;
+TAXLABELS
+	[1] 'm0'
+	[2] 'gender'
+	[3] 'm1'
+	[4] 'Partner'
+	[5] 'PhoneService'
+	[6] 'MultipleLines'
+	[7] 'InternetService'
+	[8] 'm2'
+	[9] 'Dependents'
+	[10] 'm3'
+	[11] 'Contract'
+	[12] 'm4'
+	[13] 'SeniorCitizen'
+	[14] 'm5'
+	[15] 'PaperlessBilling'
+	[16] 'm6'
+	[17] 'm7'
+	[18] 'm8'
+	[19] 'PaymentMethod'
+	[20] 'm9'
+	[21] 'StreamingMovies'
+	[22] 'm10'
+	[23] 'm11'
+	[24] 'm12'
+	[25] 'StreamingTV'
+	[26] 'm13'
+	[27] 'OnlineBackup'
+	[28] 'm14'
+	[29] 'm15'
+	[30] 'm16'
+	[31] 'm17'
+	[32] 'm18'
+	[33] 'm19'
+	[34] 'm20'
+	[35] 'DeviceProtection'
+	[36] 'm21'
+	[37] 'm22'
+	[38] 'm23'
+	[39] 'TechSupport'
+	[40] 'm24'
+	[41] 'OnlineSecurity'
+	[42] 'm25'
+	[43] 'm26'
+	[44] 'm27'
+	[45] 'm28'
+	[46] 'm29'
+	[47] 'm30'
+	[48] 'm31'
+	[49] 'm32'
+	[50] 'm33'
+	[51] 'm34'
+	[52] 'm35'
+	[53] 'm36'
+	[54] 'm37'
+	[55] 'm38'
+	[56] 'm39'
+	[57] 'm40'
+	[58] 'm41'
+	[59] 'm42'
+	[60] 'm43'
+	[61] 'm44'
+	[62] 'm45'
+	[63] 'm46'
+	[64] 'm47'
+	[65] 'm48'
+	[66] 'm49'
+	[67] 'm50'
+	[68] 'm51'
+	[69] 'm52'
+	[70] 'm53'
+	[71] 'm54'
+	[72] 'm55'
+	[73] 'm56'
+	[74] 'm57'
+	[75] 'm58'
+	[76] 'm59'
+	[77] 'm60'
+	[78] 'm61'
+	[79] 'm62'
+	[80] 'm63'
+	[81] 'm64'
+	[82] 'm65'
+	[83] 'm66'
+	[84] 'm67'
+	[85] 'm68'
+	[86] 'm69'
+	[87] 'm70'
+	[88] 'm71'
+	[89] 'm72'
+	[90] 'm73'
+	[91] 'm75'
+	[92] 'm76'
+	[93] 'm77'
+	[94] 'm78'
+	[95] 'm79'
+	[96] 'm80'
+	[97] 'm81'
+	[98] 'm82'
+	[99] 'm83'
+	[100] 'm84'
+	[101] 'm85'
+	[102] 'm86'
+	[103] 'm87'
+	[104] 'm88'
+	[105] 'm89'
+	[106] 'm90'
+	[107] 'm91'
+	[108] 'm92'
+	[109] 'm93'
+	[110] 'm94'
+	[111] 'm95'
+	[112] 'm96'
+	[113] 'm97'
+	[114] 'm98'
+	[115] 'm99'
+	[116] 'm100'
+	[117] 'm102'
+;
+DISPLAYLABELS
+	[1] '<size "1.0"><c white>m0'
+	[2] '<b><bg black><c white>gender'
+	[3] '<size "1.0"><c white>m1'
+	[4] '<bg red><b><c white>Partner'
+	[5] '<bg blue><b><c white>PhoneService'
+	[6] '<bg blue><b><c white>MultipleLines'
+	[7] '<b><bg yellow>InternetService'
+	[8] '<size "1.0"><c white>m2'
+	[9] '<bg red><b><c white>Dependents'
+	[10] '<size "1.0"><c white>m3'
+	[11] '<b><bg black><c white>Contract'
+	[12] '<size "1.0"><c white>m4'
+	[13] '<b><bg black><c white>SeniorCitizen'
+	[14] '<size "1.0"><c white>m5'
+	[15] '<b><bg black><c white>PaperlessBilling'
+	[16] '<size "1.0"><c white>m6'
+	[17] '<size "1.0"><c white>m7'
+	[18] '<size "1.0"><c white>m8'
+	[19] '<b><bg black><c white>PaymentMethod'
+	[20] '<size "1.0"><c white>m9'
+	[21] '<b><bg yellow>StreamingMovies'
+	[22] '<size "1.0"><c white>m10'
+	[23] '<size "1.0"><c white>m11'
+	[24] '<size "1.0"><c white>m12'
+	[25] '<b><bg yellow>StreamingTV'
+	[26] '<size "1.0"><c white>m13'
+	[27] '<b><bg yellow>OnlineBackup'
+	[28] '<size "1.0"><c white>m14'
+	[29] '<size "1.0"><c white>m15'
+	[30] '<size "1.0"><c white>m16'
+	[31] '<size "1.0"><c white>m17'
+	[32] '<size "1.0"><c white>m18'
+	[33] '<size "1.0"><c white>m19'
+	[34] '<size "1.0"><c white>m20'
+	[35] '<b><bg yellow>DeviceProtection'
+	[36] '<size "1.0"><c white>m21'
+	[37] '<size "1.0"><c white>m22'
+	[38] '<size "1.0"><c white>m23'
+	[39] '<b><bg yellow>TechSupport'
+	[40] '<size "1.0"><c white>m24'
+	[41] '<b><bg yellow>OnlineSecurity'
+	[42] '<size "1.0"><c white>m25'
+	[43] '<size "1.0"><c white>m26'
+	[44] '<size "1.0"><c white>m27'
+	[45] '<size "1.0"><c white>m28'
+	[46] '<size "1.0"><c white>m29'
+	[47] '<size "1.0"><c white>m30'
+	[48] '<size "1.0"><c white>m31'
+	[49] '<size "1.0"><c white>m32'
+	[50] '<size "1.0"><c white>m33'
+	[51] '<size "1.0"><c white>m34'
+	[52] '<size "1.0"><c white>m35'
+	[53] '<size "1.0"><c white>m36'
+	[54] '<size "1.0"><c white>m37'
+	[55] '<size "1.0"><c white>m38'
+	[56] '<size "1.0"><c white>m39'
+	[57] '<size "1.0"><c white>m40'
+	[58] '<size "1.0"><c white>m41'
+	[59] '<size "1.0"><c white>m42'
+	[60] '<size "1.0"><c white>m43'
+	[61] '<size "1.0"><c white>m44'
+	[62] '<size "1.0"><c white>m45'
+	[63] '<size "1.0"><c white>m46'
+	[64] '<size "1.0"><c white>m47'
+	[65] '<size "1.0"><c white>m48'
+	[66] '<size "1.0"><c white>m49'
+	[67] '<size "1.0"><c white>m50'
+	[68] '<size "1.0"><c white>m51'
+	[69] '<size "1.0"><c white>m52'
+	[70] '<size "1.0"><c white>m53'
+	[71] '<size "1.0"><c white>m54'
+	[72] '<size "1.0"><c white>m55'
+	[73] '<size "1.0"><c white>m56'
+	[74] '<size "1.0"><c white>m57'
+	[75] '<size "1.0"><c white>m58'
+	[76] '<size "1.0"><c white>m59'
+	[77] '<size "1.0"><c white>m60'
+	[78] '<size "1.0"><c white>m61'
+	[79] '<size "1.0"><c white>m62'
+	[80] '<size "1.0"><c white>m63'
+	[81] '<size "1.0"><c white>m64'
+	[82] '<size "1.0"><c white>m65'
+	[83] '<size "1.0"><c white>m66'
+	[84] '<size "1.0"><c white>m67'
+	[85] '<size "1.0"><c white>m68'
+	[86] '<size "1.0"><c white>m69'
+	[87] '<size "1.0"><c white>m70'
+	[88] '<size "1.0"><c white>m71'
+	[89] '<size "1.0"><c white>m72'
+	[90] '<size "1.0"><c white>m73'
+	[91] '<size "1.0"><c white>m75'
+	[92] '<size "1.0"><c white>m76'
+	[93] '<size "1.0"><c white>m77'
+	[94] '<size "1.0"><c white>m78'
+	[95] '<size "1.0"><c white>m79'
+	[96] '<size "1.0"><c white>m80'
+	[97] '<size "1.0"><c white>m81'
+	[98] '<size "1.0"><c white>m82'
+	[99] '<size "1.0"><c white>m83'
+	[100] '<size "1.0"><c white>m84'
+	[101] '<size "1.0"><c white>m85'
+	[102] '<size "1.0"><c white>m86'
+	[103] '<size "1.0"><c white>m87'
+	[104] '<size "1.0"><c white>m88'
+	[105] '<size "1.0"><c white>m89'
+	[106] '<size "1.0"><c white>m90'
+	[107] '<size "1.0"><c white>m91'
+	[108] '<size "1.0"><c white>m92'
+	[109] '<size "1.0"><c white>m93'
+	[110] '<size "1.0"><c white>m94'
+	[111] '<size "1.0"><c white>m95'
+	[112] '<size "1.0"><c white>m96'
+	[113] '<size "1.0"><c white>m97'
+	[114] '<size "1.0"><c white>m98'
+	[115] '<size "1.0"><c white>m99'
+	[116] '<size "1.0"><c white>m100'
+	[117] '<size "1.0"><c white>m102'
+;
+[TAXINFO;]
+END; [TAXA]
+
+BEGIN ALGORITHM;
+TITLE 'Taxa Filter';
+LINK ALGORITHM = 'Input Data Loader';
+NAME 'Taxa Filter';
+OPTIONS
+;
+END; [ALGORITHM]
+
+BEGIN TAXA;
+TITLE 'Working Taxa';
+LINK ALGORITHM = 'Taxa Filter';
+DIMENSIONS ntax=117;
+TAXLABELS
+	[1] 'm0'
+	[2] 'gender'
+	[3] 'm1'
+	[4] 'Partner'
+	[5] 'PhoneService'
+	[6] 'MultipleLines'
+	[7] 'InternetService'
+	[8] 'm2'
+	[9] 'Dependents'
+	[10] 'm3'
+	[11] 'Contract'
+	[12] 'm4'
+	[13] 'SeniorCitizen'
+	[14] 'm5'
+	[15] 'PaperlessBilling'
+	[16] 'm6'
+	[17] 'm7'
+	[18] 'm8'
+	[19] 'PaymentMethod'
+	[20] 'm9'
+	[21] 'StreamingMovies'
+	[22] 'm10'
+	[23] 'm11'
+	[24] 'm12'
+	[25] 'StreamingTV'
+	[26] 'm13'
+	[27] 'OnlineBackup'
+	[28] 'm14'
+	[29] 'm15'
+	[30] 'm16'
+	[31] 'm17'
+	[32] 'm18'
+	[33] 'm19'
+	[34] 'm20'
+	[35] 'DeviceProtection'
+	[36] 'm21'
+	[37] 'm22'
+	[38] 'm23'
+	[39] 'TechSupport'
+	[40] 'm24'
+	[41] 'OnlineSecurity'
+	[42] 'm25'
+	[43] 'm26'
+	[44] 'm27'
+	[45] 'm28'
+	[46] 'm29'
+	[47] 'm30'
+	[48] 'm31'
+	[49] 'm32'
+	[50] 'm33'
+	[51] 'm34'
+	[52] 'm35'
+	[53] 'm36'
+	[54] 'm37'
+	[55] 'm38'
+	[56] 'm39'
+	[57] 'm40'
+	[58] 'm41'
+	[59] 'm42'
+	[60] 'm43'
+	[61] 'm44'
+	[62] 'm45'
+	[63] 'm46'
+	[64] 'm47'
+	[65] 'm48'
+	[66] 'm49'
+	[67] 'm50'
+	[68] 'm51'
+	[69] 'm52'
+	[70] 'm53'
+	[71] 'm54'
+	[72] 'm55'
+	[73] 'm56'
+	[74] 'm57'
+	[75] 'm58'
+	[76] 'm59'
+	[77] 'm60'
+	[78] 'm61'
+	[79] 'm62'
+	[80] 'm63'
+	[81] 'm64'
+	[82] 'm65'
+	[83] 'm66'
+	[84] 'm67'
+	[85] 'm68'
+	[86] 'm69'
+	[87] 'm70'
+	[88] 'm71'
+	[89] 'm72'
+	[90] 'm73'
+	[91] 'm75'
+	[92] 'm76'
+	[93] 'm77'
+	[94] 'm78'
+	[95] 'm79'
+	[96] 'm80'
+	[97] 'm81'
+	[98] 'm82'
+	[99] 'm83'
+	[100] 'm84'
+	[101] 'm85'
+	[102] 'm86'
+	[103] 'm87'
+	[104] 'm88'
+	[105] 'm89'
+	[106] 'm90'
+	[107] 'm91'
+	[108] 'm92'
+	[109] 'm93'
+	[110] 'm94'
+	[111] 'm95'
+	[112] 'm96'
+	[113] 'm97'
+	[114] 'm98'
+	[115] 'm99'
+	[116] 'm100'
+	[117] 'm102'
+;
+DISPLAYLABELS
+	[1] '<size "1.0"><c white>m0'
+	[2] '<b><bg black><c white>gender'
+	[3] '<size "1.0"><c white>m1'
+	[4] '<bg red><b><c white>Partner'
+	[5] '<bg blue><b><c white>PhoneService'
+	[6] '<bg blue><b><c white>MultipleLines'
+	[7] '<b><bg yellow>InternetService'
+	[8] '<size "1.0"><c white>m2'
+	[9] '<bg red><b><c white>Dependents'
+	[10] '<size "1.0"><c white>m3'
+	[11] '<b><bg black><c white>Contract'
+	[12] '<size "1.0"><c white>m4'
+	[13] '<b><bg black><c white>SeniorCitizen'
+	[14] '<size "1.0"><c white>m5'
+	[15] '<b><bg black><c white>PaperlessBilling'
+	[16] '<size "1.0"><c white>m6'
+	[17] '<size "1.0"><c white>m7'
+	[18] '<size "1.0"><c white>m8'
+	[19] '<b><bg black><c white>PaymentMethod'
+	[20] '<size "1.0"><c white>m9'
+	[21] '<b><bg yellow>StreamingMovies'
+	[22] '<size "1.0"><c white>m10'
+	[23] '<size "1.0"><c white>m11'
+	[24] '<size "1.0"><c white>m12'
+	[25] '<b><bg yellow>StreamingTV'
+	[26] '<size "1.0"><c white>m13'
+	[27] '<b><bg yellow>OnlineBackup'
+	[28] '<size "1.0"><c white>m14'
+	[29] '<size "1.0"><c white>m15'
+	[30] '<size "1.0"><c white>m16'
+	[31] '<size "1.0"><c white>m17'
+	[32] '<size "1.0"><c white>m18'
+	[33] '<size "1.0"><c white>m19'
+	[34] '<size "1.0"><c white>m20'
+	[35] '<b><bg yellow>DeviceProtection'
+	[36] '<size "1.0"><c white>m21'
+	[37] '<size "1.0"><c white>m22'
+	[38] '<size "1.0"><c white>m23'
+	[39] '<b><bg yellow>TechSupport'
+	[40] '<size "1.0"><c white>m24'
+	[41] '<b><bg yellow>OnlineSecurity'
+	[42] '<size "1.0"><c white>m25'
+	[43] '<size "1.0"><c white>m26'
+	[44] '<size "1.0"><c white>m27'
+	[45] '<size "1.0"><c white>m28'
+	[46] '<size "1.0"><c white>m29'
+	[47] '<size "1.0"><c white>m30'
+	[48] '<size "1.0"><c white>m31'
+	[49] '<size "1.0"><c white>m32'
+	[50] '<size "1.0"><c white>m33'
+	[51] '<size "1.0"><c white>m34'
+	[52] '<size "1.0"><c white>m35'
+	[53] '<size "1.0"><c white>m36'
+	[54] '<size "1.0"><c white>m37'
+	[55] '<size "1.0"><c white>m38'
+	[56] '<size "1.0"><c white>m39'
+	[57] '<size "1.0"><c white>m40'
+	[58] '<size "1.0"><c white>m41'
+	[59] '<size "1.0"><c white>m42'
+	[60] '<size "1.0"><c white>m43'
+	[61] '<size "1.0"><c white>m44'
+	[62] '<size "1.0"><c white>m45'
+	[63] '<size "1.0"><c white>m46'
+	[64] '<size "1.0"><c white>m47'
+	[65] '<size "1.0"><c white>m48'
+	[66] '<size "1.0"><c white>m49'
+	[67] '<size "1.0"><c white>m50'
+	[68] '<size "1.0"><c white>m51'
+	[69] '<size "1.0"><c white>m52'
+	[70] '<size "1.0"><c white>m53'
+	[71] '<size "1.0"><c white>m54'
+	[72] '<size "1.0"><c white>m55'
+	[73] '<size "1.0"><c white>m56'
+	[74] '<size "1.0"><c white>m57'
+	[75] '<size "1.0"><c white>m58'
+	[76] '<size "1.0"><c white>m59'
+	[77] '<size "1.0"><c white>m60'
+	[78] '<size "1.0"><c white>m61'
+	[79] '<size "1.0"><c white>m62'
+	[80] '<size "1.0"><c white>m63'
+	[81] '<size "1.0"><c white>m64'
+	[82] '<size "1.0"><c white>m65'
+	[83] '<size "1.0"><c white>m66'
+	[84] '<size "1.0"><c white>m67'
+	[85] '<size "1.0"><c white>m68'
+	[86] '<size "1.0"><c white>m69'
+	[87] '<size "1.0"><c white>m70'
+	[88] '<size "1.0"><c white>m71'
+	[89] '<size "1.0"><c white>m72'
+	[90] '<size "1.0"><c white>m73'
+	[91] '<size "1.0"><c white>m75'
+	[92] '<size "1.0"><c white>m76'
+	[93] '<size "1.0"><c white>m77'
+	[94] '<size "1.0"><c white>m78'
+	[95] '<size "1.0"><c white>m79'
+	[96] '<size "1.0"><c white>m80'
+	[97] '<size "1.0"><c white>m81'
+	[98] '<size "1.0"><c white>m82'
+	[99] '<size "1.0"><c white>m83'
+	[100] '<size "1.0"><c white>m84'
+	[101] '<size "1.0"><c white>m85'
+	[102] '<size "1.0"><c white>m86'
+	[103] '<size "1.0"><c white>m87'
+	[104] '<size "1.0"><c white>m88'
+	[105] '<size "1.0"><c white>m89'
+	[106] '<size "1.0"><c white>m90'
+	[107] '<size "1.0"><c white>m91'
+	[108] '<size "1.0"><c white>m92'
+	[109] '<size "1.0"><c white>m93'
+	[110] '<size "1.0"><c white>m94'
+	[111] '<size "1.0"><c white>m95'
+	[112] '<size "1.0"><c white>m96'
+	[113] '<size "1.0"><c white>m97'
+	[114] '<size "1.0"><c white>m98'
+	[115] '<size "1.0"><c white>m99'
+	[116] '<size "1.0"><c white>m100'
+	[117] '<size "1.0"><c white>m102'
+;
+[TAXINFO;]
+END; [TAXA]
+
+BEGIN NETWORK;
+TITLE 'Input Network';
+LINK ALGORITHM = 'Input Data Loader';
+DIMENSIONS nVertices=117 nEdges=206;
+TYPE Other;
+VERTICES
+	id=1 label='m0' label='m0',
+	id=2 label='gender' label='gender',
+	id=3 label='m1' label='m1',
+	id=4 label='Partner' label='Partner',
+	id=5 label='PhoneService' label='PhoneService',
+	id=6 label='MultipleLines' label='MultipleLines',
+	id=7 label='InternetService' label='InternetService',
+	id=8 label='m2' label='m2',
+	id=9 label='Dependents' label='Dependents',
+	id=10 label='m3' label='m3',
+	id=11 label='Contract' label='Contract',
+	id=12 label='m4' label='m4',
+	id=13 label='SeniorCitizen' label='SeniorCitizen',
+	id=14 label='m5' label='m5',
+	id=15 label='PaperlessBilling' label='PaperlessBilling',
+	id=16 label='m6' label='m6',
+	id=17 label='m7' label='m7',
+	id=18 label='m8' label='m8',
+	id=19 label='PaymentMethod' label='PaymentMethod',
+	id=20 label='m9' label='m9',
+	id=21 label='StreamingMovies' label='StreamingMovies',
+	id=22 label='m10' label='m10',
+	id=23 label='m11' label='m11',
+	id=24 label='m12' label='m12',
+	id=25 label='StreamingTV' label='StreamingTV',
+	id=26 label='m13' label='m13',
+	id=27 label='OnlineBackup' label='OnlineBackup',
+	id=28 label='m14' label='m14',
+	id=29 label='m15' label='m15',
+	id=30 label='m16' label='m16',
+	id=31 label='m17' label='m17',
+	id=32 label='m18' label='m18',
+	id=33 label='m19' label='m19',
+	id=34 label='m20' label='m20',
+	id=35 label='DeviceProtection' label='DeviceProtection',
+	id=36 label='m21' label='m21',
+	id=37 label='m22' label='m22',
+	id=38 label='m23' label='m23',
+	id=39 label='TechSupport' label='TechSupport',
+	id=40 label='m24' label='m24',
+	id=41 label='OnlineSecurity' label='OnlineSecurity',
+	id=42 label='m25' label='m25',
+	id=43 label='m26' label='m26',
+	id=44 label='m27' label='m27',
+	id=45 label='m28' label='m28',
+	id=46 label='m29' label='m29',
+	id=47 label='m30' label='m30',
+	id=48 label='m31' label='m31',
+	id=49 label='m32' label='m32',
+	id=50 label='m33' label='m33',
+	id=51 label='m34' label='m34',
+	id=52 label='m35' label='m35',
+	id=53 label='m36' label='m36',
+	id=54 label='m37' label='m37',
+	id=55 label='m38' label='m38',
+	id=56 label='m39' label='m39',
+	id=57 label='m40' label='m40',
+	id=58 label='m41' label='m41',
+	id=59 label='m42' label='m42',
+	id=60 label='m43' label='m43',
+	id=61 label='m44' label='m44',
+	id=62 label='m45' label='m45',
+	id=63 label='m46' label='m46',
+	id=64 label='m47' label='m47',
+	id=65 label='m48' label='m48',
+	id=66 label='m49' label='m49',
+	id=67 label='m50' label='m50',
+	id=68 label='m51' label='m51',
+	id=69 label='m52' label='m52',
+	id=70 label='m53' label='m53',
+	id=71 label='m54' label='m54',
+	id=72 label='m55' label='m55',
+	id=73 label='m56' label='m56',
+	id=74 label='m57' label='m57',
+	id=75 label='m58' label='m58',
+	id=76 label='m59' label='m59',
+	id=77 label='m60' label='m60',
+	id=78 label='m61' label='m61',
+	id=79 label='m62' label='m62',
+	id=80 label='m63' label='m63',
+	id=81 label='m64' label='m64',
+	id=82 label='m65' label='m65',
+	id=83 label='m66' label='m66',
+	id=84 label='m67' label='m67',
+	id=85 label='m68' label='m68',
+	id=86 label='m69' label='m69',
+	id=87 label='m70' label='m70',
+	id=88 label='m71' label='m71',
+	id=89 label='m72' label='m72',
+	id=90 label='m73' label='m73',
+	id=91 label='m75' label='m75',
+	id=92 label='m76' label='m76',
+	id=93 label='m77' label='m77',
+	id=94 label='m78' label='m78',
+	id=95 label='m79' label='m79',
+	id=96 label='m80' label='m80',
+	id=97 label='m81' label='m81',
+	id=98 label='m82' label='m82',
+	id=99 label='m83' label='m83',
+	id=100 label='m84' label='m84',
+	id=101 label='m85' label='m85',
+	id=102 label='m86' label='m86',
+	id=103 label='m87' label='m87',
+	id=104 label='m88' label='m88',
+	id=105 label='m89' label='m89',
+	id=106 label='m90' label='m90',
+	id=107 label='m91' label='m91',
+	id=108 label='m92' label='m92',
+	id=109 label='m93' label='m93',
+	id=110 label='m94' label='m94',
+	id=111 label='m95' label='m95',
+	id=112 label='m96' label='m96',
+	id=113 label='m97' label='m97',
+	id=114 label='m98' label='m98',
+	id=115 label='m99' label='m99',
+	id=116 label='m100' label='m100',
+	id=117 label='m102' label='m102'
+;
+EDGES
+	id=1 sid=1 tid=2 w='49.0' weight='49.0',
+	id=2 sid=1 tid=53 w='2.0' weight='2.0',
+	id=3 sid=1 tid=54 w='5.5' weight='5.5',
+	id=4 sid=3 tid=4 w='22.0' weight='22.0',
+	id=5 sid=3 tid=22 w='2.5' weight='2.5',
+	id=6 sid=3 tid=23 w='10.0' weight='10.0',
+	id=7 sid=5 tid=6 w='0.0' weight='0.0',
+	id=8 sid=5 tid=7 w='55.0' weight='55.0',
+	id=9 sid=6 tid=16 w='34.5' weight='34.5',
+	id=10 sid=7 tid=17 w='10.0' weight='10.0',
+	id=11 sid=8 tid=9 w='18.0' weight='18.0',
+	id=12 sid=8 tid=28 w='4.0' weight='4.0',
+	id=13 sid=8 tid=29 w='21.0' weight='21.0',
+	id=14 sid=10 tid=11 w='24.5' weight='24.5',
+	id=15 sid=10 tid=31 w='10.0' weight='10.0',
+	id=16 sid=10 tid=46 w='10.5' weight='10.5',
+	id=17 sid=12 tid=13 w='33.5' weight='33.5',
+	id=18 sid=12 tid=59 w='1.5' weight='1.5',
+	id=19 sid=12 tid=60 w='4.0' weight='4.0',
+	id=20 sid=14 tid=15 w='31.0' weight='31.0',
+	id=21 sid=14 tid=28 w='36.0' weight='36.0',
+	id=22 sid=14 tid=37 w='19.5' weight='19.5',
+	id=23 sid=14 tid=71 w='22.0' weight='22.0',
+	id=24 sid=14 tid=44 w='5.5' weight='5.5',
+	id=25 sid=14 tid=87 w='10.0' weight='10.0',
+	id=26 sid=14 tid=111 w='4.0' weight='4.0',
+	id=27 sid=16 tid=23 w='19.5' weight='19.5',
+	id=28 sid=16 tid=92 w='3.0' weight='3.0',
+	id=29 sid=17 tid=36 w='1.5' weight='1.5',
+	id=30 sid=17 tid=37 w='1.5' weight='1.5',
+	id=31 sid=18 tid=19 w='26.5' weight='26.5',
+	id=32 sid=18 tid=69 w='3.0' weight='3.0',
+	id=33 sid=18 tid=70 w='5.0' weight='5.0',
+	id=34 sid=20 tid=21 w='7.5' weight='7.5',
+	id=35 sid=20 tid=52 w='3.5' weight='3.5',
+	id=36 sid=20 tid=45 w='6.5' weight='6.5',
+	id=37 sid=22 tid=30 w='2.5' weight='2.5',
+	id=38 sid=22 tid=31 w='11.0' weight='11.0',
+	id=39 sid=23 tid=31 w='3.5' weight='3.5',
+	id=40 sid=24 tid=25 w='7.0' weight='7.0',
+	id=41 sid=24 tid=51 w='1.5' weight='1.5',
+	id=42 sid=24 tid=52 w='5.0' weight='5.0',
+	id=43 sid=26 tid=27 w='7.0' weight='7.0',
+	id=44 sid=26 tid=61 w='1.5' weight='1.5',
+	id=45 sid=26 tid=62 w='6.5' weight='6.5',
+	id=46 sid=28 tid=32 w='3.5' weight='3.5',
+	id=47 sid=29 tid=76 w='1.5' weight='1.5',
+	id=48 sid=29 tid=77 w='2.0' weight='2.0',
+	id=49 sid=30 tid=32 w='2.5' weight='2.5',
+	id=50 sid=30 tid=33 w='15.0' weight='15.0',
+	id=51 sid=31 tid=33 w='6.5' weight='6.5',
+	id=52 sid=32 tid=42 w='43.0' weight='43.0',
+	id=53 sid=33 tid=49 w='1.5' weight='1.5',
+	id=54 sid=33 tid=50 w='6.0' weight='6.0',
+	id=55 sid=34 tid=35 w='6.0' weight='6.0',
+	id=56 sid=34 tid=47 w='2.5' weight='2.5',
+	id=57 sid=34 tid=48 w='5.0' weight='5.0',
+	id=58 sid=36 tid=43 w='2.5' weight='2.5',
+	id=59 sid=36 tid=44 w='14.0' weight='14.0',
+	id=60 sid=37 tid=43 w='2.5' weight='2.5',
+	id=61 sid=37 tid=45 w='2.5' weight='2.5',
+	id=62 sid=38 tid=39 w='7.5' weight='7.5',
+	id=63 sid=38 tid=55 w='3.5' weight='3.5',
+	id=64 sid=38 tid=72 w='3.5' weight='3.5',
+	id=65 sid=40 tid=41 w='6.5' weight='6.5',
+	id=66 sid=40 tid=56 w='5.0' weight='5.0',
+	id=67 sid=40 tid=42 w='6.0' weight='6.0',
+	id=68 sid=42 tid=98 w='1.5' weight='1.5',
+	id=69 sid=42 tid=73 w='1.5' weight='1.5',
+	id=70 sid=42 tid=101 w='8.5' weight='8.5',
+	id=71 sid=43 tid=55 w='3.0' weight='3.0',
+	id=72 sid=43 tid=56 w='3.5' weight='3.5',
+	id=73 sid=43 tid=57 w='1.5' weight='1.5',
+	id=74 sid=44 tid=79 w='2.5' weight='2.5',
+	id=75 sid=44 tid=67 w='5.5' weight='5.5',
+	id=76 sid=45 tid=55 w='3.0' weight='3.0',
+	id=77 sid=45 tid=56 w='3.5' weight='3.5',
+	id=78 sid=45 tid=65 w='5.0' weight='5.0',
+	id=79 sid=45 tid=51 w='5.5' weight='5.5',
+	id=80 sid=45 tid=61 w='6.5' weight='6.5',
+	id=81 sid=45 tid=54 w='30.5' weight='30.5',
+	id=82 sid=46 tid=77 w='9.0' weight='9.0',
+	id=83 sid=46 tid=72 w='21.0' weight='21.0',
+	id=84 sid=46 tid=103 w='2.5' weight='2.5',
+	id=85 sid=46 tid=91 w='4.5' weight='4.5',
+	id=86 sid=46 tid=95 w='8.5' weight='8.5',
+	id=87 sid=47 tid=65 w='1.5' weight='1.5',
+	id=88 sid=47 tid=66 w='2.0' weight='2.0',
+	id=89 sid=48 tid=86 w='2.5' weight='2.5',
+	id=90 sid=48 tid=82 w='21.5' weight='21.5',
+	id=91 sid=48 tid=93 w='1.5' weight='1.5',
+	id=92 sid=49 tid=53 w='5.5' weight='5.5',
+	id=93 sid=49 tid=58 w='7.0' weight='7.0',
+	id=94 sid=50 tid=58 w='2.5' weight='2.5',
+	id=95 sid=50 tid=63 w='6.5' weight='6.5',
+	id=96 sid=50 tid=69 w='6.5' weight='6.5',
+	id=97 sid=50 tid=82 w='2.5' weight='2.5',
+	id=98 sid=51 tid=71 w='4.5' weight='4.5',
+	id=99 sid=52 tid=85 w='1.5' weight='1.5',
+	id=100 sid=52 tid=86 w='1.5' weight='1.5',
+	id=101 sid=53 tid=63 w='5.5' weight='5.5',
+	id=102 sid=53 tid=64 w='9.5' weight='9.5',
+	id=103 sid=54 tid=63 w='2.0' weight='2.0',
+	id=104 sid=54 tid=87 w='3.5' weight='3.5',
+	id=105 sid=55 tid=74 w='3.0' weight='3.0',
+	id=106 sid=56 tid=74 w='2.5' weight='2.5',
+	id=107 sid=56 tid=78 w='4.0' weight='4.0',
+	id=108 sid=57 tid=74 w='3.5' weight='3.5',
+	id=109 sid=57 tid=75 w='1.5' weight='1.5',
+	id=110 sid=58 tid=103 w='2.0' weight='2.0',
+	id=111 sid=58 tid=104 w='1.5' weight='1.5',
+	id=112 sid=59 tid=67 w='7.0' weight='7.0',
+	id=113 sid=59 tid=68 w='2.0' weight='2.0',
+	id=114 sid=60 tid=88 w='1.5' weight='1.5',
+	id=115 sid=60 tid=89 w='2.0' weight='2.0',
+	id=116 sid=60 tid=90 w='3.5' weight='3.5',
+	id=117 sid=61 tid=73 w='5.5' weight='5.5',
+	id=118 sid=62 tid=86 w='3.0' weight='3.0',
+	id=119 sid=62 tid=102 w='18.5' weight='18.5',
+	id=120 sid=63 tid=77 w='1.5' weight='1.5',
+	id=121 sid=63 tid=84 w='6.5' weight='6.5',
+	id=122 sid=64 tid=89 w='6.0' weight='6.0',
+	id=123 sid=64 tid=92 w='2.0' weight='2.0',
+	id=124 sid=64 tid=105 w='3.5' weight='3.5',
+	id=125 sid=64 tid=110 w='5.5' weight='5.5',
+	id=126 sid=65 tid=80 w='2.0' weight='2.0',
+	id=127 sid=65 tid=81 w='2.0' weight='2.0',
+	id=128 sid=66 tid=80 w='1.5' weight='1.5',
+	id=129 sid=66 tid=81 w='1.5' weight='1.5',
+	id=130 sid=66 tid=73 w='3.5' weight='3.5',
+	id=131 sid=67 tid=88 w='3.0' weight='3.0',
+	id=132 sid=67 tid=84 w='2.0' weight='2.0',
+	id=133 sid=68 tid=76 w='1.5' weight='1.5',
+	id=134 sid=68 tid=84 w='7.0' weight='7.0',
+	id=135 sid=69 tid=91 w='4.0' weight='4.0',
+	id=136 sid=70 tid=99 w='1.5' weight='1.5',
+	id=137 sid=70 tid=100 w='3.0' weight='3.0',
+	id=138 sid=71 tid=78 w='4.5' weight='4.5',
+	id=139 sid=71 tid=85 w='1.5' weight='1.5',
+	id=140 sid=71 tid=86 w='1.5' weight='1.5',
+	id=141 sid=71 tid=73 w='2.0' weight='2.0',
+	id=142 sid=72 tid=78 w='3.5' weight='3.5',
+	id=143 sid=72 tid=98 w='2.0' weight='2.0',
+	id=144 sid=73 tid=93 w='1.5' weight='1.5',
+	id=145 sid=74 tid=80 w='2.0' weight='2.0',
+	id=146 sid=74 tid=81 w='2.0' weight='2.0',
+	id=147 sid=74 tid=94 w='17.5' weight='17.5',
+	id=148 sid=75 tid=78 w='2.5' weight='2.5',
+	id=149 sid=75 tid=79 w='11.0' weight='11.0',
+	id=150 sid=76 tid=83 w='3.0' weight='3.0',
+	id=151 sid=77 tid=83 w='2.5' weight='2.5',
+	id=152 sid=78 tid=97 w='14.0' weight='14.0',
+	id=153 sid=79 tid=84 w='6.0' weight='6.0',
+	id=154 sid=79 tid=107 w='3.5' weight='3.5',
+	id=155 sid=80 tid=85 w='1.5' weight='1.5',
+	id=156 sid=81 tid=95 w='14.5' weight='14.5',
+	id=157 sid=82 tid=102 w='2.5' weight='2.5',
+	id=158 sid=82 tid=105 w='2.5' weight='2.5',
+	id=159 sid=82 tid=106 w='4.0' weight='4.0',
+	id=160 sid=83 tid=112 w='2.5' weight='2.5',
+	id=161 sid=83 tid=113 w='7.0' weight='7.0',
+	id=162 sid=84 tid=96 w='2.5' weight='2.5',
+	id=163 sid=84 tid=90 w='3.0' weight='3.0',
+	id=164 sid=84 tid=109 w='2.0' weight='2.0',
+	id=165 sid=84 tid=91 w='2.5' weight='2.5',
+	id=166 sid=84 tid=100 w='1.5' weight='1.5',
+	id=167 sid=84 tid=111 w='5.0' weight='5.0',
+	id=168 sid=84 tid=114 w='2.0' weight='2.0',
+	id=169 sid=87 tid=96 w='1.5' weight='1.5',
+	id=170 sid=87 tid=90 w='2.0' weight='2.0',
+	id=171 sid=87 tid=109 w='2.0' weight='2.0',
+	id=172 sid=88 tid=91 w='7.5' weight='7.5',
+	id=173 sid=89 tid=96 w='2.0' weight='2.0',
+	id=174 sid=91 tid=99 w='2.5' weight='2.5',
+	id=175 sid=91 tid=94 w='6.0' weight='6.0',
+	id=176 sid=92 tid=108 w='2.5' weight='2.5',
+	id=177 sid=93 tid=98 w='1.5' weight='1.5',
+	id=178 sid=94 tid=97 w='3.0' weight='3.0',
+	id=179 sid=94 tid=111 w='1.5' weight='1.5',
+	id=180 sid=94 tid=110 w='1.5' weight='1.5',
+	id=181 sid=95 tid=97 w='2.0' weight='2.0',
+	id=182 sid=95 tid=116 w='4.5' weight='4.5',
+	id=183 sid=97 tid=107 w='2.0' weight='2.0',
+	id=184 sid=99 tid=114 w='2.0' weight='2.0',
+	id=185 sid=100 tid=110 w='3.5' weight='3.5',
+	id=186 sid=101 tid=104 w='12.0' weight='12.0',
+	id=187 sid=101 tid=103 w='11.5' weight='11.5',
+	id=188 sid=101 tid=117 w='9.5' weight='9.5',
+	id=189 sid=101 tid=107 w='4.5' weight='4.5',
+	id=190 sid=102 tid=115 w='1.5' weight='1.5',
+	id=191 sid=102 tid=117 w='3.5' weight='3.5',
+	id=192 sid=103 tid=112 w='4.5' weight='4.5',
+	id=193 sid=104 tid=106 w='2.5' weight='2.5',
+	id=194 sid=105 tid=109 w='4.0' weight='4.0',
+	id=195 sid=105 tid=115 w='1.5' weight='1.5',
+	id=196 sid=105 tid=117 w='3.5' weight='3.5',
+	id=197 sid=106 tid=109 w='2.5' weight='2.5',
+	id=198 sid=106 tid=112 w='1.5' weight='1.5',
+	id=199 sid=106 tid=117 w='3.0' weight='3.0',
+	id=200 sid=108 tid=115 w='1.5' weight='1.5',
+	id=201 sid=108 tid=116 w='4.0' weight='4.0',
+	id=202 sid=110 tid=112 w='6.0' weight='6.0',
+	id=203 sid=110 tid=116 w='2.0' weight='2.0',
+	id=204 sid=110 tid=114 w='3.0' weight='3.0',
+	id=205 sid=114 tid=117 w='4.5' weight='4.5',
+	id=206 sid=116 tid=117 w='3.5' weight='3.5'
+;
+END; [NETWORK]
+
+BEGIN ALGORITHM;
+TITLE 'Input Data Filter';
+LINK NETWORK = 'Input Network';
+NAME 'Network Taxa Filter';
+END; [ALGORITHM]
+
+BEGIN NETWORK;
+TITLE 'Working Network';
+LINK ALGORITHM = 'Input Data Filter';
+DIMENSIONS nVertices=117 nEdges=206;
+TYPE Other;
+VERTICES
+	id=1 label='m0' label='m0',
+	id=2 label='gender' label='gender',
+	id=3 label='m1' label='m1',
+	id=4 label='Partner' label='Partner',
+	id=5 label='PhoneService' label='PhoneService',
+	id=6 label='MultipleLines' label='MultipleLines',
+	id=7 label='InternetService' label='InternetService',
+	id=8 label='m2' label='m2',
+	id=9 label='Dependents' label='Dependents',
+	id=10 label='m3' label='m3',
+	id=11 label='Contract' label='Contract',
+	id=12 label='m4' label='m4',
+	id=13 label='SeniorCitizen' label='SeniorCitizen',
+	id=14 label='m5' label='m5',
+	id=15 label='PaperlessBilling' label='PaperlessBilling',
+	id=16 label='m6' label='m6',
+	id=17 label='m7' label='m7',
+	id=18 label='m8' label='m8',
+	id=19 label='PaymentMethod' label='PaymentMethod',
+	id=20 label='m9' label='m9',
+	id=21 label='StreamingMovies' label='StreamingMovies',
+	id=22 label='m10' label='m10',
+	id=23 label='m11' label='m11',
+	id=24 label='m12' label='m12',
+	id=25 label='StreamingTV' label='StreamingTV',
+	id=26 label='m13' label='m13',
+	id=27 label='OnlineBackup' label='OnlineBackup',
+	id=28 label='m14' label='m14',
+	id=29 label='m15' label='m15',
+	id=30 label='m16' label='m16',
+	id=31 label='m17' label='m17',
+	id=32 label='m18' label='m18',
+	id=33 label='m19' label='m19',
+	id=34 label='m20' label='m20',
+	id=35 label='DeviceProtection' label='DeviceProtection',
+	id=36 label='m21' label='m21',
+	id=37 label='m22' label='m22',
+	id=38 label='m23' label='m23',
+	id=39 label='TechSupport' label='TechSupport',
+	id=40 label='m24' label='m24',
+	id=41 label='OnlineSecurity' label='OnlineSecurity',
+	id=42 label='m25' label='m25',
+	id=43 label='m26' label='m26',
+	id=44 label='m27' label='m27',
+	id=45 label='m28' label='m28',
+	id=46 label='m29' label='m29',
+	id=47 label='m30' label='m30',
+	id=48 label='m31' label='m31',
+	id=49 label='m32' label='m32',
+	id=50 label='m33' label='m33',
+	id=51 label='m34' label='m34',
+	id=52 label='m35' label='m35',
+	id=53 label='m36' label='m36',
+	id=54 label='m37' label='m37',
+	id=55 label='m38' label='m38',
+	id=56 label='m39' label='m39',
+	id=57 label='m40' label='m40',
+	id=58 label='m41' label='m41',
+	id=59 label='m42' label='m42',
+	id=60 label='m43' label='m43',
+	id=61 label='m44' label='m44',
+	id=62 label='m45' label='m45',
+	id=63 label='m46' label='m46',
+	id=64 label='m47' label='m47',
+	id=65 label='m48' label='m48',
+	id=66 label='m49' label='m49',
+	id=67 label='m50' label='m50',
+	id=68 label='m51' label='m51',
+	id=69 label='m52' label='m52',
+	id=70 label='m53' label='m53',
+	id=71 label='m54' label='m54',
+	id=72 label='m55' label='m55',
+	id=73 label='m56' label='m56',
+	id=74 label='m57' label='m57',
+	id=75 label='m58' label='m58',
+	id=76 label='m59' label='m59',
+	id=77 label='m60' label='m60',
+	id=78 label='m61' label='m61',
+	id=79 label='m62' label='m62',
+	id=80 label='m63' label='m63',
+	id=81 label='m64' label='m64',
+	id=82 label='m65' label='m65',
+	id=83 label='m66' label='m66',
+	id=84 label='m67' label='m67',
+	id=85 label='m68' label='m68',
+	id=86 label='m69' label='m69',
+	id=87 label='m70' label='m70',
+	id=88 label='m71' label='m71',
+	id=89 label='m72' label='m72',
+	id=90 label='m73' label='m73',
+	id=91 label='m75' label='m75',
+	id=92 label='m76' label='m76',
+	id=93 label='m77' label='m77',
+	id=94 label='m78' label='m78',
+	id=95 label='m79' label='m79',
+	id=96 label='m80' label='m80',
+	id=97 label='m81' label='m81',
+	id=98 label='m82' label='m82',
+	id=99 label='m83' label='m83',
+	id=100 label='m84' label='m84',
+	id=101 label='m85' label='m85',
+	id=102 label='m86' label='m86',
+	id=103 label='m87' label='m87',
+	id=104 label='m88' label='m88',
+	id=105 label='m89' label='m89',
+	id=106 label='m90' label='m90',
+	id=107 label='m91' label='m91',
+	id=108 label='m92' label='m92',
+	id=109 label='m93' label='m93',
+	id=110 label='m94' label='m94',
+	id=111 label='m95' label='m95',
+	id=112 label='m96' label='m96',
+	id=113 label='m97' label='m97',
+	id=114 label='m98' label='m98',
+	id=115 label='m99' label='m99',
+	id=116 label='m100' label='m100',
+	id=117 label='m102' label='m102'
+;
+EDGES
+	id=1 sid=1 tid=2 weight='49.0' w='49.0',
+	id=2 sid=1 tid=53 weight='2.0' w='2.0',
+	id=3 sid=1 tid=54 weight='5.5' w='5.5',
+	id=4 sid=3 tid=4 weight='22.0' w='22.0',
+	id=5 sid=3 tid=22 weight='2.5' w='2.5',
+	id=6 sid=3 tid=23 weight='10.0' w='10.0',
+	id=7 sid=5 tid=6 weight='0.0' w='0.0',
+	id=8 sid=5 tid=7 weight='55.0' w='55.0',
+	id=9 sid=6 tid=16 weight='34.5' w='34.5',
+	id=10 sid=7 tid=17 weight='10.0' w='10.0',
+	id=11 sid=8 tid=9 weight='18.0' w='18.0',
+	id=12 sid=8 tid=28 weight='4.0' w='4.0',
+	id=13 sid=8 tid=29 weight='21.0' w='21.0',
+	id=14 sid=10 tid=11 weight='24.5' w='24.5',
+	id=15 sid=10 tid=31 weight='10.0' w='10.0',
+	id=16 sid=10 tid=46 weight='10.5' w='10.5',
+	id=17 sid=12 tid=13 weight='33.5' w='33.5',
+	id=18 sid=12 tid=59 weight='1.5' w='1.5',
+	id=19 sid=12 tid=60 weight='4.0' w='4.0',
+	id=20 sid=14 tid=15 weight='31.0' w='31.0',
+	id=21 sid=14 tid=28 weight='36.0' w='36.0',
+	id=22 sid=14 tid=37 weight='19.5' w='19.5',
+	id=23 sid=14 tid=71 weight='22.0' w='22.0',
+	id=24 sid=14 tid=44 weight='5.5' w='5.5',
+	id=25 sid=14 tid=87 weight='10.0' w='10.0',
+	id=26 sid=14 tid=111 weight='4.0' w='4.0',
+	id=27 sid=16 tid=23 weight='19.5' w='19.5',
+	id=28 sid=16 tid=92 weight='3.0' w='3.0',
+	id=29 sid=17 tid=36 weight='1.5' w='1.5',
+	id=30 sid=17 tid=37 weight='1.5' w='1.5',
+	id=31 sid=18 tid=19 weight='26.5' w='26.5',
+	id=32 sid=18 tid=69 weight='3.0' w='3.0',
+	id=33 sid=18 tid=70 weight='5.0' w='5.0',
+	id=34 sid=20 tid=21 weight='7.5' w='7.5',
+	id=35 sid=20 tid=52 weight='3.5' w='3.5',
+	id=36 sid=20 tid=45 weight='6.5' w='6.5',
+	id=37 sid=22 tid=30 weight='2.5' w='2.5',
+	id=38 sid=22 tid=31 weight='11.0' w='11.0',
+	id=39 sid=23 tid=31 weight='3.5' w='3.5',
+	id=40 sid=24 tid=25 weight='7.0' w='7.0',
+	id=41 sid=24 tid=51 weight='1.5' w='1.5',
+	id=42 sid=24 tid=52 weight='5.0' w='5.0',
+	id=43 sid=26 tid=27 weight='7.0' w='7.0',
+	id=44 sid=26 tid=61 weight='1.5' w='1.5',
+	id=45 sid=26 tid=62 weight='6.5' w='6.5',
+	id=46 sid=28 tid=32 weight='3.5' w='3.5',
+	id=47 sid=29 tid=76 weight='1.5' w='1.5',
+	id=48 sid=29 tid=77 weight='2.0' w='2.0',
+	id=49 sid=30 tid=32 weight='2.5' w='2.5',
+	id=50 sid=30 tid=33 weight='15.0' w='15.0',
+	id=51 sid=31 tid=33 weight='6.5' w='6.5',
+	id=52 sid=32 tid=42 weight='43.0' w='43.0',
+	id=53 sid=33 tid=49 weight='1.5' w='1.5',
+	id=54 sid=33 tid=50 weight='6.0' w='6.0',
+	id=55 sid=34 tid=35 weight='6.0' w='6.0',
+	id=56 sid=34 tid=47 weight='2.5' w='2.5',
+	id=57 sid=34 tid=48 weight='5.0' w='5.0',
+	id=58 sid=36 tid=43 weight='2.5' w='2.5',
+	id=59 sid=36 tid=44 weight='14.0' w='14.0',
+	id=60 sid=37 tid=43 weight='2.5' w='2.5',
+	id=61 sid=37 tid=45 weight='2.5' w='2.5',
+	id=62 sid=38 tid=39 weight='7.5' w='7.5',
+	id=63 sid=38 tid=55 weight='3.5' w='3.5',
+	id=64 sid=38 tid=72 weight='3.5' w='3.5',
+	id=65 sid=40 tid=41 weight='6.5' w='6.5',
+	id=66 sid=40 tid=56 weight='5.0' w='5.0',
+	id=67 sid=40 tid=42 weight='6.0' w='6.0',
+	id=68 sid=42 tid=98 weight='1.5' w='1.5',
+	id=69 sid=42 tid=73 weight='1.5' w='1.5',
+	id=70 sid=42 tid=101 weight='8.5' w='8.5',
+	id=71 sid=43 tid=55 weight='3.0' w='3.0',
+	id=72 sid=43 tid=56 weight='3.5' w='3.5',
+	id=73 sid=43 tid=57 weight='1.5' w='1.5',
+	id=74 sid=44 tid=79 weight='2.5' w='2.5',
+	id=75 sid=44 tid=67 weight='5.5' w='5.5',
+	id=76 sid=45 tid=55 weight='3.0' w='3.0',
+	id=77 sid=45 tid=56 weight='3.5' w='3.5',
+	id=78 sid=45 tid=65 weight='5.0' w='5.0',
+	id=79 sid=45 tid=51 weight='5.5' w='5.5',
+	id=80 sid=45 tid=61 weight='6.5' w='6.5',
+	id=81 sid=45 tid=54 weight='30.5' w='30.5',
+	id=82 sid=46 tid=77 weight='9.0' w='9.0',
+	id=83 sid=46 tid=72 weight='21.0' w='21.0',
+	id=84 sid=46 tid=103 weight='2.5' w='2.5',
+	id=85 sid=46 tid=91 weight='4.5' w='4.5',
+	id=86 sid=46 tid=95 weight='8.5' w='8.5',
+	id=87 sid=47 tid=65 weight='1.5' w='1.5',
+	id=88 sid=47 tid=66 weight='2.0' w='2.0',
+	id=89 sid=48 tid=86 weight='2.5' w='2.5',
+	id=90 sid=48 tid=82 weight='21.5' w='21.5',
+	id=91 sid=48 tid=93 weight='1.5' w='1.5',
+	id=92 sid=49 tid=53 weight='5.5' w='5.5',
+	id=93 sid=49 tid=58 weight='7.0' w='7.0',
+	id=94 sid=50 tid=58 weight='2.5' w='2.5',
+	id=95 sid=50 tid=63 weight='6.5' w='6.5',
+	id=96 sid=50 tid=69 weight='6.5' w='6.5',
+	id=97 sid=50 tid=82 weight='2.5' w='2.5',
+	id=98 sid=51 tid=71 weight='4.5' w='4.5',
+	id=99 sid=52 tid=85 weight='1.5' w='1.5',
+	id=100 sid=52 tid=86 weight='1.5' w='1.5',
+	id=101 sid=53 tid=63 weight='5.5' w='5.5',
+	id=102 sid=53 tid=64 weight='9.5' w='9.5',
+	id=103 sid=54 tid=63 weight='2.0' w='2.0',
+	id=104 sid=54 tid=87 weight='3.5' w='3.5',
+	id=105 sid=55 tid=74 weight='3.0' w='3.0',
+	id=106 sid=56 tid=74 weight='2.5' w='2.5',
+	id=107 sid=56 tid=78 weight='4.0' w='4.0',
+	id=108 sid=57 tid=74 weight='3.5' w='3.5',
+	id=109 sid=57 tid=75 weight='1.5' w='1.5',
+	id=110 sid=58 tid=103 weight='2.0' w='2.0',
+	id=111 sid=58 tid=104 weight='1.5' w='1.5',
+	id=112 sid=59 tid=67 weight='7.0' w='7.0',
+	id=113 sid=59 tid=68 weight='2.0' w='2.0',
+	id=114 sid=60 tid=88 weight='1.5' w='1.5',
+	id=115 sid=60 tid=89 weight='2.0' w='2.0',
+	id=116 sid=60 tid=90 weight='3.5' w='3.5',
+	id=117 sid=61 tid=73 weight='5.5' w='5.5',
+	id=118 sid=62 tid=86 weight='3.0' w='3.0',
+	id=119 sid=62 tid=102 weight='18.5' w='18.5',
+	id=120 sid=63 tid=77 weight='1.5' w='1.5',
+	id=121 sid=63 tid=84 weight='6.5' w='6.5',
+	id=122 sid=64 tid=89 weight='6.0' w='6.0',
+	id=123 sid=64 tid=92 weight='2.0' w='2.0',
+	id=124 sid=64 tid=105 weight='3.5' w='3.5',
+	id=125 sid=64 tid=110 weight='5.5' w='5.5',
+	id=126 sid=65 tid=80 weight='2.0' w='2.0',
+	id=127 sid=65 tid=81 weight='2.0' w='2.0',
+	id=128 sid=66 tid=80 weight='1.5' w='1.5',
+	id=129 sid=66 tid=81 weight='1.5' w='1.5',
+	id=130 sid=66 tid=73 weight='3.5' w='3.5',
+	id=131 sid=67 tid=88 weight='3.0' w='3.0',
+	id=132 sid=67 tid=84 weight='2.0' w='2.0',
+	id=133 sid=68 tid=76 weight='1.5' w='1.5',
+	id=134 sid=68 tid=84 weight='7.0' w='7.0',
+	id=135 sid=69 tid=91 weight='4.0' w='4.0',
+	id=136 sid=70 tid=99 weight='1.5' w='1.5',
+	id=137 sid=70 tid=100 weight='3.0' w='3.0',
+	id=138 sid=71 tid=78 weight='4.5' w='4.5',
+	id=139 sid=71 tid=85 weight='1.5' w='1.5',
+	id=140 sid=71 tid=86 weight='1.5' w='1.5',
+	id=141 sid=71 tid=73 weight='2.0' w='2.0',
+	id=142 sid=72 tid=78 weight='3.5' w='3.5',
+	id=143 sid=72 tid=98 weight='2.0' w='2.0',
+	id=144 sid=73 tid=93 weight='1.5' w='1.5',
+	id=145 sid=74 tid=80 weight='2.0' w='2.0',
+	id=146 sid=74 tid=81 weight='2.0' w='2.0',
+	id=147 sid=74 tid=94 weight='17.5' w='17.5',
+	id=148 sid=75 tid=78 weight='2.5' w='2.5',
+	id=149 sid=75 tid=79 weight='11.0' w='11.0',
+	id=150 sid=76 tid=83 weight='3.0' w='3.0',
+	id=151 sid=77 tid=83 weight='2.5' w='2.5',
+	id=152 sid=78 tid=97 weight='14.0' w='14.0',
+	id=153 sid=79 tid=84 weight='6.0' w='6.0',
+	id=154 sid=79 tid=107 weight='3.5' w='3.5',
+	id=155 sid=80 tid=85 weight='1.5' w='1.5',
+	id=156 sid=81 tid=95 weight='14.5' w='14.5',
+	id=157 sid=82 tid=102 weight='2.5' w='2.5',
+	id=158 sid=82 tid=105 weight='2.5' w='2.5',
+	id=159 sid=82 tid=106 weight='4.0' w='4.0',
+	id=160 sid=83 tid=112 weight='2.5' w='2.5',
+	id=161 sid=83 tid=113 weight='7.0' w='7.0',
+	id=162 sid=84 tid=96 weight='2.5' w='2.5',
+	id=163 sid=84 tid=90 weight='3.0' w='3.0',
+	id=164 sid=84 tid=109 weight='2.0' w='2.0',
+	id=165 sid=84 tid=91 weight='2.5' w='2.5',
+	id=166 sid=84 tid=100 weight='1.5' w='1.5',
+	id=167 sid=84 tid=111 weight='5.0' w='5.0',
+	id=168 sid=84 tid=114 weight='2.0' w='2.0',
+	id=169 sid=87 tid=96 weight='1.5' w='1.5',
+	id=170 sid=87 tid=90 weight='2.0' w='2.0',
+	id=171 sid=87 tid=109 weight='2.0' w='2.0',
+	id=172 sid=88 tid=91 weight='7.5' w='7.5',
+	id=173 sid=89 tid=96 weight='2.0' w='2.0',
+	id=174 sid=91 tid=99 weight='2.5' w='2.5',
+	id=175 sid=91 tid=94 weight='6.0' w='6.0',
+	id=176 sid=92 tid=108 weight='2.5' w='2.5',
+	id=177 sid=93 tid=98 weight='1.5' w='1.5',
+	id=178 sid=94 tid=97 weight='3.0' w='3.0',
+	id=179 sid=94 tid=111 weight='1.5' w='1.5',
+	id=180 sid=94 tid=110 weight='1.5' w='1.5',
+	id=181 sid=95 tid=97 weight='2.0' w='2.0',
+	id=182 sid=95 tid=116 weight='4.5' w='4.5',
+	id=183 sid=97 tid=107 weight='2.0' w='2.0',
+	id=184 sid=99 tid=114 weight='2.0' w='2.0',
+	id=185 sid=100 tid=110 weight='3.5' w='3.5',
+	id=186 sid=101 tid=104 weight='12.0' w='12.0',
+	id=187 sid=101 tid=103 weight='11.5' w='11.5',
+	id=188 sid=101 tid=117 weight='9.5' w='9.5',
+	id=189 sid=101 tid=107 weight='4.5' w='4.5',
+	id=190 sid=102 tid=115 weight='1.5' w='1.5',
+	id=191 sid=102 tid=117 weight='3.5' w='3.5',
+	id=192 sid=103 tid=112 weight='4.5' w='4.5',
+	id=193 sid=104 tid=106 weight='2.5' w='2.5',
+	id=194 sid=105 tid=109 weight='4.0' w='4.0',
+	id=195 sid=105 tid=115 weight='1.5' w='1.5',
+	id=196 sid=105 tid=117 weight='3.5' w='3.5',
+	id=197 sid=106 tid=109 weight='2.5' w='2.5',
+	id=198 sid=106 tid=112 weight='1.5' w='1.5',
+	id=199 sid=106 tid=117 weight='3.0' w='3.0',
+	id=200 sid=108 tid=115 weight='1.5' w='1.5',
+	id=201 sid=108 tid=116 weight='4.0' w='4.0',
+	id=202 sid=110 tid=112 weight='6.0' w='6.0',
+	id=203 sid=110 tid=116 weight='2.0' w='2.0',
+	id=204 sid=110 tid=114 weight='3.0' w='3.0',
+	id=205 sid=114 tid=117 weight='4.5' w='4.5',
+	id=206 sid=116 tid=117 weight='3.5' w='3.5'
+;
+END; [NETWORK]
+
+BEGIN ALGORITHM;
+TITLE 'Show Network';
+LINK NETWORK = 'Working Network';
+NAME 'Show Network';
+OPTIONS
+	View = 'Network';
+END; [ALGORITHM]
+
+BEGIN VIEW;
+TITLE 'Network';
+LINK ALGORITHM = 'Show Network';
+NAME 'NetworkView';
+INPUT 'NETWORK';
+OPTIONS
+	Diagram = 'Network',
+	FontScaleFactor = 1.44,
+	TraitLegend = 'False',
+	TraitSize = 32,
+	SitesStyle = 'None',
+	Edits = 'mn:1:187.87,-75.71' 'mn:2:323.59,-108.21' 'mn:3:133.31,-259.72' 'mn:4:223.94,-334.54' 'mn:5:-43.11,-261.43' 'mn:6:-20.3,-229.1' 'mn:7:-148.28,-133.31' 'mn:8:208.68,-209.93' 'mn:9:301.25,-285.36' 'mn:10:179.12,-166.56' 'mn:11:261.57,-196.22' 'mn:12:205.16,116.82' 'mn:13:329.32,183.53' 'mn:14:3.67,83.37' 'mn:15:96.45,174.54' 'mn:16:62.32,-118.43' 'mn:17:-83.59,-18.18' 'mn:18:224.37,26.4' 'mn:19:300.72,35.41' 'mn:20:-234.16,-37.76' 'mn:21:-285.9,-78.84' 'mn:22:97.38,-235.81' 'mn:23:179.17,-194.77' 'mn:24:-272.08,-35.66' 'mn:25:-330.5,-60.89' 'mn:26:-261.37,74.1' 'mn:27:-320.69,99.05' 'mn:28:178.51,-195.4' 'mn:29:151.07,-27.75' 'mn:30:78.2,-192.31' 'mn:31:106.33,-165.74' 'mn:32:60.41,-145.3' 'mn:33:81.92,-112.37' 'mn:34:-256.1,51.97' 'mn:35:-317.55,60.83' 'mn:36:-65.15,18.67' 'mn:37:-101.87,8.38' 'mn:38:-158.95,117.08' 'mn:39:-186.89,176.69' 'mn:40:-186.67,102.77' 'mn:41:-247.62,138.31' 'mn:42:-85.18,52.11' 'mn:43:-109.21,30.42' 'mn:44:32.92,81.55' 'mn:45:-143.32,20.21' 'mn:46:48,13.08' 'mn:47:-257.14,24.74' 'mn:48:-152.82,41.16' 'mn:49:58.14,-106.7' 'mn:50:63.41,-39.76' 'mn:51:-233.53,-16.77' 'mn:52:-245.84,-8.24' 'mn:53:117.58,-84.58' 'mn:54:53.98,22.76' 'mn:55:-130.42,69.43' 'mn:56:-137.3,61.88' 'mn:57:-81.17,69.93' 'mn:58:37.81,-59.67' 'mn:59:173.48,102.84' 'mn:60:181.66,88.85' 'mn:61:-232.38,57.7' 'mn:62:-160.96,46.22' 'mn:63:109.19,9.15' 'mn:64:132.76,-41.61' 'mn:65:-224.31,21.02' 'mn:66:-219.82,32.04' 'mn:67:100.66,102.47' 'mn:68:168.27,62.27' 'mn:69:148.1,-2.44' 'mn:70:166.32,55.81' 'mn:71:-140.87,6.34' 'mn:72:-80.84,91.2' 'mn:73:-143.98,50.03' 'mn:74:-115.16,38.71' 'mn:75:-65.02,89.53' 'mn:76:181.61,22.81' 'mn:77:126.89,-10.52' 'mn:78:-103.79,70.84' 'mn:79:24.63,101.88' 'mn:80:-157.58,23' 'mn:81:-147.97,29.33' 'mn:82:11.93,-9.54' 'mn:83:139.35,-17.58' 'mn:84:90.97,68.91' 'mn:85:-213.65,-4.85' 'mn:86:-216.14,9.95' 'mn:87:87.96,56.11' 'mn:88:136.56,95.52' 'mn:89:145.43,43.94' 'mn:90:121.77,83.33' 'mn:91:86.99,42.7' 'mn:92:92.01,-85.12' 'mn:93:-151.86,76.68' 'mn:94:21.43,47.64' 'mn:95:-45.62,22.55' 'mn:96:122.35,66.72' 'mn:97:-40.58,53.75' 'mn:98:-117.61,84.47' 'mn:99:108.11,72.74' 'mn:100:106.33,48.36' 'mn:101:-22.57,34.07' 'mn:102:-18.53,1.31' 'mn:103:48.8,-24.27' 'mn:104:29.6,-29.02' 'mn:105:49.81,-9.09' 'mn:106:62.77,-4.39' 'mn:107:-12.59,85.59' 'mn:108:47.1,-41.01' 'mn:109:78.66,30.43' 'mn:110:58.72,28.27' 'mn:111:40.95,71.7' 'mn:112:101.58,-14.86' 'mn:113:151.36,-27.11' 'mn:114:69.61,61.98' 'mn:115:10.55,-27.72' 'mn:116:22.73,-0.35' 'mn:117:29.65,23.3' 'ml:11:21,66' 'ml:21:7,-9' 'ml:41:-14,-48' 'ml:5:-27,-4' 'ml:6:13,25' 'ml:2:49,14' 'ml:7:-6,0' 'ml:35:-8,0' 'ml:27:-7,0',
+	LayoutSeed = 22;
+END; [VIEW]

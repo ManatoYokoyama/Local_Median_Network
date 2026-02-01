@@ -1,0 +1,368 @@
+#nexus [SplitsTree6]
+
+BEGIN SPLITSTREE6;
+DIMENSIONS nDataNodes=7 nAlgorithms=5;
+PROGRAM version='SplitsTree App (version 6.7.2, built 17 Jan 2026)';
+WORKFLOW creationDate='1769258236182'; [Sat Jan 24 21:37:16 JST 2026]
+END; [SPLITSTREE6]
+
+[
+Methods:
+Analysis was performed using SplitsTree App 6.0.0 (Huson and Bryant 2024).
+The original input consisted of 30 taxa and a 30 x 30 distance matrix.
+The Neighbor Net method (Bryant & Moulton 2004, Bryant & Huson 2023) was used (default options) so as to obtain 69 splits, circular.
+The Show Splits method was used (default options) so as to obtain a Split Network visualization.
+
+References:
+Bryant & Huson 2023: D. Bryant and DH Huson, NeighborNet- improved algorithms and implementation. Front. Bioinform. 3, 2023.
+Bryant & Moulton 2004: D. Bryant and V. Moulton. Neighbor-net: An agglomerative method for the construction of phylogenetic networks. Molecular Biology and Evolution, 21(2):255– 265, 2004.
+Huson and Bryant 2024: D.H. Huson and D. Bryant. The SplitsTree App: interactive analysis and visualization using phylogenetic trees and networks. Nature Methods, 2024.
+]
+
+BEGIN TAXA;
+TITLE 'Input Taxa';
+LINK ALGORITHM = 'Input Data Loader';
+DIMENSIONS ntax=30;
+TAXLABELS
+	[1] 'graph'
+	[2] 'graphs'
+	[3] 'graft'
+	[4] 'giraffe'
+	[5] 'grasp'
+	[6] 'grass'
+	[7] 'grade'
+	[8] 'grady'
+	[9] 'grain'
+	[10] 'metric'
+	[11] 'metrics'
+	[12] 'matrix'
+	[13] 'vertex'
+	[14] 'vector'
+	[15] 'tensor'
+	[16] 'tensors'
+	[17] 'sensor'
+	[18] 'edit'
+	[19] 'credit'
+	[20] 'reddit'
+	[21] 'distance'
+	[22] 'instance'
+	[23] 'stance'
+	[24] 'substance'
+	[25] 'tree'
+	[26] 'three'
+	[27] 'free'
+	[28] 'freeze'
+	[29] 'frozen'
+	[30] 'chosen'
+;
+DISPLAYLABELS
+	[1] '<bg yellow><c black><b>graph'
+	[2] '<bg yellow><c black><b>graphs'
+	[3] '<bg yellow><c black><b>graft'
+	[4] '<bg yellow><c black><b>giraffe'
+	[5] '<bg yellow><c black><b>grasp'
+	[6] '<bg yellow><c black><b>grass'
+	[7] '<bg yellow><c black><b>grade'
+	[8] '<bg yellow><c black><b>grady'
+	[9] '<bg yellow><c black><b>grain'
+	[10] '<bg yellow><c black><b>metric'
+	[11] '<bg yellow><c black><b>metrics'
+	[12] '<bg yellow><c black><b>matrix'
+	[13] '<bg yellow><c black><b>vertex'
+	[14] '<bg yellow><c black><b>vector'
+	[15] '<bg yellow><c black><b>tensor'
+	[16] '<bg yellow><c black><b>tensors'
+	[17] '<bg yellow><c black><b>sensor'
+	[18] '<bg yellow><c black><b>edit'
+	[19] '<bg yellow><c black><b>credit'
+	[20] '<bg yellow><c black><b>reddit'
+	[21] '<bg yellow><c black><b>distance'
+	[22] '<bg yellow><c black><b>instance'
+	[23] '<bg yellow><c black><b>stance'
+	[24] '<bg yellow><c black><b>substance'
+	[25] '<bg yellow><c black><b>tree'
+	[26] '<bg yellow><c black><b>three'
+	[27] '<bg yellow><c black><b>free'
+	[28] '<bg yellow><c black><b>freeze'
+	[29] '<bg yellow><c black><b>frozen'
+	[30] '<bg yellow><c black><b>chosen'
+;
+[TAXINFO;]
+END; [TAXA]
+
+BEGIN ALGORITHM;
+TITLE 'Taxa Filter';
+LINK ALGORITHM = 'Input Data Loader';
+NAME 'Taxa Filter';
+OPTIONS
+;
+END; [ALGORITHM]
+
+BEGIN TAXA;
+TITLE 'Working Taxa';
+LINK ALGORITHM = 'Taxa Filter';
+DIMENSIONS ntax=30;
+TAXLABELS
+	[1] 'graph'
+	[2] 'graphs'
+	[3] 'graft'
+	[4] 'giraffe'
+	[5] 'grasp'
+	[6] 'grass'
+	[7] 'grade'
+	[8] 'grady'
+	[9] 'grain'
+	[10] 'metric'
+	[11] 'metrics'
+	[12] 'matrix'
+	[13] 'vertex'
+	[14] 'vector'
+	[15] 'tensor'
+	[16] 'tensors'
+	[17] 'sensor'
+	[18] 'edit'
+	[19] 'credit'
+	[20] 'reddit'
+	[21] 'distance'
+	[22] 'instance'
+	[23] 'stance'
+	[24] 'substance'
+	[25] 'tree'
+	[26] 'three'
+	[27] 'free'
+	[28] 'freeze'
+	[29] 'frozen'
+	[30] 'chosen'
+;
+DISPLAYLABELS
+	[1] '<bg yellow><c black><b>graph'
+	[2] '<bg yellow><c black><b>graphs'
+	[3] '<bg yellow><c black><b>graft'
+	[4] '<bg yellow><c black><b>giraffe'
+	[5] '<bg yellow><c black><b>grasp'
+	[6] '<bg yellow><c black><b>grass'
+	[7] '<bg yellow><c black><b>grade'
+	[8] '<bg yellow><c black><b>grady'
+	[9] '<bg yellow><c black><b>grain'
+	[10] '<bg yellow><c black><b>metric'
+	[11] '<bg yellow><c black><b>metrics'
+	[12] '<bg yellow><c black><b>matrix'
+	[13] '<bg yellow><c black><b>vertex'
+	[14] '<bg yellow><c black><b>vector'
+	[15] '<bg yellow><c black><b>tensor'
+	[16] '<bg yellow><c black><b>tensors'
+	[17] '<bg yellow><c black><b>sensor'
+	[18] '<bg yellow><c black><b>edit'
+	[19] '<bg yellow><c black><b>credit'
+	[20] '<bg yellow><c black><b>reddit'
+	[21] '<bg yellow><c black><b>distance'
+	[22] '<bg yellow><c black><b>instance'
+	[23] '<bg yellow><c black><b>stance'
+	[24] '<bg yellow><c black><b>substance'
+	[25] '<bg yellow><c black><b>tree'
+	[26] '<bg yellow><c black><b>three'
+	[27] '<bg yellow><c black><b>free'
+	[28] '<bg yellow><c black><b>freeze'
+	[29] '<bg yellow><c black><b>frozen'
+	[30] '<bg yellow><c black><b>chosen'
+;
+[TAXINFO;]
+END; [TAXA]
+
+BEGIN DISTANCES;
+TITLE 'Input Distances';
+LINK ALGORITHM = 'Input Data Loader';
+DIMENSIONS ntax=30;
+FORMAT labels=left diagonal triangle=Both;
+MATRIX
+[1] 'graph'       0 1 2 4 2 2 2 2 2 6 6 6 5 6 6 7 6 5 5 6 7 7 5 8 4 5 4 5 5 6
+[2] 'graphs'      1 0 3 4 3 2 3 3 3 6 6 6 6 6 6 6 6 6 5 6 7 7 5 8 5 6 5 5 5 6
+[3] 'graft'       2 3 0 3 2 2 2 2 2 6 6 6 5 6 6 7 6 4 4 5 7 7 5 8 4 5 4 5 5 6
+[4] 'giraffe'     4 4 3 0 4 4 3 4 4 7 7 7 6 7 7 7 7 7 6 7 5 6 5 7 5 5 5 5 6 7
+[5] 'grasp'       2 3 2 4 0 1 2 2 2 6 6 6 5 6 5 6 5 5 5 6 7 7 5 8 4 5 4 5 5 5
+[6] 'grass'       2 2 2 4 1 0 2 2 2 6 5 6 5 6 5 5 5 5 5 6 7 7 5 8 4 5 4 5 5 5
+[7] 'grade'       2 3 2 3 2 2 0 1 2 6 6 6 5 6 6 7 6 5 4 5 6 6 4 7 3 4 3 4 4 5
+[8] 'grady'       2 3 2 4 2 2 1 0 2 6 6 6 5 6 6 7 6 5 4 5 7 7 5 8 4 5 4 5 5 6
+[9] 'grain'       2 3 2 4 2 2 2 2 0 5 6 5 5 6 6 7 6 4 4 5 7 7 5 8 4 5 4 5 4 5
+[10] 'metric'      6 6 6 7 6 6 6 6 5 0 1 2 5 5 5 6 5 4 5 4 6 6 5 7 4 5 5 6 6 6
+[11] 'metrics'     6 6 6 7 6 5 6 6 6 1 0 3 5 6 6 5 6 5 6 5 6 6 5 7 5 6 6 7 7 7
+[12] 'matrix'      6 6 6 7 6 6 6 6 5 2 3 0 5 6 6 7 6 5 5 5 7 7 6 8 4 5 5 6 6 6
+[13] 'vertex'      5 6 5 6 5 5 5 5 5 5 5 5 0 3 5 6 5 5 6 5 7 7 6 8 4 4 4 5 5 5
+[14] 'vector'      6 6 6 7 6 6 6 6 6 5 6 6 3 0 3 4 3 5 6 5 7 7 6 8 6 6 6 6 6 6
+[15] 'tensor'      6 6 6 7 5 5 6 6 6 5 6 6 5 3 0 1 1 5 6 5 7 7 5 8 5 5 6 6 6 5
+[16] 'tensors'     7 6 7 7 6 5 7 7 7 6 5 7 6 4 1 0 2 6 7 6 8 7 6 8 6 6 7 7 7 6
+[17] 'sensor'      6 6 6 7 5 5 6 6 6 5 6 6 5 3 1 2 0 5 6 5 7 7 5 7 6 6 6 6 6 5
+[18] 'edit'        5 6 4 7 5 5 5 5 4 4 5 5 5 5 5 6 5 0 2 2 6 7 6 8 4 5 4 5 6 6
+[19] 'credit'      5 5 4 6 5 5 4 4 4 5 6 5 6 6 6 7 6 2 0 2 8 8 6 9 4 5 4 4 5 5
+[20] 'reddit'      6 6 5 7 6 6 5 5 5 4 5 5 5 5 5 6 5 2 2 0 8 8 6 9 5 6 5 5 6 6
+[21] 'distance'    7 7 7 5 7 7 6 7 7 6 6 7 7 7 7 8 7 6 8 8 0 2 2 3 6 6 7 7 7 7
+[22] 'instance'    7 7 7 6 7 7 6 7 7 6 6 7 7 7 7 7 7 7 8 8 2 0 2 3 6 6 7 7 7 7
+[23] 'stance'      5 5 5 5 5 5 4 5 5 5 5 6 6 6 5 6 5 6 6 6 2 2 0 3 4 4 5 5 6 6
+[24] 'substance'   8 8 8 7 8 8 7 8 8 7 7 8 8 8 8 8 7 8 9 9 3 3 3 0 7 7 8 8 8 7
+[25] 'tree'        4 5 4 5 4 4 3 4 4 4 5 4 4 6 5 6 6 4 4 5 6 6 4 7 0 1 1 3 4 5
+[26] 'three'       5 6 5 5 5 5 4 5 5 5 6 5 4 6 5 6 6 5 5 6 6 6 4 7 1 0 2 4 5 4
+[27] 'free'        4 5 4 5 4 4 3 4 4 5 6 5 4 6 6 7 6 4 4 5 7 7 5 8 1 2 0 2 3 5
+[28] 'freeze'      5 5 5 5 5 5 4 5 5 6 7 6 5 6 6 7 6 5 4 5 7 7 5 8 3 4 2 0 3 6
+[29] 'frozen'      5 5 5 6 5 5 4 5 4 6 7 6 5 6 6 7 6 6 5 6 7 7 6 8 4 5 3 3 0 3
+[30] 'chosen'      6 6 6 7 5 5 5 6 5 6 7 6 5 6 5 6 5 6 5 6 7 7 6 7 5 4 5 6 3 0
+;
+END; [DISTANCES]
+
+BEGIN ALGORITHM;
+TITLE 'Input Data Filter';
+LINK DISTANCES = 'Input Distances';
+NAME 'Distances Taxa Filter';
+END; [ALGORITHM]
+
+BEGIN DISTANCES;
+TITLE 'Working Distances';
+LINK ALGORITHM = 'Input Data Filter';
+DIMENSIONS ntax=30;
+FORMAT labels=left diagonal triangle=Both;
+MATRIX
+[1] 'graph'       0 1 2 4 2 2 2 2 2 6 6 6 5 6 6 7 6 5 5 6 7 7 5 8 4 5 4 5 5 6
+[2] 'graphs'      1 0 3 4 3 2 3 3 3 6 6 6 6 6 6 6 6 6 5 6 7 7 5 8 5 6 5 5 5 6
+[3] 'graft'       2 3 0 3 2 2 2 2 2 6 6 6 5 6 6 7 6 4 4 5 7 7 5 8 4 5 4 5 5 6
+[4] 'giraffe'     4 4 3 0 4 4 3 4 4 7 7 7 6 7 7 7 7 7 6 7 5 6 5 7 5 5 5 5 6 7
+[5] 'grasp'       2 3 2 4 0 1 2 2 2 6 6 6 5 6 5 6 5 5 5 6 7 7 5 8 4 5 4 5 5 5
+[6] 'grass'       2 2 2 4 1 0 2 2 2 6 5 6 5 6 5 5 5 5 5 6 7 7 5 8 4 5 4 5 5 5
+[7] 'grade'       2 3 2 3 2 2 0 1 2 6 6 6 5 6 6 7 6 5 4 5 6 6 4 7 3 4 3 4 4 5
+[8] 'grady'       2 3 2 4 2 2 1 0 2 6 6 6 5 6 6 7 6 5 4 5 7 7 5 8 4 5 4 5 5 6
+[9] 'grain'       2 3 2 4 2 2 2 2 0 5 6 5 5 6 6 7 6 4 4 5 7 7 5 8 4 5 4 5 4 5
+[10] 'metric'      6 6 6 7 6 6 6 6 5 0 1 2 5 5 5 6 5 4 5 4 6 6 5 7 4 5 5 6 6 6
+[11] 'metrics'     6 6 6 7 6 5 6 6 6 1 0 3 5 6 6 5 6 5 6 5 6 6 5 7 5 6 6 7 7 7
+[12] 'matrix'      6 6 6 7 6 6 6 6 5 2 3 0 5 6 6 7 6 5 5 5 7 7 6 8 4 5 5 6 6 6
+[13] 'vertex'      5 6 5 6 5 5 5 5 5 5 5 5 0 3 5 6 5 5 6 5 7 7 6 8 4 4 4 5 5 5
+[14] 'vector'      6 6 6 7 6 6 6 6 6 5 6 6 3 0 3 4 3 5 6 5 7 7 6 8 6 6 6 6 6 6
+[15] 'tensor'      6 6 6 7 5 5 6 6 6 5 6 6 5 3 0 1 1 5 6 5 7 7 5 8 5 5 6 6 6 5
+[16] 'tensors'     7 6 7 7 6 5 7 7 7 6 5 7 6 4 1 0 2 6 7 6 8 7 6 8 6 6 7 7 7 6
+[17] 'sensor'      6 6 6 7 5 5 6 6 6 5 6 6 5 3 1 2 0 5 6 5 7 7 5 7 6 6 6 6 6 5
+[18] 'edit'        5 6 4 7 5 5 5 5 4 4 5 5 5 5 5 6 5 0 2 2 6 7 6 8 4 5 4 5 6 6
+[19] 'credit'      5 5 4 6 5 5 4 4 4 5 6 5 6 6 6 7 6 2 0 2 8 8 6 9 4 5 4 4 5 5
+[20] 'reddit'      6 6 5 7 6 6 5 5 5 4 5 5 5 5 5 6 5 2 2 0 8 8 6 9 5 6 5 5 6 6
+[21] 'distance'    7 7 7 5 7 7 6 7 7 6 6 7 7 7 7 8 7 6 8 8 0 2 2 3 6 6 7 7 7 7
+[22] 'instance'    7 7 7 6 7 7 6 7 7 6 6 7 7 7 7 7 7 7 8 8 2 0 2 3 6 6 7 7 7 7
+[23] 'stance'      5 5 5 5 5 5 4 5 5 5 5 6 6 6 5 6 5 6 6 6 2 2 0 3 4 4 5 5 6 6
+[24] 'substance'   8 8 8 7 8 8 7 8 8 7 7 8 8 8 8 8 7 8 9 9 3 3 3 0 7 7 8 8 8 7
+[25] 'tree'        4 5 4 5 4 4 3 4 4 4 5 4 4 6 5 6 6 4 4 5 6 6 4 7 0 1 1 3 4 5
+[26] 'three'       5 6 5 5 5 5 4 5 5 5 6 5 4 6 5 6 6 5 5 6 6 6 4 7 1 0 2 4 5 4
+[27] 'free'        4 5 4 5 4 4 3 4 4 5 6 5 4 6 6 7 6 4 4 5 7 7 5 8 1 2 0 2 3 5
+[28] 'freeze'      5 5 5 5 5 5 4 5 5 6 7 6 5 6 6 7 6 5 4 5 7 7 5 8 3 4 2 0 3 6
+[29] 'frozen'      5 5 5 6 5 5 4 5 4 6 7 6 5 6 6 7 6 6 5 6 7 7 6 8 4 5 3 3 0 3
+[30] 'chosen'      6 6 6 7 5 5 5 6 5 6 7 6 5 6 5 6 5 6 5 6 7 7 6 7 5 4 5 6 3 0
+;
+END; [DISTANCES]
+
+BEGIN ALGORITHM;
+TITLE 'Neighbor Net';
+LINK DISTANCES = 'Working Distances';
+NAME 'Neighbor Net';
+OPTIONS
+	InferenceAlgorithm = 'ActiveSet';
+END; [ALGORITHM]
+
+BEGIN SPLITS;
+TITLE 'Splits';
+LINK ALGORITHM = 'Neighbor Net';
+DIMENSIONS ntax=30 nsplits=69;
+FORMAT labels=no weights=yes confidences=no;
+PROPERTIES fit=99.3 circular;
+CYCLE 1 2 6 5 26 25 27 28 29 30 13 14 17 15 16 12 10 11 18 20 19 21 22 24 23 4 7 8 3 9;
+MATRIX
+[1, size=1] 	 0.05750156 	 1,
+[2, size=2] 	 1.05544386 	 1 2,
+[3, size=1] 	 0.87230035 	 1 2 3 4 5 6 7 8 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30,
+[4, size=1] 	 0.13445309 	 1 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30,
+[5, size=2] 	 0.38089939 	 1 3 4 5 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30,
+[6, size=5] 	 0.14054269 	 1 3 7 8 9,
+[7, size=1] 	 0 	 1 2 3 4 5 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30,
+[8, size=2] 	 0.6171945 	 1 2 3 4 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30,
+[9, size=1] 	 0.46584373 	 1 2 3 4 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30,
+[10, size=1] 	 0.74178435 	 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 27 28 29 30,
+[11, size=2] 	 0.31560913 	 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 27 28 29 30,
+[12, size=3] 	 0.74367742 	 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 28 29 30,
+[13, size=4] 	 0.20613928 	 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 29 30,
+[14, size=7] 	 0.121004 	 1 2 3 4 5 6 7 8 9 10 11 12 14 15 16 17 18 19 20 21 22 23 24,
+[15, size=9] 	 0.91339547 	 1 2 3 4 5 6 7 8 9,
+[16, size=8] 	 0.11674724 	 1 2 3 5 6 7 8 9,
+[17, size=7] 	 0.16673454 	 1 2 3 5 6 8 9,
+[18, size=1] 	 0 	 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 26 27 28 29 30,
+[19, size=3] 	 0.1524224 	 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 26 29 30,
+[20, size=4] 	 0.05294492 	 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 26 30,
+[21, size=1] 	 0 	 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 28 29 30,
+[22, size=3] 	 0.67206274 	 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 30,
+[23, size=1] 	 0.99679265 	 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 29 30,
+[24, size=2] 	 0.27264821 	 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 30,
+[25, size=1] 	 0.16751037 	 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 30,
+[26, size=2] 	 1.28334808 	 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28,
+[27, size=6] 	 0.09841158 	 1 2 3 4 5 6 7 8 9 10 11 12 16 18 19 20 21 22 23 24 25 26 27 28,
+[28, size=1] 	 1.18869581 	 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29,
+[29, size=6] 	 0.22105003 	 1 2 3 4 5 6 7 8 9 10 11 12 18 19 20 21 22 23 24 25 26 27 28 29,
+[30, size=15] 	 0.19392144 	 1 2 3 4 5 6 7 8 9 23 25 26 27 28 29,
+[31, size=1] 	 0.93922365 	 1 2 3 4 5 6 7 8 9 10 11 12 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30,
+[32, size=2] 	 0.98946741 	 1 2 3 4 5 6 7 8 9 10 11 12 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30,
+[33, size=10] 	 0.26797364 	 1 2 3 4 5 6 7 8 9 19 21 22 23 24 25 26 27 28 29 30,
+[34, size=1] 	 0.62364715 	 1 2 3 4 5 6 7 8 9 10 11 12 13 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30,
+[35, size=4] 	 1.05857386 	 1 2 3 4 5 6 7 8 9 10 11 12 13 18 19 20 21 22 23 24 25 26 27 28 29 30,
+[36, size=14] 	 0.20991011 	 1 2 3 4 5 6 7 8 9 13 25 26 27 28 29 30,
+[37, size=1] 	 0.53977242 	 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 18 19 20 21 22 23 24 25 26 27 28 29 30,
+[38, size=3] 	 0.8811753 	 1 2 3 4 5 6 7 8 9 10 11 12 13 14 18 19 20 21 22 23 24 25 26 27 28 29 30,
+[39, size=1] 	 0 	 1 2 3 4 5 6 7 8 9 10 11 12 13 14 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30,
+[40, size=2] 	 0.49921215 	 1 2 3 4 5 6 7 8 9 10 11 12 13 14 17 18 19 20 21 22 23 24 25 26 27 28 29 30,
+[41, size=1] 	 0.74395113 	 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 17 18 19 20 21 22 23 24 25 26 27 28 29 30,
+[42, size=4] 	 0.09192604 	 1 2 3 4 5 6 7 8 9 13 14 15 17 18 19 20 21 22 23 24 25 26 27 28 29 30,
+[43, size=1] 	 1.16742406 	 1 2 3 4 5 6 7 8 9 10 11 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30,
+[44, size=2] 	 0.30402881 	 1 2 3 4 5 6 7 8 9 11 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30,
+[45, size=3] 	 1.15483917 	 1 2 3 4 5 6 7 8 9 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30,
+[46, size=6] 	 0.05073899 	 1 2 3 4 5 6 7 8 9 13 14 15 16 17 21 22 23 24 25 26 27 28 29 30,
+[47, size=1] 	 0 	 1 2 3 4 5 6 7 8 9 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30,
+[48, size=2] 	 0.62687106 	 1 2 3 4 5 6 7 8 9 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30,
+[49, size=4] 	 0.19868213 	 1 2 3 4 5 6 7 8 9 12 13 14 15 16 17 19 21 22 23 24 25 26 27 28 29 30,
+[50, size=1] 	 0.71171372 	 1 2 3 4 5 6 7 8 9 10 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30,
+[51, size=1] 	 0.66239318 	 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 19 20 21 22 23 24 25 26 27 28 29 30,
+[52, size=3] 	 1.2676809 	 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 21 22 23 24 25 26 27 28 29 30,
+[53, size=1] 	 0.76435517 	 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 21 22 23 24 25 26 27 28 29 30,
+[54, size=2] 	 0.35205353 	 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 21 22 23 24 25 26 27 28 29 30,
+[55, size=1] 	 0.73162647 	 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 20 21 22 23 24 25 26 27 28 29 30,
+[56, size=1] 	 0.99241275 	 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 22 23 24 25 26 27 28 29 30,
+[57, size=3] 	 0.69459111 	 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 23 25 26 27 28 29 30,
+[58, size=4] 	 1.41458598 	 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 25 26 27 28 29 30,
+[59, size=5] 	 0.68264504 	 1 2 3 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 25 26 27 28 29 30,
+[60, size=6] 	 0.26407492 	 1 2 3 5 6 8 9 10 11 12 13 14 15 16 17 18 19 20 25 26 27 28 29 30,
+[61, size=1] 	 1.02724296 	 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 23 24 25 26 27 28 29 30,
+[62, size=1] 	 1.95581421 	 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 25 26 27 28 29 30,
+[63, size=1] 	 0.12332584 	 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 24 25 26 27 28 29 30,
+[64, size=1] 	 1.42030294 	 1 2 3 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30,
+[65, size=4] 	 0.10294832 	 1 2 5 6 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30,
+[66, size=1] 	 0 	 1 2 3 4 5 6 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30,
+[67, size=2] 	 0.4939513 	 1 2 3 4 5 6 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30,
+[68, size=1] 	 0.47585612 	 1 2 3 4 5 6 7 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30,
+[69, size=1] 	 0.89835976 	 1 2 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30,
+;
+END; [SPLITS]
+
+BEGIN ALGORITHM;
+TITLE 'Show Splits';
+LINK SPLITS = 'Splits';
+NAME 'Show Splits';
+OPTIONS
+	View = 'SplitNetwork';
+END; [ALGORITHM]
+
+BEGIN VIEW;
+TITLE 'SplitNetwork';
+LINK ALGORITHM = 'Show Splits';
+NAME 'SplitNetworkView';
+INPUT 'SPLITS';
+OPTIONS
+	Diagram = 'Splits',
+	Orientation = 'Rotate30Deg',
+	Rooting = 'None',
+	ZoomFactor = 0.98029605,
+	FontScaleFactor = 1,
+	RootAngle = 160,
+	OutlineFill = 0xc0c0c0ff,
+	Edits = 'a:4:0.05' 'a:10:26.17' 'a:43:9.32' 'a:50:-21.69',
+	LabelSplitsBy = 'None',
+	ShowQRCode = 'false';
+END; [VIEW]

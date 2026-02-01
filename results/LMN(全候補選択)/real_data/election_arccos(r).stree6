@@ -1,0 +1,783 @@
+#nexus [SplitsTree6]
+
+BEGIN SPLITSTREE6;
+DIMENSIONS nDataNodes=6 nAlgorithms=4;
+PROGRAM version='SplitsTree App (version 6.7.2, built 17 Jan 2026)';
+WORKFLOW creationDate='1769321971803'; [Sun Jan 25 15:19:31 JST 2026]
+END; [SPLITSTREE6]
+
+[
+Methods:
+Analysis was performed using SplitsTree App 6.0.0 (Huson and Bryant 2024).
+The original input consisted of 72 taxa and 72 nodes and 127 edges.
+
+References:
+Huson and Bryant 2024: D.H. Huson and D. Bryant. The SplitsTree App: interactive analysis and visualization using phylogenetic trees and networks. Nature Methods, 2024.
+]
+
+BEGIN TAXA;
+TITLE 'Input Taxa';
+LINK ALGORITHM = 'Input Data Loader';
+DIMENSIONS ntax=72;
+TAXLABELS
+	[1] 'm0'
+	[2] 'Romney'
+	[3] 'm1'
+	[4] 'Obama'
+	[5] 'm2'
+	[6] 'm3'
+	[7] 'm4'
+	[8] 'm5'
+	[9] 'Clinton'
+	[10] 'm6'
+	[11] 'Trump'
+	[12] 'm7'
+	[13] 'm8'
+	[14] 'm9'
+	[15] 'White'
+	[16] 'm10'
+	[17] 'm11'
+	[18] 'm12'
+	[19] 'm13'
+	[20] 'Poverty'
+	[21] 'm14'
+	[22] 'm15'
+	[23] 'High_School'
+	[24] 'm16'
+	[25] 'Black'
+	[26] 'm17'
+	[27] 'm18'
+	[28] 'm19'
+	[29] 'm20'
+	[30] 'Bachelors'
+	[31] 'm21'
+	[32] 'm22'
+	[33] 'm23'
+	[34] 'm24'
+	[35] 'm25'
+	[36] 'm26'
+	[37] 'm27'
+	[38] 'Hispanic'
+	[39] 'm28'
+	[40] 'm29'
+	[41] 'm30'
+	[42] 'm31'
+	[43] 'm32'
+	[44] 'm33'
+	[45] 'm34'
+	[46] 'm35'
+	[47] 'm36'
+	[48] 'm37'
+	[49] 'm38'
+	[50] 'm39'
+	[51] 'm40'
+	[52] 'm41'
+	[53] 'm42'
+	[54] 'm43'
+	[55] 'm44'
+	[56] 'm45'
+	[57] 'm46'
+	[58] 'm47'
+	[59] 'm48'
+	[60] 'm49'
+	[61] 'm50'
+	[62] 'Density'
+	[63] 'm51'
+	[64] 'm52'
+	[65] 'm53'
+	[66] 'm54'
+	[67] 'm55'
+	[68] 'm56'
+	[69] 'm57'
+	[70] 'm58'
+	[71] 'm59'
+	[72] 'm60'
+;
+DISPLAYLABELS
+	[1] '<size "1.0"><c white>m0'
+	[2] '<bg red><c white><b>Romney'
+	[3] '<size "1.0"><c white>m1'
+	[4] '<bg blue><c white><b>Obama'
+	[5] '<size "1.0"><c white>m2'
+	[6] '<size "1.0"><c white>m3'
+	[7] '<size "1.0"><c white>m4'
+	[8] '<size "1.0"><c white>m5'
+	[9] '<bg blue><c white><b>Clinton'
+	[10] '<size "1.0"><c white>m6'
+	[11] '<bg red><c white><b>Trump'
+	[12] '<size "1.0"><c white>m7'
+	[13] '<size "1.0"><c white>m8'
+	[14] '<size "1.0"><c white>m9'
+	[15] '<bg 0xff6666ff><c white><b>White'
+	[16] '<size "1.0"><c white>m10'
+	[17] '<size "1.0"><c white>m11'
+	[18] '<size "1.0"><c white>m12'
+	[19] '<size "1.0"><c white>m13'
+	[20] '<bg 0xcce6ffff><c black><b>Poverty'
+	[21] '<size "1.0"><c white>m14'
+	[22] '<size "1.0"><c white>m15'
+	[23] '<c white><bg black><b>High_School'
+	[24] '<size "1.0"><c white>m16'
+	[25] '<bg 0x6680e6ff><c white><b>Black'
+	[26] '<size "1.0"><c white>m17'
+	[27] '<size "1.0"><c white>m18'
+	[28] '<size "1.0"><c white>m19'
+	[29] '<size "1.0"><c white>m20'
+	[30] '<bg 0xb3ccffff><c black><b>Bachelors'
+	[31] '<size "1.0"><c white>m21'
+	[32] '<size "1.0"><c white>m22'
+	[33] '<size "1.0"><c white>m23'
+	[34] '<size "1.0"><c white>m24'
+	[35] '<size "1.0"><c white>m25'
+	[36] '<size "1.0"><c white>m26'
+	[37] '<size "1.0"><c white>m27'
+	[38] '<c white><bg black><b>Hispanic'
+	[39] '<size "1.0"><c white>m28'
+	[40] '<size "1.0"><c white>m29'
+	[41] '<size "1.0"><c white>m30'
+	[42] '<size "1.0"><c white>m31'
+	[43] '<size "1.0"><c white>m32'
+	[44] '<size "1.0"><c white>m33'
+	[45] '<size "1.0"><c white>m34'
+	[46] '<size "1.0"><c white>m35'
+	[47] '<size "1.0"><c white>m36'
+	[48] '<size "1.0"><c white>m37'
+	[49] '<size "1.0"><c white>m38'
+	[50] '<size "1.0"><c white>m39'
+	[51] '<size "1.0"><c white>m40'
+	[52] '<size "1.0"><c white>m41'
+	[53] '<size "1.0"><c white>m42'
+	[54] '<size "1.0"><c white>m43'
+	[55] '<size "1.0"><c white>m44'
+	[56] '<size "1.0"><c white>m45'
+	[57] '<size "1.0"><c white>m46'
+	[58] '<size "1.0"><c white>m47'
+	[59] '<size "1.0"><c white>m48'
+	[60] '<size "1.0"><c white>m49'
+	[61] '<size "1.0"><c white>m50'
+	[62] '<bg 0xcce6ffff><c black><b>Density'
+	[63] '<size "1.0"><c white>m51'
+	[64] '<size "1.0"><c white>m52'
+	[65] '<size "1.0"><c white>m53'
+	[66] '<size "1.0"><c white>m54'
+	[67] '<size "1.0"><c white>m55'
+	[68] '<size "1.0"><c white>m56'
+	[69] '<size "1.0"><c white>m57'
+	[70] '<size "1.0"><c white>m58'
+	[71] '<size "1.0"><c white>m59'
+	[72] '<size "1.0"><c white>m60'
+;
+[TAXINFO;]
+END; [TAXA]
+
+BEGIN ALGORITHM;
+TITLE 'Taxa Filter';
+LINK ALGORITHM = 'Input Data Loader';
+NAME 'Taxa Filter';
+OPTIONS
+;
+END; [ALGORITHM]
+
+BEGIN TAXA;
+TITLE 'Working Taxa';
+LINK ALGORITHM = 'Taxa Filter';
+DIMENSIONS ntax=72;
+TAXLABELS
+	[1] 'm0'
+	[2] 'Romney'
+	[3] 'm1'
+	[4] 'Obama'
+	[5] 'm2'
+	[6] 'm3'
+	[7] 'm4'
+	[8] 'm5'
+	[9] 'Clinton'
+	[10] 'm6'
+	[11] 'Trump'
+	[12] 'm7'
+	[13] 'm8'
+	[14] 'm9'
+	[15] 'White'
+	[16] 'm10'
+	[17] 'm11'
+	[18] 'm12'
+	[19] 'm13'
+	[20] 'Poverty'
+	[21] 'm14'
+	[22] 'm15'
+	[23] 'High_School'
+	[24] 'm16'
+	[25] 'Black'
+	[26] 'm17'
+	[27] 'm18'
+	[28] 'm19'
+	[29] 'm20'
+	[30] 'Bachelors'
+	[31] 'm21'
+	[32] 'm22'
+	[33] 'm23'
+	[34] 'm24'
+	[35] 'm25'
+	[36] 'm26'
+	[37] 'm27'
+	[38] 'Hispanic'
+	[39] 'm28'
+	[40] 'm29'
+	[41] 'm30'
+	[42] 'm31'
+	[43] 'm32'
+	[44] 'm33'
+	[45] 'm34'
+	[46] 'm35'
+	[47] 'm36'
+	[48] 'm37'
+	[49] 'm38'
+	[50] 'm39'
+	[51] 'm40'
+	[52] 'm41'
+	[53] 'm42'
+	[54] 'm43'
+	[55] 'm44'
+	[56] 'm45'
+	[57] 'm46'
+	[58] 'm47'
+	[59] 'm48'
+	[60] 'm49'
+	[61] 'm50'
+	[62] 'Density'
+	[63] 'm51'
+	[64] 'm52'
+	[65] 'm53'
+	[66] 'm54'
+	[67] 'm55'
+	[68] 'm56'
+	[69] 'm57'
+	[70] 'm58'
+	[71] 'm59'
+	[72] 'm60'
+;
+DISPLAYLABELS
+	[1] '<size "1.0"><c white>m0'
+	[2] '<bg red><c white><b>Romney'
+	[3] '<size "1.0"><c white>m1'
+	[4] '<bg blue><c white><b>Obama'
+	[5] '<size "1.0"><c white>m2'
+	[6] '<size "1.0"><c white>m3'
+	[7] '<size "1.0"><c white>m4'
+	[8] '<size "1.0"><c white>m5'
+	[9] '<bg blue><c white><b>Clinton'
+	[10] '<size "1.0"><c white>m6'
+	[11] '<bg red><c white><b>Trump'
+	[12] '<size "1.0"><c white>m7'
+	[13] '<size "1.0"><c white>m8'
+	[14] '<size "1.0"><c white>m9'
+	[15] '<bg 0xff6666ff><c white><b>White'
+	[16] '<size "1.0"><c white>m10'
+	[17] '<size "1.0"><c white>m11'
+	[18] '<size "1.0"><c white>m12'
+	[19] '<size "1.0"><c white>m13'
+	[20] '<bg 0xcce6ffff><c black><b>Poverty'
+	[21] '<size "1.0"><c white>m14'
+	[22] '<size "1.0"><c white>m15'
+	[23] '<c white><bg black><b>High_School'
+	[24] '<size "1.0"><c white>m16'
+	[25] '<bg 0x6680e6ff><c white><b>Black'
+	[26] '<size "1.0"><c white>m17'
+	[27] '<size "1.0"><c white>m18'
+	[28] '<size "1.0"><c white>m19'
+	[29] '<size "1.0"><c white>m20'
+	[30] '<bg 0xb3ccffff><c black><b>Bachelors'
+	[31] '<size "1.0"><c white>m21'
+	[32] '<size "1.0"><c white>m22'
+	[33] '<size "1.0"><c white>m23'
+	[34] '<size "1.0"><c white>m24'
+	[35] '<size "1.0"><c white>m25'
+	[36] '<size "1.0"><c white>m26'
+	[37] '<size "1.0"><c white>m27'
+	[38] '<c white><bg black><b>Hispanic'
+	[39] '<size "1.0"><c white>m28'
+	[40] '<size "1.0"><c white>m29'
+	[41] '<size "1.0"><c white>m30'
+	[42] '<size "1.0"><c white>m31'
+	[43] '<size "1.0"><c white>m32'
+	[44] '<size "1.0"><c white>m33'
+	[45] '<size "1.0"><c white>m34'
+	[46] '<size "1.0"><c white>m35'
+	[47] '<size "1.0"><c white>m36'
+	[48] '<size "1.0"><c white>m37'
+	[49] '<size "1.0"><c white>m38'
+	[50] '<size "1.0"><c white>m39'
+	[51] '<size "1.0"><c white>m40'
+	[52] '<size "1.0"><c white>m41'
+	[53] '<size "1.0"><c white>m42'
+	[54] '<size "1.0"><c white>m43'
+	[55] '<size "1.0"><c white>m44'
+	[56] '<size "1.0"><c white>m45'
+	[57] '<size "1.0"><c white>m46'
+	[58] '<size "1.0"><c white>m47'
+	[59] '<size "1.0"><c white>m48'
+	[60] '<size "1.0"><c white>m49'
+	[61] '<size "1.0"><c white>m50'
+	[62] '<bg 0xcce6ffff><c black><b>Density'
+	[63] '<size "1.0"><c white>m51'
+	[64] '<size "1.0"><c white>m52'
+	[65] '<size "1.0"><c white>m53'
+	[66] '<size "1.0"><c white>m54'
+	[67] '<size "1.0"><c white>m55'
+	[68] '<size "1.0"><c white>m56'
+	[69] '<size "1.0"><c white>m57'
+	[70] '<size "1.0"><c white>m58'
+	[71] '<size "1.0"><c white>m59'
+	[72] '<size "1.0"><c white>m60'
+;
+[TAXINFO;]
+END; [TAXA]
+
+BEGIN NETWORK;
+TITLE 'Input Network';
+LINK ALGORITHM = 'Input Data Loader';
+DIMENSIONS nVertices=72 nEdges=127;
+TYPE Other;
+VERTICES
+	id=1 label='m0' label='m0',
+	id=2 label='Romney' label='Romney',
+	id=3 label='m1' label='m1',
+	id=4 label='Obama' label='Obama',
+	id=5 label='m2' label='m2',
+	id=6 label='m3' label='m3',
+	id=7 label='m4' label='m4',
+	id=8 label='m5' label='m5',
+	id=9 label='Clinton' label='Clinton',
+	id=10 label='m6' label='m6',
+	id=11 label='Trump' label='Trump',
+	id=12 label='m7' label='m7',
+	id=13 label='m8' label='m8',
+	id=14 label='m9' label='m9',
+	id=15 label='White' label='White',
+	id=16 label='m10' label='m10',
+	id=17 label='m11' label='m11',
+	id=18 label='m12' label='m12',
+	id=19 label='m13' label='m13',
+	id=20 label='Poverty' label='Poverty',
+	id=21 label='m14' label='m14',
+	id=22 label='m15' label='m15',
+	id=23 label='High_School' label='High_School',
+	id=24 label='m16' label='m16',
+	id=25 label='Black' label='Black',
+	id=26 label='m17' label='m17',
+	id=27 label='m18' label='m18',
+	id=28 label='m19' label='m19',
+	id=29 label='m20' label='m20',
+	id=30 label='Bachelors' label='Bachelors',
+	id=31 label='m21' label='m21',
+	id=32 label='m22' label='m22',
+	id=33 label='m23' label='m23',
+	id=34 label='m24' label='m24',
+	id=35 label='m25' label='m25',
+	id=36 label='m26' label='m26',
+	id=37 label='m27' label='m27',
+	id=38 label='Hispanic' label='Hispanic',
+	id=39 label='m28' label='m28',
+	id=40 label='m29' label='m29',
+	id=41 label='m30' label='m30',
+	id=42 label='m31' label='m31',
+	id=43 label='m32' label='m32',
+	id=44 label='m33' label='m33',
+	id=45 label='m34' label='m34',
+	id=46 label='m35' label='m35',
+	id=47 label='m36' label='m36',
+	id=48 label='m37' label='m37',
+	id=49 label='m38' label='m38',
+	id=50 label='m39' label='m39',
+	id=51 label='m40' label='m40',
+	id=52 label='m41' label='m41',
+	id=53 label='m42' label='m42',
+	id=54 label='m43' label='m43',
+	id=55 label='m44' label='m44',
+	id=56 label='m45' label='m45',
+	id=57 label='m46' label='m46',
+	id=58 label='m47' label='m47',
+	id=59 label='m48' label='m48',
+	id=60 label='m49' label='m49',
+	id=61 label='m50' label='m50',
+	id=62 label='Density' label='Density',
+	id=63 label='m51' label='m51',
+	id=64 label='m52' label='m52',
+	id=65 label='m53' label='m53',
+	id=66 label='m54' label='m54',
+	id=67 label='m55' label='m55',
+	id=68 label='m56' label='m56',
+	id=69 label='m57' label='m57',
+	id=70 label='m58' label='m58',
+	id=71 label='m59' label='m59',
+	id=72 label='m60' label='m60'
+;
+EDGES
+	id=1 sid=1 tid=2 w='8.449319164999991' weight='8.449319164999991',
+	id=2 sid=1 tid=6 w='8.176795699999985' weight='8.176795699999985',
+	id=3 sid=1 tid=7 w='51.062574285' weight='51.062574285',
+	id=4 sid=3 tid=4 w='10.50501816500001' weight='10.50501816500001',
+	id=5 sid=3 tid=8 w='12.88630024999999' weight='12.88630024999999',
+	id=6 sid=3 tid=14 w='107.425853735' weight='107.425853735',
+	id=7 sid=4 tid=5 w='94.36355370000001' weight='94.36355370000001',
+	id=8 sid=5 tid=11 w='182.1573634' weight='182.1573634',
+	id=9 sid=5 tid=17 w='174.64416495' weight='174.64416495',
+	id=10 sid=5 tid=25 w='19.371546999999993' weight='19.371546999999993',
+	id=11 sid=5 tid=40 w='16.315728950000008' weight='16.315728950000008',
+	id=12 sid=6 tid=11 w='21.01223336500002' weight='21.01223336500002',
+	id=13 sid=6 tid=12 w='20.25913438499999' weight='20.25913438499999',
+	id=14 sid=6 tid=13 w='66.03292928499998' weight='66.03292928499998',
+	id=15 sid=7 tid=15 w='47.50226794999999' weight='47.50226794999999',
+	id=16 sid=7 tid=17 w='21.081884799999983' weight='21.081884799999983',
+	id=17 sid=7 tid=27 w='36.06225884999998' weight='36.06225884999998',
+	id=18 sid=7 tid=28 w='38.76684295000002' weight='38.76684295000002',
+	id=19 sid=8 tid=9 w='8.364724514999999' weight='8.364724514999999',
+	id=20 sid=8 tid=16 w='17.186934484999995' weight='17.186934484999995',
+	id=21 sid=9 tid=10 w='54.147163349999985' weight='54.147163349999985',
+	id=22 sid=10 tid=48 w='17.406615649999978' weight='17.406615649999978',
+	id=23 sid=10 tid=26 w='9.89500414999997' weight='9.89500414999997',
+	id=24 sid=10 tid=61 w='20.536439449999953' weight='20.536439449999953',
+	id=25 sid=12 tid=17 w='8.266297499999936' weight='8.266297499999936',
+	id=26 sid=12 tid=18 w='116.15624734999996' weight='116.15624734999996',
+	id=27 sid=13 tid=25 w='114.48374775' weight='114.48374775',
+	id=28 sid=13 tid=32 w='10.985765900000004' weight='10.985765900000004',
+	id=29 sid=13 tid=33 w='36.804006900000005' weight='36.804006900000005',
+	id=30 sid=14 tid=15 w='91.5086383' weight='91.5086383',
+	id=31 sid=14 tid=23 w='36.1483106' weight='36.1483106',
+	id=32 sid=14 tid=43 w='12.886300249999962' weight='12.886300249999962',
+	id=33 sid=16 tid=21 w='12.17122424999998' weight='12.17122424999998',
+	id=34 sid=16 tid=22 w='9.89500414999997' weight='9.89500414999997',
+	id=35 sid=18 tid=19 w='15.17419894999999' weight='15.17419894999999',
+	id=36 sid=18 tid=36 w='12.309242199999971' weight='12.309242199999971',
+	id=37 sid=19 tid=20 w='7.980151750000061' weight='7.980151750000061',
+	id=38 sid=19 tid=26 w='66.87480844999996' weight='66.87480844999996',
+	id=39 sid=21 tid=34 w='9.895004149999977' weight='9.895004149999977',
+	id=40 sid=21 tid=26 w='26.319284249999974' weight='26.319284249999974',
+	id=41 sid=22 tid=34 w='12.17122424999998' weight='12.17122424999998',
+	id=42 sid=22 tid=35 w='12.319200150000015' weight='12.319200150000015',
+	id=43 sid=23 tid=24 w='40.689325099999984' weight='40.689325099999984',
+	id=44 sid=24 tid=46 w='8.176795699999953' weight='8.176795699999953',
+	id=45 sid=24 tid=41 w='17.721115750000045' weight='17.721115750000045',
+	id=46 sid=24 tid=53 w='28.48093535' weight='28.48093535',
+	id=47 sid=25 tid=26 w='39.51898620000005' weight='39.51898620000005',
+	id=48 sid=26 tid=59 w='13.889405499999967' weight='13.889405499999967',
+	id=49 sid=27 tid=46 w='17.641445300000054' weight='17.641445300000054',
+	id=50 sid=27 tid=47 w='22.617275050000075' weight='22.617275050000075',
+	id=51 sid=28 tid=37 w='29.36497669999998' weight='29.36497669999998',
+	id=52 sid=28 tid=50 w='14.936861199999992' weight='14.936861199999992',
+	id=53 sid=29 tid=30 w='8.700086500000026' weight='8.700086500000026',
+	id=54 sid=29 tid=44 w='10.52246310000006' weight='10.52246310000006',
+	id=55 sid=29 tid=45 w='27.922458699999957' weight='27.922458699999957',
+	id=56 sid=30 tid=31 w='28.445749500000055' weight='28.445749500000055',
+	id=57 sid=31 tid=50 w='45.887550999999945' weight='45.887550999999945',
+	id=58 sid=31 tid=45 w='8.176795699999971' weight='8.176795699999971',
+	id=59 sid=31 tid=56 w='22.035735299999914' weight='22.035735299999914',
+	id=60 sid=32 tid=41 w='10.026467499999953' weight='10.026467499999953',
+	id=61 sid=32 tid=42 w='42.55107449999999' weight='42.55107449999999',
+	id=62 sid=33 tid=50 w='10.106137949999951' weight='10.106137949999951',
+	id=63 sid=33 tid=47 w='15.081967699999964' weight='15.081967699999964',
+	id=64 sid=33 tid=45 w='47.816893249999964' weight='47.816893249999964',
+	id=65 sid=33 tid=64 w='9.769106399999998' weight='9.769106399999998',
+	id=66 sid=34 tid=48 w='8.912668599999996' weight='8.912668599999996',
+	id=67 sid=34 tid=49 w='12.207233800000026' weight='12.207233800000026',
+	id=68 sid=35 tid=49 w='12.283190599999926' weight='12.283190599999926',
+	id=69 sid=35 tid=44 w='45.64194209999993' weight='45.64194209999993',
+	id=70 sid=36 tid=51 w='8.656939949999995' weight='8.656939949999995',
+	id=71 sid=36 tid=52 w='24.761121100000018' weight='24.761121100000018',
+	id=72 sid=37 tid=38 w='37.44447760000002' weight='37.44447760000002',
+	id=73 sid=37 tid=67 w='13.411911899999973' weight='13.411911899999973',
+	id=74 sid=38 tid=39 w='50.85638949999999' weight='50.85638949999999',
+	id=75 sid=39 tid=57 w='18.188991950000016' weight='18.188991950000016',
+	id=76 sid=39 tid=55 w='25.91980054999992' weight='25.91980054999992',
+	id=77 sid=39 tid=72 w='44.89689124999988' weight='44.89689124999988',
+	id=78 sid=40 tid=41 w='99.80870519999998' weight='99.80870519999998',
+	id=79 sid=40 tid=48 w='39.12213274999997' weight='39.12213274999997',
+	id=80 sid=40 tid=54 w='11.35170454999998' weight='11.35170454999998',
+	id=81 sid=40 tid=59 w='17.72111575000001' weight='17.72111575000001',
+	id=82 sid=41 tid=47 w='30.873741200000012' weight='30.873741200000012',
+	id=83 sid=42 tid=54 w='55.93239364999995' weight='55.93239364999995',
+	id=84 sid=42 tid=63 w='15.791773500000009' weight='15.791773500000009',
+	id=85 sid=42 tid=70 w='9.954139399999974' weight='9.954139399999974',
+	id=86 sid=42 tid=71 w='31.584151149999958' weight='31.584151149999958',
+	id=87 sid=43 tid=45 w='16.062148949999987' weight='16.062148949999987',
+	id=88 sid=43 tid=60 w='21.814864800000002' weight='21.814864800000002',
+	id=89 sid=44 tid=60 w='11.647279749999875' weight='11.647279749999875',
+	id=90 sid=45 tid=48 w='75.32217119999999' weight='75.32217119999999',
+	id=91 sid=45 tid=58 w='63.49232084999997' weight='63.49232084999997',
+	id=92 sid=45 tid=57 w='61.917121050000006' weight='61.917121050000006',
+	id=93 sid=45 tid=53 w='17.40661564999998' weight='17.40661564999998',
+	id=94 sid=46 tid=56 w='23.85181570000003' weight='23.85181570000003',
+	id=95 sid=47 tid=56 w='18.875985950000015' weight='18.875985950000015',
+	id=96 sid=49 tid=57 w='10.110484949999957' weight='10.110484949999957',
+	id=97 sid=49 tid=58 w='8.535285149999986' weight='8.535285149999986',
+	id=98 sid=51 tid=54 w='18.120599450000014' weight='18.120599450000014',
+	id=99 sid=51 tid=55 w='25.16060480000006' weight='25.16060480000006',
+	id=100 sid=52 tid=55 w='9.056423650000035' weight='9.056423650000035',
+	id=101 sid=52 tid=66 w='17.308237149999943' weight='17.308237149999943',
+	id=102 sid=53 tid=56 w='12.805915349999907' weight='12.805915349999907',
+	id=103 sid=53 tid=68 w='62.96252744999996' weight='62.96252744999996',
+	id=104 sid=54 tid=61 w='26.610792900000007' weight='26.610792900000007',
+	id=105 sid=55 tid=71 w='17.30823714999995' weight='17.30823714999995',
+	id=106 sid=55 tid=68 w='28.54655064999998' weight='28.54655064999998',
+	id=107 sid=56 tid=69 w='13.500759100000003' weight='13.500759100000003',
+	id=108 sid=57 tid=61 w='28.10056354999999' weight='28.10056354999999',
+	id=109 sid=58 tid=62 w='61.37992315000003' weight='61.37992315000003',
+	id=110 sid=58 tid=61 w='26.11320474999988' weight='26.11320474999988',
+	id=111 sid=59 tid=68 w='8.365242400000064' weight='8.365242400000064',
+	id=112 sid=60 tid=65 w='39.05596510000002' weight='39.05596510000002',
+	id=113 sid=61 tid=68 w='8.176795699999936' weight='8.176795699999936',
+	id=114 sid=61 tid=72 w='38.54787825' weight='38.54787825',
+	id=115 sid=62 tid=63 w='28.299742950000013' weight='28.299742950000013',
+	id=116 sid=63 tid=64 w='22.755500600000005' weight='22.755500600000005',
+	id=117 sid=63 tid=72 w='25.018051000000085' weight='25.018051000000085',
+	id=118 sid=64 tid=65 w='25.789463800000007' weight='25.789463800000007',
+	id=119 sid=64 tid=66 w='29.491454599999965' weight='29.491454599999965',
+	id=120 sid=65 tid=67 w='35.29743204999999' weight='35.29743204999999',
+	id=121 sid=65 tid=70 w='8.871597300000005' weight='8.871597300000005',
+	id=122 sid=65 tid=72 w='11.089560899999952' weight='11.089560899999952',
+	id=123 sid=66 tid=67 w='17.66798705' weight='17.66798705',
+	id=124 sid=66 tid=71 w='9.056423650000031' weight='9.056423650000031',
+	id=125 sid=69 tid=70 w='14.815147850000024' weight='14.815147850000024',
+	id=126 sid=69 tid=72 w='15.543009749999925' weight='15.543009749999925',
+	id=127 sid=71 tid=72 w='40.81042865000005' weight='40.81042865000005'
+;
+END; [NETWORK]
+
+BEGIN ALGORITHM;
+TITLE 'Input Data Filter';
+LINK NETWORK = 'Input Network';
+NAME 'Network Taxa Filter';
+END; [ALGORITHM]
+
+BEGIN NETWORK;
+TITLE 'Working Network';
+LINK ALGORITHM = 'Input Data Filter';
+DIMENSIONS nVertices=72 nEdges=127;
+TYPE Other;
+VERTICES
+	id=1 label='m0' label='m0',
+	id=2 label='Romney' label='Romney',
+	id=3 label='m1' label='m1',
+	id=4 label='Obama' label='Obama',
+	id=5 label='m2' label='m2',
+	id=6 label='m3' label='m3',
+	id=7 label='m4' label='m4',
+	id=8 label='m5' label='m5',
+	id=9 label='Clinton' label='Clinton',
+	id=10 label='m6' label='m6',
+	id=11 label='Trump' label='Trump',
+	id=12 label='m7' label='m7',
+	id=13 label='m8' label='m8',
+	id=14 label='m9' label='m9',
+	id=15 label='White' label='White',
+	id=16 label='m10' label='m10',
+	id=17 label='m11' label='m11',
+	id=18 label='m12' label='m12',
+	id=19 label='m13' label='m13',
+	id=20 label='Poverty' label='Poverty',
+	id=21 label='m14' label='m14',
+	id=22 label='m15' label='m15',
+	id=23 label='High_School' label='High_School',
+	id=24 label='m16' label='m16',
+	id=25 label='Black' label='Black',
+	id=26 label='m17' label='m17',
+	id=27 label='m18' label='m18',
+	id=28 label='m19' label='m19',
+	id=29 label='m20' label='m20',
+	id=30 label='Bachelors' label='Bachelors',
+	id=31 label='m21' label='m21',
+	id=32 label='m22' label='m22',
+	id=33 label='m23' label='m23',
+	id=34 label='m24' label='m24',
+	id=35 label='m25' label='m25',
+	id=36 label='m26' label='m26',
+	id=37 label='m27' label='m27',
+	id=38 label='Hispanic' label='Hispanic',
+	id=39 label='m28' label='m28',
+	id=40 label='m29' label='m29',
+	id=41 label='m30' label='m30',
+	id=42 label='m31' label='m31',
+	id=43 label='m32' label='m32',
+	id=44 label='m33' label='m33',
+	id=45 label='m34' label='m34',
+	id=46 label='m35' label='m35',
+	id=47 label='m36' label='m36',
+	id=48 label='m37' label='m37',
+	id=49 label='m38' label='m38',
+	id=50 label='m39' label='m39',
+	id=51 label='m40' label='m40',
+	id=52 label='m41' label='m41',
+	id=53 label='m42' label='m42',
+	id=54 label='m43' label='m43',
+	id=55 label='m44' label='m44',
+	id=56 label='m45' label='m45',
+	id=57 label='m46' label='m46',
+	id=58 label='m47' label='m47',
+	id=59 label='m48' label='m48',
+	id=60 label='m49' label='m49',
+	id=61 label='m50' label='m50',
+	id=62 label='Density' label='Density',
+	id=63 label='m51' label='m51',
+	id=64 label='m52' label='m52',
+	id=65 label='m53' label='m53',
+	id=66 label='m54' label='m54',
+	id=67 label='m55' label='m55',
+	id=68 label='m56' label='m56',
+	id=69 label='m57' label='m57',
+	id=70 label='m58' label='m58',
+	id=71 label='m59' label='m59',
+	id=72 label='m60' label='m60'
+;
+EDGES
+	id=1 sid=1 tid=2 weight='8.449319164999991' w='8.449319164999991',
+	id=2 sid=1 tid=6 weight='8.176795699999985' w='8.176795699999985',
+	id=3 sid=1 tid=7 weight='51.062574285' w='51.062574285',
+	id=4 sid=3 tid=4 weight='10.50501816500001' w='10.50501816500001',
+	id=5 sid=3 tid=8 weight='12.88630024999999' w='12.88630024999999',
+	id=6 sid=3 tid=14 weight='107.425853735' w='107.425853735',
+	id=7 sid=4 tid=5 weight='94.36355370000001' w='94.36355370000001',
+	id=8 sid=5 tid=11 weight='182.1573634' w='182.1573634',
+	id=9 sid=5 tid=17 weight='174.64416495' w='174.64416495',
+	id=10 sid=5 tid=25 weight='19.371546999999993' w='19.371546999999993',
+	id=11 sid=5 tid=40 weight='16.315728950000008' w='16.315728950000008',
+	id=12 sid=6 tid=11 weight='21.01223336500002' w='21.01223336500002',
+	id=13 sid=6 tid=12 weight='20.25913438499999' w='20.25913438499999',
+	id=14 sid=6 tid=13 weight='66.03292928499998' w='66.03292928499998',
+	id=15 sid=7 tid=15 weight='47.50226794999999' w='47.50226794999999',
+	id=16 sid=7 tid=17 weight='21.081884799999983' w='21.081884799999983',
+	id=17 sid=7 tid=27 weight='36.06225884999998' w='36.06225884999998',
+	id=18 sid=7 tid=28 weight='38.76684295000002' w='38.76684295000002',
+	id=19 sid=8 tid=9 weight='8.364724514999999' w='8.364724514999999',
+	id=20 sid=8 tid=16 weight='17.186934484999995' w='17.186934484999995',
+	id=21 sid=9 tid=10 weight='54.147163349999985' w='54.147163349999985',
+	id=22 sid=10 tid=48 weight='17.406615649999978' w='17.406615649999978',
+	id=23 sid=10 tid=26 weight='9.89500414999997' w='9.89500414999997',
+	id=24 sid=10 tid=61 weight='20.536439449999953' w='20.536439449999953',
+	id=25 sid=12 tid=17 weight='8.266297499999936' w='8.266297499999936',
+	id=26 sid=12 tid=18 weight='116.15624734999996' w='116.15624734999996',
+	id=27 sid=13 tid=25 weight='114.48374775' w='114.48374775',
+	id=28 sid=13 tid=32 weight='10.985765900000004' w='10.985765900000004',
+	id=29 sid=13 tid=33 weight='36.804006900000005' w='36.804006900000005',
+	id=30 sid=14 tid=15 weight='91.5086383' w='91.5086383',
+	id=31 sid=14 tid=23 weight='36.1483106' w='36.1483106',
+	id=32 sid=14 tid=43 weight='12.886300249999962' w='12.886300249999962',
+	id=33 sid=16 tid=21 weight='12.17122424999998' w='12.17122424999998',
+	id=34 sid=16 tid=22 weight='9.89500414999997' w='9.89500414999997',
+	id=35 sid=18 tid=19 weight='15.17419894999999' w='15.17419894999999',
+	id=36 sid=18 tid=36 weight='12.309242199999971' w='12.309242199999971',
+	id=37 sid=19 tid=20 weight='7.980151750000061' w='7.980151750000061',
+	id=38 sid=19 tid=26 weight='66.87480844999996' w='66.87480844999996',
+	id=39 sid=21 tid=34 weight='9.895004149999977' w='9.895004149999977',
+	id=40 sid=21 tid=26 weight='26.319284249999974' w='26.319284249999974',
+	id=41 sid=22 tid=34 weight='12.17122424999998' w='12.17122424999998',
+	id=42 sid=22 tid=35 weight='12.319200150000015' w='12.319200150000015',
+	id=43 sid=23 tid=24 weight='40.689325099999984' w='40.689325099999984',
+	id=44 sid=24 tid=46 weight='8.176795699999953' w='8.176795699999953',
+	id=45 sid=24 tid=41 weight='17.721115750000045' w='17.721115750000045',
+	id=46 sid=24 tid=53 weight='28.48093535' w='28.48093535',
+	id=47 sid=25 tid=26 weight='39.51898620000005' w='39.51898620000005',
+	id=48 sid=26 tid=59 weight='13.889405499999967' w='13.889405499999967',
+	id=49 sid=27 tid=46 weight='17.641445300000054' w='17.641445300000054',
+	id=50 sid=27 tid=47 weight='22.617275050000075' w='22.617275050000075',
+	id=51 sid=28 tid=37 weight='29.36497669999998' w='29.36497669999998',
+	id=52 sid=28 tid=50 weight='14.936861199999992' w='14.936861199999992',
+	id=53 sid=29 tid=30 weight='8.700086500000026' w='8.700086500000026',
+	id=54 sid=29 tid=44 weight='10.52246310000006' w='10.52246310000006',
+	id=55 sid=29 tid=45 weight='27.922458699999957' w='27.922458699999957',
+	id=56 sid=30 tid=31 weight='28.445749500000055' w='28.445749500000055',
+	id=57 sid=31 tid=50 weight='45.887550999999945' w='45.887550999999945',
+	id=58 sid=31 tid=45 weight='8.176795699999971' w='8.176795699999971',
+	id=59 sid=31 tid=56 weight='22.035735299999914' w='22.035735299999914',
+	id=60 sid=32 tid=41 weight='10.026467499999953' w='10.026467499999953',
+	id=61 sid=32 tid=42 weight='42.55107449999999' w='42.55107449999999',
+	id=62 sid=33 tid=50 weight='10.106137949999951' w='10.106137949999951',
+	id=63 sid=33 tid=47 weight='15.081967699999964' w='15.081967699999964',
+	id=64 sid=33 tid=45 weight='47.816893249999964' w='47.816893249999964',
+	id=65 sid=33 tid=64 weight='9.769106399999998' w='9.769106399999998',
+	id=66 sid=34 tid=48 weight='8.912668599999996' w='8.912668599999996',
+	id=67 sid=34 tid=49 weight='12.207233800000026' w='12.207233800000026',
+	id=68 sid=35 tid=49 weight='12.283190599999926' w='12.283190599999926',
+	id=69 sid=35 tid=44 weight='45.64194209999993' w='45.64194209999993',
+	id=70 sid=36 tid=51 weight='8.656939949999995' w='8.656939949999995',
+	id=71 sid=36 tid=52 weight='24.761121100000018' w='24.761121100000018',
+	id=72 sid=37 tid=38 weight='37.44447760000002' w='37.44447760000002',
+	id=73 sid=37 tid=67 weight='13.411911899999973' w='13.411911899999973',
+	id=74 sid=38 tid=39 weight='50.85638949999999' w='50.85638949999999',
+	id=75 sid=39 tid=57 weight='18.188991950000016' w='18.188991950000016',
+	id=76 sid=39 tid=55 weight='25.91980054999992' w='25.91980054999992',
+	id=77 sid=39 tid=72 weight='44.89689124999988' w='44.89689124999988',
+	id=78 sid=40 tid=41 weight='99.80870519999998' w='99.80870519999998',
+	id=79 sid=40 tid=48 weight='39.12213274999997' w='39.12213274999997',
+	id=80 sid=40 tid=54 weight='11.35170454999998' w='11.35170454999998',
+	id=81 sid=40 tid=59 weight='17.72111575000001' w='17.72111575000001',
+	id=82 sid=41 tid=47 weight='30.873741200000012' w='30.873741200000012',
+	id=83 sid=42 tid=54 weight='55.93239364999995' w='55.93239364999995',
+	id=84 sid=42 tid=63 weight='15.791773500000009' w='15.791773500000009',
+	id=85 sid=42 tid=70 weight='9.954139399999974' w='9.954139399999974',
+	id=86 sid=42 tid=71 weight='31.584151149999958' w='31.584151149999958',
+	id=87 sid=43 tid=45 weight='16.062148949999987' w='16.062148949999987',
+	id=88 sid=43 tid=60 weight='21.814864800000002' w='21.814864800000002',
+	id=89 sid=44 tid=60 weight='11.647279749999875' w='11.647279749999875',
+	id=90 sid=45 tid=48 weight='75.32217119999999' w='75.32217119999999',
+	id=91 sid=45 tid=58 weight='63.49232084999997' w='63.49232084999997',
+	id=92 sid=45 tid=57 weight='61.917121050000006' w='61.917121050000006',
+	id=93 sid=45 tid=53 weight='17.40661564999998' w='17.40661564999998',
+	id=94 sid=46 tid=56 weight='23.85181570000003' w='23.85181570000003',
+	id=95 sid=47 tid=56 weight='18.875985950000015' w='18.875985950000015',
+	id=96 sid=49 tid=57 weight='10.110484949999957' w='10.110484949999957',
+	id=97 sid=49 tid=58 weight='8.535285149999986' w='8.535285149999986',
+	id=98 sid=51 tid=54 weight='18.120599450000014' w='18.120599450000014',
+	id=99 sid=51 tid=55 weight='25.16060480000006' w='25.16060480000006',
+	id=100 sid=52 tid=55 weight='9.056423650000035' w='9.056423650000035',
+	id=101 sid=52 tid=66 weight='17.308237149999943' w='17.308237149999943',
+	id=102 sid=53 tid=56 weight='12.805915349999907' w='12.805915349999907',
+	id=103 sid=53 tid=68 weight='62.96252744999996' w='62.96252744999996',
+	id=104 sid=54 tid=61 weight='26.610792900000007' w='26.610792900000007',
+	id=105 sid=55 tid=71 weight='17.30823714999995' w='17.30823714999995',
+	id=106 sid=55 tid=68 weight='28.54655064999998' w='28.54655064999998',
+	id=107 sid=56 tid=69 weight='13.500759100000003' w='13.500759100000003',
+	id=108 sid=57 tid=61 weight='28.10056354999999' w='28.10056354999999',
+	id=109 sid=58 tid=62 weight='61.37992315000003' w='61.37992315000003',
+	id=110 sid=58 tid=61 weight='26.11320474999988' w='26.11320474999988',
+	id=111 sid=59 tid=68 weight='8.365242400000064' w='8.365242400000064',
+	id=112 sid=60 tid=65 weight='39.05596510000002' w='39.05596510000002',
+	id=113 sid=61 tid=68 weight='8.176795699999936' w='8.176795699999936',
+	id=114 sid=61 tid=72 weight='38.54787825' w='38.54787825',
+	id=115 sid=62 tid=63 weight='28.299742950000013' w='28.299742950000013',
+	id=116 sid=63 tid=64 weight='22.755500600000005' w='22.755500600000005',
+	id=117 sid=63 tid=72 weight='25.018051000000085' w='25.018051000000085',
+	id=118 sid=64 tid=65 weight='25.789463800000007' w='25.789463800000007',
+	id=119 sid=64 tid=66 weight='29.491454599999965' w='29.491454599999965',
+	id=120 sid=65 tid=67 weight='35.29743204999999' w='35.29743204999999',
+	id=121 sid=65 tid=70 weight='8.871597300000005' w='8.871597300000005',
+	id=122 sid=65 tid=72 weight='11.089560899999952' w='11.089560899999952',
+	id=123 sid=66 tid=67 weight='17.66798705' w='17.66798705',
+	id=124 sid=66 tid=71 weight='9.056423650000031' w='9.056423650000031',
+	id=125 sid=69 tid=70 weight='14.815147850000024' w='14.815147850000024',
+	id=126 sid=69 tid=72 weight='15.543009749999925' w='15.543009749999925',
+	id=127 sid=71 tid=72 weight='40.81042865000005' w='40.81042865000005'
+;
+END; [NETWORK]
+
+BEGIN ALGORITHM;
+TITLE 'Show Network';
+LINK NETWORK = 'Working Network';
+NAME 'Show Network';
+OPTIONS
+	View = 'Network';
+END; [ALGORITHM]
+
+BEGIN VIEW;
+TITLE 'Network';
+LINK ALGORITHM = 'Show Network';
+NAME 'NetworkView';
+INPUT 'NETWORK';
+OPTIONS
+	Diagram = 'Network',
+	FontScaleFactor = 1,
+	TraitLegend = 'False',
+	TraitSize = 32,
+	SitesStyle = 'None',
+	Edits = 'mn:1:-343.58,-0.09' 'mn:2:-393.43,-1.4' 'mn:3:203.27,-122.33' 'mn:4:284.67,-65.66' 'mn:5:3.49,-35.07' 'mn:6:-298.14,25.82' 'mn:7:-245.96,-78.07' 'mn:8:288.5,-34.19' 'mn:9:312.04,-12.13' 'mn:10:221.39,84.53' 'mn:11:-291.8,78.87' 'mn:12:-235.44,64.55' 'mn:13:-153.56,-24.37' 'mn:14:37.16,-208.67' 'mn:15:-190.52,-184.21' 'mn:16:286.58,37.66' 'mn:17:-240,9.72' 'mn:18:-52.77,253.75' 'mn:19:23.6,268.91' 'mn:20:34.37,317.58' 'mn:21:251.55,78.78' 'mn:22:259.2,3.22' 'mn:23:-34.07,-261.07' 'mn:24:-64.87,-158.06' 'mn:25:155.68,111.15' 'mn:26:139.04,148.82' 'mn:27:-179.93,-156.19' 'mn:28:-169.26,-79.67' 'mn:29:114.64,-171.8' 'mn:30:97.5,-210.3' 'mn:31:17.05,-144.75' 'mn:32:-149.57,-66.78' 'mn:33:-81.6,-66.99' 'mn:34:215.96,36.06' 'mn:35:216.07,-33.49' 'mn:36:-26.45,226.61' 'mn:37:-168.54,31.53' 'mn:38:-51.54,104.57' 'mn:39:-21.35,74.67' 'mn:40:6.38,97.99' 'mn:41:-74.62,-85.41' 'mn:42:-90.01,43.78' 'mn:43:68.69,-169.35' 'mn:44:142.82,-128.92' 'mn:45:52.67,-105.63' 'mn:46:-110.25,-172.5' 'mn:47:-114.28,-127.77' 'mn:48:186.33,20.06' 'mn:49:183.76,-3.06' 'mn:50:-143.33,-93.95' 'mn:51:10.13,199.06' 'mn:52:-80.12,175.65' 'mn:53:-5.41,-74.8' 'mn:54:36.72,128.51' 'mn:55:-9.2,137.6' 'mn:56:-54.21,-99.67' 'mn:57:110.16,8.38' 'mn:58:129.26,-14.22' 'mn:59:113.45,122.05' 'mn:60:87.35,-109.06' 'mn:61:158.44,68.89' 'mn:62:74.26,12.21' 'mn:63:-34.48,60.82' 'mn:64:-107.01,-39.96' 'mn:65:-5.25,-51.01' 'mn:66:-132.31,101.66' 'mn:67:-141.75,21.83' 'mn:68:66.03,100.18' 'mn:69:-25.73,-57.68' 'mn:70:-71.07,-32.17' 'mn:71:-58.49,65.53' 'mn:72:-15.26,4.96' 'ml:25:7,7' 'ml:62:-15,-71' 'ml:23:-1,0' 'ml:38:9,-25' 'ml:20:-1,0' 'ml:9:-1,0' 'ml:11:-38,-14' 'ml:2:-1,0' 'ml:30:-1,0' 'ml:4:14,-1' 'ml:15:-1,0',
+	LayoutSeed = 36;
+END; [VIEW]

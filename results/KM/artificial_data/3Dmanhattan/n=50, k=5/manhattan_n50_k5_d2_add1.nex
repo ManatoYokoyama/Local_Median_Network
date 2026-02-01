@@ -1,0 +1,171 @@
+#nexus [SplitsTree6]
+
+BEGIN SPLITSTREE6;
+DIMENSIONS nDataNodes=6 nAlgorithms=4;
+PROGRAM version='SplitsTree App (version 6.6.1, built 23 Oct 2025)';
+WORKFLOW creationDate='1768937859625'; [Wed Jan 21 04:37:39 JST 2026]
+END; [SPLITSTREE6]
+
+[
+Methods:
+Analysis was performed using SplitsTree App 6.0.0 (Huson and Bryant 2024).
+The original input consisted of 12 taxa and 12 nodes and 14 edges.
+
+References:
+Huson and Bryant 2024: D.H. Huson and D. Bryant. The SplitsTree App: interactive analysis and visualization using phylogenetic trees and networks. Nature Methods, 2024.
+]
+
+BEGIN TAXA;
+TITLE 'Input Taxa';
+LINK ALGORITHM = 'Input Data Loader';
+DIMENSIONS ntax=12;
+TAXLABELS
+	[1] 'v1'
+	[2] 'v2'
+	[3] 'v3'
+	[4] 'v4'
+	[5] 'v5'
+	[6] 'v6'
+	[7] 'm0'
+	[8] 'm1'
+	[9] 'm2'
+	[10] 'm3'
+	[11] 'm4'
+	[12] 'm5'
+;
+[DISPLAYLABELS;]
+[TAXINFO;]
+END; [TAXA]
+
+BEGIN ALGORITHM;
+TITLE 'Taxa Filter';
+LINK ALGORITHM = 'Input Data Loader';
+NAME 'Taxa Filter';
+OPTIONS
+;
+END; [ALGORITHM]
+
+BEGIN TAXA;
+TITLE 'Working Taxa';
+LINK ALGORITHM = 'Taxa Filter';
+DIMENSIONS ntax=12;
+TAXLABELS
+	[1] 'v1'
+	[2] 'v2'
+	[3] 'v3'
+	[4] 'v4'
+	[5] 'v5'
+	[6] 'v6'
+	[7] 'm0'
+	[8] 'm1'
+	[9] 'm2'
+	[10] 'm3'
+	[11] 'm4'
+	[12] 'm5'
+;
+[DISPLAYLABELS;]
+[TAXINFO;]
+END; [TAXA]
+
+BEGIN NETWORK;
+TITLE 'Input Network';
+LINK ALGORITHM = 'Input Data Loader';
+DIMENSIONS nVertices=12 nEdges=14;
+TYPE Other;
+VERTICES
+	id=1 label='v1' label='v1',
+	id=2 label='v2' label='v2',
+	id=3 label='v3' label='v3',
+	id=4 label='v4' label='v4',
+	id=5 label='v5' label='v5',
+	id=6 label='v6' label='v6',
+	id=7 label='m0' label='m0',
+	id=8 label='m1' label='m1',
+	id=9 label='m2' label='m2',
+	id=10 label='m3' label='m3',
+	id=11 label='m4' label='m4',
+	id=12 label='m5' label='m5'
+;
+EDGES
+	id=1 sid=1 tid=8 weight='6.0',
+	id=2 sid=2 tid=10 weight='11.0',
+	id=3 sid=3 tid=8 weight='3.0',
+	id=4 sid=3 tid=11 weight='6.0',
+	id=5 sid=4 tid=12 weight='17.0',
+	id=6 sid=5 tid=7 weight='5.0',
+	id=7 sid=5 tid=10 weight='3.0',
+	id=8 sid=5 tid=12 weight='10.0',
+	id=9 sid=6 tid=9 weight='66.0',
+	id=10 sid=7 tid=8 weight='6.0',
+	id=11 sid=7 tid=9 weight='10.0',
+	id=12 sid=7 tid=11 weight='3.0',
+	id=13 sid=9 tid=12 weight='5.0',
+	id=14 sid=10 tid=11 weight='5.0'
+;
+END; [NETWORK]
+
+BEGIN ALGORITHM;
+TITLE 'Input Data Filter';
+LINK NETWORK = 'Input Network';
+NAME 'Network Taxa Filter';
+END; [ALGORITHM]
+
+BEGIN NETWORK;
+TITLE 'Working Network';
+LINK ALGORITHM = 'Input Data Filter';
+DIMENSIONS nVertices=12 nEdges=14;
+TYPE Other;
+VERTICES
+	id=1 label='v1' label='v1',
+	id=2 label='v2' label='v2',
+	id=3 label='v3' label='v3',
+	id=4 label='v4' label='v4',
+	id=5 label='v5' label='v5',
+	id=6 label='v6' label='v6',
+	id=7 label='m0' label='m0',
+	id=8 label='m1' label='m1',
+	id=9 label='m2' label='m2',
+	id=10 label='m3' label='m3',
+	id=11 label='m4' label='m4',
+	id=12 label='m5' label='m5'
+;
+EDGES
+	id=1 sid=1 tid=8 weight='6.0',
+	id=2 sid=2 tid=10 weight='11.0',
+	id=3 sid=3 tid=8 weight='3.0',
+	id=4 sid=3 tid=11 weight='6.0',
+	id=5 sid=4 tid=12 weight='17.0',
+	id=6 sid=5 tid=7 weight='5.0',
+	id=7 sid=5 tid=10 weight='3.0',
+	id=8 sid=5 tid=12 weight='10.0',
+	id=9 sid=6 tid=9 weight='66.0',
+	id=10 sid=7 tid=8 weight='6.0',
+	id=11 sid=7 tid=9 weight='10.0',
+	id=12 sid=7 tid=11 weight='3.0',
+	id=13 sid=9 tid=12 weight='5.0',
+	id=14 sid=10 tid=11 weight='5.0'
+;
+END; [NETWORK]
+
+BEGIN ALGORITHM;
+TITLE 'Show Network';
+LINK NETWORK = 'Working Network';
+NAME 'Show Network';
+OPTIONS
+	View = 'Network';
+END; [ALGORITHM]
+
+BEGIN VIEW;
+TITLE 'Network';
+LINK ALGORITHM = 'Show Network';
+NAME 'NetworkView';
+INPUT 'NETWORK';
+OPTIONS
+	Diagram = 'Network',
+	FontScaleFactor = 1.2,
+	TraitLegend = 'False',
+	TraitSize = 32,
+	SitesStyle = 'None',
+	Edits = 'mn:1:67.71,-185.23' 'mn:2:155.61,156.51' 'mn:3:127.64,-79.04' 'mn:4:-167.48,174.7' 'mn:5:23.07,58.37' 'mn:6:-311.66,-135.76' 'mn:7:28.77,-23.85' 'mn:8:68.09,-103.27' 'mn:9:-82.92,-6.57' 'mn:10:84.08,75.26' 'mn:11:91.4,-3.09' 'mn:12:-84.32,71.98',
+	LayoutSeed = 1;
+END; [VIEW]

@@ -1,0 +1,318 @@
+#nexus [SplitsTree6]
+
+BEGIN SPLITSTREE6;
+DIMENSIONS nDataNodes=9 nAlgorithms=7;
+PROGRAM version='SplitsTree App (version 6.7.2, built 17 Jan 2026)';
+WORKFLOW creationDate='1769286178499'; [Sun Jan 25 05:22:58 JST 2026]
+END; [SPLITSTREE6]
+
+[
+Methods:
+Analysis was performed using SplitsTree App 6.0.0 (Huson and Bryant 2024).
+The original input consisted of 16 taxa and a 16 x 16 distance matrix.
+The Neighbor Net method (Bryant & Moulton 2004, Bryant & Huson 2023) was used (default options) so as to obtain 42 splits, circular.
+The PCOA method (Gower 1966) was used (default options) so as to obtain 16 nodes and 0 edges.
+The Show Splits method was used (default options) so as to obtain a Split Network visualization.
+
+References:
+Bryant & Huson 2023: D. Bryant and DH Huson, NeighborNet- improved algorithms and implementation. Front. Bioinform. 3, 2023.
+Bryant & Moulton 2004: D. Bryant and V. Moulton. Neighbor-net: An agglomerative method for the construction of phylogenetic networks. Molecular Biology and Evolution, 21(2):255– 265, 2004.
+Gower 1966: JC Gower,. Some distance properties of latent root and vector methods used in multivariate analysis. Biometrika, 53(3-4):325-338, 1996.
+Huson and Bryant 2024: D.H. Huson and D. Bryant. The SplitsTree App: interactive analysis and visualization using phylogenetic trees and networks. Nature Methods, 2024.
+]
+
+BEGIN TAXA;
+TITLE 'Input Taxa';
+LINK ALGORITHM = 'Input Data Loader';
+DIMENSIONS ntax=16;
+TAXLABELS
+	[1] 'gender'
+	[2] 'SeniorCitizen'
+	[3] 'Partner'
+	[4] 'Dependents'
+	[5] 'PhoneService'
+	[6] 'MultipleLines'
+	[7] 'InternetService'
+	[8] 'OnlineSecurity'
+	[9] 'OnlineBackup'
+	[10] 'DeviceProtection'
+	[11] 'TechSupport'
+	[12] 'StreamingTV'
+	[13] 'StreamingMovies'
+	[14] 'Contract'
+	[15] 'PaperlessBilling'
+	[16] 'PaymentMethod'
+;
+DISPLAYLABELS
+	[1] '<bg black><c white><b>gender'
+	[2] '<bg black><c white><b>SeniorCitizen'
+	[3] '<bg red><c white><b>Partner'
+	[4] '<bg red><c white><b>Dependents'
+	[5] '<bg blue><c white><b>PhoneService'
+	[6] '<bg blue><c white><b>MultipleLines'
+	[7] '<bg yellow><c black><b>InternetService'
+	[8] '<bg yellow><c black><b>OnlineSecurity'
+	[9] '<bg yellow><c black><b>OnlineBackup'
+	[10] '<bg yellow><c black><b>DeviceProtection'
+	[11] '<bg yellow><c black><b>TechSupport'
+	[12] '<bg yellow><c black><b>StreamingTV'
+	[13] '<bg yellow><c black><b>StreamingMovies'
+	[14] '<bg black><c white><b>Contract'
+	[15] '<bg black><c white><b>PaperlessBilling'
+	[16] '<bg black><c white><b>PaymentMethod'
+;
+[TAXINFO;]
+END; [TAXA]
+
+BEGIN ALGORITHM;
+TITLE 'Taxa Filter';
+LINK ALGORITHM = 'Input Data Loader';
+NAME 'Taxa Filter';
+OPTIONS
+;
+END; [ALGORITHM]
+
+BEGIN TAXA;
+TITLE 'Working Taxa';
+LINK ALGORITHM = 'Taxa Filter';
+DIMENSIONS ntax=16;
+TAXLABELS
+	[1] 'gender'
+	[2] 'SeniorCitizen'
+	[3] 'Partner'
+	[4] 'Dependents'
+	[5] 'PhoneService'
+	[6] 'MultipleLines'
+	[7] 'InternetService'
+	[8] 'OnlineSecurity'
+	[9] 'OnlineBackup'
+	[10] 'DeviceProtection'
+	[11] 'TechSupport'
+	[12] 'StreamingTV'
+	[13] 'StreamingMovies'
+	[14] 'Contract'
+	[15] 'PaperlessBilling'
+	[16] 'PaymentMethod'
+;
+DISPLAYLABELS
+	[1] '<bg black><c white><b>gender'
+	[2] '<bg black><c white><b>SeniorCitizen'
+	[3] '<bg red><c white><b>Partner'
+	[4] '<bg red><c white><b>Dependents'
+	[5] '<bg blue><c white><b>PhoneService'
+	[6] '<bg blue><c white><b>MultipleLines'
+	[7] '<bg yellow><c black><b>InternetService'
+	[8] '<bg yellow><c black><b>OnlineSecurity'
+	[9] '<bg yellow><c black><b>OnlineBackup'
+	[10] '<bg yellow><c black><b>DeviceProtection'
+	[11] '<bg yellow><c black><b>TechSupport'
+	[12] '<bg yellow><c black><b>StreamingTV'
+	[13] '<bg yellow><c black><b>StreamingMovies'
+	[14] '<bg black><c white><b>Contract'
+	[15] '<bg black><c white><b>PaperlessBilling'
+	[16] '<bg black><c white><b>PaymentMethod'
+;
+[TAXINFO;]
+END; [TAXA]
+
+BEGIN DISTANCES;
+TITLE 'Input Distances';
+LINK ALGORITHM = 'Input Data Loader';
+DIMENSIONS ntax=16;
+FORMAT labels=left diagonal triangle=Both;
+MATRIX
+[1] 'gender'             0 100 100 99.498744 99.498744 99.498744 99.498744 98.994949 99.498744 99.498744 99.498744 99.498744 99.498744 99.498744 99.498744 98.994949
+[2] 'SeniorCitizen'      100 0 98.994949 88.881944 99.498744 92.195445 85.440037 88.881944 90.553851 90.553851 88.317609 90 90 92.736185 91.651514 89.442719
+[3] 'Partner'            100 98.994949 0 74.161985 98.994949 92.736185 100 92.195445 92.195445 91.104336 93.273791 92.736185 93.273791 83.666003 99.498744 91.651514
+[4] 'Dependents'         99.498744 88.881944 74.161985 0 100 98.488578 90.553851 90 91.651514 91.651514 90.553851 92.195445 92.736185 87.177979 94.339811 92.195445
+[5] 'PhoneService'       99.498744 99.498744 98.994949 100 0 0 74.161985 90.553851 91.104336 91.104336 90.553851 90.553851 90.553851 100 98.994949 99.498744
+[6] 'MultipleLines'      99.498744 92.195445 92.736185 98.488578 0 0 77.459667 87.749644 86.60254 86.60254 87.749644 86.023253 86.023253 95.91663 91.104336 91.104336
+[7] 'InternetService'    99.498744 85.440037 100 90.553851 74.161985 77.459667 0 52.915026 53.851648 53.851648 52.915026 52.915026 52.915026 88.881944 78.740079 83.066239
+[8] 'OnlineSecurity'     98.994949 88.881944 92.195445 90 90.553851 87.749644 52.915026 0 52.915026 52.915026 51.961524 53.851648 53.851648 83.666003 81.240384 83.666003
+[9] 'OnlineBackup'       99.498744 90.553851 92.195445 91.651514 91.104336 86.60254 53.851648 52.915026 0 52.915026 52.915026 53.851648 53.851648 86.023253 82.462113 84.852814
+[10] 'DeviceProtection'   99.498744 90.553851 91.104336 91.651514 91.104336 86.60254 53.851648 52.915026 52.915026 0 51.961524 51.961524 50.990195 83.666003 82.462113 84.261498
+[11] 'TechSupport'        99.498744 88.317609 93.273791 90.553851 90.553851 87.749644 52.915026 51.961524 52.915026 51.961524 0 52.915026 52.915026 81.853528 81.853528 83.066239
+[12] 'StreamingTV'        99.498744 90 92.736185 92.195445 90.553851 86.023253 52.915026 53.851648 53.851648 51.961524 52.915026 0 47.958315 87.177979 81.240384 85.440037
+[13] 'StreamingMovies'    99.498744 90 93.273791 92.736185 90.553851 86.023253 52.915026 53.851648 53.851648 50.990195 52.915026 47.958315 0 87.177979 81.853528 85.440037
+[14] 'Contract'           99.498744 92.736185 83.666003 87.177979 100 95.91663 88.881944 83.666003 86.023253 83.666003 81.853528 87.177979 87.177979 0 90.553851 85.440037
+[15] 'PaperlessBilling'   99.498744 91.651514 99.498744 94.339811 98.994949 91.104336 78.740079 81.240384 82.462113 82.462113 81.853528 81.240384 81.853528 90.553851 0 86.60254
+[16] 'PaymentMethod'      98.994949 89.442719 91.651514 92.195445 99.498744 91.104336 83.066239 83.666003 84.852814 84.261498 83.066239 85.440037 85.440037 85.440037 86.60254 0
+;
+END; [DISTANCES]
+
+BEGIN ALGORITHM;
+TITLE 'Input Data Filter';
+LINK DISTANCES = 'Input Distances';
+NAME 'Distances Taxa Filter';
+END; [ALGORITHM]
+
+BEGIN DISTANCES;
+TITLE 'Working Distances';
+LINK ALGORITHM = 'Input Data Filter';
+DIMENSIONS ntax=16;
+FORMAT labels=left diagonal triangle=Both;
+MATRIX
+[1] 'gender'             0 100 100 99.498744 99.498744 99.498744 99.498744 98.994949 99.498744 99.498744 99.498744 99.498744 99.498744 99.498744 99.498744 98.994949
+[2] 'SeniorCitizen'      100 0 98.994949 88.881944 99.498744 92.195445 85.440037 88.881944 90.553851 90.553851 88.317609 90 90 92.736185 91.651514 89.442719
+[3] 'Partner'            100 98.994949 0 74.161985 98.994949 92.736185 100 92.195445 92.195445 91.104336 93.273791 92.736185 93.273791 83.666003 99.498744 91.651514
+[4] 'Dependents'         99.498744 88.881944 74.161985 0 100 98.488578 90.553851 90 91.651514 91.651514 90.553851 92.195445 92.736185 87.177979 94.339811 92.195445
+[5] 'PhoneService'       99.498744 99.498744 98.994949 100 0 0 74.161985 90.553851 91.104336 91.104336 90.553851 90.553851 90.553851 100 98.994949 99.498744
+[6] 'MultipleLines'      99.498744 92.195445 92.736185 98.488578 0 0 77.459667 87.749644 86.60254 86.60254 87.749644 86.023253 86.023253 95.91663 91.104336 91.104336
+[7] 'InternetService'    99.498744 85.440037 100 90.553851 74.161985 77.459667 0 52.915026 53.851648 53.851648 52.915026 52.915026 52.915026 88.881944 78.740079 83.066239
+[8] 'OnlineSecurity'     98.994949 88.881944 92.195445 90 90.553851 87.749644 52.915026 0 52.915026 52.915026 51.961524 53.851648 53.851648 83.666003 81.240384 83.666003
+[9] 'OnlineBackup'       99.498744 90.553851 92.195445 91.651514 91.104336 86.60254 53.851648 52.915026 0 52.915026 52.915026 53.851648 53.851648 86.023253 82.462113 84.852814
+[10] 'DeviceProtection'   99.498744 90.553851 91.104336 91.651514 91.104336 86.60254 53.851648 52.915026 52.915026 0 51.961524 51.961524 50.990195 83.666003 82.462113 84.261498
+[11] 'TechSupport'        99.498744 88.317609 93.273791 90.553851 90.553851 87.749644 52.915026 51.961524 52.915026 51.961524 0 52.915026 52.915026 81.853528 81.853528 83.066239
+[12] 'StreamingTV'        99.498744 90 92.736185 92.195445 90.553851 86.023253 52.915026 53.851648 53.851648 51.961524 52.915026 0 47.958315 87.177979 81.240384 85.440037
+[13] 'StreamingMovies'    99.498744 90 93.273791 92.736185 90.553851 86.023253 52.915026 53.851648 53.851648 50.990195 52.915026 47.958315 0 87.177979 81.853528 85.440037
+[14] 'Contract'           99.498744 92.736185 83.666003 87.177979 100 95.91663 88.881944 83.666003 86.023253 83.666003 81.853528 87.177979 87.177979 0 90.553851 85.440037
+[15] 'PaperlessBilling'   99.498744 91.651514 99.498744 94.339811 98.994949 91.104336 78.740079 81.240384 82.462113 82.462113 81.853528 81.240384 81.853528 90.553851 0 86.60254
+[16] 'PaymentMethod'      98.994949 89.442719 91.651514 92.195445 99.498744 91.104336 83.066239 83.666003 84.852814 84.261498 83.066239 85.440037 85.440037 85.440037 86.60254 0
+;
+END; [DISTANCES]
+
+BEGIN ALGORITHM;
+TITLE 'Neighbor Net';
+LINK DISTANCES = 'Working Distances';
+NAME 'Neighbor Net';
+OPTIONS
+	InferenceAlgorithm = 'ActiveSet';
+END; [ALGORITHM]
+
+BEGIN ALGORITHM;
+TITLE 'PCOA';
+LINK DISTANCES = 'Working Distances';
+NAME 'PCOA';
+OPTIONS
+	FirstCoordinate = 1,
+	SecondCoordinate = 2;
+END; [ALGORITHM]
+
+BEGIN SPLITS;
+TITLE 'Splits';
+LINK ALGORITHM = 'Neighbor Net';
+DIMENSIONS ntax=16 nsplits=42;
+FORMAT labels=no weights=yes confidences=no;
+PROPERTIES fit=100 circular;
+CYCLE 1 2 6 5 7 12 13 10 11 8 9 15 16 14 3 4;
+MATRIX
+[1, size=1] 	 51.96915033 	 1,
+[2, size=5] 	 0.69947002 	 1 2 5 6 7,
+[3, size=7] 	 0.25363008 	 1 2 5 6 7 12 13,
+[4, size=4] 	 0.08864499 	 1 2 5 6 7 8 9 10 11 12 13 15,
+[5, size=3] 	 2.63696691 	 1 2 5 6 7 8 9 10 11 12 13 15 16,
+[6, size=2] 	 7.17561764 	 1 2 5 6 7 8 9 10 11 12 13 14 15 16,
+[7, size=1] 	 35.73052405 	 1 2 3 5 6 7 8 9 10 11 12 13 14 15 16,
+[8, size=1] 	 44.5182893 	 1 3 4 5 6 7 8 9 10 11 12 13 14 15 16,
+[9, size=4] 	 1.07773765 	 1 3 4 14,
+[10, size=3] 	 0.24119783 	 1 3 4,
+[11, size=1] 	 0 	 1 2 3 4 5 7 8 9 10 11 12 13 14 15 16,
+[12, size=2] 	 40.3591031 	 1 2 3 4 7 8 9 10 11 12 13 14 15 16,
+[13, size=3] 	 3.58666804 	 1 2 3 4 8 9 10 11 12 13 14 15 16,
+[14, size=5] 	 0.50321308 	 1 2 3 4 8 9 10 11 14 15 16,
+[15, size=6] 	 0.17738061 	 1 2 3 4 8 9 11 14 15 16,
+[16, size=7] 	 1.27439551 	 1 2 3 4 14 15 16,
+[17, size=6] 	 0.9422256 	 1 2 3 4 14 16,
+[18, size=3] 	 0.35969079 	 1 2 4,
+[19, size=1] 	 0 	 1 2 3 4 6 7 8 9 10 11 12 13 14 15 16,
+[20, size=2] 	 3.85910167 	 1 2 3 4 6 8 9 10 11 12 13 14 15 16,
+[21, size=1] 	 18.27047687 	 1 2 3 4 5 6 8 9 10 11 12 13 14 15 16,
+[22, size=7] 	 11.08421726 	 1 2 3 4 5 6 14 15 16,
+[23, size=8] 	 1.46488144 	 1 2 3 4 5 6 14 16,
+[24, size=6] 	 2.70830189 	 1 2 3 4 5 6,
+[25, size=1] 	 23.93659214 	 1 2 3 4 5 6 7 8 9 10 11 13 14 15 16,
+[26, size=2] 	 1.69051741 	 1 2 3 4 5 6 7 8 9 10 11 14 15 16,
+[27, size=3] 	 0.60490898 	 1 2 3 4 5 6 7 8 9 11 14 15 16,
+[28, size=4] 	 0.21558897 	 1 2 3 4 5 6 7 8 9 14 15 16,
+[29, size=1] 	 23.54251143 	 1 2 3 4 5 6 7 8 9 10 11 12 14 15 16,
+[30, size=2] 	 0.52619358 	 1 2 3 4 5 6 7 8 9 11 12 14 15 16,
+[31, size=1] 	 24.97127805 	 1 2 3 4 5 6 7 8 9 11 12 13 14 15 16,
+[32, size=1] 	 25.6611449 	 1 2 3 4 5 6 7 8 9 10 12 13 14 15 16,
+[33, size=2] 	 0.02575933 	 1 2 3 4 5 6 7 9 10 12 13 14 15 16,
+[34, size=1] 	 26.01350626 	 1 2 3 4 5 6 7 9 10 11 12 13 14 15 16,
+[35, size=1] 	 26.73886323 	 1 2 3 4 5 6 7 8 10 11 12 13 14 15 16,
+[36, size=1] 	 41.87052147 	 1 2 3 4 5 6 7 8 9 10 11 12 13 14 16,
+[37, size=2] 	 0.37228056 	 1 2 3 4 5 6 7 8 9 10 11 12 13 14,
+[38, size=1] 	 41.04660532 	 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15,
+[39, size=3] 	 0.98986111 	 1 2 4 5 6 7 8 9 10 11 12 13 15,
+[40, size=1] 	 38.23863481 	 1 2 3 4 5 6 7 8 9 10 11 12 13 15 16,
+[41, size=2] 	 1.47067084 	 1 2 4 5 6 7 8 9 10 11 12 13 15 16,
+[42, size=1] 	 35.51056029 	 1 2 4 5 6 7 8 9 10 11 12 13 14 15 16,
+;
+END; [SPLITS]
+
+BEGIN NETWORK;
+TITLE 'Network';
+LINK ALGORITHM = 'PCOA';
+DIMENSIONS nVertices=16 nEdges=0;
+TYPE Points;
+PROPERTIES info ='PCOA on 16 taxa, PC-1 (21.9%) vs PC-2 (17.2%)';
+VERTICES
+	id=1 label='gender' x='3646.3520386586774' y='511.49329310091457',
+	id=2 label='SeniorCitizen' x='1890.7162802517353' y='1014.7895116450754',
+	id=3 label='Partner' x='3750.95212872057' y='2429.84760693217',
+	id=4 label='Dependents' x='3294.952951466602' y='2865.217458907085',
+	id=5 label='PhoneService' x='2492.6418343103674' y='-6066.814758195971',
+	id=6 label='MultipleLines' x='2503.37188751323' y='-5403.759322597968',
+	id=7 label='InternetService' x='-2639.645964385986' y='-1546.7145049885823',
+	id=8 label='OnlineSecurity' x='-2860.5807321505768' y='391.92552406092824',
+	id=9 label='OnlineBackup' x='-2958.136851054085' y='200.56450830045353',
+	id=10 label='DeviceProtection' x='-2971.760166878527' y='308.5178635682225',
+	id=11 label='TechSupport' x='-2933.305814194105' y='402.0303658517125',
+	id=12 label='StreamingTV' x='-3083.2712026430872' y='59.083507988959425',
+	id=13 label='StreamingMovies' x='-3129.9547737508224' y='24.247125697565128',
+	id=14 label='Contract' x='1724.532442647255' y='2556.0029939157657',
+	id=15 label='PaperlessBilling' x='54.676801277079036' y='736.1371893181271',
+	id=16 label='PaymentMethod' x='1218.4591402116873' y='1517.4316364955387'
+;
+EDGES
+
+;
+END; [NETWORK]
+
+BEGIN ALGORITHM;
+TITLE 'Show Splits';
+LINK SPLITS = 'Splits';
+NAME 'Show Splits';
+OPTIONS
+	View = 'SplitNetwork';
+END; [ALGORITHM]
+
+BEGIN ALGORITHM;
+TITLE 'Show Network';
+LINK NETWORK = 'Network';
+NAME 'Show Network';
+OPTIONS
+	View = 'Network';
+END; [ALGORITHM]
+
+BEGIN VIEW;
+TITLE 'SplitNetwork';
+LINK ALGORITHM = 'Show Splits';
+NAME 'SplitNetworkView';
+INPUT 'SPLITS';
+OPTIONS
+	Diagram = 'Splits',
+	Orientation = 'FlipRotate125Deg',
+	Rooting = 'None',
+	ZoomFactor = 0.71297334,
+	FontScaleFactor = 1,
+	RootAngle = 160,
+	OutlineFill = 0xc0c0c0ff,
+	LabelSplitsBy = 'None',
+	ShowQRCode = 'false';
+END; [VIEW]
+
+BEGIN VIEW;
+TITLE 'Network';
+LINK ALGORITHM = 'Show Network';
+NAME 'NetworkView';
+INPUT 'NETWORK';
+OPTIONS
+	Diagram = 'Network',
+	FontScaleFactor = 1,
+	TraitLegend = 'False',
+	TraitSize = 32,
+	SitesStyle = 'None',
+	LayoutSeed = 1;
+END; [VIEW]

@@ -1,0 +1,811 @@
+#nexus [SplitsTree6]
+
+BEGIN SPLITSTREE6;
+DIMENSIONS nDataNodes=6 nAlgorithms=3;
+PROGRAM version='SplitsTree App (version 6.7.2, built 17 Jan 2026)';
+WORKFLOW creationDate='1769071196249'; [Thu Jan 22 17:39:56 JST 2026]
+END; [SPLITSTREE6]
+
+[
+Methods:
+Analysis was performed using SplitsTree App 6.0.0 (Huson and Bryant 2024).
+The original input consisted of 80 taxa and 80 nodes and 118 edges.
+
+References:
+Huson and Bryant 2024: D.H. Huson and D. Bryant. The SplitsTree App: interactive analysis and visualization using phylogenetic trees and networks. Nature Methods, 2024.
+]
+
+BEGIN TAXA;
+TITLE 'Input Taxa';
+DIMENSIONS ntax=80;
+TAXLABELS
+	[1] 'm0'
+	[2] '大田区'
+	[3] 'm1'
+	[4] '江戸川区'
+	[5] 'm2'
+	[6] '足立区'
+	[7] '葛飾区'
+	[8] 'm4'
+	[9] 'm5'
+	[10] 'm6'
+	[11] 'm7'
+	[12] '杉並区'
+	[13] 'm8'
+	[14] 'm9'
+	[15] '世田谷区'
+	[16] 'm10'
+	[17] 'm11'
+	[18] 'm12'
+	[19] 'm13'
+	[20] 'm14'
+	[21] 'm15'
+	[22] 'm16'
+	[23] '品川区'
+	[24] 'm17'
+	[25] '荒川区'
+	[26] '墨田区'
+	[27] 'm18'
+	[28] 'm19'
+	[29] '練馬区'
+	[30] 'm20'
+	[31] 'm21'
+	[32] '江東区'
+	[33] 'm23'
+	[34] 'm24'
+	[35] '北区'
+	[36] 'm25'
+	[37] 'm26'
+	[38] 'm27'
+	[39] 'm28'
+	[40] '豊島区'
+	[41] '板橋区'
+	[42] 'm29'
+	[43] 'm32'
+	[44] 'm34'
+	[45] 'm35'
+	[46] 'm36'
+	[47] 'm37'
+	[48] '目黒区'
+	[49] 'm38'
+	[50] '中野区'
+	[51] 'm39'
+	[52] '中央区'
+	[53] 'm40'
+	[54] 'm41'
+	[55] 'm42'
+	[56] 'm43'
+	[57] 'm44'
+	[58] 'm45'
+	[59] 'm46'
+	[60] 'm47'
+	[61] '渋谷区'
+	[62] 'm48'
+	[63] 'm49'
+	[64] 'm50'
+	[65] 'm51'
+	[66] 'm52'
+	[67] 'm53'
+	[68] 'm54'
+	[69] 'm55'
+	[70] '台東区'
+	[71] '新宿区'
+	[72] '文京区'
+	[73] 'm56'
+	[74] 'm57'
+	[75] 'm58'
+	[76] '千代田区'
+	[77] '港区'
+	[78] 'm59'
+	[79] 'm60'
+	[80] 'm61'
+;
+DISPLAYLABELS
+	[1] '<size "1.0"><c white>m0'
+	[2] '<b><bg yellow><c black>大田区'
+	[3] '<size "1.0"><c white>m1'
+	[4] '<b><bg yellow><c black>江戸川区'
+	[5] '<size "1.0"><c white>m2'
+	[6] '<b><bg yellow><c black>足立区'
+	[7] '<b><bg yellow><c black>葛飾区'
+	[8] '<size "1.0"><c white>m4'
+	[9] '<size "1.0"><c white>m5'
+	[10] '<size "1.0"><c white>m6'
+	[11] '<size "1.0"><c white>m7'
+	[12] '<b><bg yellow><c black>杉並区'
+	[13] '<size "1.0"><c white>m8'
+	[14] '<size "1.0"><c white>m9'
+	[15] '<b><bg yellow><c black>世田谷区'
+	[16] '<size "1.0"><c white>m10'
+	[17] '<size "1.0"><c white>m11'
+	[18] '<size "1.0"><c white>m12'
+	[19] '<size "1.0"><c white>m13'
+	[20] '<size "1.0"><c white>m14'
+	[21] '<size "1.0"><c white>m15'
+	[22] '<size "1.0"><c white>m16'
+	[23] '<b><bg yellow><c black>品川区'
+	[24] '<size "1.0"><c white>m17'
+	[25] '<b><bg yellow><c black>荒川区'
+	[26] '<b><bg yellow><c black>墨田区'
+	[27] '<size "1.0"><c white>m18'
+	[28] '<size "1.0"><c white>m19'
+	[29] '<b><bg yellow><c black>練馬区'
+	[30] '<size "1.0"><c white>m20'
+	[31] '<size "1.0"><c white>m21'
+	[32] '<b><bg yellow><c black>江東区'
+	[33] '<size "1.0"><c white>m23'
+	[34] '<size "1.0"><c white>m24'
+	[35] '<b><bg yellow><c black>北区'
+	[36] '<size "1.0"><c white>m25'
+	[37] '<size "1.0"><c white>m26'
+	[38] '<size "1.0"><c white>m27'
+	[39] '<size "1.0"><c white>m28'
+	[40] '<b><bg yellow><c black>豊島区'
+	[41] '<b><bg yellow><c black>板橋区'
+	[42] '<size "1.0"><c white>m29'
+	[43] '<size "1.0"><c white>m32'
+	[44] '<size "1.0"><c white>m34'
+	[45] '<size "1.0"><c white>m35'
+	[46] '<size "1.0"><c white>m36'
+	[47] '<size "1.0"><c white>m37'
+	[48] '<b><bg yellow><c black>目黒区'
+	[49] '<size "1.0"><c white>m38'
+	[50] '<b><bg yellow><c black>中野区'
+	[51] '<size "1.0"><c white>m39'
+	[52] '<b><bg yellow><c black>中央区'
+	[53] '<size "1.0"><c white>m40'
+	[54] '<size "1.0"><c white>m41'
+	[55] '<size "1.0"><c white>m42'
+	[56] '<size "1.0"><c white>m43'
+	[57] '<size "1.0"><c white>m44'
+	[58] '<size "1.0"><c white>m45'
+	[59] '<size "1.0"><c white>m46'
+	[60] '<size "1.0"><c white>m47'
+	[61] '<b><bg yellow><c black>渋谷区'
+	[62] '<size "1.0"><c white>m48'
+	[63] '<size "1.0"><c white>m49'
+	[64] '<size "1.0"><c white>m50'
+	[65] '<size "1.0"><c white>m51'
+	[66] '<size "1.0"><c white>m52'
+	[67] '<size "1.0"><c white>m53'
+	[68] '<size "1.0"><c white>m54'
+	[69] '<size "1.0"><c white>m55'
+	[70] '<b><bg yellow><c black>台東区'
+	[71] '<b><bg yellow><c black>新宿区'
+	[72] '<b><bg yellow><c black>文京区'
+	[73] '<size "1.0"><c white>m56'
+	[74] '<size "1.0"><c white>m57'
+	[75] '<size "1.0"><c white>m58'
+	[76] '<b><bg yellow><c black>千代田区'
+	[77] '<b><bg yellow><c black>港区'
+	[78] '<size "1.0"><c white>m59'
+	[79] '<size "1.0"><c white>m60'
+	[80] '<size "1.0"><c white>m61'
+;
+[TAXINFO;]
+END; [TAXA]
+
+BEGIN ALGORITHM;
+TITLE 'Taxa Filter';
+NAME 'Taxa Filter';
+OPTIONS
+;
+END; [ALGORITHM]
+
+BEGIN TAXA;
+TITLE 'Working Taxa';
+LINK ALGORITHM = 'Taxa Filter';
+DIMENSIONS ntax=80;
+TAXLABELS
+	[1] 'm0'
+	[2] '大田区'
+	[3] 'm1'
+	[4] '江戸川区'
+	[5] 'm2'
+	[6] '足立区'
+	[7] '葛飾区'
+	[8] 'm4'
+	[9] 'm5'
+	[10] 'm6'
+	[11] 'm7'
+	[12] '杉並区'
+	[13] 'm8'
+	[14] 'm9'
+	[15] '世田谷区'
+	[16] 'm10'
+	[17] 'm11'
+	[18] 'm12'
+	[19] 'm13'
+	[20] 'm14'
+	[21] 'm15'
+	[22] 'm16'
+	[23] '品川区'
+	[24] 'm17'
+	[25] '荒川区'
+	[26] '墨田区'
+	[27] 'm18'
+	[28] 'm19'
+	[29] '練馬区'
+	[30] 'm20'
+	[31] 'm21'
+	[32] '江東区'
+	[33] 'm23'
+	[34] 'm24'
+	[35] '北区'
+	[36] 'm25'
+	[37] 'm26'
+	[38] 'm27'
+	[39] 'm28'
+	[40] '豊島区'
+	[41] '板橋区'
+	[42] 'm29'
+	[43] 'm32'
+	[44] 'm34'
+	[45] 'm35'
+	[46] 'm36'
+	[47] 'm37'
+	[48] '目黒区'
+	[49] 'm38'
+	[50] '中野区'
+	[51] 'm39'
+	[52] '中央区'
+	[53] 'm40'
+	[54] 'm41'
+	[55] 'm42'
+	[56] 'm43'
+	[57] 'm44'
+	[58] 'm45'
+	[59] 'm46'
+	[60] 'm47'
+	[61] '渋谷区'
+	[62] 'm48'
+	[63] 'm49'
+	[64] 'm50'
+	[65] 'm51'
+	[66] 'm52'
+	[67] 'm53'
+	[68] 'm54'
+	[69] 'm55'
+	[70] '台東区'
+	[71] '新宿区'
+	[72] '文京区'
+	[73] 'm56'
+	[74] 'm57'
+	[75] 'm58'
+	[76] '千代田区'
+	[77] '港区'
+	[78] 'm59'
+	[79] 'm60'
+	[80] 'm61'
+;
+DISPLAYLABELS
+	[1] '<size "1.0"><c white>m0'
+	[2] '<b><bg yellow><c black>大田区'
+	[3] '<size "1.0"><c white>m1'
+	[4] '<b><bg yellow><c black>江戸川区'
+	[5] '<size "1.0"><c white>m2'
+	[6] '<b><bg yellow><c black>足立区'
+	[7] '<b><bg yellow><c black>葛飾区'
+	[8] '<size "1.0"><c white>m4'
+	[9] '<size "1.0"><c white>m5'
+	[10] '<size "1.0"><c white>m6'
+	[11] '<size "1.0"><c white>m7'
+	[12] '<b><bg yellow><c black>杉並区'
+	[13] '<size "1.0"><c white>m8'
+	[14] '<size "1.0"><c white>m9'
+	[15] '<b><bg yellow><c black>世田谷区'
+	[16] '<size "1.0"><c white>m10'
+	[17] '<size "1.0"><c white>m11'
+	[18] '<size "1.0"><c white>m12'
+	[19] '<size "1.0"><c white>m13'
+	[20] '<size "1.0"><c white>m14'
+	[21] '<size "1.0"><c white>m15'
+	[22] '<size "1.0"><c white>m16'
+	[23] '<b><bg yellow><c black>品川区'
+	[24] '<size "1.0"><c white>m17'
+	[25] '<b><bg yellow><c black>荒川区'
+	[26] '<b><bg yellow><c black>墨田区'
+	[27] '<size "1.0"><c white>m18'
+	[28] '<size "1.0"><c white>m19'
+	[29] '<b><bg yellow><c black>練馬区'
+	[30] '<size "1.0"><c white>m20'
+	[31] '<size "1.0"><c white>m21'
+	[32] '<b><bg yellow><c black>江東区'
+	[33] '<size "1.0"><c white>m23'
+	[34] '<size "1.0"><c white>m24'
+	[35] '<b><bg yellow><c black>北区'
+	[36] '<size "1.0"><c white>m25'
+	[37] '<size "1.0"><c white>m26'
+	[38] '<size "1.0"><c white>m27'
+	[39] '<size "1.0"><c white>m28'
+	[40] '<b><bg yellow><c black>豊島区'
+	[41] '<b><bg yellow><c black>板橋区'
+	[42] '<size "1.0"><c white>m29'
+	[43] '<size "1.0"><c white>m32'
+	[44] '<size "1.0"><c white>m34'
+	[45] '<size "1.0"><c white>m35'
+	[46] '<size "1.0"><c white>m36'
+	[47] '<size "1.0"><c white>m37'
+	[48] '<b><bg yellow><c black>目黒区'
+	[49] '<size "1.0"><c white>m38'
+	[50] '<b><bg yellow><c black>中野区'
+	[51] '<size "1.0"><c white>m39'
+	[52] '<b><bg yellow><c black>中央区'
+	[53] '<size "1.0"><c white>m40'
+	[54] '<size "1.0"><c white>m41'
+	[55] '<size "1.0"><c white>m42'
+	[56] '<size "1.0"><c white>m43'
+	[57] '<size "1.0"><c white>m44'
+	[58] '<size "1.0"><c white>m45'
+	[59] '<size "1.0"><c white>m46'
+	[60] '<size "1.0"><c white>m47'
+	[61] '<b><bg yellow><c black>渋谷区'
+	[62] '<size "1.0"><c white>m48'
+	[63] '<size "1.0"><c white>m49'
+	[64] '<size "1.0"><c white>m50'
+	[65] '<size "1.0"><c white>m51'
+	[66] '<size "1.0"><c white>m52'
+	[67] '<size "1.0"><c white>m53'
+	[68] '<size "1.0"><c white>m54'
+	[69] '<size "1.0"><c white>m55'
+	[70] '<b><bg yellow><c black>台東区'
+	[71] '<b><bg yellow><c black>新宿区'
+	[72] '<b><bg yellow><c black>文京区'
+	[73] '<size "1.0"><c white>m56'
+	[74] '<size "1.0"><c white>m57'
+	[75] '<size "1.0"><c white>m58'
+	[76] '<b><bg yellow><c black>千代田区'
+	[77] '<b><bg yellow><c black>港区'
+	[78] '<size "1.0"><c white>m59'
+	[79] '<size "1.0"><c white>m60'
+	[80] '<size "1.0"><c white>m61'
+;
+[TAXINFO;]
+END; [TAXA]
+
+BEGIN NETWORK;
+TITLE 'Input Network';
+LINK ALGORITHM = 'Taxa Filter';
+DIMENSIONS nVertices=80 nEdges=118;
+TYPE Other;
+VERTICES
+	id=1 label='m0' label='m0',
+	id=2 label='大田区' label='大田区',
+	id=3 label='m1' label='m1',
+	id=4 label='江戸川区' label='江戸川区',
+	id=5 label='m2' label='m2',
+	id=6 label='足立区' label='足立区',
+	id=7 label='葛飾区' label='葛飾区',
+	id=8 label='m4' label='m4',
+	id=9 label='m5' label='m5',
+	id=10 label='m6' label='m6',
+	id=11 label='m7' label='m7',
+	id=12 label='杉並区' label='杉並区',
+	id=13 label='m8' label='m8',
+	id=14 label='m9' label='m9',
+	id=15 label='世田谷区' label='世田谷区',
+	id=16 label='m10' label='m10',
+	id=17 label='m11' label='m11',
+	id=18 label='m12' label='m12',
+	id=19 label='m13' label='m13',
+	id=20 label='m14' label='m14',
+	id=21 label='m15' label='m15',
+	id=22 label='m16' label='m16',
+	id=23 label='品川区' label='品川区',
+	id=24 label='m17' label='m17',
+	id=25 label='荒川区' label='荒川区',
+	id=26 label='墨田区' label='墨田区',
+	id=27 label='m18' label='m18',
+	id=28 label='m19' label='m19',
+	id=29 label='練馬区' label='練馬区',
+	id=30 label='m20' label='m20',
+	id=31 label='m21' label='m21',
+	id=32 label='江東区' label='江東区',
+	id=33 label='m23' label='m23',
+	id=34 label='m24' label='m24',
+	id=35 label='北区' label='北区',
+	id=36 label='m25' label='m25',
+	id=37 label='m26' label='m26',
+	id=38 label='m27' label='m27',
+	id=39 label='m28' label='m28',
+	id=40 label='豊島区' label='豊島区',
+	id=41 label='板橋区' label='板橋区',
+	id=42 label='m29' label='m29',
+	id=43 label='m32' label='m32',
+	id=44 label='m34' label='m34',
+	id=45 label='m35' label='m35',
+	id=46 label='m36' label='m36',
+	id=47 label='m37' label='m37',
+	id=48 label='目黒区' label='目黒区',
+	id=49 label='m38' label='m38',
+	id=50 label='中野区' label='中野区',
+	id=51 label='m39' label='m39',
+	id=52 label='中央区' label='中央区',
+	id=53 label='m40' label='m40',
+	id=54 label='m41' label='m41',
+	id=55 label='m42' label='m42',
+	id=56 label='m43' label='m43',
+	id=57 label='m44' label='m44',
+	id=58 label='m45' label='m45',
+	id=59 label='m46' label='m46',
+	id=60 label='m47' label='m47',
+	id=61 label='渋谷区' label='渋谷区',
+	id=62 label='m48' label='m48',
+	id=63 label='m49' label='m49',
+	id=64 label='m50' label='m50',
+	id=65 label='m51' label='m51',
+	id=66 label='m52' label='m52',
+	id=67 label='m53' label='m53',
+	id=68 label='m54' label='m54',
+	id=69 label='m55' label='m55',
+	id=70 label='台東区' label='台東区',
+	id=71 label='新宿区' label='新宿区',
+	id=72 label='文京区' label='文京区',
+	id=73 label='m56' label='m56',
+	id=74 label='m57' label='m57',
+	id=75 label='m58' label='m58',
+	id=76 label='千代田区' label='千代田区',
+	id=77 label='港区' label='港区',
+	id=78 label='m59' label='m59',
+	id=79 label='m60' label='m60',
+	id=80 label='m61' label='m61'
+;
+EDGES
+	id=1 sid=1 tid=2 w='4.202275' weight='4.202275',
+	id=2 sid=1 tid=9 w='0.7501575000000003' weight='0.7501575000000003',
+	id=3 sid=1 tid=10 w='1.6628870000000004' weight='1.6628870000000004',
+	id=4 sid=3 tid=4 w='1.0774570000000003' weight='1.0774570000000003',
+	id=5 sid=3 tid=19 w='1.4529899999999998' weight='1.4529899999999998',
+	id=6 sid=3 tid=20 w='2.6937239999999996' weight='2.6937239999999996',
+	id=7 sid=5 tid=6 w='0.879721' weight='0.879721',
+	id=8 sid=5 tid=17 w='1.1753284999999993' weight='1.1753284999999993',
+	id=9 sid=5 tid=18 w='2.483372999999999' weight='2.483372999999999',
+	id=10 sid=7 tid=8 w='1.778751000000001' weight='1.778751000000001',
+	id=11 sid=7 tid=19 w='1.9812649999999998' weight='1.9812649999999998',
+	id=12 sid=8 tid=17 w='1.3696575' weight='1.3696575',
+	id=13 sid=8 tid=26 w='3.7217849999999992' weight='3.7217849999999992',
+	id=14 sid=9 tid=23 w='0.5175964999999998' weight='0.5175964999999998',
+	id=15 sid=9 tid=24 w='1.6936085000000007' weight='1.6936085000000007',
+	id=16 sid=10 tid=24 w='0.7808789999999997' weight='0.7808789999999997',
+	id=17 sid=10 tid=14 w='3.5748955000000007' weight='3.5748955000000007',
+	id=18 sid=11 tid=12 w='0.7479219999999995' weight='0.7479219999999995',
+	id=19 sid=11 tid=30 w='1.1083439999999993' weight='1.1083439999999993',
+	id=20 sid=11 tid=31 w='1.0086389999999987' weight='1.0086389999999987',
+	id=21 sid=12 tid=13 w='0.8515484999999998' weight='0.8515484999999998',
+	id=22 sid=13 tid=31 w='0.9050124999999998' weight='0.9050124999999998',
+	id=23 sid=13 tid=22 w='3.3620655' weight='3.3620655',
+	id=24 sid=14 tid=15 w='1.6058314999999994' weight='1.6058314999999994',
+	id=25 sid=14 tid=21 w='0.993513000000001' weight='0.993513000000001',
+	id=26 sid=15 tid=16 w='0.8269955000000002' weight='0.8269955000000002',
+	id=27 sid=16 tid=21 w='1.7723489999999995' weight='1.7723489999999995',
+	id=28 sid=16 tid=22 w='1.0518444999999996' weight='1.0518444999999996',
+	id=29 sid=17 tid=25 w='2.671165499999999' weight='2.671165499999999',
+	id=30 sid=18 tid=25 w='1.3631209999999991' weight='1.3631209999999991',
+	id=31 sid=18 tid=35 w='3.493655000000001' weight='3.493655000000001',
+	id=32 sid=19 tid=26 w='3.519271' weight='3.519271',
+	id=33 sid=20 tid=32 w='2.1690509999999996' weight='2.1690509999999996',
+	id=34 sid=20 tid=26 w='2.278537' weight='2.278537',
+	id=35 sid=21 tid=49 w='0.8465659999999995' weight='0.8465659999999995',
+	id=36 sid=21 tid=42 w='1.4409279999999995' weight='1.4409279999999995',
+	id=37 sid=22 tid=42 w='2.161432499999999' weight='2.161432499999999',
+	id=38 sid=24 tid=36 w='0.913066000000001' weight='0.913066000000001',
+	id=39 sid=24 tid=37 w='3.6704825' weight='3.6704825',
+	id=40 sid=25 tid=44 w='0.7674315000000003' weight='0.7674315000000003',
+	id=41 sid=26 tid=47 w='0.5831500000000001' weight='0.5831500000000001',
+	id=42 sid=27 tid=36 w='3.2245094999999977' weight='3.2245094999999977',
+	id=43 sid=27 tid=37 w='0.46709299999999887' weight='0.46709299999999887',
+	id=44 sid=27 tid=75 w='2.0454739999999996' weight='2.0454739999999996',
+	id=45 sid=27 tid=77 w='0.4523835000000007' weight='0.4523835000000007',
+	id=46 sid=27 tid=51 w='0.5505634999999973' weight='0.5505634999999973',
+	id=47 sid=27 tid=69 w='1.3760475000000003' weight='1.3760475000000003',
+	id=48 sid=28 tid=29 w='0.4911185000000007' weight='0.4911185000000007',
+	id=49 sid=28 tid=33 w='3.7883404999999994' weight='3.7883404999999994',
+	id=50 sid=28 tid=30 w='1.8932505000000006' weight='1.8932505000000006',
+	id=51 sid=30 tid=50 w='0.7502809999999989' weight='0.7502809999999989',
+	id=52 sid=31 tid=50 w='0.8499859999999995' weight='0.8499859999999995',
+	id=53 sid=32 tid=34 w='1.664027' weight='1.664027',
+	id=54 sid=33 tid=41 w='1.1955710000000002' weight='1.1955710000000002',
+	id=55 sid=33 tid=40 w='1.6774959999999997' weight='1.6774959999999997',
+	id=56 sid=34 tid=45 w='1.315883000000001' weight='1.315883000000001',
+	id=57 sid=34 tid=46 w='0.8055954999999995' weight='0.8055954999999995',
+	id=58 sid=35 tid=38 w='0.6406024999999997' weight='0.6406024999999997',
+	id=59 sid=35 tid=39 w='1.7754945' weight='1.7754945',
+	id=60 sid=36 tid=48 w='1.4984239999999986' weight='1.4984239999999986',
+	id=61 sid=37 tid=62 w='1.9291599999999987' weight='1.9291599999999987',
+	id=62 sid=38 tid=41 w='1.5690835000000003' weight='1.5690835000000003',
+	id=63 sid=38 tid=43 w='1.7573679999999996' weight='1.7573679999999996',
+	id=64 sid=39 tid=43 w='0.6224759999999998' weight='0.6224759999999998',
+	id=65 sid=39 tid=65 w='1.9293644999999997' weight='1.9293644999999997',
+	id=66 sid=40 tid=68 w='2.4854765' weight='2.4854765',
+	id=67 sid=40 tid=43 w='0.9415244999999999' weight='0.9415244999999999',
+	id=68 sid=42 tid=61 w='0.4460405000000005' weight='0.4460405000000005',
+	id=69 sid=42 tid=66 w='0.8770219999999971' weight='0.8770219999999971',
+	id=70 sid=43 tid=72 w='2.8681995000000002' weight='2.8681995000000002',
+	id=71 sid=44 tid=55 w='0.7387504999999998' weight='0.7387504999999998',
+	id=72 sid=44 tid=56 w='0.652597499999999' weight='0.652597499999999',
+	id=73 sid=45 tid=62 w='0.33602949999999954' weight='0.33602949999999954',
+	id=74 sid=45 tid=63 w='0.3358164999999973' weight='0.3358164999999973',
+	id=75 sid=46 tid=59 w='0.8461039999999989' weight='0.8461039999999989',
+	id=76 sid=46 tid=60 w='1.3342390000000004' weight='1.3342390000000004',
+	id=77 sid=47 tid=57 w='0.7095690000000002' weight='0.7095690000000002',
+	id=78 sid=47 tid=58 w='0.6603049999999995' weight='0.6603049999999995',
+	id=79 sid=48 tid=49 w='0.6512845000000009' weight='0.6512845000000009',
+	id=80 sid=49 tid=54 w='1.4373214999999993' weight='1.4373214999999993',
+	id=81 sid=50 tid=53 w='1.9025415000000003' weight='1.9025415000000003',
+	id=82 sid=51 tid=52 w='1.933599000000001' weight='1.933599000000001',
+	id=83 sid=51 tid=73 w='1.2795000000000005' weight='1.2795000000000005',
+	id=84 sid=52 tid=59 w='0.7896805000000005' weight='0.7896805000000005',
+	id=85 sid=52 tid=75 w='0.4386885000000005' weight='0.4386885000000005',
+	id=86 sid=53 tid=67 w='1.3867814999999994' weight='1.3867814999999994',
+	id=87 sid=53 tid=68 w='0.8324669999999996' weight='0.8324669999999996',
+	id=88 sid=54 tid=61 w='0.42133599999999993' weight='0.42133599999999993',
+	id=89 sid=54 tid=69 w='2.6416299999999993' weight='2.6416299999999993',
+	id=90 sid=55 tid=57 w='0.4612219999999997' weight='0.4612219999999997',
+	id=91 sid=55 tid=64 w='0.6710524999999974' weight='0.6710524999999974',
+	id=92 sid=56 tid=64 w='0.7202954999999999' weight='0.7202954999999999',
+	id=93 sid=56 tid=65 w='1.2077680000000002' weight='1.2077680000000002',
+	id=94 sid=57 tid=70 w='0.6608669999999995' weight='0.6608669999999995',
+	id=95 sid=58 tid=70 w='0.7101310000000003' weight='0.7101310000000003',
+	id=96 sid=58 tid=60 w='1.0475275' weight='1.0475275',
+	id=97 sid=59 tid=74 w='2.535604000000001' weight='2.535604000000001',
+	id=98 sid=60 tid=74 w='2.047468999999999' weight='2.047468999999999',
+	id=99 sid=62 tid=76 w='2.9017954999999995' weight='2.9017954999999995',
+	id=100 sid=63 tid=74 w='2.5356040000000006' weight='2.5356040000000006',
+	id=101 sid=63 tid=75 w='0.35099199999999975' weight='0.35099199999999975',
+	id=102 sid=64 tid=70 w='0.48794650000000017' weight='0.48794650000000017',
+	id=103 sid=64 tid=72 w='2.0487835' weight='2.0487835',
+	id=104 sid=65 tid=72 w='1.5613109999999994' weight='1.5613109999999994',
+	id=105 sid=66 tid=67 w='1.3021264999999997' weight='1.3021264999999997',
+	id=106 sid=66 tid=73 w='2.9319904999999977' weight='2.9319904999999977',
+	id=107 sid=67 tid=71 w='0.7375330000000002' weight='0.7375330000000002',
+	id=108 sid=68 tid=71 w='1.2918475' weight='1.2918475',
+	id=109 sid=69 tid=73 w='0.4540159999999984' weight='0.4540159999999984',
+	id=110 sid=71 tid=78 w='2.1433915000000003' weight='2.1433915000000003',
+	id=111 sid=72 tid=79 w='0.5879574999999992' weight='0.5879574999999992',
+	id=112 sid=73 tid=80 w='0.8014835000000009' weight='0.8014835000000009',
+	id=113 sid=74 tid=79 w='0.6028999999999998' weight='0.6028999999999998',
+	id=114 sid=74 tid=76 w='0.36640450000000113' weight='0.36640450000000113',
+	id=115 sid=76 tid=77 w='3.999688' weight='3.999688',
+	id=116 sid=76 tid=80 w='1.7182485000000003' weight='1.7182485000000003',
+	id=117 sid=78 tid=79 w='1.9631850000000004' weight='1.9631850000000004',
+	id=118 sid=78 tid=80 w='0.669146999999999' weight='0.669146999999999'
+;
+END; [NETWORK]
+
+BEGIN ALGORITHM;
+TITLE 'Input Data Filter';
+LINK NETWORK = 'Input Network';
+NAME 'Network Taxa Filter';
+END; [ALGORITHM]
+
+BEGIN NETWORK;
+TITLE 'Working Network';
+LINK ALGORITHM = 'Input Data Filter';
+DIMENSIONS nVertices=80 nEdges=118;
+TYPE Other;
+VERTICES
+	id=1 label='m0' label='m0',
+	id=2 label='大田区' label='大田区',
+	id=3 label='m1' label='m1',
+	id=4 label='江戸川区' label='江戸川区',
+	id=5 label='m2' label='m2',
+	id=6 label='足立区' label='足立区',
+	id=7 label='葛飾区' label='葛飾区',
+	id=8 label='m4' label='m4',
+	id=9 label='m5' label='m5',
+	id=10 label='m6' label='m6',
+	id=11 label='m7' label='m7',
+	id=12 label='杉並区' label='杉並区',
+	id=13 label='m8' label='m8',
+	id=14 label='m9' label='m9',
+	id=15 label='世田谷区' label='世田谷区',
+	id=16 label='m10' label='m10',
+	id=17 label='m11' label='m11',
+	id=18 label='m12' label='m12',
+	id=19 label='m13' label='m13',
+	id=20 label='m14' label='m14',
+	id=21 label='m15' label='m15',
+	id=22 label='m16' label='m16',
+	id=23 label='品川区' label='品川区',
+	id=24 label='m17' label='m17',
+	id=25 label='荒川区' label='荒川区',
+	id=26 label='墨田区' label='墨田区',
+	id=27 label='m18' label='m18',
+	id=28 label='m19' label='m19',
+	id=29 label='練馬区' label='練馬区',
+	id=30 label='m20' label='m20',
+	id=31 label='m21' label='m21',
+	id=32 label='江東区' label='江東区',
+	id=33 label='m23' label='m23',
+	id=34 label='m24' label='m24',
+	id=35 label='北区' label='北区',
+	id=36 label='m25' label='m25',
+	id=37 label='m26' label='m26',
+	id=38 label='m27' label='m27',
+	id=39 label='m28' label='m28',
+	id=40 label='豊島区' label='豊島区',
+	id=41 label='板橋区' label='板橋区',
+	id=42 label='m29' label='m29',
+	id=43 label='m32' label='m32',
+	id=44 label='m34' label='m34',
+	id=45 label='m35' label='m35',
+	id=46 label='m36' label='m36',
+	id=47 label='m37' label='m37',
+	id=48 label='目黒区' label='目黒区',
+	id=49 label='m38' label='m38',
+	id=50 label='中野区' label='中野区',
+	id=51 label='m39' label='m39',
+	id=52 label='中央区' label='中央区',
+	id=53 label='m40' label='m40',
+	id=54 label='m41' label='m41',
+	id=55 label='m42' label='m42',
+	id=56 label='m43' label='m43',
+	id=57 label='m44' label='m44',
+	id=58 label='m45' label='m45',
+	id=59 label='m46' label='m46',
+	id=60 label='m47' label='m47',
+	id=61 label='渋谷区' label='渋谷区',
+	id=62 label='m48' label='m48',
+	id=63 label='m49' label='m49',
+	id=64 label='m50' label='m50',
+	id=65 label='m51' label='m51',
+	id=66 label='m52' label='m52',
+	id=67 label='m53' label='m53',
+	id=68 label='m54' label='m54',
+	id=69 label='m55' label='m55',
+	id=70 label='台東区' label='台東区',
+	id=71 label='新宿区' label='新宿区',
+	id=72 label='文京区' label='文京区',
+	id=73 label='m56' label='m56',
+	id=74 label='m57' label='m57',
+	id=75 label='m58' label='m58',
+	id=76 label='千代田区' label='千代田区',
+	id=77 label='港区' label='港区',
+	id=78 label='m59' label='m59',
+	id=79 label='m60' label='m60',
+	id=80 label='m61' label='m61'
+;
+EDGES
+	id=1 sid=1 tid=2 w='4.202275' weight='4.202275',
+	id=2 sid=1 tid=9 w='0.7501575000000003' weight='0.7501575000000003',
+	id=3 sid=1 tid=10 w='1.6628870000000004' weight='1.6628870000000004',
+	id=4 sid=3 tid=4 w='1.0774570000000003' weight='1.0774570000000003',
+	id=5 sid=3 tid=19 w='1.4529899999999998' weight='1.4529899999999998',
+	id=6 sid=3 tid=20 w='2.6937239999999996' weight='2.6937239999999996',
+	id=7 sid=5 tid=6 w='0.879721' weight='0.879721',
+	id=8 sid=5 tid=17 w='1.1753284999999993' weight='1.1753284999999993',
+	id=9 sid=5 tid=18 w='2.483372999999999' weight='2.483372999999999',
+	id=10 sid=7 tid=8 w='1.778751000000001' weight='1.778751000000001',
+	id=11 sid=7 tid=19 w='1.9812649999999998' weight='1.9812649999999998',
+	id=12 sid=8 tid=17 w='1.3696575' weight='1.3696575',
+	id=13 sid=8 tid=26 w='3.7217849999999992' weight='3.7217849999999992',
+	id=14 sid=9 tid=23 w='0.5175964999999998' weight='0.5175964999999998',
+	id=15 sid=9 tid=24 w='1.6936085000000007' weight='1.6936085000000007',
+	id=16 sid=10 tid=24 w='0.7808789999999997' weight='0.7808789999999997',
+	id=17 sid=10 tid=14 w='3.5748955000000007' weight='3.5748955000000007',
+	id=18 sid=11 tid=12 w='0.7479219999999995' weight='0.7479219999999995',
+	id=19 sid=11 tid=30 w='1.1083439999999993' weight='1.1083439999999993',
+	id=20 sid=11 tid=31 w='1.0086389999999987' weight='1.0086389999999987',
+	id=21 sid=12 tid=13 w='0.8515484999999998' weight='0.8515484999999998',
+	id=22 sid=13 tid=31 w='0.9050124999999998' weight='0.9050124999999998',
+	id=23 sid=13 tid=22 w='3.3620655' weight='3.3620655',
+	id=24 sid=14 tid=15 w='1.6058314999999994' weight='1.6058314999999994',
+	id=25 sid=14 tid=21 w='0.993513000000001' weight='0.993513000000001',
+	id=26 sid=15 tid=16 w='0.8269955000000002' weight='0.8269955000000002',
+	id=27 sid=16 tid=21 w='1.7723489999999995' weight='1.7723489999999995',
+	id=28 sid=16 tid=22 w='1.0518444999999996' weight='1.0518444999999996',
+	id=29 sid=17 tid=25 w='2.671165499999999' weight='2.671165499999999',
+	id=30 sid=18 tid=25 w='1.3631209999999991' weight='1.3631209999999991',
+	id=31 sid=18 tid=35 w='3.493655000000001' weight='3.493655000000001',
+	id=32 sid=19 tid=26 w='3.519271' weight='3.519271',
+	id=33 sid=20 tid=32 w='2.1690509999999996' weight='2.1690509999999996',
+	id=34 sid=20 tid=26 w='2.278537' weight='2.278537',
+	id=35 sid=21 tid=49 w='0.8465659999999995' weight='0.8465659999999995',
+	id=36 sid=21 tid=42 w='1.4409279999999995' weight='1.4409279999999995',
+	id=37 sid=22 tid=42 w='2.161432499999999' weight='2.161432499999999',
+	id=38 sid=24 tid=36 w='0.913066000000001' weight='0.913066000000001',
+	id=39 sid=24 tid=37 w='3.6704825' weight='3.6704825',
+	id=40 sid=25 tid=44 w='0.7674315000000003' weight='0.7674315000000003',
+	id=41 sid=26 tid=47 w='0.5831500000000001' weight='0.5831500000000001',
+	id=42 sid=27 tid=36 w='3.2245094999999977' weight='3.2245094999999977',
+	id=43 sid=27 tid=37 w='0.46709299999999887' weight='0.46709299999999887',
+	id=44 sid=27 tid=75 w='2.0454739999999996' weight='2.0454739999999996',
+	id=45 sid=27 tid=77 w='0.4523835000000007' weight='0.4523835000000007',
+	id=46 sid=27 tid=51 w='0.5505634999999973' weight='0.5505634999999973',
+	id=47 sid=27 tid=69 w='1.3760475000000003' weight='1.3760475000000003',
+	id=48 sid=28 tid=29 w='0.4911185000000007' weight='0.4911185000000007',
+	id=49 sid=28 tid=33 w='3.7883404999999994' weight='3.7883404999999994',
+	id=50 sid=28 tid=30 w='1.8932505000000006' weight='1.8932505000000006',
+	id=51 sid=30 tid=50 w='0.7502809999999989' weight='0.7502809999999989',
+	id=52 sid=31 tid=50 w='0.8499859999999995' weight='0.8499859999999995',
+	id=53 sid=32 tid=34 w='1.664027' weight='1.664027',
+	id=54 sid=33 tid=41 w='1.1955710000000002' weight='1.1955710000000002',
+	id=55 sid=33 tid=40 w='1.6774959999999997' weight='1.6774959999999997',
+	id=56 sid=34 tid=45 w='1.315883000000001' weight='1.315883000000001',
+	id=57 sid=34 tid=46 w='0.8055954999999995' weight='0.8055954999999995',
+	id=58 sid=35 tid=38 w='0.6406024999999997' weight='0.6406024999999997',
+	id=59 sid=35 tid=39 w='1.7754945' weight='1.7754945',
+	id=60 sid=36 tid=48 w='1.4984239999999986' weight='1.4984239999999986',
+	id=61 sid=37 tid=62 w='1.9291599999999987' weight='1.9291599999999987',
+	id=62 sid=38 tid=41 w='1.5690835000000003' weight='1.5690835000000003',
+	id=63 sid=38 tid=43 w='1.7573679999999996' weight='1.7573679999999996',
+	id=64 sid=39 tid=43 w='0.6224759999999998' weight='0.6224759999999998',
+	id=65 sid=39 tid=65 w='1.9293644999999997' weight='1.9293644999999997',
+	id=66 sid=40 tid=68 w='2.4854765' weight='2.4854765',
+	id=67 sid=40 tid=43 w='0.9415244999999999' weight='0.9415244999999999',
+	id=68 sid=42 tid=61 w='0.4460405000000005' weight='0.4460405000000005',
+	id=69 sid=42 tid=66 w='0.8770219999999971' weight='0.8770219999999971',
+	id=70 sid=43 tid=72 w='2.8681995000000002' weight='2.8681995000000002',
+	id=71 sid=44 tid=55 w='0.7387504999999998' weight='0.7387504999999998',
+	id=72 sid=44 tid=56 w='0.652597499999999' weight='0.652597499999999',
+	id=73 sid=45 tid=62 w='0.33602949999999954' weight='0.33602949999999954',
+	id=74 sid=45 tid=63 w='0.3358164999999973' weight='0.3358164999999973',
+	id=75 sid=46 tid=59 w='0.8461039999999989' weight='0.8461039999999989',
+	id=76 sid=46 tid=60 w='1.3342390000000004' weight='1.3342390000000004',
+	id=77 sid=47 tid=57 w='0.7095690000000002' weight='0.7095690000000002',
+	id=78 sid=47 tid=58 w='0.6603049999999995' weight='0.6603049999999995',
+	id=79 sid=48 tid=49 w='0.6512845000000009' weight='0.6512845000000009',
+	id=80 sid=49 tid=54 w='1.4373214999999993' weight='1.4373214999999993',
+	id=81 sid=50 tid=53 w='1.9025415000000003' weight='1.9025415000000003',
+	id=82 sid=51 tid=52 w='1.933599000000001' weight='1.933599000000001',
+	id=83 sid=51 tid=73 w='1.2795000000000005' weight='1.2795000000000005',
+	id=84 sid=52 tid=59 w='0.7896805000000005' weight='0.7896805000000005',
+	id=85 sid=52 tid=75 w='0.4386885000000005' weight='0.4386885000000005',
+	id=86 sid=53 tid=67 w='1.3867814999999994' weight='1.3867814999999994',
+	id=87 sid=53 tid=68 w='0.8324669999999996' weight='0.8324669999999996',
+	id=88 sid=54 tid=61 w='0.42133599999999993' weight='0.42133599999999993',
+	id=89 sid=54 tid=69 w='2.6416299999999993' weight='2.6416299999999993',
+	id=90 sid=55 tid=57 w='0.4612219999999997' weight='0.4612219999999997',
+	id=91 sid=55 tid=64 w='0.6710524999999974' weight='0.6710524999999974',
+	id=92 sid=56 tid=64 w='0.7202954999999999' weight='0.7202954999999999',
+	id=93 sid=56 tid=65 w='1.2077680000000002' weight='1.2077680000000002',
+	id=94 sid=57 tid=70 w='0.6608669999999995' weight='0.6608669999999995',
+	id=95 sid=58 tid=70 w='0.7101310000000003' weight='0.7101310000000003',
+	id=96 sid=58 tid=60 w='1.0475275' weight='1.0475275',
+	id=97 sid=59 tid=74 w='2.535604000000001' weight='2.535604000000001',
+	id=98 sid=60 tid=74 w='2.047468999999999' weight='2.047468999999999',
+	id=99 sid=62 tid=76 w='2.9017954999999995' weight='2.9017954999999995',
+	id=100 sid=63 tid=74 w='2.5356040000000006' weight='2.5356040000000006',
+	id=101 sid=63 tid=75 w='0.35099199999999975' weight='0.35099199999999975',
+	id=102 sid=64 tid=70 w='0.48794650000000017' weight='0.48794650000000017',
+	id=103 sid=64 tid=72 w='2.0487835' weight='2.0487835',
+	id=104 sid=65 tid=72 w='1.5613109999999994' weight='1.5613109999999994',
+	id=105 sid=66 tid=67 w='1.3021264999999997' weight='1.3021264999999997',
+	id=106 sid=66 tid=73 w='2.9319904999999977' weight='2.9319904999999977',
+	id=107 sid=67 tid=71 w='0.7375330000000002' weight='0.7375330000000002',
+	id=108 sid=68 tid=71 w='1.2918475' weight='1.2918475',
+	id=109 sid=69 tid=73 w='0.4540159999999984' weight='0.4540159999999984',
+	id=110 sid=71 tid=78 w='2.1433915000000003' weight='2.1433915000000003',
+	id=111 sid=72 tid=79 w='0.5879574999999992' weight='0.5879574999999992',
+	id=112 sid=73 tid=80 w='0.8014835000000009' weight='0.8014835000000009',
+	id=113 sid=74 tid=79 w='0.6028999999999998' weight='0.6028999999999998',
+	id=114 sid=74 tid=76 w='0.36640450000000113' weight='0.36640450000000113',
+	id=115 sid=76 tid=77 w='3.999688' weight='3.999688',
+	id=116 sid=76 tid=80 w='1.7182485000000003' weight='1.7182485000000003',
+	id=117 sid=78 tid=79 w='1.9631850000000004' weight='1.9631850000000004',
+	id=118 sid=78 tid=80 w='0.669146999999999' weight='0.669146999999999'
+;
+END; [NETWORK]
+
+BEGIN ALGORITHM;
+TITLE 'Show Network';
+LINK NETWORK = 'Working Network';
+NAME 'Show Network';
+OPTIONS
+	View = 'Network';
+END; [ALGORITHM]
+
+BEGIN VIEW;
+TITLE 'Network';
+LINK ALGORITHM = 'Show Network';
+NAME 'NetworkView';
+INPUT 'NETWORK';
+OPTIONS
+	Diagram = 'Network',
+	FontScaleFactor = 1,
+	TraitLegend = 'False',
+	TraitSize = 32,
+	SitesStyle = 'None',
+	Edits = 'mn:1:-59.78,265.99' 'mn:2:-79.07,345.82' 'mn:3:281.85,-18.11' 'mn:4:318.45,-2.29' 'mn:5:163.26,-228.44' 'mn:6:172.55,-262.81' 'mn:7:272.53,-128.18' 'mn:8:218.79,-145.85' 'mn:9:-26.57,255.51' 'mn:10:-70.92,214.62' 'mn:11:-251.13,-65.47' 'mn:12:-265.63,-32.15' 'mn:13:-241.34,-4.48' 'mn:14:-162.03,167.88' 'mn:15:-214.74,151.73' 'mn:16:-209.91,115.99' 'mn:17:187.02,-188.09' 'mn:18:93.04,-210.63' 'mn:19:263.54,-66.15' 'mn:20:217.65,3.69' 'mn:21:-154.4,128.15' 'mn:22:-203.09,72.97' 'mn:23:-9.7,275.4' 'mn:24:-35.53,202.9' 'mn:25:118.87,-169.35' 'mn:26:187.93,-58.99' 'mn:27:-1.09,114.56' 'mn:28:-184.44,-148.6' 'mn:29:-196.94,-170.42' 'mn:30:-214.62,-93.52' 'mn:31:-223.99,-39.61' 'mn:32:183.77,64.54' 'mn:33:-95.05,-162.17' 'mn:34:130.23,72.53' 'mn:35:6.31,-194.74' 'mn:36:-45.75,171.45' 'mn:37:15.16,135.23' 'mn:38:-19.63,-179.31' 'mn:39:-1.45,-138.83' 'mn:40:-61.52,-118.06' 'mn:41:-68.78,-196.55' 'mn:42:-140.9,74.06' 'mn:43:-21.34,-118.58' 'mn:44:110.84,-136.08' 'mn:45:85.96,90.98' 'mn:46:117.41,39.49' 'mn:47:158.47,-58.84' 'mn:48:-100.54,165.38' 'mn:49:-122.74,143.74' 'mn:50:-195.97,-65.08' 'mn:51:-6.58,90.14' 'mn:52:43.18,65.4' 'mn:53:-139.48,-49.54' 'mn:54:-83,106.76' 'mn:55:120.73,-103.77' 'mn:56:83.84,-118.72' 'mn:57:140.38,-87.48' 'mn:58:130.54,-41.45' 'mn:59:80.53,42.09' 'mn:60:106.6,-6.98' 'mn:61:-112.05,94.34' 'mn:62:72.34,105.73' 'mn:63:71.78,76.48' 'mn:64:92.08,-85.72' 'mn:65:41.25,-104.05' 'mn:66:-115.7,42.93' 'mn:67:-116.33,-4.89' 'mn:68:-107.58,-67.29' 'mn:69:-41.04,80.72' 'mn:70:113.07,-69.85' 'mn:71:-87.87,-24.12' 'mn:72:33.6,-57.25' 'mn:73:-38.95,56.54' 'mn:74:43.78,2.26' 'mn:75:53.09,84.5' 'mn:76:30.51,18.62' 'mn:77:16.08,106.66' 'mn:78:-27.53,-6.78' 'mn:79:29.38,-26.5' 'mn:80:-23.21,24.41' 'ml:52:138,-22' 'ml:43:1,3' 'ml:45:1,3' 'ml:44:1,3' 'ml:47:1,3' 'ml:46:1,3' 'ml:51:1,3' 'ml:49:1,3' 'ml:70:-2,-11' 'ml:53:1,3' 'ml:55:1,3' 'ml:32:-1,0' 'ml:54:1,3' 'ml:2:-1,1' 'ml:57:1,3' 'ml:56:1,3' 'ml:59:1,3' 'ml:58:1,3' 'ml:62:1,3' 'ml:60:1,3' 'ml:63:1,3' 'ml:23:-1,0' 'ml:25:-25,-6' 'ml:65:1,3' 'ml:64:1,3' 'ml:67:1,3' 'ml:66:1,3' 'ml:17:1,3' 'ml:69:1,3' 'ml:16:1,3' 'ml:68:1,3' 'ml:19:1,3' 'ml:74:1,3' 'ml:18:1,3' 'ml:73:1,3' 'ml:21:1,3' 'ml:78:1,3' 'ml:20:1,3' 'ml:75:1,3' 'ml:24:1,3' 'ml:22:1,3' 'ml:28:1,3' 'ml:27:1,3' 'ml:1:1,3' 'ml:3:1,3' 'ml:5:1,3' 'ml:77:-23,29' 'ml:79:1,3' 'ml:8:1,3' 'ml:9:1,3' 'ml:10:1,3' 'ml:26:7,-22' 'ml:80:1,3' 'ml:11:1,3' 'ml:30:1,3' 'ml:13:1,3' 'ml:14:1,3' 'ml:31:1,3' 'ml:34:1,3' 'ml:33:1,3' 'ml:37:1,3' 'ml:36:1,3' 'ml:39:1,3' 'ml:38:1,3' 'ml:42:1,3' 'ml:61:-37,-102' 'ml:48:-30,-41' 'ml:50:12,57' 'ml:72:23,-3' 'ml:76:58,4' 'ml:71:-6,44' 'ml:40:-26,28',
+	LayoutSeed = 1;
+END; [VIEW]

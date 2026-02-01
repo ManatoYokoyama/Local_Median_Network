@@ -1,0 +1,577 @@
+#nexus [SplitsTree6]
+
+BEGIN SPLITSTREE6;
+DIMENSIONS nDataNodes=6 nAlgorithms=4;
+PROGRAM version='SplitsTree App (version 6.7.2, built 17 Jan 2026)';
+WORKFLOW creationDate='1769195890804'; [Sat Jan 24 04:18:10 JST 2026]
+END; [SPLITSTREE6]
+
+[
+Methods:
+Analysis was performed using SplitsTree App 6.0.0 (Huson and Bryant 2024).
+The original input consisted of 55 taxa and 55 nodes and 75 edges.
+
+References:
+Huson and Bryant 2024: D.H. Huson and D. Bryant. The SplitsTree App: interactive analysis and visualization using phylogenetic trees and networks. Nature Methods, 2024.
+]
+
+BEGIN TAXA;
+TITLE 'Input Taxa';
+LINK ALGORITHM = 'Input Data Loader';
+DIMENSIONS ntax=55;
+TAXLABELS
+	[1] 'm0'
+	[2] 'C.CN.1998.YNRL9840.AY967806.PI'
+	[3] '08_BC.CN.1997.97CNGX_7F.AY008716.PI'
+	[4] '07_BC.CN.1997.97CN001_C54.AF286226.PI'
+	[5] 'm3'
+	[6] 'B.CN.1998.YN9802.JF932495.PI'
+	[7] 'm4'
+	[8] '07_BC.CN.1998.98CN009.AF286230.NR'
+	[9] 'm5'
+	[10] 'B.CN.1999.plwj.GU177863.PB'
+	[11] 'm6'
+	[12] '08_BC.CN.1998.98CN006.AF286229.NR'
+	[13] 'm7'
+	[14] 'B.CN.1999.plwj11_6.GU647196.PB'
+	[15] '08_BC.CN.1996.96CNKM005.AB213671.SH'
+	[16] 'm9'
+	[17] '07_BC.CN.1997.97CNKM007.AB213673.SH'
+	[18] 'B.CN.1999.plwj5_6.GU647197.PB'
+	[19] 'B.CN.1999.plwj2_6.GU647198.PB'
+	[20] 'm10'
+	[21] 'B.CN.1994.94CNKM001.AB213667.SH'
+	[22] 'm11'
+	[23] 'B.CN.1996.96CNKM004.AB213670.SH'
+	[24] 'm12'
+	[25] 'm13'
+	[26] 'm14'
+	[27] 'B.CN.1998.YN9838.JF932496.PI'
+	[28] 'm15'
+	[29] 'm16'
+	[30] 'm17'
+	[31] 'm18'
+	[32] 'B.CN.1996.96CNKM006.AB213672.SH'
+	[33] 'm19'
+	[34] 'm20'
+	[35] 'B.CN.1995.95CNKM002.AB213668.SH'
+	[36] 'm21'
+	[37] 'm22'
+	[38] 'm23'
+	[39] 'm24'
+	[40] 'm25'
+	[41] 'm26'
+	[42] 'm27'
+	[43] 'm29'
+	[44] 'm30'
+	[45] 'm31'
+	[46] 'm32'
+	[47] 'm33'
+	[48] 'm34'
+	[49] 'm35'
+	[50] 'm36'
+	[51] 'm37'
+	[52] 'm38'
+	[53] 'm39'
+	[54] 'm40'
+	[55] 'm41'
+;
+DISPLAYLABELS
+	[1] '<c white><size "1.0">m0'
+	[2] '<c green>C.CN.1998.YNRL9840.AY967806.PI'
+	[3] '<c blue>08_BC.CN.1997.97CNGX_7F.AY008716.PI'
+	[4] '<c 0xe6804dff>07_BC.CN.1997.97CN001_C54.AF286226.PI'
+	[5] '<c white><size "1.0">m3'
+	[6] '<c red>B.CN.1998.YN9802.JF932495.PI'
+	[7] '<c white><size "1.0">m4'
+	[8] '<c 0xe6804dff>07_BC.CN.1998.98CN009.AF286230.NR'
+	[9] '<c white><size "1.0">m5'
+	[10] '<c red>B.CN.1999.plwj.GU177863.PB'
+	[11] '<c white><size "1.0">m6'
+	[12] '<c blue>08_BC.CN.1998.98CN006.AF286229.NR'
+	[13] '<c white><size "1.0">m7'
+	[14] '<c red>B.CN.1999.plwj11_6.GU647196.PB'
+	[15] '<c blue>08_BC.CN.1996.96CNKM005.AB213671.SH'
+	[16] '<c white><size "1.0">m9'
+	[17] '<c 0xe6804dff>07_BC.CN.1997.97CNKM007.AB213673.SH'
+	[18] '<c red>B.CN.1999.plwj5_6.GU647197.PB'
+	[19] '<c red>B.CN.1999.plwj2_6.GU647198.PB'
+	[20] '<c white><size "1.0">m10'
+	[21] '<c red>B.CN.1994.94CNKM001.AB213667.SH'
+	[22] '<c white><size "1.0">m11'
+	[23] '<c red>B.CN.1996.96CNKM004.AB213670.SH'
+	[24] '<c white><size "1.0">m12'
+	[25] '<c white><size "1.0">m13'
+	[26] '<c white><size "1.0">m14'
+	[27] '<c red>B.CN.1998.YN9838.JF932496.PI'
+	[28] '<c white><size "1.0">m15'
+	[29] '<c white><size "1.0">m16'
+	[30] '<c white><size "1.0">m17'
+	[31] '<c white><size "1.0">m18'
+	[32] '<c red>B.CN.1996.96CNKM006.AB213672.SH'
+	[33] '<c white><size "1.0">m19'
+	[34] '<c white><size "1.0">m20'
+	[35] '<c red>B.CN.1995.95CNKM002.AB213668.SH'
+	[36] '<c white><size "1.0">m21'
+	[37] '<c white><size "1.0">m22'
+	[38] '<c white><size "1.0">m23'
+	[39] '<c white><size "1.0">m24'
+	[40] '<c white><size "1.0">m25'
+	[41] '<c white><size "1.0">m26'
+	[42] '<c white><size "1.0">m27'
+	[43] '<c white><size "1.0">m29'
+	[44] '<c white><size "1.0">m30'
+	[45] '<c white><size "1.0">m31'
+	[46] '<c white><size "1.0">m32'
+	[47] '<c white><size "1.0">m33'
+	[48] '<c white><size "1.0">m34'
+	[49] '<c white><size "1.0">m35'
+	[50] '<c white><size "1.0">m36'
+	[51] '<c white><size "1.0">m37'
+	[52] '<c white><size "1.0">m38'
+	[53] '<c white><size "1.0">m39'
+	[54] '<c white><size "1.0">m40'
+	[55] '<c white><size "1.0">m41'
+;
+[TAXINFO;]
+END; [TAXA]
+
+BEGIN ALGORITHM;
+TITLE 'Taxa Filter';
+LINK ALGORITHM = 'Input Data Loader';
+NAME 'Taxa Filter';
+OPTIONS
+;
+END; [ALGORITHM]
+
+BEGIN TAXA;
+TITLE 'Working Taxa';
+LINK ALGORITHM = 'Taxa Filter';
+DIMENSIONS ntax=55;
+TAXLABELS
+	[1] 'm0'
+	[2] 'C.CN.1998.YNRL9840.AY967806.PI'
+	[3] '08_BC.CN.1997.97CNGX_7F.AY008716.PI'
+	[4] '07_BC.CN.1997.97CN001_C54.AF286226.PI'
+	[5] 'm3'
+	[6] 'B.CN.1998.YN9802.JF932495.PI'
+	[7] 'm4'
+	[8] '07_BC.CN.1998.98CN009.AF286230.NR'
+	[9] 'm5'
+	[10] 'B.CN.1999.plwj.GU177863.PB'
+	[11] 'm6'
+	[12] '08_BC.CN.1998.98CN006.AF286229.NR'
+	[13] 'm7'
+	[14] 'B.CN.1999.plwj11_6.GU647196.PB'
+	[15] '08_BC.CN.1996.96CNKM005.AB213671.SH'
+	[16] 'm9'
+	[17] '07_BC.CN.1997.97CNKM007.AB213673.SH'
+	[18] 'B.CN.1999.plwj5_6.GU647197.PB'
+	[19] 'B.CN.1999.plwj2_6.GU647198.PB'
+	[20] 'm10'
+	[21] 'B.CN.1994.94CNKM001.AB213667.SH'
+	[22] 'm11'
+	[23] 'B.CN.1996.96CNKM004.AB213670.SH'
+	[24] 'm12'
+	[25] 'm13'
+	[26] 'm14'
+	[27] 'B.CN.1998.YN9838.JF932496.PI'
+	[28] 'm15'
+	[29] 'm16'
+	[30] 'm17'
+	[31] 'm18'
+	[32] 'B.CN.1996.96CNKM006.AB213672.SH'
+	[33] 'm19'
+	[34] 'm20'
+	[35] 'B.CN.1995.95CNKM002.AB213668.SH'
+	[36] 'm21'
+	[37] 'm22'
+	[38] 'm23'
+	[39] 'm24'
+	[40] 'm25'
+	[41] 'm26'
+	[42] 'm27'
+	[43] 'm29'
+	[44] 'm30'
+	[45] 'm31'
+	[46] 'm32'
+	[47] 'm33'
+	[48] 'm34'
+	[49] 'm35'
+	[50] 'm36'
+	[51] 'm37'
+	[52] 'm38'
+	[53] 'm39'
+	[54] 'm40'
+	[55] 'm41'
+;
+DISPLAYLABELS
+	[1] '<c white><size "1.0">m0'
+	[2] '<c green>C.CN.1998.YNRL9840.AY967806.PI'
+	[3] '<c blue>08_BC.CN.1997.97CNGX_7F.AY008716.PI'
+	[4] '<c 0xe6804dff>07_BC.CN.1997.97CN001_C54.AF286226.PI'
+	[5] '<c white><size "1.0">m3'
+	[6] '<c red>B.CN.1998.YN9802.JF932495.PI'
+	[7] '<c white><size "1.0">m4'
+	[8] '<c 0xe6804dff>07_BC.CN.1998.98CN009.AF286230.NR'
+	[9] '<c white><size "1.0">m5'
+	[10] '<c red>B.CN.1999.plwj.GU177863.PB'
+	[11] '<c white><size "1.0">m6'
+	[12] '<c blue>08_BC.CN.1998.98CN006.AF286229.NR'
+	[13] '<c white><size "1.0">m7'
+	[14] '<c red>B.CN.1999.plwj11_6.GU647196.PB'
+	[15] '<c blue>08_BC.CN.1996.96CNKM005.AB213671.SH'
+	[16] '<c white><size "1.0">m9'
+	[17] '<c 0xe6804dff>07_BC.CN.1997.97CNKM007.AB213673.SH'
+	[18] '<c red>B.CN.1999.plwj5_6.GU647197.PB'
+	[19] '<c red>B.CN.1999.plwj2_6.GU647198.PB'
+	[20] '<c white><size "1.0">m10'
+	[21] '<c red>B.CN.1994.94CNKM001.AB213667.SH'
+	[22] '<c white><size "1.0">m11'
+	[23] '<c red>B.CN.1996.96CNKM004.AB213670.SH'
+	[24] '<c white><size "1.0">m12'
+	[25] '<c white><size "1.0">m13'
+	[26] '<c white><size "1.0">m14'
+	[27] '<c red>B.CN.1998.YN9838.JF932496.PI'
+	[28] '<c white><size "1.0">m15'
+	[29] '<c white><size "1.0">m16'
+	[30] '<c white><size "1.0">m17'
+	[31] '<c white><size "1.0">m18'
+	[32] '<c red>B.CN.1996.96CNKM006.AB213672.SH'
+	[33] '<c white><size "1.0">m19'
+	[34] '<c white><size "1.0">m20'
+	[35] '<c red>B.CN.1995.95CNKM002.AB213668.SH'
+	[36] '<c white><size "1.0">m21'
+	[37] '<c white><size "1.0">m22'
+	[38] '<c white><size "1.0">m23'
+	[39] '<c white><size "1.0">m24'
+	[40] '<c white><size "1.0">m25'
+	[41] '<c white><size "1.0">m26'
+	[42] '<c white><size "1.0">m27'
+	[43] '<c white><size "1.0">m29'
+	[44] '<c white><size "1.0">m30'
+	[45] '<c white><size "1.0">m31'
+	[46] '<c white><size "1.0">m32'
+	[47] '<c white><size "1.0">m33'
+	[48] '<c white><size "1.0">m34'
+	[49] '<c white><size "1.0">m35'
+	[50] '<c white><size "1.0">m36'
+	[51] '<c white><size "1.0">m37'
+	[52] '<c white><size "1.0">m38'
+	[53] '<c white><size "1.0">m39'
+	[54] '<c white><size "1.0">m40'
+	[55] '<c white><size "1.0">m41'
+;
+[TAXINFO;]
+END; [TAXA]
+
+BEGIN NETWORK;
+TITLE 'Input Network';
+LINK ALGORITHM = 'Input Data Loader';
+DIMENSIONS nVertices=55 nEdges=75;
+TYPE Other;
+VERTICES
+	id=1 label='m0' label='m0',
+	id=2 label='C.CN.1998.YNRL9840.AY967806.PI' label='C.CN.1998.YNRL9840.AY967806.PI',
+	id=3 label='08_BC.CN.1997.97CNGX_7F.AY008716.PI' label='08_BC.CN.1997.97CNGX_7F.AY008716.PI',
+	id=4 label='07_BC.CN.1997.97CN001_C54.AF286226.PI' label='07_BC.CN.1997.97CN001_C54.AF286226.PI',
+	id=5 label='m3' label='m3',
+	id=6 label='B.CN.1998.YN9802.JF932495.PI' label='B.CN.1998.YN9802.JF932495.PI',
+	id=7 label='m4' label='m4',
+	id=8 label='07_BC.CN.1998.98CN009.AF286230.NR' label='07_BC.CN.1998.98CN009.AF286230.NR',
+	id=9 label='m5' label='m5',
+	id=10 label='B.CN.1999.plwj.GU177863.PB' label='B.CN.1999.plwj.GU177863.PB',
+	id=11 label='m6' label='m6',
+	id=12 label='08_BC.CN.1998.98CN006.AF286229.NR' label='08_BC.CN.1998.98CN006.AF286229.NR',
+	id=13 label='m7' label='m7',
+	id=14 label='B.CN.1999.plwj11_6.GU647196.PB' label='B.CN.1999.plwj11_6.GU647196.PB',
+	id=15 label='08_BC.CN.1996.96CNKM005.AB213671.SH' label='08_BC.CN.1996.96CNKM005.AB213671.SH',
+	id=16 label='m9' label='m9',
+	id=17 label='07_BC.CN.1997.97CNKM007.AB213673.SH' label='07_BC.CN.1997.97CNKM007.AB213673.SH',
+	id=18 label='B.CN.1999.plwj5_6.GU647197.PB' label='B.CN.1999.plwj5_6.GU647197.PB',
+	id=19 label='B.CN.1999.plwj2_6.GU647198.PB' label='B.CN.1999.plwj2_6.GU647198.PB',
+	id=20 label='m10' label='m10',
+	id=21 label='B.CN.1994.94CNKM001.AB213667.SH' label='B.CN.1994.94CNKM001.AB213667.SH',
+	id=22 label='m11' label='m11',
+	id=23 label='B.CN.1996.96CNKM004.AB213670.SH' label='B.CN.1996.96CNKM004.AB213670.SH',
+	id=24 label='m12' label='m12',
+	id=25 label='m13' label='m13',
+	id=26 label='m14' label='m14',
+	id=27 label='B.CN.1998.YN9838.JF932496.PI' label='B.CN.1998.YN9838.JF932496.PI',
+	id=28 label='m15' label='m15',
+	id=29 label='m16' label='m16',
+	id=30 label='m17' label='m17',
+	id=31 label='m18' label='m18',
+	id=32 label='B.CN.1996.96CNKM006.AB213672.SH' label='B.CN.1996.96CNKM006.AB213672.SH',
+	id=33 label='m19' label='m19',
+	id=34 label='m20' label='m20',
+	id=35 label='B.CN.1995.95CNKM002.AB213668.SH' label='B.CN.1995.95CNKM002.AB213668.SH',
+	id=36 label='m21' label='m21',
+	id=37 label='m22' label='m22',
+	id=38 label='m23' label='m23',
+	id=39 label='m24' label='m24',
+	id=40 label='m25' label='m25',
+	id=41 label='m26' label='m26',
+	id=42 label='m27' label='m27',
+	id=43 label='m29' label='m29',
+	id=44 label='m30' label='m30',
+	id=45 label='m31' label='m31',
+	id=46 label='m32' label='m32',
+	id=47 label='m33' label='m33',
+	id=48 label='m34' label='m34',
+	id=49 label='m35' label='m35',
+	id=50 label='m36' label='m36',
+	id=51 label='m37' label='m37',
+	id=52 label='m38' label='m38',
+	id=53 label='m39' label='m39',
+	id=54 label='m40' label='m40',
+	id=55 label='m41' label='m41'
+;
+EDGES
+	id=1 sid=1 tid=2 w='31.0' weight='31.0',
+	id=2 sid=1 tid=33 w='2.0' weight='2.0',
+	id=3 sid=1 tid=34 w='11.5' weight='11.5',
+	id=4 sid=3 tid=38 w='13.0' weight='13.0',
+	id=5 sid=4 tid=28 w='10.0' weight='10.0',
+	id=6 sid=5 tid=6 w='30.5' weight='30.5',
+	id=7 sid=5 tid=54 w='3.5' weight='3.5',
+	id=8 sid=5 tid=55 w='4.0' weight='4.0',
+	id=9 sid=7 tid=8 w='7.0' weight='7.0',
+	id=10 sid=7 tid=29 w='3.0' weight='3.0',
+	id=11 sid=7 tid=28 w='2.0' weight='2.0',
+	id=12 sid=9 tid=10 w='3.0' weight='3.0',
+	id=13 sid=9 tid=18 w='2.0' weight='2.0',
+	id=14 sid=9 tid=13 w='8.5' weight='8.5',
+	id=15 sid=11 tid=12 w='4.0' weight='4.0',
+	id=16 sid=11 tid=24 w='2.0' weight='2.0',
+	id=17 sid=11 tid=25 w='1.5' weight='1.5',
+	id=18 sid=13 tid=14 w='7.5' weight='7.5',
+	id=19 sid=13 tid=30 w='14.5' weight='14.5',
+	id=20 sid=15 tid=24 w='6.0' weight='6.0',
+	id=21 sid=16 tid=17 w='3.5' weight='3.5',
+	id=22 sid=16 tid=28 w='2.5' weight='2.5',
+	id=23 sid=16 tid=29 w='1.5' weight='1.5',
+	id=24 sid=18 tid=19 w='2.0' weight='2.0',
+	id=25 sid=20 tid=21 w='17.5' weight='17.5',
+	id=26 sid=20 tid=50 w='7.0' weight='7.0',
+	id=27 sid=20 tid=37 w='2.5' weight='2.5',
+	id=28 sid=20 tid=41 w='11.0' weight='11.0',
+	id=29 sid=22 tid=23 w='4.0' weight='4.0',
+	id=30 sid=22 tid=35 w='3.0' weight='3.0',
+	id=31 sid=22 tid=40 w='3.5' weight='3.5',
+	id=32 sid=24 tid=34 w='11.5' weight='11.5',
+	id=33 sid=25 tid=38 w='2.5' weight='2.5',
+	id=34 sid=25 tid=39 w='10.0' weight='10.0',
+	id=35 sid=26 tid=27 w='15.5' weight='15.5',
+	id=36 sid=26 tid=47 w='3.5' weight='3.5',
+	id=37 sid=26 tid=40 w='12.0' weight='12.0',
+	id=38 sid=29 tid=43 w='17.0' weight='17.0',
+	id=39 sid=30 tid=45 w='2.0' weight='2.0',
+	id=40 sid=30 tid=51 w='5.5' weight='5.5',
+	id=41 sid=30 tid=48 w='12.5' weight='12.5',
+	id=42 sid=31 tid=32 w='3.5' weight='3.5',
+	id=43 sid=31 tid=44 w='1.5' weight='1.5',
+	id=44 sid=31 tid=45 w='11.5' weight='11.5',
+	id=45 sid=33 tid=43 w='13.0' weight='13.0',
+	id=46 sid=33 tid=39 w='11.5' weight='11.5',
+	id=47 sid=34 tid=39 w='2.0' weight='2.0',
+	id=48 sid=34 tid=42 w='2.0' weight='2.0',
+	id=49 sid=35 tid=36 w='2.5' weight='2.5',
+	id=50 sid=35 tid=37 w='9.0' weight='9.0',
+	id=51 sid=36 tid=44 w='1.5' weight='1.5',
+	id=52 sid=36 tid=50 w='2.0' weight='2.0',
+	id=53 sid=37 tid=40 w='6.5' weight='6.5',
+	id=54 sid=37 tid=52 w='3.0' weight='3.0',
+	id=55 sid=37 tid=53 w='2.0' weight='2.0',
+	id=56 sid=38 tid=42 w='7.5' weight='7.5',
+	id=57 sid=39 tid=48 w='102.0' weight='102.0',
+	id=58 sid=40 tid=50 w='2.0' weight='2.0',
+	id=59 sid=41 tid=42 w='107.0' weight='107.0',
+	id=60 sid=41 tid=47 w='2.5' weight='2.5',
+	id=61 sid=41 tid=48 w='5.0' weight='5.0',
+	id=62 sid=43 tid=49 w='97.0' weight='97.0',
+	id=63 sid=44 tid=51 w='6.5' weight='6.5',
+	id=64 sid=45 tid=46 w='1.5' weight='1.5',
+	id=65 sid=45 tid=49 w='10.0' weight='10.0',
+	id=66 sid=46 tid=53 w='4.5' weight='4.5',
+	id=67 sid=46 tid=52 w='3.5' weight='3.5',
+	id=68 sid=46 tid=54 w='10.5' weight='10.5',
+	id=69 sid=47 tid=52 w='8.0' weight='8.0',
+	id=70 sid=47 tid=55 w='3.5' weight='3.5',
+	id=71 sid=47 tid=54 w='4.0' weight='4.0',
+	id=72 sid=48 tid=49 w='3.5' weight='3.5',
+	id=73 sid=48 tid=54 w='1.5' weight='1.5',
+	id=74 sid=51 tid=52 w='1.5' weight='1.5',
+	id=75 sid=53 tid=55 w='5.5' weight='5.5'
+;
+END; [NETWORK]
+
+BEGIN ALGORITHM;
+TITLE 'Input Data Filter';
+LINK NETWORK = 'Input Network';
+NAME 'Network Taxa Filter';
+END; [ALGORITHM]
+
+BEGIN NETWORK;
+TITLE 'Working Network';
+LINK ALGORITHM = 'Input Data Filter';
+DIMENSIONS nVertices=55 nEdges=75;
+TYPE Other;
+VERTICES
+	id=1 label='m0' label='m0',
+	id=2 label='C.CN.1998.YNRL9840.AY967806.PI' label='C.CN.1998.YNRL9840.AY967806.PI',
+	id=3 label='08_BC.CN.1997.97CNGX_7F.AY008716.PI' label='08_BC.CN.1997.97CNGX_7F.AY008716.PI',
+	id=4 label='07_BC.CN.1997.97CN001_C54.AF286226.PI' label='07_BC.CN.1997.97CN001_C54.AF286226.PI',
+	id=5 label='m3' label='m3',
+	id=6 label='B.CN.1998.YN9802.JF932495.PI' label='B.CN.1998.YN9802.JF932495.PI',
+	id=7 label='m4' label='m4',
+	id=8 label='07_BC.CN.1998.98CN009.AF286230.NR' label='07_BC.CN.1998.98CN009.AF286230.NR',
+	id=9 label='m5' label='m5',
+	id=10 label='B.CN.1999.plwj.GU177863.PB' label='B.CN.1999.plwj.GU177863.PB',
+	id=11 label='m6' label='m6',
+	id=12 label='08_BC.CN.1998.98CN006.AF286229.NR' label='08_BC.CN.1998.98CN006.AF286229.NR',
+	id=13 label='m7' label='m7',
+	id=14 label='B.CN.1999.plwj11_6.GU647196.PB' label='B.CN.1999.plwj11_6.GU647196.PB',
+	id=15 label='08_BC.CN.1996.96CNKM005.AB213671.SH' label='08_BC.CN.1996.96CNKM005.AB213671.SH',
+	id=16 label='m9' label='m9',
+	id=17 label='07_BC.CN.1997.97CNKM007.AB213673.SH' label='07_BC.CN.1997.97CNKM007.AB213673.SH',
+	id=18 label='B.CN.1999.plwj5_6.GU647197.PB' label='B.CN.1999.plwj5_6.GU647197.PB',
+	id=19 label='B.CN.1999.plwj2_6.GU647198.PB' label='B.CN.1999.plwj2_6.GU647198.PB',
+	id=20 label='m10' label='m10',
+	id=21 label='B.CN.1994.94CNKM001.AB213667.SH' label='B.CN.1994.94CNKM001.AB213667.SH',
+	id=22 label='m11' label='m11',
+	id=23 label='B.CN.1996.96CNKM004.AB213670.SH' label='B.CN.1996.96CNKM004.AB213670.SH',
+	id=24 label='m12' label='m12',
+	id=25 label='m13' label='m13',
+	id=26 label='m14' label='m14',
+	id=27 label='B.CN.1998.YN9838.JF932496.PI' label='B.CN.1998.YN9838.JF932496.PI',
+	id=28 label='m15' label='m15',
+	id=29 label='m16' label='m16',
+	id=30 label='m17' label='m17',
+	id=31 label='m18' label='m18',
+	id=32 label='B.CN.1996.96CNKM006.AB213672.SH' label='B.CN.1996.96CNKM006.AB213672.SH',
+	id=33 label='m19' label='m19',
+	id=34 label='m20' label='m20',
+	id=35 label='B.CN.1995.95CNKM002.AB213668.SH' label='B.CN.1995.95CNKM002.AB213668.SH',
+	id=36 label='m21' label='m21',
+	id=37 label='m22' label='m22',
+	id=38 label='m23' label='m23',
+	id=39 label='m24' label='m24',
+	id=40 label='m25' label='m25',
+	id=41 label='m26' label='m26',
+	id=42 label='m27' label='m27',
+	id=43 label='m29' label='m29',
+	id=44 label='m30' label='m30',
+	id=45 label='m31' label='m31',
+	id=46 label='m32' label='m32',
+	id=47 label='m33' label='m33',
+	id=48 label='m34' label='m34',
+	id=49 label='m35' label='m35',
+	id=50 label='m36' label='m36',
+	id=51 label='m37' label='m37',
+	id=52 label='m38' label='m38',
+	id=53 label='m39' label='m39',
+	id=54 label='m40' label='m40',
+	id=55 label='m41' label='m41'
+;
+EDGES
+	id=1 sid=1 tid=2 weight='31.0' w='31.0',
+	id=2 sid=1 tid=33 weight='2.0' w='2.0',
+	id=3 sid=1 tid=34 weight='11.5' w='11.5',
+	id=4 sid=3 tid=38 weight='13.0' w='13.0',
+	id=5 sid=4 tid=28 weight='10.0' w='10.0',
+	id=6 sid=5 tid=6 weight='30.5' w='30.5',
+	id=7 sid=5 tid=54 weight='3.5' w='3.5',
+	id=8 sid=5 tid=55 weight='4.0' w='4.0',
+	id=9 sid=7 tid=8 weight='7.0' w='7.0',
+	id=10 sid=7 tid=29 weight='3.0' w='3.0',
+	id=11 sid=7 tid=28 weight='2.0' w='2.0',
+	id=12 sid=9 tid=10 weight='3.0' w='3.0',
+	id=13 sid=9 tid=18 weight='2.0' w='2.0',
+	id=14 sid=9 tid=13 weight='8.5' w='8.5',
+	id=15 sid=11 tid=12 weight='4.0' w='4.0',
+	id=16 sid=11 tid=24 weight='2.0' w='2.0',
+	id=17 sid=11 tid=25 weight='1.5' w='1.5',
+	id=18 sid=13 tid=14 weight='7.5' w='7.5',
+	id=19 sid=13 tid=30 weight='14.5' w='14.5',
+	id=20 sid=15 tid=24 weight='6.0' w='6.0',
+	id=21 sid=16 tid=17 weight='3.5' w='3.5',
+	id=22 sid=16 tid=28 weight='2.5' w='2.5',
+	id=23 sid=16 tid=29 weight='1.5' w='1.5',
+	id=24 sid=18 tid=19 weight='2.0' w='2.0',
+	id=25 sid=20 tid=21 weight='17.5' w='17.5',
+	id=26 sid=20 tid=50 weight='7.0' w='7.0',
+	id=27 sid=20 tid=37 weight='2.5' w='2.5',
+	id=28 sid=20 tid=41 weight='11.0' w='11.0',
+	id=29 sid=22 tid=23 weight='4.0' w='4.0',
+	id=30 sid=22 tid=35 weight='3.0' w='3.0',
+	id=31 sid=22 tid=40 weight='3.5' w='3.5',
+	id=32 sid=24 tid=34 weight='11.5' w='11.5',
+	id=33 sid=25 tid=38 weight='2.5' w='2.5',
+	id=34 sid=25 tid=39 weight='10.0' w='10.0',
+	id=35 sid=26 tid=27 weight='15.5' w='15.5',
+	id=36 sid=26 tid=47 weight='3.5' w='3.5',
+	id=37 sid=26 tid=40 weight='12.0' w='12.0',
+	id=38 sid=29 tid=43 weight='17.0' w='17.0',
+	id=39 sid=30 tid=45 weight='2.0' w='2.0',
+	id=40 sid=30 tid=51 weight='5.5' w='5.5',
+	id=41 sid=30 tid=48 weight='12.5' w='12.5',
+	id=42 sid=31 tid=32 weight='3.5' w='3.5',
+	id=43 sid=31 tid=44 weight='1.5' w='1.5',
+	id=44 sid=31 tid=45 weight='11.5' w='11.5',
+	id=45 sid=33 tid=43 weight='13.0' w='13.0',
+	id=46 sid=33 tid=39 weight='11.5' w='11.5',
+	id=47 sid=34 tid=39 weight='2.0' w='2.0',
+	id=48 sid=34 tid=42 weight='2.0' w='2.0',
+	id=49 sid=35 tid=36 weight='2.5' w='2.5',
+	id=50 sid=35 tid=37 weight='9.0' w='9.0',
+	id=51 sid=36 tid=44 weight='1.5' w='1.5',
+	id=52 sid=36 tid=50 weight='2.0' w='2.0',
+	id=53 sid=37 tid=40 weight='6.5' w='6.5',
+	id=54 sid=37 tid=52 weight='3.0' w='3.0',
+	id=55 sid=37 tid=53 weight='2.0' w='2.0',
+	id=56 sid=38 tid=42 weight='7.5' w='7.5',
+	id=57 sid=39 tid=48 weight='102.0' w='102.0',
+	id=58 sid=40 tid=50 weight='2.0' w='2.0',
+	id=59 sid=41 tid=42 weight='107.0' w='107.0',
+	id=60 sid=41 tid=47 weight='2.5' w='2.5',
+	id=61 sid=41 tid=48 weight='5.0' w='5.0',
+	id=62 sid=43 tid=49 weight='97.0' w='97.0',
+	id=63 sid=44 tid=51 weight='6.5' w='6.5',
+	id=64 sid=45 tid=46 weight='1.5' w='1.5',
+	id=65 sid=45 tid=49 weight='10.0' w='10.0',
+	id=66 sid=46 tid=53 weight='4.5' w='4.5',
+	id=67 sid=46 tid=52 weight='3.5' w='3.5',
+	id=68 sid=46 tid=54 weight='10.5' w='10.5',
+	id=69 sid=47 tid=52 weight='8.0' w='8.0',
+	id=70 sid=47 tid=55 weight='3.5' w='3.5',
+	id=71 sid=47 tid=54 weight='4.0' w='4.0',
+	id=72 sid=48 tid=49 weight='3.5' w='3.5',
+	id=73 sid=48 tid=54 weight='1.5' w='1.5',
+	id=74 sid=51 tid=52 weight='1.5' w='1.5',
+	id=75 sid=53 tid=55 weight='5.5' w='5.5'
+;
+END; [NETWORK]
+
+BEGIN ALGORITHM;
+TITLE 'Show Network';
+LINK NETWORK = 'Working Network';
+NAME 'Show Network';
+OPTIONS
+	View = 'Network';
+END; [ALGORITHM]
+
+BEGIN VIEW;
+TITLE 'Network';
+LINK ALGORITHM = 'Show Network';
+NAME 'NetworkView';
+INPUT 'NETWORK';
+OPTIONS
+	Diagram = 'Network',
+	FontScaleFactor = 1,
+	TraitLegend = 'False',
+	TraitSize = 32,
+	SitesStyle = 'None',
+	Edits = 'mn:1:287.95,-50.08' 'mn:2:335.01,-70.28' 'mn:3:294.41,99.71' 'mn:4:284.57,-218.98' 'mn:5:-43.1,50.7' 'mn:6:-35.13,132.95' 'mn:7:209.41,-180.26' 'mn:8:237.89,-240.77' 'mn:9:-150.62,-90.92' 'mn:10:-199.17,-104.22' 'mn:11:273.38,47.9' 'mn:12:303.81,68.87' 'mn:13:-115.87,-66.57' 'mn:14:-210.79,-53.55' 'mn:15:364.81,14.7' 'mn:16:243.01,-160.48' 'mn:17:277.34,-164.74' 'mn:18:-166.65,-117.02' 'mn:19:-183.91,-150.38' 'mn:20:-75.26,95.11' 'mn:21:-141.8,166.21' 'mn:22:-150.08,132.58' 'mn:23:-198.28,149.66' 'mn:24:293.24,35.95' 'mn:25:252.23,27.04' 'mn:26:-60.65,-7.77' 'mn:27:-71.84,-103.52' 'mn:28:245.07,-186.19' 'mn:29:215.87,-146.78' 'mn:30:-80.37,-23.63' 'mn:31:-138.13,12.64' 'mn:32:-185.43,-0.23' 'mn:33:225.48,-70.05' 'mn:34:231.21,-5.07' 'mn:35:-149.73,93.02' 'mn:36:-135.34,71.38' 'mn:37:-86.1,75' 'mn:38:238.08,53.2' 'mn:39:174.4,-41.05' 'mn:40:-115.31,112.66' 'mn:41:-14.51,51.63' 'mn:42:203.11,40.52' 'mn:43:195.34,-90.1' 'mn:44:-136.53,40.97' 'mn:45:-71.01,-7.13' 'mn:46:-75.86,10.97' 'mn:47:-43.75,-0.33' 'mn:48:-16.9,4.23' 'mn:49:-28,-25.76' 'mn:50:-122.12,91.34' 'mn:51:-102.73,18.76' 'mn:52:-84.5,42.43' 'mn:53:-71.03,51.96' 'mn:54:-29.81,8.81' 'mn:55:-58.47,40.96' 'ml:15:157,-23' 'ml:21:-130,-3' 'ml:19:0,1' 'ml:14:0,1' 'ml:45:0,2' 'ml:44:0,2' 'ml:47:0,2' 'ml:46:0,2' 'ml:49:0,2' 'ml:48:0,2' 'ml:51:0,2' 'ml:50:0,2' 'ml:53:0,2' 'ml:52:0,2' 'ml:10:1,5' 'ml:17:-1,1' 'ml:12:1,-10' 'ml:4:140,7' 'ml:2:-1,1' 'ml:54:0,2' 'ml:55:0,2' 'ml:23:-106,-52' 'ml:22:0,2' 'ml:20:0,2' 'ml:25:-1,2' 'ml:24:-1,2' 'ml:28:-1,2' 'ml:26:0,2' 'ml:30:0,2' 'ml:18:-250,-12' 'ml:29:-1,2' 'ml:33:-1,2' 'ml:31:0,2' 'ml:6:29,46' 'ml:35:0,1' 'ml:1:-1,2' 'ml:5:0,2' 'ml:3:-1,1' 'ml:7:-1,2' 'ml:9:0,2' 'ml:11:-1,2' 'ml:13:0,2' 'ml:34:-1,2' 'ml:16:-1,2' 'ml:37:0,2' 'ml:36:0,2' 'ml:39:-1,2' 'ml:38:-1,2' 'ml:27:5,-84' 'ml:41:0,2' 'ml:40:0,2' 'ml:42:-1,2' 'ml:43:-1,2' 'ml:32:0,1' 'ml:8:153,34',
+	LayoutSeed = 29;
+END; [VIEW]

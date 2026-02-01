@@ -1,0 +1,30 @@
+#NEXUS
+
+BEGIN NETWORK;
+DIMENSIONS nVertices=10 nEdges=12;
+VERTICES
+    id=1 label='v1',
+    id=2 label='v2',
+    id=3 label='v3',
+    id=4 label='v4',
+    id=5 label='v5',
+    id=6 label='m6',
+    id=7 label='m7',
+    id=8 label='m8',
+    id=9 label='m9',
+    id=10 label='m10';
+EDGES
+    id=1 sid=1 tid=8 weight=23.0,
+    id=2 sid=2 tid=6 weight=2.0,
+    id=3 sid=3 tid=6 weight=2.0,
+    id=4 sid=3 tid=10 weight=2.0,
+    id=5 sid=4 tid=8 weight=7.0,
+    id=6 sid=4 tid=9 weight=8.0,
+    id=7 sid=5 tid=7 weight=2.0,
+    id=8 sid=5 tid=10 weight=7.0,
+    id=9 sid=6 tid=9 weight=2.0,
+    id=10 sid=7 tid=8 weight=8.0,
+    id=11 sid=7 tid=9 weight=7.0,
+    id=12 sid=9 tid=10 weight=2.0
+;
+END; [NETWORK]

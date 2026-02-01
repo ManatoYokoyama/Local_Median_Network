@@ -1,0 +1,463 @@
+#nexus [SplitsTree6]
+
+BEGIN SPLITSTREE6;
+DIMENSIONS nDataNodes=6 nAlgorithms=4;
+PROGRAM version='SplitsTree App (version 6.7.2, built 17 Jan 2026)';
+WORKFLOW creationDate='1769320736862'; [Sun Jan 25 14:58:56 JST 2026]
+END; [SPLITSTREE6]
+
+[
+Methods:
+Analysis was performed using SplitsTree App 6.0.0 (Huson and Bryant 2024).
+The original input consisted of 40 taxa and 40 nodes and 63 edges.
+
+References:
+Huson and Bryant 2024: D.H. Huson and D. Bryant. The SplitsTree App: interactive analysis and visualization using phylogenetic trees and networks. Nature Methods, 2024.
+]
+
+BEGIN TAXA;
+TITLE 'Input Taxa';
+LINK ALGORITHM = 'Input Data Loader';
+DIMENSIONS ntax=40;
+TAXLABELS
+	[1] 'Romney'
+	[2] 'Trump'
+	[3] 'm0'
+	[4] 'm1'
+	[5] 'Clinton'
+	[6] 'Obama'
+	[7] 'm2'
+	[8] 'm3'
+	[9] 'm4'
+	[10] 'm5'
+	[11] 'm6'
+	[12] 'Black'
+	[13] 'm7'
+	[14] 'm8'
+	[15] 'White'
+	[16] 'm9'
+	[17] 'm10'
+	[18] 'm11'
+	[19] 'm12'
+	[20] 'Poverty'
+	[21] 'm13'
+	[22] 'High_School'
+	[23] 'm14'
+	[24] 'm15'
+	[25] 'm16'
+	[26] 'Density'
+	[27] 'm17'
+	[28] 'm18'
+	[29] 'm19'
+	[30] 'Bachelors'
+	[31] 'm20'
+	[32] 'm21'
+	[33] 'm22'
+	[34] 'm23'
+	[35] 'Hispanic'
+	[36] 'm24'
+	[37] 'm25'
+	[38] 'm26'
+	[39] 'm27'
+	[40] 'm28'
+;
+DISPLAYLABELS
+	[1] '<c white><bg red><b>Romney'
+	[2] '<c white><bg red><b>Trump'
+	[3] '<c white><size "1.0">m0'
+	[4] '<c white><size "1.0">m1'
+	[5] '<bg blue><c white><b>Clinton'
+	[6] '<bg blue><c white><b>Obama'
+	[7] '<c white><size "1.0">m2'
+	[8] '<c white><size "1.0">m3'
+	[9] '<c white><size "1.0">m4'
+	[10] '<c white><size "1.0">m5'
+	[11] '<c white><size "1.0">m6'
+	[12] '<c white><bg 0x6680e6ff><b>Black'
+	[13] '<c white><size "1.0">m7'
+	[14] '<c white><size "1.0">m8'
+	[15] '<bg 0xff6666ff><c white><b>White'
+	[16] '<c white><size "1.0">m9'
+	[17] '<c white><size "1.0">m10'
+	[18] '<c white><size "1.0">m11'
+	[19] '<c white><size "1.0">m12'
+	[20] '<bg 0xcce6ffff><b>Poverty'
+	[21] '<c white><size "1.0">m13'
+	[22] '<c white><bg black><b>High_School'
+	[23] '<c white><size "1.0">m14'
+	[24] '<c white><size "1.0">m15'
+	[25] '<c white><size "1.0">m16'
+	[26] '<bg 0xcce6ffff><b>Density'
+	[27] '<c white><size "1.0">m17'
+	[28] '<c white><size "1.0">m18'
+	[29] '<c white><size "1.0">m19'
+	[30] '<bg 0xb3ccffff><b>Bachelors'
+	[31] '<c white><size "1.0">m20'
+	[32] '<c white><size "1.0">m21'
+	[33] '<c white><size "1.0">m22'
+	[34] '<c white><size "1.0">m23'
+	[35] '<c white><bg black><b>Hispanic'
+	[36] '<c white><size "1.0">m24'
+	[37] '<c white><size "1.0">m25'
+	[38] '<c white><size "1.0">m26'
+	[39] '<c white><size "1.0">m27'
+	[40] '<c white><size "1.0">m28'
+;
+[TAXINFO;]
+END; [TAXA]
+
+BEGIN ALGORITHM;
+TITLE 'Taxa Filter';
+LINK ALGORITHM = 'Input Data Loader';
+NAME 'Taxa Filter';
+OPTIONS
+;
+END; [ALGORITHM]
+
+BEGIN TAXA;
+TITLE 'Working Taxa';
+LINK ALGORITHM = 'Taxa Filter';
+DIMENSIONS ntax=40;
+TAXLABELS
+	[1] 'Romney'
+	[2] 'Trump'
+	[3] 'm0'
+	[4] 'm1'
+	[5] 'Clinton'
+	[6] 'Obama'
+	[7] 'm2'
+	[8] 'm3'
+	[9] 'm4'
+	[10] 'm5'
+	[11] 'm6'
+	[12] 'Black'
+	[13] 'm7'
+	[14] 'm8'
+	[15] 'White'
+	[16] 'm9'
+	[17] 'm10'
+	[18] 'm11'
+	[19] 'm12'
+	[20] 'Poverty'
+	[21] 'm13'
+	[22] 'High_School'
+	[23] 'm14'
+	[24] 'm15'
+	[25] 'm16'
+	[26] 'Density'
+	[27] 'm17'
+	[28] 'm18'
+	[29] 'm19'
+	[30] 'Bachelors'
+	[31] 'm20'
+	[32] 'm21'
+	[33] 'm22'
+	[34] 'm23'
+	[35] 'Hispanic'
+	[36] 'm24'
+	[37] 'm25'
+	[38] 'm26'
+	[39] 'm27'
+	[40] 'm28'
+;
+DISPLAYLABELS
+	[1] '<c white><bg red><b>Romney'
+	[2] '<c white><bg red><b>Trump'
+	[3] '<c white><size "1.0">m0'
+	[4] '<c white><size "1.0">m1'
+	[5] '<bg blue><c white><b>Clinton'
+	[6] '<bg blue><c white><b>Obama'
+	[7] '<c white><size "1.0">m2'
+	[8] '<c white><size "1.0">m3'
+	[9] '<c white><size "1.0">m4'
+	[10] '<c white><size "1.0">m5'
+	[11] '<c white><size "1.0">m6'
+	[12] '<c white><bg 0x6680e6ff><b>Black'
+	[13] '<c white><size "1.0">m7'
+	[14] '<c white><size "1.0">m8'
+	[15] '<bg 0xff6666ff><c white><b>White'
+	[16] '<c white><size "1.0">m9'
+	[17] '<c white><size "1.0">m10'
+	[18] '<c white><size "1.0">m11'
+	[19] '<c white><size "1.0">m12'
+	[20] '<bg 0xcce6ffff><b>Poverty'
+	[21] '<c white><size "1.0">m13'
+	[22] '<c white><bg black><b>High_School'
+	[23] '<c white><size "1.0">m14'
+	[24] '<c white><size "1.0">m15'
+	[25] '<c white><size "1.0">m16'
+	[26] '<bg 0xcce6ffff><b>Density'
+	[27] '<c white><size "1.0">m17'
+	[28] '<c white><size "1.0">m18'
+	[29] '<c white><size "1.0">m19'
+	[30] '<bg 0xb3ccffff><b>Bachelors'
+	[31] '<c white><size "1.0">m20'
+	[32] '<c white><size "1.0">m21'
+	[33] '<c white><size "1.0">m22'
+	[34] '<c white><size "1.0">m23'
+	[35] '<c white><bg black><b>Hispanic'
+	[36] '<c white><size "1.0">m24'
+	[37] '<c white><size "1.0">m25'
+	[38] '<c white><size "1.0">m26'
+	[39] '<c white><size "1.0">m27'
+	[40] '<c white><size "1.0">m28'
+;
+[TAXINFO;]
+END; [TAXA]
+
+BEGIN NETWORK;
+TITLE 'Input Network';
+LINK ALGORITHM = 'Input Data Loader';
+DIMENSIONS nVertices=40 nEdges=63;
+TYPE Other;
+VERTICES
+	id=1 label='Romney' label='Romney',
+	id=2 label='Trump' label='Trump',
+	id=3 label='m0' label='m0',
+	id=4 label='m1' label='m1',
+	id=5 label='Clinton' label='Clinton',
+	id=6 label='Obama' label='Obama',
+	id=7 label='m2' label='m2',
+	id=8 label='m3' label='m3',
+	id=9 label='m4' label='m4',
+	id=10 label='m5' label='m5',
+	id=11 label='m6' label='m6',
+	id=12 label='Black' label='Black',
+	id=13 label='m7' label='m7',
+	id=14 label='m8' label='m8',
+	id=15 label='White' label='White',
+	id=16 label='m9' label='m9',
+	id=17 label='m10' label='m10',
+	id=18 label='m11' label='m11',
+	id=19 label='m12' label='m12',
+	id=20 label='Poverty' label='Poverty',
+	id=21 label='m13' label='m13',
+	id=22 label='High_School' label='High_School',
+	id=23 label='m14' label='m14',
+	id=24 label='m15' label='m15',
+	id=25 label='m16' label='m16',
+	id=26 label='Density' label='Density',
+	id=27 label='m17' label='m17',
+	id=28 label='m18' label='m18',
+	id=29 label='m19' label='m19',
+	id=30 label='Bachelors' label='Bachelors',
+	id=31 label='m20' label='m20',
+	id=32 label='m21' label='m21',
+	id=33 label='m22' label='m22',
+	id=34 label='m23' label='m23',
+	id=35 label='Hispanic' label='Hispanic',
+	id=36 label='m24' label='m24',
+	id=37 label='m25' label='m25',
+	id=38 label='m26' label='m26',
+	id=39 label='m27' label='m27',
+	id=40 label='m28' label='m28'
+;
+EDGES
+	id=1 sid=1 tid=2 w='7.0' weight='7.0',
+	id=2 sid=1 tid=3 w='37.5' weight='37.5',
+	id=3 sid=2 tid=4 w='5.5' weight='5.5',
+	id=4 sid=3 tid=10 w='16.5' weight='16.5',
+	id=5 sid=3 tid=9 w='13.5' weight='13.5',
+	id=6 sid=3 tid=23 w='27.5' weight='27.5',
+	id=7 sid=3 tid=31 w='31.0' weight='31.0',
+	id=8 sid=4 tid=9 w='29.5' weight='29.5',
+	id=9 sid=4 tid=10 w='26.5' weight='26.5',
+	id=10 sid=5 tid=6 w='5.0' weight='5.0',
+	id=11 sid=5 tid=7 w='10.5' weight='10.5',
+	id=12 sid=5 tid=8 w='20.0' weight='20.0',
+	id=13 sid=6 tid=21 w='87.5' weight='87.5',
+	id=14 sid=7 tid=17 w='8.0' weight='8.0',
+	id=15 sid=7 tid=25 w='15.5' weight='15.5',
+	id=16 sid=8 tid=27 w='7.0' weight='7.0',
+	id=17 sid=8 tid=28 w='11.5' weight='11.5',
+	id=18 sid=9 tid=14 w='7.5' weight='7.5',
+	id=19 sid=10 tid=21 w='73.5' weight='73.5',
+	id=20 sid=11 tid=12 w='11.5' weight='11.5',
+	id=21 sid=11 tid=17 w='19.0' weight='19.0',
+	id=22 sid=11 tid=18 w='10.0' weight='10.0',
+	id=23 sid=12 tid=13 w='28.5' weight='28.5',
+	id=24 sid=13 tid=29 w='9.0' weight='9.0',
+	id=25 sid=13 tid=32 w='9.0' weight='9.0',
+	id=26 sid=13 tid=31 w='42.0' weight='42.0',
+	id=27 sid=13 tid=40 w='28.0' weight='28.0',
+	id=28 sid=14 tid=15 w='4.5' weight='4.5',
+	id=29 sid=14 tid=22 w='66.5' weight='66.5',
+	id=30 sid=15 tid=16 w='65.5' weight='65.5',
+	id=31 sid=16 tid=22 w='5.5' weight='5.5',
+	id=32 sid=16 tid=23 w='34.5' weight='34.5',
+	id=33 sid=16 tid=24 w='25.5' weight='25.5',
+	id=34 sid=17 tid=26 w='59.5' weight='59.5',
+	id=35 sid=18 tid=33 w='16.0' weight='16.0',
+	id=36 sid=18 tid=40 w='21.0' weight='21.0',
+	id=37 sid=19 tid=20 w='11.0' weight='11.0',
+	id=38 sid=19 tid=32 w='5.5' weight='5.5',
+	id=39 sid=19 tid=33 w='5.5' weight='5.5',
+	id=40 sid=20 tid=21 w='8.5' weight='8.5',
+	id=41 sid=21 tid=29 w='8.0' weight='8.0',
+	id=42 sid=23 tid=26 w='58.0' weight='58.0',
+	id=43 sid=24 tid=30 w='9.0' weight='9.0',
+	id=44 sid=24 tid=34 w='9.5' weight='9.5',
+	id=45 sid=25 tid=28 w='5.5' weight='5.5',
+	id=46 sid=25 tid=40 w='30.5' weight='30.5',
+	id=47 sid=26 tid=38 w='16.5' weight='16.5',
+	id=48 sid=26 tid=39 w='16.5' weight='16.5',
+	id=49 sid=27 tid=30 w='30.0' weight='30.0',
+	id=50 sid=27 tid=37 w='14.5' weight='14.5',
+	id=51 sid=28 tid=35 w='50.5' weight='50.5',
+	id=52 sid=28 tid=37 w='10.0' weight='10.0',
+	id=53 sid=29 tid=35 w='72.5' weight='72.5',
+	id=54 sid=31 tid=36 w='27.5' weight='27.5',
+	id=55 sid=31 tid=35 w='39.5' weight='39.5',
+	id=56 sid=32 tid=35 w='72.5' weight='72.5',
+	id=57 sid=33 tid=35 w='72.5' weight='72.5',
+	id=58 sid=34 tid=36 w='30.5' weight='30.5',
+	id=59 sid=34 tid=37 w='26.0' weight='26.0',
+	id=60 sid=36 tid=38 w='10.5' weight='10.5',
+	id=61 sid=37 tid=39 w='15.0' weight='15.0',
+	id=62 sid=38 tid=40 w='31.0' weight='31.0',
+	id=63 sid=39 tid=40 w='31.0' weight='31.0'
+;
+END; [NETWORK]
+
+BEGIN ALGORITHM;
+TITLE 'Input Data Filter';
+LINK NETWORK = 'Input Network';
+NAME 'Network Taxa Filter';
+END; [ALGORITHM]
+
+BEGIN NETWORK;
+TITLE 'Working Network';
+LINK ALGORITHM = 'Input Data Filter';
+DIMENSIONS nVertices=40 nEdges=63;
+TYPE Other;
+VERTICES
+	id=1 label='Romney' label='Romney',
+	id=2 label='Trump' label='Trump',
+	id=3 label='m0' label='m0',
+	id=4 label='m1' label='m1',
+	id=5 label='Clinton' label='Clinton',
+	id=6 label='Obama' label='Obama',
+	id=7 label='m2' label='m2',
+	id=8 label='m3' label='m3',
+	id=9 label='m4' label='m4',
+	id=10 label='m5' label='m5',
+	id=11 label='m6' label='m6',
+	id=12 label='Black' label='Black',
+	id=13 label='m7' label='m7',
+	id=14 label='m8' label='m8',
+	id=15 label='White' label='White',
+	id=16 label='m9' label='m9',
+	id=17 label='m10' label='m10',
+	id=18 label='m11' label='m11',
+	id=19 label='m12' label='m12',
+	id=20 label='Poverty' label='Poverty',
+	id=21 label='m13' label='m13',
+	id=22 label='High_School' label='High_School',
+	id=23 label='m14' label='m14',
+	id=24 label='m15' label='m15',
+	id=25 label='m16' label='m16',
+	id=26 label='Density' label='Density',
+	id=27 label='m17' label='m17',
+	id=28 label='m18' label='m18',
+	id=29 label='m19' label='m19',
+	id=30 label='Bachelors' label='Bachelors',
+	id=31 label='m20' label='m20',
+	id=32 label='m21' label='m21',
+	id=33 label='m22' label='m22',
+	id=34 label='m23' label='m23',
+	id=35 label='Hispanic' label='Hispanic',
+	id=36 label='m24' label='m24',
+	id=37 label='m25' label='m25',
+	id=38 label='m26' label='m26',
+	id=39 label='m27' label='m27',
+	id=40 label='m28' label='m28'
+;
+EDGES
+	id=1 sid=1 tid=2 weight='7.0' w='7.0',
+	id=2 sid=1 tid=3 weight='37.5' w='37.5',
+	id=3 sid=2 tid=4 weight='5.5' w='5.5',
+	id=4 sid=3 tid=10 weight='16.5' w='16.5',
+	id=5 sid=3 tid=9 weight='13.5' w='13.5',
+	id=6 sid=3 tid=23 weight='27.5' w='27.5',
+	id=7 sid=3 tid=31 weight='31.0' w='31.0',
+	id=8 sid=4 tid=9 weight='29.5' w='29.5',
+	id=9 sid=4 tid=10 weight='26.5' w='26.5',
+	id=10 sid=5 tid=6 weight='5.0' w='5.0',
+	id=11 sid=5 tid=7 weight='10.5' w='10.5',
+	id=12 sid=5 tid=8 weight='20.0' w='20.0',
+	id=13 sid=6 tid=21 weight='87.5' w='87.5',
+	id=14 sid=7 tid=17 weight='8.0' w='8.0',
+	id=15 sid=7 tid=25 weight='15.5' w='15.5',
+	id=16 sid=8 tid=27 weight='7.0' w='7.0',
+	id=17 sid=8 tid=28 weight='11.5' w='11.5',
+	id=18 sid=9 tid=14 weight='7.5' w='7.5',
+	id=19 sid=10 tid=21 weight='73.5' w='73.5',
+	id=20 sid=11 tid=12 weight='11.5' w='11.5',
+	id=21 sid=11 tid=17 weight='19.0' w='19.0',
+	id=22 sid=11 tid=18 weight='10.0' w='10.0',
+	id=23 sid=12 tid=13 weight='28.5' w='28.5',
+	id=24 sid=13 tid=29 weight='9.0' w='9.0',
+	id=25 sid=13 tid=32 weight='9.0' w='9.0',
+	id=26 sid=13 tid=31 weight='42.0' w='42.0',
+	id=27 sid=13 tid=40 weight='28.0' w='28.0',
+	id=28 sid=14 tid=15 weight='4.5' w='4.5',
+	id=29 sid=14 tid=22 weight='66.5' w='66.5',
+	id=30 sid=15 tid=16 weight='65.5' w='65.5',
+	id=31 sid=16 tid=22 weight='5.5' w='5.5',
+	id=32 sid=16 tid=23 weight='34.5' w='34.5',
+	id=33 sid=16 tid=24 weight='25.5' w='25.5',
+	id=34 sid=17 tid=26 weight='59.5' w='59.5',
+	id=35 sid=18 tid=33 weight='16.0' w='16.0',
+	id=36 sid=18 tid=40 weight='21.0' w='21.0',
+	id=37 sid=19 tid=20 weight='11.0' w='11.0',
+	id=38 sid=19 tid=32 weight='5.5' w='5.5',
+	id=39 sid=19 tid=33 weight='5.5' w='5.5',
+	id=40 sid=20 tid=21 weight='8.5' w='8.5',
+	id=41 sid=21 tid=29 weight='8.0' w='8.0',
+	id=42 sid=23 tid=26 weight='58.0' w='58.0',
+	id=43 sid=24 tid=30 weight='9.0' w='9.0',
+	id=44 sid=24 tid=34 weight='9.5' w='9.5',
+	id=45 sid=25 tid=28 weight='5.5' w='5.5',
+	id=46 sid=25 tid=40 weight='30.5' w='30.5',
+	id=47 sid=26 tid=38 weight='16.5' w='16.5',
+	id=48 sid=26 tid=39 weight='16.5' w='16.5',
+	id=49 sid=27 tid=30 weight='30.0' w='30.0',
+	id=50 sid=27 tid=37 weight='14.5' w='14.5',
+	id=51 sid=28 tid=35 weight='50.5' w='50.5',
+	id=52 sid=28 tid=37 weight='10.0' w='10.0',
+	id=53 sid=29 tid=35 weight='72.5' w='72.5',
+	id=54 sid=31 tid=36 weight='27.5' w='27.5',
+	id=55 sid=31 tid=35 weight='39.5' w='39.5',
+	id=56 sid=32 tid=35 weight='72.5' w='72.5',
+	id=57 sid=33 tid=35 weight='72.5' w='72.5',
+	id=58 sid=34 tid=36 weight='30.5' w='30.5',
+	id=59 sid=34 tid=37 weight='26.0' w='26.0',
+	id=60 sid=36 tid=38 weight='10.5' w='10.5',
+	id=61 sid=37 tid=39 weight='15.0' w='15.0',
+	id=62 sid=38 tid=40 weight='31.0' w='31.0',
+	id=63 sid=39 tid=40 weight='31.0' w='31.0'
+;
+END; [NETWORK]
+
+BEGIN ALGORITHM;
+TITLE 'Show Network';
+LINK NETWORK = 'Working Network';
+NAME 'Show Network';
+OPTIONS
+	View = 'Network';
+END; [ALGORITHM]
+
+BEGIN VIEW;
+TITLE 'Network';
+LINK ALGORITHM = 'Show Network';
+NAME 'NetworkView';
+INPUT 'NETWORK';
+OPTIONS
+	Diagram = 'Network',
+	FontScaleFactor = 1,
+	TraitLegend = 'False',
+	TraitSize = 32,
+	SitesStyle = 'None',
+	Edits = 'mn:1:-371.25,-24.19' 'mn:2:-415.74,3.77' 'mn:3:-222.55,-3.51' 'mn:4:-375,32.71' 'mn:5:245.25,-74.84' 'mn:6:291.12,-17.74' 'mn:7:284.22,9.4' 'mn:8:203.55,-155.96' 'mn:9:-298.18,-42.18' 'mn:10:-256.32,74.74' 'mn:11:233.14,157.68' 'mn:12:183.94,207.32' 'mn:13:21.06,161.42' 'mn:14:-321.57,-97.94' 'mn:15:-325.93,-141.84' 'mn:16:-204.8,-265.55' 'mn:17:248.73,58.68' 'mn:18:168.57,169.04' 'mn:19:64.99,266.56' 'mn:20:-3.36,234.41' 'mn:21:-5.6,200.86' 'mn:22:-239.32,-209.34' 'mn:23:-91.02,-142.81' 'mn:24:-27.75,-237.18' 'mn:25:203.81,-45.9' 'mn:26:69.46,-40.68' 'mn:27:164.34,-204.64' 'mn:28:175.87,-90.67' 'mn:29:-17.69,157.27' 'mn:30:38.39,-257.55' 'mn:31:-75.12,46.63' 'mn:32:80.74,219.08' 'mn:33:112.52,243.42' 'mn:34:14.23,-182.95' 'mn:35:40.8,65.68' 'mn:36:-19.94,-56.32' 'mn:37:127.82,-141.62' 'mn:38:21.08,-1.51' 'mn:39:136.18,-62' 'mn:40:133.76,64.09' 'ml:35:-68,-27' 'ml:26:8,-11' 'ml:6:0,-13' 'ml:5:0,0' 'ml:12:0,0' 'ml:1:0,0' 'ml:22:45,45',
+	LayoutSeed = 8;
+END; [VIEW]

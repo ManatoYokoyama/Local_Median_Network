@@ -1,0 +1,268 @@
+#nexus [SplitsTree6]
+
+BEGIN SPLITSTREE6;
+DIMENSIONS nDataNodes=9 nAlgorithms=6;
+PROGRAM version='SplitsTree App (version 6.7.2, built 17 Jan 2026)';
+WORKFLOW creationDate='1769323432416'; [Sun Jan 25 15:43:52 JST 2026]
+END; [SPLITSTREE6]
+
+[
+Methods:
+Analysis was performed using SplitsTree App 6.0.0 (Huson and Bryant 2024).
+The original input consisted of 11 taxa and a 11 x 11 distance matrix.
+The Neighbor Net method (Bryant & Moulton 2004, Bryant & Huson 2023) was used (default options) so as to obtain 29 splits, circular.
+The PCOA method (Gower 1966) was used (default options) so as to obtain 11 nodes and 0 edges.
+The Show Splits method was used (default options) so as to obtain a Split Network visualization.
+
+References:
+Bryant & Huson 2023: D. Bryant and DH Huson, NeighborNet- improved algorithms and implementation. Front. Bioinform. 3, 2023.
+Bryant & Moulton 2004: D. Bryant and V. Moulton. Neighbor-net: An agglomerative method for the construction of phylogenetic networks. Molecular Biology and Evolution, 21(2):255– 265, 2004.
+Gower 1966: JC Gower,. Some distance properties of latent root and vector methods used in multivariate analysis. Biometrika, 53(3-4):325-338, 1996.
+Huson and Bryant 2024: D.H. Huson and D. Bryant. The SplitsTree App: interactive analysis and visualization using phylogenetic trees and networks. Nature Methods, 2024.
+]
+
+BEGIN TAXA;
+TITLE 'Input Taxa';
+DIMENSIONS ntax=11;
+TAXLABELS
+	[1] 'Romney'
+	[2] 'Obama'
+	[3] 'Trump'
+	[4] 'Clinton'
+	[5] 'White'
+	[6] 'Black'
+	[7] 'Hispanic'
+	[8] 'Bachelors'
+	[9] 'High_School'
+	[10] 'Poverty'
+	[11] 'Density'
+;
+DISPLAYLABELS
+	[1] '<bg red><c white><b>Romney'
+	[2] '<c white><bg blue><b>Obama'
+	[3] '<bg red><c white><b>Trump'
+	[4] '<c white><bg blue><b>Clinton'
+	[5] '<c white><bg 0xff6666ff><b>White'
+	[6] '<bg 0x6680e6ff><c white><b>Black'
+	[7] '<bg black><c white><b>Hispanic'
+	[8] '<bg 0xb3ccffff><b>Bachelors'
+	[9] '<bg black><c white><b>High_School'
+	[10] '<bg 0xcce6ffff><b>Poverty'
+	[11] '<bg 0xcce6ffff><b>Density'
+;
+[TAXINFO;]
+END; [TAXA]
+
+BEGIN ALGORITHM;
+TITLE 'Taxa Filter';
+NAME 'Taxa Filter';
+OPTIONS
+;
+END; [ALGORITHM]
+
+BEGIN TAXA;
+TITLE 'Working Taxa';
+LINK ALGORITHM = 'Taxa Filter';
+DIMENSIONS ntax=11;
+TAXLABELS
+	[1] 'Romney'
+	[2] 'Obama'
+	[3] 'Trump'
+	[4] 'Clinton'
+	[5] 'White'
+	[6] 'Black'
+	[7] 'Hispanic'
+	[8] 'Bachelors'
+	[9] 'High_School'
+	[10] 'Poverty'
+	[11] 'Density'
+;
+DISPLAYLABELS
+	[1] '<bg red><c white><b>Romney'
+	[2] '<c white><bg blue><b>Obama'
+	[3] '<bg red><c white><b>Trump'
+	[4] '<c white><bg blue><b>Clinton'
+	[5] '<c white><bg 0xff6666ff><b>White'
+	[6] '<bg 0x6680e6ff><c white><b>Black'
+	[7] '<bg black><c white><b>Hispanic'
+	[8] '<bg 0xb3ccffff><b>Bachelors'
+	[9] '<bg black><c white><b>High_School'
+	[10] '<bg 0xcce6ffff><b>Poverty'
+	[11] '<bg 0xcce6ffff><b>Density'
+;
+[TAXINFO;]
+END; [TAXA]
+
+BEGIN DISTANCES;
+TITLE 'Input Distances';
+LINK ALGORITHM = 'Taxa Filter';
+DIMENSIONS ntax=11;
+FORMAT labels=left diagonal triangle=Both;
+MATRIX
+[1] 'Romney'        0 141.421356 26.457513 139.283883 72.111026 117.898261 103.923049 114.017543 102.469508 109.087121 110.905365
+[2] 'Obama'         141.421356 0 138.92444 22.36068 122.474487 76.157731 95.91663 84.261498 98.488578 89.442719 87.749644
+[3] 'Trump'         26.457513 138.92444 0 140.712473 68.556546 119.582607 109.087121 122.065556 104.403065 106.770783 112.249722
+[4] 'Clinton'       139.283883 22.36068 140.712473 0 126.095202 70 90.553851 75.498344 99.498744 89.442719 85.440037
+[5] 'White'         72.111026 122.474487 68.556546 126.095202 0 136.747943 97.97959 100 84.261498 122.474487 107.238053
+[6] 'Black'         117.898261 76.157731 119.582607 70 136.747943 0 104.880885 103.923049 116.619038 73.484692 94.86833
+[7] 'Hispanic'      103.923049 95.91663 109.087121 90.553851 97.97959 104.880885 0 99.498744 117.473401 94.339811 95.91663
+[8] 'Bachelors'     114.017543 84.261498 122.065556 75.498344 100 103.923049 99.498744 0 63.245553 119.163753 87.177979
+[9] 'High_School'   102.469508 98.488578 104.403065 99.498744 84.261498 116.619038 117.473401 63.245553 0 128.840987 98.994949
+[10] 'Poverty'       109.087121 89.442719 106.770783 89.442719 122.474487 73.484692 94.339811 119.163753 128.840987 0 100.498756
+[11] 'Density'       110.905365 87.749644 112.249722 85.440037 107.238053 94.86833 95.91663 87.177979 98.994949 100.498756 0
+;
+END; [DISTANCES]
+
+BEGIN ALGORITHM;
+TITLE 'Input Data Filter';
+LINK DISTANCES = 'Input Distances';
+NAME 'Distances Taxa Filter';
+END; [ALGORITHM]
+
+BEGIN DISTANCES;
+TITLE 'Working Distances';
+LINK ALGORITHM = 'Input Data Filter';
+DIMENSIONS ntax=11;
+FORMAT labels=left diagonal triangle=Both;
+MATRIX
+[1] 'Romney'        0 141.421356 26.457513 139.283883 72.111026 117.898261 103.923049 114.017543 102.469508 109.087121 110.905365
+[2] 'Obama'         141.421356 0 138.92444 22.36068 122.474487 76.157731 95.91663 84.261498 98.488578 89.442719 87.749644
+[3] 'Trump'         26.457513 138.92444 0 140.712473 68.556546 119.582607 109.087121 122.065556 104.403065 106.770783 112.249722
+[4] 'Clinton'       139.283883 22.36068 140.712473 0 126.095202 70 90.553851 75.498344 99.498744 89.442719 85.440037
+[5] 'White'         72.111026 122.474487 68.556546 126.095202 0 136.747943 97.97959 100 84.261498 122.474487 107.238053
+[6] 'Black'         117.898261 76.157731 119.582607 70 136.747943 0 104.880885 103.923049 116.619038 73.484692 94.86833
+[7] 'Hispanic'      103.923049 95.91663 109.087121 90.553851 97.97959 104.880885 0 99.498744 117.473401 94.339811 95.91663
+[8] 'Bachelors'     114.017543 84.261498 122.065556 75.498344 100 103.923049 99.498744 0 63.245553 119.163753 87.177979
+[9] 'High_School'   102.469508 98.488578 104.403065 99.498744 84.261498 116.619038 117.473401 63.245553 0 128.840987 98.994949
+[10] 'Poverty'       109.087121 89.442719 106.770783 89.442719 122.474487 73.484692 94.339811 119.163753 128.840987 0 100.498756
+[11] 'Density'       110.905365 87.749644 112.249722 85.440037 107.238053 94.86833 95.91663 87.177979 98.994949 100.498756 0
+;
+END; [DISTANCES]
+
+BEGIN ALGORITHM;
+TITLE 'Neighbor Net';
+LINK DISTANCES = 'Working Distances';
+NAME 'Neighbor Net';
+OPTIONS
+	InferenceAlgorithm = 'ActiveSet';
+END; [ALGORITHM]
+
+BEGIN ALGORITHM;
+TITLE 'PCOA';
+LINK DISTANCES = 'Working Distances';
+NAME 'PCOA';
+OPTIONS
+	FirstCoordinate = 1,
+	SecondCoordinate = 2;
+END; [ALGORITHM]
+
+BEGIN SPLITS;
+TITLE 'Splits';
+LINK ALGORITHM = 'Neighbor Net';
+DIMENSIONS ntax=11 nsplits=29;
+FORMAT labels=no weights=yes confidences=no;
+PROPERTIES fit=99.7 circular;
+CYCLE 1 3 5 9 8 11 2 4 6 10 7;
+MATRIX
+[1, size=1] 	 12.27142452 	 1,
+[2, size=2] 	 20.93171731 	 1 3,
+[3, size=3] 	 10.56064576 	 1 3 5,
+[4, size=4] 	 15.04557376 	 1 3 5 9,
+[5, size=5] 	 2.83706157 	 1 3 5 8 9,
+[6, size=5] 	 3.15047464 	 1 3 5 8 9 11,
+[7, size=1] 	 36.29930149 	 1 2 3 4 5 6 8 9 10 11,
+[8, size=1] 	 11.25917473 	 1 2 4 5 6 7 8 9 10 11,
+[9, size=2] 	 2.84272809 	 1 2 4 6 7 8 9 10 11,
+[10, size=3] 	 0.0512311 	 1 2 4 6 7 8 10 11,
+[11, size=1] 	 24.43225168 	 1 2 3 4 6 7 8 9 10 11,
+[12, size=3] 	 4.81887344 	 1 2 3 4 6 7 10 11,
+[13, size=5] 	 6.95677355 	 1 3 6 7 10,
+[14, size=1] 	 24.06644276 	 1 2 3 4 5 6 7 8 10 11,
+[15, size=2] 	 8.70463735 	 1 2 3 4 5 6 7 10 11,
+[16, size=5] 	 2.70323185 	 1 3 5 6 7 10,
+[17, size=5] 	 11.26070308 	 1 3 5 7 10,
+[18, size=1] 	 24.07400825 	 1 2 3 4 5 6 7 9 10 11,
+[19, size=1] 	 35.13109128 	 1 2 3 4 5 6 7 8 9 10,
+[20, size=5] 	 0.6534955 	 1 3 5 7 8 9,
+[21, size=1] 	 11.91812182 	 1 3 4 5 6 7 8 9 10 11,
+[22, size=2] 	 19.76909728 	 1 3 5 6 7 8 9 10 11,
+[23, size=3] 	 1.63069602 	 1 3 5 7 8 9 10 11,
+[24, size=4] 	 11.7977419 	 1 3 5 7 8 9 11,
+[25, size=1] 	 8.03636461 	 1 2 3 5 6 7 8 9 10 11,
+[26, size=2] 	 2.38600191 	 1 2 3 5 7 8 9 10 11,
+[27, size=1] 	 27.25121788 	 1 2 3 4 5 7 8 9 10 11,
+[28, size=2] 	 5.18319584 	 1 2 3 4 5 7 8 9 11,
+[29, size=1] 	 30.9013341 	 1 2 3 4 5 6 7 8 9 11,
+;
+END; [SPLITS]
+
+BEGIN NETWORK;
+TITLE 'Network';
+LINK ALGORITHM = 'PCOA';
+DIMENSIONS nVertices=11 nEdges=0;
+TYPE Points;
+PROPERTIES info ='PCOA on 11 taxa, PC-1 (44.8%) vs PC-2 (23.7%)';
+VERTICES
+	id=1 label='<bg red><c white><b>Romney' x='-7130.066894980296' y='1844.6792148183242',
+	id=2 label='<c white><bg blue><b>Obama' x='6038.469158587922' y='-860.7802248107273',
+	id=3 label='<bg red><c white><b>Trump' x='-7235.792302408112' y='2255.435310179904',
+	id=4 label='<c white><bg blue><b>Clinton' x='6280.711049335274' y='-814.527390606764',
+	id=5 label='<c white><bg 0xff6666ff><b>White' x='-5777.543515313136' y='-2415.5452181500023',
+	id=6 label='<bg 0x6680e6ff><c white><b>Black' x='4036.398140148181' y='3720.906194428355',
+	id=7 label='<bg black><c white><b>Hispanic' x='264.7055739172941' y='1673.925795369206',
+	id=8 label='<bg 0xb3ccffff><b>Bachelors' x='1539.98838218396' y='-4972.383076013475',
+	id=9 label='<bg black><c white><b>High_School' x='-1333.174166181244' y='-5802.363236237074',
+	id=10 label='<bg 0xcce6ffff><b>Poverty' x='1870.6948351706212' y='5942.488719302299',
+	id=11 label='<bg 0xcce6ffff><b>Density' x='1445.6097395395366' y='-571.8360882800387'
+;
+EDGES
+
+;
+END; [NETWORK]
+
+BEGIN ALGORITHM;
+TITLE 'Show Splits';
+LINK SPLITS = 'Splits';
+NAME 'Show Splits';
+OPTIONS
+	View = 'SplitNetwork';
+END; [ALGORITHM]
+
+BEGIN ALGORITHM;
+TITLE 'Show Network';
+LINK NETWORK = 'Network';
+NAME 'Show Network';
+OPTIONS
+	View = 'Network';
+END; [ALGORITHM]
+
+BEGIN VIEW;
+TITLE 'SplitNetwork';
+LINK ALGORITHM = 'Show Splits';
+NAME 'SplitNetworkView';
+INPUT 'SPLITS';
+OPTIONS
+	Diagram = 'Splits',
+	Orientation = 'Rotate300Deg',
+	Rooting = 'None',
+	ZoomFactor = 0.75683557,
+	FontScaleFactor = 1,
+	RootAngle = 160,
+	OutlineFill = 0xc0c0c0ff,
+	LabelSplitsBy = 'None',
+	ShowQRCode = 'false';
+END; [VIEW]
+
+BEGIN VIEW;
+TITLE 'Network';
+LINK ALGORITHM = 'Show Network';
+NAME 'NetworkView';
+INPUT 'NETWORK';
+OPTIONS
+	Diagram = 'Network',
+	FontScaleFactor = 1,
+	TraitLegend = 'False',
+	TraitSize = 32,
+	SitesStyle = 'None',
+	LayoutSeed = 1;
+END; [VIEW]

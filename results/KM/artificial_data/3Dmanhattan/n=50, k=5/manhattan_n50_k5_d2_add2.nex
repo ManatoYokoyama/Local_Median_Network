@@ -1,0 +1,1655 @@
+#nexus [SplitsTree6]
+
+BEGIN SPLITSTREE6;
+DIMENSIONS nDataNodes=6 nAlgorithms=4;
+PROGRAM version='SplitsTree App (version 6.6.1, built 23 Oct 2025)';
+WORKFLOW creationDate='1768937872702'; [Wed Jan 21 04:37:52 JST 2026]
+END; [SPLITSTREE6]
+
+[
+Methods:
+Analysis was performed using SplitsTree App 6.0.0 (Huson and Bryant 2024).
+The original input consisted of 143 taxa and 143 nodes and 350 edges.
+
+References:
+Huson and Bryant 2024: D.H. Huson and D. Bryant. The SplitsTree App: interactive analysis and visualization using phylogenetic trees and networks. Nature Methods, 2024.
+]
+
+BEGIN TAXA;
+TITLE 'Input Taxa';
+LINK ALGORITHM = 'Input Data Loader';
+DIMENSIONS ntax=143;
+TAXLABELS
+	[1] 'v1'
+	[2] 'v2'
+	[3] 'v3'
+	[4] 'v4'
+	[5] 'v5'
+	[6] 'v6'
+	[7] 'v7'
+	[8] 'm0'
+	[9] 'm1'
+	[10] 'm2'
+	[11] 'm3'
+	[12] 'm4'
+	[13] 'm5'
+	[14] 'm6'
+	[15] 'm7'
+	[16] 'm8'
+	[17] 'm9'
+	[18] 'm10'
+	[19] 'm11'
+	[20] 'm12'
+	[21] 'm13'
+	[22] 'm14'
+	[23] 'm15'
+	[24] 'm16'
+	[25] 'm17'
+	[26] 'm18'
+	[27] 'm19'
+	[28] 'm20'
+	[29] 'm21'
+	[30] 'm22'
+	[31] 'm23'
+	[32] 'm24'
+	[33] 'm25'
+	[34] 'm26'
+	[35] 'm27'
+	[36] 'm28'
+	[37] 'm29'
+	[38] 'm30'
+	[39] 'm31'
+	[40] 'm32'
+	[41] 'm33'
+	[42] 'm34'
+	[43] 'm35'
+	[44] 'm36'
+	[45] 'm37'
+	[46] 'm38'
+	[47] 'm39'
+	[48] 'm40'
+	[49] 'm41'
+	[50] 'm42'
+	[51] 'm43'
+	[52] 'm44'
+	[53] 'm45'
+	[54] 'm46'
+	[55] 'm47'
+	[56] 'm48'
+	[57] 'm49'
+	[58] 'm50'
+	[59] 'm51'
+	[60] 'm52'
+	[61] 'm53'
+	[62] 'm54'
+	[63] 'm55'
+	[64] 'm56'
+	[65] 'm57'
+	[66] 'm58'
+	[67] 'm59'
+	[68] 'm60'
+	[69] 'm61'
+	[70] 'm62'
+	[71] 'm63'
+	[72] 'm64'
+	[73] 'm65'
+	[74] 'm66'
+	[75] 'm67'
+	[76] 'm68'
+	[77] 'm69'
+	[78] 'm70'
+	[79] 'm71'
+	[80] 'm72'
+	[81] 'm73'
+	[82] 'm74'
+	[83] 'm75'
+	[84] 'm76'
+	[85] 'm77'
+	[86] 'm78'
+	[87] 'm79'
+	[88] 'm80'
+	[89] 'm81'
+	[90] 'm82'
+	[91] 'm83'
+	[92] 'm84'
+	[93] 'm85'
+	[94] 'm86'
+	[95] 'm87'
+	[96] 'm88'
+	[97] 'm89'
+	[98] 'm90'
+	[99] 'm91'
+	[100] 'm92'
+	[101] 'm93'
+	[102] 'm94'
+	[103] 'm95'
+	[104] 'm96'
+	[105] 'm97'
+	[106] 'm98'
+	[107] 'm99'
+	[108] 'm100'
+	[109] 'm101'
+	[110] 'm102'
+	[111] 'm103'
+	[112] 'm104'
+	[113] 'm105'
+	[114] 'm106'
+	[115] 'm107'
+	[116] 'm108'
+	[117] 'm109'
+	[118] 'm110'
+	[119] 'm111'
+	[120] 'm112'
+	[121] 'm113'
+	[122] 'm114'
+	[123] 'm115'
+	[124] 'm116'
+	[125] 'm117'
+	[126] 'm118'
+	[127] 'm119'
+	[128] 'm120'
+	[129] 'm121'
+	[130] 'm122'
+	[131] 'm123'
+	[132] 'm124'
+	[133] 'm125'
+	[134] 'm126'
+	[135] 'm127'
+	[136] 'm128'
+	[137] 'm129'
+	[138] 'm130'
+	[139] 'm131'
+	[140] 'm132'
+	[141] 'm133'
+	[142] 'm134'
+	[143] 'm135'
+;
+DISPLAYLABELS
+	[1] 'v1'
+	[2] 'v2'
+	[3] 'v3'
+	[4] 'v4'
+	[5] 'v5'
+	[6] 'v6'
+	[7] 'v7'
+	[8] '<c white>m0'
+	[9] '<c white>m1'
+	[10] '<c white>m2'
+	[11] '<c white>m3'
+	[12] '<c white>m4'
+	[13] '<c white>m5'
+	[14] '<c white>m6'
+	[15] '<c white>m7'
+	[16] '<c white>m8'
+	[17] '<c white>m9'
+	[18] '<c white>m10'
+	[19] '<c white>m11'
+	[20] '<c white>m12'
+	[21] '<c white>m13'
+	[22] '<c white>m14'
+	[23] '<c white>m15'
+	[24] '<c white>m16'
+	[25] '<c white>m17'
+	[26] '<c white>m18'
+	[27] '<c white>m19'
+	[28] '<c white>m20'
+	[29] '<c white>m21'
+	[30] '<c white>m22'
+	[31] '<c white>m23'
+	[32] '<c white>m24'
+	[33] '<c white>m25'
+	[34] '<c white>m26'
+	[35] '<c white>m27'
+	[36] '<c white>m28'
+	[37] '<c white>m29'
+	[38] '<c white>m30'
+	[39] '<c white>m31'
+	[40] '<c white>m32'
+	[41] '<c white>m33'
+	[42] '<c white>m34'
+	[43] '<c white>m35'
+	[44] '<c white>m36'
+	[45] '<c white>m37'
+	[46] '<c white>m38'
+	[47] '<c white>m39'
+	[48] '<c white>m40'
+	[49] '<c white>m41'
+	[50] '<c white>m42'
+	[51] '<c white>m43'
+	[52] '<c white>m44'
+	[53] '<c white>m45'
+	[54] '<c white>m46'
+	[55] '<c white>m47'
+	[56] '<c white>m48'
+	[57] '<c white>m49'
+	[58] '<c white>m50'
+	[59] '<c white>m51'
+	[60] '<c white>m52'
+	[61] '<c white>m53'
+	[62] '<c white>m54'
+	[63] '<c white>m55'
+	[64] '<c white>m56'
+	[65] '<c white>m57'
+	[66] '<c white>m58'
+	[67] '<c white>m59'
+	[68] '<c white>m60'
+	[69] '<c white>m61'
+	[70] '<c white>m62'
+	[71] '<c white>m63'
+	[72] '<c white>m64'
+	[73] '<c white>m65'
+	[74] '<c white>m66'
+	[75] '<c white>m67'
+	[76] '<c white>m68'
+	[77] '<c white>m69'
+	[78] '<c white>m70'
+	[79] '<c white>m71'
+	[80] '<c white>m72'
+	[81] '<c white>m73'
+	[82] '<c white>m74'
+	[83] '<c white>m75'
+	[84] '<c white>m76'
+	[85] '<c white>m77'
+	[86] '<c white>m78'
+	[87] '<c white>m79'
+	[88] '<c white>m80'
+	[89] '<c white>m81'
+	[90] '<c white>m82'
+	[91] '<c white>m83'
+	[92] '<c white>m84'
+	[93] '<c white>m85'
+	[94] '<c white>m86'
+	[95] '<c white>m87'
+	[96] '<c white>m88'
+	[97] '<c white>m89'
+	[98] '<c white>m90'
+	[99] '<c white>m91'
+	[100] '<c white>m92'
+	[101] '<c white>m93'
+	[102] '<c white>m94'
+	[103] '<c white>m95'
+	[104] '<c white>m96'
+	[105] '<c white>m97'
+	[106] '<c white>m98'
+	[107] '<c white>m99'
+	[108] '<c white>m100'
+	[109] '<c white>m101'
+	[110] '<c white>m102'
+	[111] '<c white>m103'
+	[112] '<c white>m104'
+	[113] '<c white>m105'
+	[114] '<c white>m106'
+	[115] '<c white>m107'
+	[116] '<c white>m108'
+	[117] '<c white>m109'
+	[118] '<c white>m110'
+	[119] '<c white>m111'
+	[120] '<c white>m112'
+	[121] '<c white>m113'
+	[122] '<c white>m114'
+	[123] '<c white>m115'
+	[124] '<c white>m116'
+	[125] '<c white>m117'
+	[126] '<c white>m118'
+	[127] '<c white>m119'
+	[128] '<c white>m120'
+	[129] '<c white>m121'
+	[130] '<c white>m122'
+	[131] '<c white>m123'
+	[132] '<c white>m124'
+	[133] '<c white>m125'
+	[134] '<c white>m126'
+	[135] '<c white>m127'
+	[136] '<c white>m128'
+	[137] '<c white>m129'
+	[138] '<c white>m130'
+	[139] '<c white>m131'
+	[140] '<c white>m132'
+	[141] '<c white>m133'
+	[142] '<c white>m134'
+	[143] '<c white>m135'
+;
+[TAXINFO;]
+END; [TAXA]
+
+BEGIN ALGORITHM;
+TITLE 'Taxa Filter';
+LINK ALGORITHM = 'Input Data Loader';
+NAME 'Taxa Filter';
+OPTIONS
+;
+END; [ALGORITHM]
+
+BEGIN TAXA;
+TITLE 'Working Taxa';
+LINK ALGORITHM = 'Taxa Filter';
+DIMENSIONS ntax=143;
+TAXLABELS
+	[1] 'v1'
+	[2] 'v2'
+	[3] 'v3'
+	[4] 'v4'
+	[5] 'v5'
+	[6] 'v6'
+	[7] 'v7'
+	[8] 'm0'
+	[9] 'm1'
+	[10] 'm2'
+	[11] 'm3'
+	[12] 'm4'
+	[13] 'm5'
+	[14] 'm6'
+	[15] 'm7'
+	[16] 'm8'
+	[17] 'm9'
+	[18] 'm10'
+	[19] 'm11'
+	[20] 'm12'
+	[21] 'm13'
+	[22] 'm14'
+	[23] 'm15'
+	[24] 'm16'
+	[25] 'm17'
+	[26] 'm18'
+	[27] 'm19'
+	[28] 'm20'
+	[29] 'm21'
+	[30] 'm22'
+	[31] 'm23'
+	[32] 'm24'
+	[33] 'm25'
+	[34] 'm26'
+	[35] 'm27'
+	[36] 'm28'
+	[37] 'm29'
+	[38] 'm30'
+	[39] 'm31'
+	[40] 'm32'
+	[41] 'm33'
+	[42] 'm34'
+	[43] 'm35'
+	[44] 'm36'
+	[45] 'm37'
+	[46] 'm38'
+	[47] 'm39'
+	[48] 'm40'
+	[49] 'm41'
+	[50] 'm42'
+	[51] 'm43'
+	[52] 'm44'
+	[53] 'm45'
+	[54] 'm46'
+	[55] 'm47'
+	[56] 'm48'
+	[57] 'm49'
+	[58] 'm50'
+	[59] 'm51'
+	[60] 'm52'
+	[61] 'm53'
+	[62] 'm54'
+	[63] 'm55'
+	[64] 'm56'
+	[65] 'm57'
+	[66] 'm58'
+	[67] 'm59'
+	[68] 'm60'
+	[69] 'm61'
+	[70] 'm62'
+	[71] 'm63'
+	[72] 'm64'
+	[73] 'm65'
+	[74] 'm66'
+	[75] 'm67'
+	[76] 'm68'
+	[77] 'm69'
+	[78] 'm70'
+	[79] 'm71'
+	[80] 'm72'
+	[81] 'm73'
+	[82] 'm74'
+	[83] 'm75'
+	[84] 'm76'
+	[85] 'm77'
+	[86] 'm78'
+	[87] 'm79'
+	[88] 'm80'
+	[89] 'm81'
+	[90] 'm82'
+	[91] 'm83'
+	[92] 'm84'
+	[93] 'm85'
+	[94] 'm86'
+	[95] 'm87'
+	[96] 'm88'
+	[97] 'm89'
+	[98] 'm90'
+	[99] 'm91'
+	[100] 'm92'
+	[101] 'm93'
+	[102] 'm94'
+	[103] 'm95'
+	[104] 'm96'
+	[105] 'm97'
+	[106] 'm98'
+	[107] 'm99'
+	[108] 'm100'
+	[109] 'm101'
+	[110] 'm102'
+	[111] 'm103'
+	[112] 'm104'
+	[113] 'm105'
+	[114] 'm106'
+	[115] 'm107'
+	[116] 'm108'
+	[117] 'm109'
+	[118] 'm110'
+	[119] 'm111'
+	[120] 'm112'
+	[121] 'm113'
+	[122] 'm114'
+	[123] 'm115'
+	[124] 'm116'
+	[125] 'm117'
+	[126] 'm118'
+	[127] 'm119'
+	[128] 'm120'
+	[129] 'm121'
+	[130] 'm122'
+	[131] 'm123'
+	[132] 'm124'
+	[133] 'm125'
+	[134] 'm126'
+	[135] 'm127'
+	[136] 'm128'
+	[137] 'm129'
+	[138] 'm130'
+	[139] 'm131'
+	[140] 'm132'
+	[141] 'm133'
+	[142] 'm134'
+	[143] 'm135'
+;
+DISPLAYLABELS
+	[1] 'v1'
+	[2] 'v2'
+	[3] 'v3'
+	[4] 'v4'
+	[5] 'v5'
+	[6] 'v6'
+	[7] 'v7'
+	[8] '<c white>m0'
+	[9] '<c white>m1'
+	[10] '<c white>m2'
+	[11] '<c white>m3'
+	[12] '<c white>m4'
+	[13] '<c white>m5'
+	[14] '<c white>m6'
+	[15] '<c white>m7'
+	[16] '<c white>m8'
+	[17] '<c white>m9'
+	[18] '<c white>m10'
+	[19] '<c white>m11'
+	[20] '<c white>m12'
+	[21] '<c white>m13'
+	[22] '<c white>m14'
+	[23] '<c white>m15'
+	[24] '<c white>m16'
+	[25] '<c white>m17'
+	[26] '<c white>m18'
+	[27] '<c white>m19'
+	[28] '<c white>m20'
+	[29] '<c white>m21'
+	[30] '<c white>m22'
+	[31] '<c white>m23'
+	[32] '<c white>m24'
+	[33] '<c white>m25'
+	[34] '<c white>m26'
+	[35] '<c white>m27'
+	[36] '<c white>m28'
+	[37] '<c white>m29'
+	[38] '<c white>m30'
+	[39] '<c white>m31'
+	[40] '<c white>m32'
+	[41] '<c white>m33'
+	[42] '<c white>m34'
+	[43] '<c white>m35'
+	[44] '<c white>m36'
+	[45] '<c white>m37'
+	[46] '<c white>m38'
+	[47] '<c white>m39'
+	[48] '<c white>m40'
+	[49] '<c white>m41'
+	[50] '<c white>m42'
+	[51] '<c white>m43'
+	[52] '<c white>m44'
+	[53] '<c white>m45'
+	[54] '<c white>m46'
+	[55] '<c white>m47'
+	[56] '<c white>m48'
+	[57] '<c white>m49'
+	[58] '<c white>m50'
+	[59] '<c white>m51'
+	[60] '<c white>m52'
+	[61] '<c white>m53'
+	[62] '<c white>m54'
+	[63] '<c white>m55'
+	[64] '<c white>m56'
+	[65] '<c white>m57'
+	[66] '<c white>m58'
+	[67] '<c white>m59'
+	[68] '<c white>m60'
+	[69] '<c white>m61'
+	[70] '<c white>m62'
+	[71] '<c white>m63'
+	[72] '<c white>m64'
+	[73] '<c white>m65'
+	[74] '<c white>m66'
+	[75] '<c white>m67'
+	[76] '<c white>m68'
+	[77] '<c white>m69'
+	[78] '<c white>m70'
+	[79] '<c white>m71'
+	[80] '<c white>m72'
+	[81] '<c white>m73'
+	[82] '<c white>m74'
+	[83] '<c white>m75'
+	[84] '<c white>m76'
+	[85] '<c white>m77'
+	[86] '<c white>m78'
+	[87] '<c white>m79'
+	[88] '<c white>m80'
+	[89] '<c white>m81'
+	[90] '<c white>m82'
+	[91] '<c white>m83'
+	[92] '<c white>m84'
+	[93] '<c white>m85'
+	[94] '<c white>m86'
+	[95] '<c white>m87'
+	[96] '<c white>m88'
+	[97] '<c white>m89'
+	[98] '<c white>m90'
+	[99] '<c white>m91'
+	[100] '<c white>m92'
+	[101] '<c white>m93'
+	[102] '<c white>m94'
+	[103] '<c white>m95'
+	[104] '<c white>m96'
+	[105] '<c white>m97'
+	[106] '<c white>m98'
+	[107] '<c white>m99'
+	[108] '<c white>m100'
+	[109] '<c white>m101'
+	[110] '<c white>m102'
+	[111] '<c white>m103'
+	[112] '<c white>m104'
+	[113] '<c white>m105'
+	[114] '<c white>m106'
+	[115] '<c white>m107'
+	[116] '<c white>m108'
+	[117] '<c white>m109'
+	[118] '<c white>m110'
+	[119] '<c white>m111'
+	[120] '<c white>m112'
+	[121] '<c white>m113'
+	[122] '<c white>m114'
+	[123] '<c white>m115'
+	[124] '<c white>m116'
+	[125] '<c white>m117'
+	[126] '<c white>m118'
+	[127] '<c white>m119'
+	[128] '<c white>m120'
+	[129] '<c white>m121'
+	[130] '<c white>m122'
+	[131] '<c white>m123'
+	[132] '<c white>m124'
+	[133] '<c white>m125'
+	[134] '<c white>m126'
+	[135] '<c white>m127'
+	[136] '<c white>m128'
+	[137] '<c white>m129'
+	[138] '<c white>m130'
+	[139] '<c white>m131'
+	[140] '<c white>m132'
+	[141] '<c white>m133'
+	[142] '<c white>m134'
+	[143] '<c white>m135'
+;
+[TAXINFO;]
+END; [TAXA]
+
+BEGIN NETWORK;
+TITLE 'Input Network';
+LINK ALGORITHM = 'Input Data Loader';
+DIMENSIONS nVertices=143 nEdges=350;
+TYPE Other;
+VERTICES
+	id=1 label='v1' label='v1',
+	id=2 label='v2' label='v2',
+	id=3 label='v3' label='v3',
+	id=4 label='v4' label='v4',
+	id=5 label='v5' label='v5',
+	id=6 label='v6' label='v6',
+	id=7 label='v7' label='v7',
+	id=8 label='m0' label='m0',
+	id=9 label='m1' label='m1',
+	id=10 label='m2' label='m2',
+	id=11 label='m3' label='m3',
+	id=12 label='m4' label='m4',
+	id=13 label='m5' label='m5',
+	id=14 label='m6' label='m6',
+	id=15 label='m7' label='m7',
+	id=16 label='m8' label='m8',
+	id=17 label='m9' label='m9',
+	id=18 label='m10' label='m10',
+	id=19 label='m11' label='m11',
+	id=20 label='m12' label='m12',
+	id=21 label='m13' label='m13',
+	id=22 label='m14' label='m14',
+	id=23 label='m15' label='m15',
+	id=24 label='m16' label='m16',
+	id=25 label='m17' label='m17',
+	id=26 label='m18' label='m18',
+	id=27 label='m19' label='m19',
+	id=28 label='m20' label='m20',
+	id=29 label='m21' label='m21',
+	id=30 label='m22' label='m22',
+	id=31 label='m23' label='m23',
+	id=32 label='m24' label='m24',
+	id=33 label='m25' label='m25',
+	id=34 label='m26' label='m26',
+	id=35 label='m27' label='m27',
+	id=36 label='m28' label='m28',
+	id=37 label='m29' label='m29',
+	id=38 label='m30' label='m30',
+	id=39 label='m31' label='m31',
+	id=40 label='m32' label='m32',
+	id=41 label='m33' label='m33',
+	id=42 label='m34' label='m34',
+	id=43 label='m35' label='m35',
+	id=44 label='m36' label='m36',
+	id=45 label='m37' label='m37',
+	id=46 label='m38' label='m38',
+	id=47 label='m39' label='m39',
+	id=48 label='m40' label='m40',
+	id=49 label='m41' label='m41',
+	id=50 label='m42' label='m42',
+	id=51 label='m43' label='m43',
+	id=52 label='m44' label='m44',
+	id=53 label='m45' label='m45',
+	id=54 label='m46' label='m46',
+	id=55 label='m47' label='m47',
+	id=56 label='m48' label='m48',
+	id=57 label='m49' label='m49',
+	id=58 label='m50' label='m50',
+	id=59 label='m51' label='m51',
+	id=60 label='m52' label='m52',
+	id=61 label='m53' label='m53',
+	id=62 label='m54' label='m54',
+	id=63 label='m55' label='m55',
+	id=64 label='m56' label='m56',
+	id=65 label='m57' label='m57',
+	id=66 label='m58' label='m58',
+	id=67 label='m59' label='m59',
+	id=68 label='m60' label='m60',
+	id=69 label='m61' label='m61',
+	id=70 label='m62' label='m62',
+	id=71 label='m63' label='m63',
+	id=72 label='m64' label='m64',
+	id=73 label='m65' label='m65',
+	id=74 label='m66' label='m66',
+	id=75 label='m67' label='m67',
+	id=76 label='m68' label='m68',
+	id=77 label='m69' label='m69',
+	id=78 label='m70' label='m70',
+	id=79 label='m71' label='m71',
+	id=80 label='m72' label='m72',
+	id=81 label='m73' label='m73',
+	id=82 label='m74' label='m74',
+	id=83 label='m75' label='m75',
+	id=84 label='m76' label='m76',
+	id=85 label='m77' label='m77',
+	id=86 label='m78' label='m78',
+	id=87 label='m79' label='m79',
+	id=88 label='m80' label='m80',
+	id=89 label='m81' label='m81',
+	id=90 label='m82' label='m82',
+	id=91 label='m83' label='m83',
+	id=92 label='m84' label='m84',
+	id=93 label='m85' label='m85',
+	id=94 label='m86' label='m86',
+	id=95 label='m87' label='m87',
+	id=96 label='m88' label='m88',
+	id=97 label='m89' label='m89',
+	id=98 label='m90' label='m90',
+	id=99 label='m91' label='m91',
+	id=100 label='m92' label='m92',
+	id=101 label='m93' label='m93',
+	id=102 label='m94' label='m94',
+	id=103 label='m95' label='m95',
+	id=104 label='m96' label='m96',
+	id=105 label='m97' label='m97',
+	id=106 label='m98' label='m98',
+	id=107 label='m99' label='m99',
+	id=108 label='m100' label='m100',
+	id=109 label='m101' label='m101',
+	id=110 label='m102' label='m102',
+	id=111 label='m103' label='m103',
+	id=112 label='m104' label='m104',
+	id=113 label='m105' label='m105',
+	id=114 label='m106' label='m106',
+	id=115 label='m107' label='m107',
+	id=116 label='m108' label='m108',
+	id=117 label='m109' label='m109',
+	id=118 label='m110' label='m110',
+	id=119 label='m111' label='m111',
+	id=120 label='m112' label='m112',
+	id=121 label='m113' label='m113',
+	id=122 label='m114' label='m114',
+	id=123 label='m115' label='m115',
+	id=124 label='m116' label='m116',
+	id=125 label='m117' label='m117',
+	id=126 label='m118' label='m118',
+	id=127 label='m119' label='m119',
+	id=128 label='m120' label='m120',
+	id=129 label='m121' label='m121',
+	id=130 label='m122' label='m122',
+	id=131 label='m123' label='m123',
+	id=132 label='m124' label='m124',
+	id=133 label='m125' label='m125',
+	id=134 label='m126' label='m126',
+	id=135 label='m127' label='m127',
+	id=136 label='m128' label='m128',
+	id=137 label='m129' label='m129',
+	id=138 label='m130' label='m130',
+	id=139 label='m131' label='m131',
+	id=140 label='m132' label='m132',
+	id=141 label='m133' label='m133',
+	id=142 label='m134' label='m134',
+	id=143 label='m135' label='m135'
+;
+EDGES
+	id=1 sid=1 tid=18 weight='1.0',
+	id=2 sid=1 tid=81 weight='3.0',
+	id=3 sid=2 tid=20 weight='10.0',
+	id=4 sid=3 tid=16 weight='1.0',
+	id=5 sid=3 tid=45 weight='1.0',
+	id=6 sid=3 tid=64 weight='1.0',
+	id=7 sid=3 tid=94 weight='1.0',
+	id=8 sid=4 tid=19 weight='17.0',
+	id=9 sid=5 tid=8 weight='5.0',
+	id=10 sid=5 tid=19 weight='10.0',
+	id=11 sid=5 tid=21 weight='1.0',
+	id=12 sid=6 tid=101 weight='44.0',
+	id=13 sid=7 tid=13 weight='4.0',
+	id=14 sid=8 tid=12 weight='10.0',
+	id=15 sid=8 tid=23 weight='1.0',
+	id=16 sid=8 tid=30 weight='1.0',
+	id=17 sid=8 tid=113 weight='1.0',
+	id=18 sid=9 tid=11 weight='1.0',
+	id=19 sid=9 tid=13 weight='18.0',
+	id=20 sid=9 tid=79 weight='3.0',
+	id=21 sid=10 tid=17 weight='1.0',
+	id=22 sid=10 tid=22 weight='1.0',
+	id=23 sid=10 tid=63 weight='1.0',
+	id=24 sid=10 tid=95 weight='1.0',
+	id=25 sid=11 tid=43 weight='1.0',
+	id=26 sid=11 tid=80 weight='3.0',
+	id=27 sid=12 tid=19 weight='5.0',
+	id=28 sid=12 tid=107 weight='1.0',
+	id=29 sid=13 tid=78 weight='3.0',
+	id=30 sid=14 tid=15 weight='5.0',
+	id=31 sid=14 tid=20 weight='1.0',
+	id=32 sid=14 tid=44 weight='1.0',
+	id=33 sid=15 tid=31 weight='1.0',
+	id=34 sid=15 tid=38 weight='1.0',
+	id=35 sid=15 tid=46 weight='1.0',
+	id=36 sid=15 tid=52 weight='1.0',
+	id=37 sid=16 tid=51 weight='1.0',
+	id=38 sid=16 tid=66 weight='1.0',
+	id=39 sid=16 tid=93 weight='1.0',
+	id=40 sid=17 tid=62 weight='1.0',
+	id=41 sid=17 tid=67 weight='1.0',
+	id=42 sid=17 tid=69 weight='1.0',
+	id=43 sid=17 tid=96 weight='1.0',
+	id=44 sid=17 tid=118 weight='1.0',
+	id=45 sid=18 tid=43 weight='1.0',
+	id=46 sid=18 tid=82 weight='3.0',
+	id=47 sid=20 tid=38 weight='5.0',
+	id=48 sid=21 tid=23 weight='5.0',
+	id=49 sid=21 tid=44 weight='1.0',
+	id=50 sid=22 tid=45 weight='1.0',
+	id=51 sid=22 tid=62 weight='1.0',
+	id=52 sid=22 tid=69 weight='1.0',
+	id=53 sid=22 tid=96 weight='1.0',
+	id=54 sid=23 tid=32 weight='1.0',
+	id=55 sid=23 tid=46 weight='1.0',
+	id=56 sid=23 tid=50 weight='1.0',
+	id=57 sid=24 tid=25 weight='18.0',
+	id=58 sid=24 tid=127 weight='1.0',
+	id=59 sid=24 tid=140 weight='1.0',
+	id=60 sid=25 tid=27 weight='1.0',
+	id=61 sid=25 tid=75 weight='1.0',
+	id=62 sid=25 tid=128 weight='1.0',
+	id=63 sid=25 tid=141 weight='1.0',
+	id=64 sid=26 tid=28 weight='1.0',
+	id=65 sid=26 tid=34 weight='1.0',
+	id=66 sid=26 tid=36 weight='1.0',
+	id=67 sid=26 tid=63 weight='1.0',
+	id=68 sid=27 tid=42 weight='1.0',
+	id=69 sid=27 tid=76 weight='1.0',
+	id=70 sid=27 tid=90 weight='1.0',
+	id=71 sid=27 tid=104 weight='1.0',
+	id=72 sid=27 tid=121 weight='1.0',
+	id=73 sid=28 tid=37 weight='1.0',
+	id=74 sid=28 tid=41 weight='1.0',
+	id=75 sid=28 tid=42 weight='1.0',
+	id=76 sid=28 tid=67 weight='1.0',
+	id=77 sid=28 tid=71 weight='1.0',
+	id=78 sid=29 tid=31 weight='1.0',
+	id=79 sid=29 tid=38 weight='1.0',
+	id=80 sid=29 tid=52 weight='1.0',
+	id=81 sid=29 tid=55 weight='1.0',
+	id=82 sid=29 tid=77 weight='1.0',
+	id=83 sid=30 tid=32 weight='1.0',
+	id=84 sid=30 tid=50 weight='1.0',
+	id=85 sid=30 tid=56 weight='1.0',
+	id=86 sid=31 tid=47 weight='1.0',
+	id=87 sid=31 tid=57 weight='1.0',
+	id=88 sid=31 tid=61 weight='1.0',
+	id=89 sid=32 tid=47 weight='1.0',
+	id=90 sid=32 tid=58 weight='1.0',
+	id=91 sid=32 tid=60 weight='1.0',
+	id=92 sid=32 tid=70 weight='1.0',
+	id=93 sid=33 tid=35 weight='1.0',
+	id=94 sid=33 tid=39 weight='1.0',
+	id=95 sid=33 tid=48 weight='1.0',
+	id=96 sid=33 tid=64 weight='1.0',
+	id=97 sid=33 tid=68 weight='1.0',
+	id=98 sid=34 tid=37 weight='1.0',
+	id=99 sid=34 tid=48 weight='1.0',
+	id=100 sid=34 tid=62 weight='1.0',
+	id=101 sid=34 tid=67 weight='1.0',
+	id=102 sid=34 tid=71 weight='1.0',
+	id=103 sid=35 tid=40 weight='1.0',
+	id=104 sid=35 tid=49 weight='1.0',
+	id=105 sid=35 tid=53 weight='1.0',
+	id=106 sid=35 tid=57 weight='1.0',
+	id=107 sid=36 tid=37 weight='1.0',
+	id=108 sid=36 tid=41 weight='1.0',
+	id=109 sid=36 tid=56 weight='1.0',
+	id=110 sid=37 tid=49 weight='1.0',
+	id=111 sid=37 tid=58 weight='1.0',
+	id=112 sid=37 tid=72 weight='1.0',
+	id=113 sid=39 tid=40 weight='1.0',
+	id=114 sid=39 tid=53 weight='1.0',
+	id=115 sid=39 tid=66 weight='1.0',
+	id=116 sid=39 tid=126 weight='1.0',
+	id=117 sid=40 tid=54 weight='1.0',
+	id=118 sid=40 tid=55 weight='1.0',
+	id=119 sid=40 tid=100 weight='1.0',
+	id=120 sid=41 tid=58 weight='1.0',
+	id=121 sid=41 tid=60 weight='1.0',
+	id=122 sid=41 tid=72 weight='1.0',
+	id=123 sid=41 tid=105 weight='1.0',
+	id=124 sid=42 tid=72 weight='1.0',
+	id=125 sid=42 tid=91 weight='1.0',
+	id=126 sid=42 tid=105 weight='1.0',
+	id=127 sid=42 tid=122 weight='1.0',
+	id=128 sid=43 tid=83 weight='3.0',
+	id=129 sid=44 tid=46 weight='5.0',
+	id=130 sid=45 tid=51 weight='1.0',
+	id=131 sid=45 tid=65 weight='1.0',
+	id=132 sid=45 tid=98 weight='1.0',
+	id=133 sid=46 tid=47 weight='1.0',
+	id=134 sid=46 tid=70 weight='1.0',
+	id=135 sid=47 tid=52 weight='1.0',
+	id=136 sid=47 tid=59 weight='1.0',
+	id=137 sid=47 tid=73 weight='1.0',
+	id=138 sid=48 tid=49 weight='1.0',
+	id=139 sid=48 tid=53 weight='1.0',
+	id=140 sid=48 tid=65 weight='1.0',
+	id=141 sid=48 tid=74 weight='1.0',
+	id=142 sid=49 tid=54 weight='1.0',
+	id=143 sid=49 tid=59 weight='1.0',
+	id=144 sid=49 tid=71 weight='1.0',
+	id=145 sid=50 tid=60 weight='1.0',
+	id=146 sid=50 tid=70 weight='1.0',
+	id=147 sid=50 tid=113 weight='1.0',
+	id=148 sid=50 tid=132 weight='1.0',
+	id=149 sid=51 tid=64 weight='1.0',
+	id=150 sid=51 tid=68 weight='1.0',
+	id=151 sid=51 tid=69 weight='1.0',
+	id=152 sid=51 tid=94 weight='1.0',
+	id=153 sid=51 tid=99 weight='1.0',
+	id=154 sid=51 tid=124 weight='1.0',
+	id=155 sid=52 tid=61 weight='1.0',
+	id=156 sid=52 tid=70 weight='1.0',
+	id=157 sid=52 tid=106 weight='1.0',
+	id=158 sid=53 tid=54 weight='1.0',
+	id=159 sid=53 tid=68 weight='1.0',
+	id=160 sid=53 tid=71 weight='1.0',
+	id=161 sid=53 tid=100 weight='1.0',
+	id=162 sid=53 tid=120 weight='1.0',
+	id=163 sid=54 tid=57 weight='1.0',
+	id=164 sid=54 tid=61 weight='1.0',
+	id=165 sid=54 tid=72 weight='1.0',
+	id=166 sid=54 tid=91 weight='1.0',
+	id=167 sid=54 tid=92 weight='1.0',
+	id=168 sid=55 tid=57 weight='1.0',
+	id=169 sid=55 tid=61 weight='1.0',
+	id=170 sid=55 tid=92 weight='1.0',
+	id=171 sid=56 tid=58 weight='1.0',
+	id=172 sid=56 tid=60 weight='1.0',
+	id=173 sid=57 tid=59 weight='1.0',
+	id=174 sid=58 tid=59 weight='1.0',
+	id=175 sid=58 tid=73 weight='1.0',
+	id=176 sid=59 tid=61 weight='1.0',
+	id=177 sid=59 tid=72 weight='1.0',
+	id=178 sid=60 tid=73 weight='1.0',
+	id=179 sid=60 tid=109 weight='1.0',
+	id=180 sid=61 tid=73 weight='1.0',
+	id=181 sid=61 tid=76 weight='1.0',
+	id=182 sid=61 tid=77 weight='1.0',
+	id=183 sid=62 tid=63 weight='1.0',
+	id=184 sid=62 tid=65 weight='1.0',
+	id=185 sid=62 tid=74 weight='1.0',
+	id=186 sid=63 tid=67 weight='1.0',
+	id=187 sid=64 tid=65 weight='1.0',
+	id=188 sid=64 tid=66 weight='1.0',
+	id=189 sid=65 tid=68 weight='1.0',
+	id=190 sid=65 tid=69 weight='1.0',
+	id=191 sid=66 tid=68 weight='1.0',
+	id=192 sid=66 tid=124 weight='1.0',
+	id=193 sid=67 tid=74 weight='1.0',
+	id=194 sid=67 tid=122 weight='1.0',
+	id=195 sid=68 tid=74 weight='1.0',
+	id=196 sid=68 tid=123 weight='1.0',
+	id=197 sid=68 tid=126 weight='1.0',
+	id=198 sid=69 tid=74 weight='1.0',
+	id=199 sid=69 tid=97 weight='1.0',
+	id=200 sid=69 tid=98 weight='1.0',
+	id=201 sid=69 tid=123 weight='1.0',
+	id=202 sid=70 tid=73 weight='1.0',
+	id=203 sid=70 tid=109 weight='1.0',
+	id=204 sid=71 tid=72 weight='1.0',
+	id=205 sid=71 tid=74 weight='1.0',
+	id=206 sid=71 tid=91 weight='1.0',
+	id=207 sid=71 tid=122 weight='1.0',
+	id=208 sid=72 tid=73 weight='1.0',
+	id=209 sid=72 tid=76 weight='1.0',
+	id=210 sid=73 tid=105 weight='1.0',
+	id=211 sid=73 tid=106 weight='1.0',
+	id=212 sid=74 tid=118 weight='1.0',
+	id=213 sid=74 tid=120 weight='1.0',
+	id=214 sid=75 tid=76 weight='1.0',
+	id=215 sid=75 tid=77 weight='1.0',
+	id=216 sid=75 tid=90 weight='1.0',
+	id=217 sid=75 tid=104 weight='1.0',
+	id=218 sid=76 tid=91 weight='1.0',
+	id=219 sid=76 tid=92 weight='1.0',
+	id=220 sid=76 tid=105 weight='1.0',
+	id=221 sid=76 tid=106 weight='1.0',
+	id=222 sid=77 tid=92 weight='1.0',
+	id=223 sid=77 tid=106 weight='1.0',
+	id=224 sid=78 tid=79 weight='18.0',
+	id=225 sid=78 tid=142 weight='1.0',
+	id=226 sid=79 tid=80 weight='1.0',
+	id=227 sid=79 tid=88 weight='1.0',
+	id=228 sid=79 tid=143 weight='1.0',
+	id=229 sid=80 tid=83 weight='1.0',
+	id=230 sid=80 tid=84 weight='1.0',
+	id=231 sid=80 tid=89 weight='1.0',
+	id=232 sid=81 tid=82 weight='1.0',
+	id=233 sid=81 tid=85 weight='1.0',
+	id=234 sid=82 tid=83 weight='1.0',
+	id=235 sid=82 tid=86 weight='1.0',
+	id=236 sid=83 tid=87 weight='1.0',
+	id=237 sid=84 tid=87 weight='1.0',
+	id=238 sid=84 tid=88 weight='1.0',
+	id=239 sid=84 tid=94 weight='1.0',
+	id=240 sid=84 tid=99 weight='1.0',
+	id=241 sid=85 tid=86 weight='1.0',
+	id=242 sid=85 tid=95 weight='1.0',
+	id=243 sid=86 tid=87 weight='1.0',
+	id=244 sid=86 tid=96 weight='1.0',
+	id=245 sid=87 tid=89 weight='1.0',
+	id=246 sid=87 tid=97 weight='1.0',
+	id=247 sid=87 tid=98 weight='1.0',
+	id=248 sid=88 tid=89 weight='1.0',
+	id=249 sid=88 tid=93 weight='1.0',
+	id=250 sid=88 tid=136 weight='1.0',
+	id=251 sid=89 tid=99 weight='1.0',
+	id=252 sid=89 tid=135 weight='1.0',
+	id=253 sid=89 tid=143 weight='1.0',
+	id=254 sid=90 tid=91 weight='1.0',
+	id=255 sid=90 tid=92 weight='1.0',
+	id=256 sid=90 tid=119 weight='1.0',
+	id=257 sid=90 tid=141 weight='1.0',
+	id=258 sid=91 tid=100 weight='1.0',
+	id=259 sid=91 tid=120 weight='1.0',
+	id=260 sid=91 tid=121 weight='1.0',
+	id=261 sid=92 tid=100 weight='1.0',
+	id=262 sid=93 tid=94 weight='1.0',
+	id=263 sid=93 tid=99 weight='1.0',
+	id=264 sid=93 tid=124 weight='1.0',
+	id=265 sid=94 tid=98 weight='1.0',
+	id=266 sid=95 tid=96 weight='1.0',
+	id=267 sid=96 tid=97 weight='1.0',
+	id=268 sid=96 tid=98 weight='1.0',
+	id=269 sid=97 tid=99 weight='1.0',
+	id=270 sid=97 tid=118 weight='1.0',
+	id=271 sid=97 tid=135 weight='1.0',
+	id=272 sid=98 tid=99 weight='1.0',
+	id=273 sid=99 tid=123 weight='1.0',
+	id=274 sid=99 tid=136 weight='1.0',
+	id=275 sid=100 tid=119 weight='1.0',
+	id=276 sid=100 tid=126 weight='1.0',
+	id=277 sid=101 tid=102 weight='18.0',
+	id=278 sid=101 tid=110 weight='10.0',
+	id=279 sid=102 tid=103 weight='1.0',
+	id=280 sid=102 tid=111 weight='10.0',
+	id=281 sid=103 tid=108 weight='1.0',
+	id=282 sid=103 tid=112 weight='10.0',
+	id=283 sid=104 tid=105 weight='1.0',
+	id=284 sid=104 tid=106 weight='1.0',
+	id=285 sid=104 tid=128 weight='1.0',
+	id=286 sid=104 tid=139 weight='1.0',
+	id=287 sid=105 tid=109 weight='1.0',
+	id=288 sid=106 tid=109 weight='1.0',
+	id=289 sid=107 tid=108 weight='1.0',
+	id=290 sid=107 tid=113 weight='10.0',
+	id=291 sid=108 tid=114 weight='10.0',
+	id=292 sid=109 tid=132 weight='1.0',
+	id=293 sid=109 tid=139 weight='1.0',
+	id=294 sid=110 tid=111 weight='18.0',
+	id=295 sid=110 tid=129 weight='1.0',
+	id=296 sid=111 tid=112 weight='1.0',
+	id=297 sid=111 tid=130 weight='1.0',
+	id=298 sid=112 tid=114 weight='1.0',
+	id=299 sid=112 tid=131 weight='1.0',
+	id=300 sid=113 tid=114 weight='1.0',
+	id=301 sid=114 tid=132 weight='1.0',
+	id=302 sid=115 tid=116 weight='18.0',
+	id=303 sid=115 tid=133 weight='1.0',
+	id=304 sid=115 tid=140 weight='1.0',
+	id=305 sid=116 tid=117 weight='1.0',
+	id=306 sid=116 tid=119 weight='1.0',
+	id=307 sid=116 tid=134 weight='1.0',
+	id=308 sid=116 tid=141 weight='1.0',
+	id=309 sid=117 tid=118 weight='1.0',
+	id=310 sid=117 tid=120 weight='1.0',
+	id=311 sid=117 tid=121 weight='1.0',
+	id=312 sid=117 tid=125 weight='1.0',
+	id=313 sid=117 tid=135 weight='1.0',
+	id=314 sid=118 tid=122 weight='1.0',
+	id=315 sid=118 tid=123 weight='1.0',
+	id=316 sid=119 tid=120 weight='1.0',
+	id=317 sid=119 tid=121 weight='1.0',
+	id=318 sid=119 tid=125 weight='1.0',
+	id=319 sid=120 tid=122 weight='1.0',
+	id=320 sid=120 tid=123 weight='1.0',
+	id=321 sid=120 tid=126 weight='1.0',
+	id=322 sid=121 tid=122 weight='1.0',
+	id=323 sid=121 tid=141 weight='1.0',
+	id=324 sid=123 tid=124 weight='1.0',
+	id=325 sid=123 tid=125 weight='1.0',
+	id=326 sid=123 tid=135 weight='1.0',
+	id=327 sid=124 tid=126 weight='1.0',
+	id=328 sid=124 tid=136 weight='1.0',
+	id=329 sid=125 tid=126 weight='1.0',
+	id=330 sid=125 tid=134 weight='1.0',
+	id=331 sid=125 tid=136 weight='1.0',
+	id=332 sid=127 tid=128 weight='18.0',
+	id=333 sid=127 tid=137 weight='1.0',
+	id=334 sid=128 tid=138 weight='1.0',
+	id=335 sid=129 tid=130 weight='18.0',
+	id=336 sid=129 tid=137 weight='1.0',
+	id=337 sid=130 tid=131 weight='1.0',
+	id=338 sid=130 tid=138 weight='1.0',
+	id=339 sid=131 tid=132 weight='1.0',
+	id=340 sid=131 tid=139 weight='1.0',
+	id=341 sid=133 tid=134 weight='18.0',
+	id=342 sid=133 tid=142 weight='1.0',
+	id=343 sid=134 tid=135 weight='1.0',
+	id=344 sid=134 tid=143 weight='1.0',
+	id=345 sid=135 tid=136 weight='1.0',
+	id=346 sid=136 tid=143 weight='1.0',
+	id=347 sid=137 tid=138 weight='18.0',
+	id=348 sid=138 tid=139 weight='1.0',
+	id=349 sid=140 tid=141 weight='18.0',
+	id=350 sid=142 tid=143 weight='18.0'
+;
+END; [NETWORK]
+
+BEGIN ALGORITHM;
+TITLE 'Input Data Filter';
+LINK NETWORK = 'Input Network';
+NAME 'Network Taxa Filter';
+END; [ALGORITHM]
+
+BEGIN NETWORK;
+TITLE 'Working Network';
+LINK ALGORITHM = 'Input Data Filter';
+DIMENSIONS nVertices=143 nEdges=350;
+TYPE Other;
+VERTICES
+	id=1 label='v1' label='v1',
+	id=2 label='v2' label='v2',
+	id=3 label='v3' label='v3',
+	id=4 label='v4' label='v4',
+	id=5 label='v5' label='v5',
+	id=6 label='v6' label='v6',
+	id=7 label='v7' label='v7',
+	id=8 label='m0' label='m0',
+	id=9 label='m1' label='m1',
+	id=10 label='m2' label='m2',
+	id=11 label='m3' label='m3',
+	id=12 label='m4' label='m4',
+	id=13 label='m5' label='m5',
+	id=14 label='m6' label='m6',
+	id=15 label='m7' label='m7',
+	id=16 label='m8' label='m8',
+	id=17 label='m9' label='m9',
+	id=18 label='m10' label='m10',
+	id=19 label='m11' label='m11',
+	id=20 label='m12' label='m12',
+	id=21 label='m13' label='m13',
+	id=22 label='m14' label='m14',
+	id=23 label='m15' label='m15',
+	id=24 label='m16' label='m16',
+	id=25 label='m17' label='m17',
+	id=26 label='m18' label='m18',
+	id=27 label='m19' label='m19',
+	id=28 label='m20' label='m20',
+	id=29 label='m21' label='m21',
+	id=30 label='m22' label='m22',
+	id=31 label='m23' label='m23',
+	id=32 label='m24' label='m24',
+	id=33 label='m25' label='m25',
+	id=34 label='m26' label='m26',
+	id=35 label='m27' label='m27',
+	id=36 label='m28' label='m28',
+	id=37 label='m29' label='m29',
+	id=38 label='m30' label='m30',
+	id=39 label='m31' label='m31',
+	id=40 label='m32' label='m32',
+	id=41 label='m33' label='m33',
+	id=42 label='m34' label='m34',
+	id=43 label='m35' label='m35',
+	id=44 label='m36' label='m36',
+	id=45 label='m37' label='m37',
+	id=46 label='m38' label='m38',
+	id=47 label='m39' label='m39',
+	id=48 label='m40' label='m40',
+	id=49 label='m41' label='m41',
+	id=50 label='m42' label='m42',
+	id=51 label='m43' label='m43',
+	id=52 label='m44' label='m44',
+	id=53 label='m45' label='m45',
+	id=54 label='m46' label='m46',
+	id=55 label='m47' label='m47',
+	id=56 label='m48' label='m48',
+	id=57 label='m49' label='m49',
+	id=58 label='m50' label='m50',
+	id=59 label='m51' label='m51',
+	id=60 label='m52' label='m52',
+	id=61 label='m53' label='m53',
+	id=62 label='m54' label='m54',
+	id=63 label='m55' label='m55',
+	id=64 label='m56' label='m56',
+	id=65 label='m57' label='m57',
+	id=66 label='m58' label='m58',
+	id=67 label='m59' label='m59',
+	id=68 label='m60' label='m60',
+	id=69 label='m61' label='m61',
+	id=70 label='m62' label='m62',
+	id=71 label='m63' label='m63',
+	id=72 label='m64' label='m64',
+	id=73 label='m65' label='m65',
+	id=74 label='m66' label='m66',
+	id=75 label='m67' label='m67',
+	id=76 label='m68' label='m68',
+	id=77 label='m69' label='m69',
+	id=78 label='m70' label='m70',
+	id=79 label='m71' label='m71',
+	id=80 label='m72' label='m72',
+	id=81 label='m73' label='m73',
+	id=82 label='m74' label='m74',
+	id=83 label='m75' label='m75',
+	id=84 label='m76' label='m76',
+	id=85 label='m77' label='m77',
+	id=86 label='m78' label='m78',
+	id=87 label='m79' label='m79',
+	id=88 label='m80' label='m80',
+	id=89 label='m81' label='m81',
+	id=90 label='m82' label='m82',
+	id=91 label='m83' label='m83',
+	id=92 label='m84' label='m84',
+	id=93 label='m85' label='m85',
+	id=94 label='m86' label='m86',
+	id=95 label='m87' label='m87',
+	id=96 label='m88' label='m88',
+	id=97 label='m89' label='m89',
+	id=98 label='m90' label='m90',
+	id=99 label='m91' label='m91',
+	id=100 label='m92' label='m92',
+	id=101 label='m93' label='m93',
+	id=102 label='m94' label='m94',
+	id=103 label='m95' label='m95',
+	id=104 label='m96' label='m96',
+	id=105 label='m97' label='m97',
+	id=106 label='m98' label='m98',
+	id=107 label='m99' label='m99',
+	id=108 label='m100' label='m100',
+	id=109 label='m101' label='m101',
+	id=110 label='m102' label='m102',
+	id=111 label='m103' label='m103',
+	id=112 label='m104' label='m104',
+	id=113 label='m105' label='m105',
+	id=114 label='m106' label='m106',
+	id=115 label='m107' label='m107',
+	id=116 label='m108' label='m108',
+	id=117 label='m109' label='m109',
+	id=118 label='m110' label='m110',
+	id=119 label='m111' label='m111',
+	id=120 label='m112' label='m112',
+	id=121 label='m113' label='m113',
+	id=122 label='m114' label='m114',
+	id=123 label='m115' label='m115',
+	id=124 label='m116' label='m116',
+	id=125 label='m117' label='m117',
+	id=126 label='m118' label='m118',
+	id=127 label='m119' label='m119',
+	id=128 label='m120' label='m120',
+	id=129 label='m121' label='m121',
+	id=130 label='m122' label='m122',
+	id=131 label='m123' label='m123',
+	id=132 label='m124' label='m124',
+	id=133 label='m125' label='m125',
+	id=134 label='m126' label='m126',
+	id=135 label='m127' label='m127',
+	id=136 label='m128' label='m128',
+	id=137 label='m129' label='m129',
+	id=138 label='m130' label='m130',
+	id=139 label='m131' label='m131',
+	id=140 label='m132' label='m132',
+	id=141 label='m133' label='m133',
+	id=142 label='m134' label='m134',
+	id=143 label='m135' label='m135'
+;
+EDGES
+	id=1 sid=1 tid=18 weight='1.0',
+	id=2 sid=1 tid=81 weight='3.0',
+	id=3 sid=2 tid=20 weight='10.0',
+	id=4 sid=3 tid=16 weight='1.0',
+	id=5 sid=3 tid=45 weight='1.0',
+	id=6 sid=3 tid=64 weight='1.0',
+	id=7 sid=3 tid=94 weight='1.0',
+	id=8 sid=4 tid=19 weight='17.0',
+	id=9 sid=5 tid=8 weight='5.0',
+	id=10 sid=5 tid=19 weight='10.0',
+	id=11 sid=5 tid=21 weight='1.0',
+	id=12 sid=6 tid=101 weight='44.0',
+	id=13 sid=7 tid=13 weight='4.0',
+	id=14 sid=8 tid=12 weight='10.0',
+	id=15 sid=8 tid=23 weight='1.0',
+	id=16 sid=8 tid=30 weight='1.0',
+	id=17 sid=8 tid=113 weight='1.0',
+	id=18 sid=9 tid=11 weight='1.0',
+	id=19 sid=9 tid=13 weight='18.0',
+	id=20 sid=9 tid=79 weight='3.0',
+	id=21 sid=10 tid=17 weight='1.0',
+	id=22 sid=10 tid=22 weight='1.0',
+	id=23 sid=10 tid=63 weight='1.0',
+	id=24 sid=10 tid=95 weight='1.0',
+	id=25 sid=11 tid=43 weight='1.0',
+	id=26 sid=11 tid=80 weight='3.0',
+	id=27 sid=12 tid=19 weight='5.0',
+	id=28 sid=12 tid=107 weight='1.0',
+	id=29 sid=13 tid=78 weight='3.0',
+	id=30 sid=14 tid=15 weight='5.0',
+	id=31 sid=14 tid=20 weight='1.0',
+	id=32 sid=14 tid=44 weight='1.0',
+	id=33 sid=15 tid=31 weight='1.0',
+	id=34 sid=15 tid=38 weight='1.0',
+	id=35 sid=15 tid=46 weight='1.0',
+	id=36 sid=15 tid=52 weight='1.0',
+	id=37 sid=16 tid=51 weight='1.0',
+	id=38 sid=16 tid=66 weight='1.0',
+	id=39 sid=16 tid=93 weight='1.0',
+	id=40 sid=17 tid=62 weight='1.0',
+	id=41 sid=17 tid=67 weight='1.0',
+	id=42 sid=17 tid=69 weight='1.0',
+	id=43 sid=17 tid=96 weight='1.0',
+	id=44 sid=17 tid=118 weight='1.0',
+	id=45 sid=18 tid=43 weight='1.0',
+	id=46 sid=18 tid=82 weight='3.0',
+	id=47 sid=20 tid=38 weight='5.0',
+	id=48 sid=21 tid=23 weight='5.0',
+	id=49 sid=21 tid=44 weight='1.0',
+	id=50 sid=22 tid=45 weight='1.0',
+	id=51 sid=22 tid=62 weight='1.0',
+	id=52 sid=22 tid=69 weight='1.0',
+	id=53 sid=22 tid=96 weight='1.0',
+	id=54 sid=23 tid=32 weight='1.0',
+	id=55 sid=23 tid=46 weight='1.0',
+	id=56 sid=23 tid=50 weight='1.0',
+	id=57 sid=24 tid=25 weight='18.0',
+	id=58 sid=24 tid=127 weight='1.0',
+	id=59 sid=24 tid=140 weight='1.0',
+	id=60 sid=25 tid=27 weight='1.0',
+	id=61 sid=25 tid=75 weight='1.0',
+	id=62 sid=25 tid=128 weight='1.0',
+	id=63 sid=25 tid=141 weight='1.0',
+	id=64 sid=26 tid=28 weight='1.0',
+	id=65 sid=26 tid=34 weight='1.0',
+	id=66 sid=26 tid=36 weight='1.0',
+	id=67 sid=26 tid=63 weight='1.0',
+	id=68 sid=27 tid=42 weight='1.0',
+	id=69 sid=27 tid=76 weight='1.0',
+	id=70 sid=27 tid=90 weight='1.0',
+	id=71 sid=27 tid=104 weight='1.0',
+	id=72 sid=27 tid=121 weight='1.0',
+	id=73 sid=28 tid=37 weight='1.0',
+	id=74 sid=28 tid=41 weight='1.0',
+	id=75 sid=28 tid=42 weight='1.0',
+	id=76 sid=28 tid=67 weight='1.0',
+	id=77 sid=28 tid=71 weight='1.0',
+	id=78 sid=29 tid=31 weight='1.0',
+	id=79 sid=29 tid=38 weight='1.0',
+	id=80 sid=29 tid=52 weight='1.0',
+	id=81 sid=29 tid=55 weight='1.0',
+	id=82 sid=29 tid=77 weight='1.0',
+	id=83 sid=30 tid=32 weight='1.0',
+	id=84 sid=30 tid=50 weight='1.0',
+	id=85 sid=30 tid=56 weight='1.0',
+	id=86 sid=31 tid=47 weight='1.0',
+	id=87 sid=31 tid=57 weight='1.0',
+	id=88 sid=31 tid=61 weight='1.0',
+	id=89 sid=32 tid=47 weight='1.0',
+	id=90 sid=32 tid=58 weight='1.0',
+	id=91 sid=32 tid=60 weight='1.0',
+	id=92 sid=32 tid=70 weight='1.0',
+	id=93 sid=33 tid=35 weight='1.0',
+	id=94 sid=33 tid=39 weight='1.0',
+	id=95 sid=33 tid=48 weight='1.0',
+	id=96 sid=33 tid=64 weight='1.0',
+	id=97 sid=33 tid=68 weight='1.0',
+	id=98 sid=34 tid=37 weight='1.0',
+	id=99 sid=34 tid=48 weight='1.0',
+	id=100 sid=34 tid=62 weight='1.0',
+	id=101 sid=34 tid=67 weight='1.0',
+	id=102 sid=34 tid=71 weight='1.0',
+	id=103 sid=35 tid=40 weight='1.0',
+	id=104 sid=35 tid=49 weight='1.0',
+	id=105 sid=35 tid=53 weight='1.0',
+	id=106 sid=35 tid=57 weight='1.0',
+	id=107 sid=36 tid=37 weight='1.0',
+	id=108 sid=36 tid=41 weight='1.0',
+	id=109 sid=36 tid=56 weight='1.0',
+	id=110 sid=37 tid=49 weight='1.0',
+	id=111 sid=37 tid=58 weight='1.0',
+	id=112 sid=37 tid=72 weight='1.0',
+	id=113 sid=39 tid=40 weight='1.0',
+	id=114 sid=39 tid=53 weight='1.0',
+	id=115 sid=39 tid=66 weight='1.0',
+	id=116 sid=39 tid=126 weight='1.0',
+	id=117 sid=40 tid=54 weight='1.0',
+	id=118 sid=40 tid=55 weight='1.0',
+	id=119 sid=40 tid=100 weight='1.0',
+	id=120 sid=41 tid=58 weight='1.0',
+	id=121 sid=41 tid=60 weight='1.0',
+	id=122 sid=41 tid=72 weight='1.0',
+	id=123 sid=41 tid=105 weight='1.0',
+	id=124 sid=42 tid=72 weight='1.0',
+	id=125 sid=42 tid=91 weight='1.0',
+	id=126 sid=42 tid=105 weight='1.0',
+	id=127 sid=42 tid=122 weight='1.0',
+	id=128 sid=43 tid=83 weight='3.0',
+	id=129 sid=44 tid=46 weight='5.0',
+	id=130 sid=45 tid=51 weight='1.0',
+	id=131 sid=45 tid=65 weight='1.0',
+	id=132 sid=45 tid=98 weight='1.0',
+	id=133 sid=46 tid=47 weight='1.0',
+	id=134 sid=46 tid=70 weight='1.0',
+	id=135 sid=47 tid=52 weight='1.0',
+	id=136 sid=47 tid=59 weight='1.0',
+	id=137 sid=47 tid=73 weight='1.0',
+	id=138 sid=48 tid=49 weight='1.0',
+	id=139 sid=48 tid=53 weight='1.0',
+	id=140 sid=48 tid=65 weight='1.0',
+	id=141 sid=48 tid=74 weight='1.0',
+	id=142 sid=49 tid=54 weight='1.0',
+	id=143 sid=49 tid=59 weight='1.0',
+	id=144 sid=49 tid=71 weight='1.0',
+	id=145 sid=50 tid=60 weight='1.0',
+	id=146 sid=50 tid=70 weight='1.0',
+	id=147 sid=50 tid=113 weight='1.0',
+	id=148 sid=50 tid=132 weight='1.0',
+	id=149 sid=51 tid=64 weight='1.0',
+	id=150 sid=51 tid=68 weight='1.0',
+	id=151 sid=51 tid=69 weight='1.0',
+	id=152 sid=51 tid=94 weight='1.0',
+	id=153 sid=51 tid=99 weight='1.0',
+	id=154 sid=51 tid=124 weight='1.0',
+	id=155 sid=52 tid=61 weight='1.0',
+	id=156 sid=52 tid=70 weight='1.0',
+	id=157 sid=52 tid=106 weight='1.0',
+	id=158 sid=53 tid=54 weight='1.0',
+	id=159 sid=53 tid=68 weight='1.0',
+	id=160 sid=53 tid=71 weight='1.0',
+	id=161 sid=53 tid=100 weight='1.0',
+	id=162 sid=53 tid=120 weight='1.0',
+	id=163 sid=54 tid=57 weight='1.0',
+	id=164 sid=54 tid=61 weight='1.0',
+	id=165 sid=54 tid=72 weight='1.0',
+	id=166 sid=54 tid=91 weight='1.0',
+	id=167 sid=54 tid=92 weight='1.0',
+	id=168 sid=55 tid=57 weight='1.0',
+	id=169 sid=55 tid=61 weight='1.0',
+	id=170 sid=55 tid=92 weight='1.0',
+	id=171 sid=56 tid=58 weight='1.0',
+	id=172 sid=56 tid=60 weight='1.0',
+	id=173 sid=57 tid=59 weight='1.0',
+	id=174 sid=58 tid=59 weight='1.0',
+	id=175 sid=58 tid=73 weight='1.0',
+	id=176 sid=59 tid=61 weight='1.0',
+	id=177 sid=59 tid=72 weight='1.0',
+	id=178 sid=60 tid=73 weight='1.0',
+	id=179 sid=60 tid=109 weight='1.0',
+	id=180 sid=61 tid=73 weight='1.0',
+	id=181 sid=61 tid=76 weight='1.0',
+	id=182 sid=61 tid=77 weight='1.0',
+	id=183 sid=62 tid=63 weight='1.0',
+	id=184 sid=62 tid=65 weight='1.0',
+	id=185 sid=62 tid=74 weight='1.0',
+	id=186 sid=63 tid=67 weight='1.0',
+	id=187 sid=64 tid=65 weight='1.0',
+	id=188 sid=64 tid=66 weight='1.0',
+	id=189 sid=65 tid=68 weight='1.0',
+	id=190 sid=65 tid=69 weight='1.0',
+	id=191 sid=66 tid=68 weight='1.0',
+	id=192 sid=66 tid=124 weight='1.0',
+	id=193 sid=67 tid=74 weight='1.0',
+	id=194 sid=67 tid=122 weight='1.0',
+	id=195 sid=68 tid=74 weight='1.0',
+	id=196 sid=68 tid=123 weight='1.0',
+	id=197 sid=68 tid=126 weight='1.0',
+	id=198 sid=69 tid=74 weight='1.0',
+	id=199 sid=69 tid=97 weight='1.0',
+	id=200 sid=69 tid=98 weight='1.0',
+	id=201 sid=69 tid=123 weight='1.0',
+	id=202 sid=70 tid=73 weight='1.0',
+	id=203 sid=70 tid=109 weight='1.0',
+	id=204 sid=71 tid=72 weight='1.0',
+	id=205 sid=71 tid=74 weight='1.0',
+	id=206 sid=71 tid=91 weight='1.0',
+	id=207 sid=71 tid=122 weight='1.0',
+	id=208 sid=72 tid=73 weight='1.0',
+	id=209 sid=72 tid=76 weight='1.0',
+	id=210 sid=73 tid=105 weight='1.0',
+	id=211 sid=73 tid=106 weight='1.0',
+	id=212 sid=74 tid=118 weight='1.0',
+	id=213 sid=74 tid=120 weight='1.0',
+	id=214 sid=75 tid=76 weight='1.0',
+	id=215 sid=75 tid=77 weight='1.0',
+	id=216 sid=75 tid=90 weight='1.0',
+	id=217 sid=75 tid=104 weight='1.0',
+	id=218 sid=76 tid=91 weight='1.0',
+	id=219 sid=76 tid=92 weight='1.0',
+	id=220 sid=76 tid=105 weight='1.0',
+	id=221 sid=76 tid=106 weight='1.0',
+	id=222 sid=77 tid=92 weight='1.0',
+	id=223 sid=77 tid=106 weight='1.0',
+	id=224 sid=78 tid=79 weight='18.0',
+	id=225 sid=78 tid=142 weight='1.0',
+	id=226 sid=79 tid=80 weight='1.0',
+	id=227 sid=79 tid=88 weight='1.0',
+	id=228 sid=79 tid=143 weight='1.0',
+	id=229 sid=80 tid=83 weight='1.0',
+	id=230 sid=80 tid=84 weight='1.0',
+	id=231 sid=80 tid=89 weight='1.0',
+	id=232 sid=81 tid=82 weight='1.0',
+	id=233 sid=81 tid=85 weight='1.0',
+	id=234 sid=82 tid=83 weight='1.0',
+	id=235 sid=82 tid=86 weight='1.0',
+	id=236 sid=83 tid=87 weight='1.0',
+	id=237 sid=84 tid=87 weight='1.0',
+	id=238 sid=84 tid=88 weight='1.0',
+	id=239 sid=84 tid=94 weight='1.0',
+	id=240 sid=84 tid=99 weight='1.0',
+	id=241 sid=85 tid=86 weight='1.0',
+	id=242 sid=85 tid=95 weight='1.0',
+	id=243 sid=86 tid=87 weight='1.0',
+	id=244 sid=86 tid=96 weight='1.0',
+	id=245 sid=87 tid=89 weight='1.0',
+	id=246 sid=87 tid=97 weight='1.0',
+	id=247 sid=87 tid=98 weight='1.0',
+	id=248 sid=88 tid=89 weight='1.0',
+	id=249 sid=88 tid=93 weight='1.0',
+	id=250 sid=88 tid=136 weight='1.0',
+	id=251 sid=89 tid=99 weight='1.0',
+	id=252 sid=89 tid=135 weight='1.0',
+	id=253 sid=89 tid=143 weight='1.0',
+	id=254 sid=90 tid=91 weight='1.0',
+	id=255 sid=90 tid=92 weight='1.0',
+	id=256 sid=90 tid=119 weight='1.0',
+	id=257 sid=90 tid=141 weight='1.0',
+	id=258 sid=91 tid=100 weight='1.0',
+	id=259 sid=91 tid=120 weight='1.0',
+	id=260 sid=91 tid=121 weight='1.0',
+	id=261 sid=92 tid=100 weight='1.0',
+	id=262 sid=93 tid=94 weight='1.0',
+	id=263 sid=93 tid=99 weight='1.0',
+	id=264 sid=93 tid=124 weight='1.0',
+	id=265 sid=94 tid=98 weight='1.0',
+	id=266 sid=95 tid=96 weight='1.0',
+	id=267 sid=96 tid=97 weight='1.0',
+	id=268 sid=96 tid=98 weight='1.0',
+	id=269 sid=97 tid=99 weight='1.0',
+	id=270 sid=97 tid=118 weight='1.0',
+	id=271 sid=97 tid=135 weight='1.0',
+	id=272 sid=98 tid=99 weight='1.0',
+	id=273 sid=99 tid=123 weight='1.0',
+	id=274 sid=99 tid=136 weight='1.0',
+	id=275 sid=100 tid=119 weight='1.0',
+	id=276 sid=100 tid=126 weight='1.0',
+	id=277 sid=101 tid=102 weight='18.0',
+	id=278 sid=101 tid=110 weight='10.0',
+	id=279 sid=102 tid=103 weight='1.0',
+	id=280 sid=102 tid=111 weight='10.0',
+	id=281 sid=103 tid=108 weight='1.0',
+	id=282 sid=103 tid=112 weight='10.0',
+	id=283 sid=104 tid=105 weight='1.0',
+	id=284 sid=104 tid=106 weight='1.0',
+	id=285 sid=104 tid=128 weight='1.0',
+	id=286 sid=104 tid=139 weight='1.0',
+	id=287 sid=105 tid=109 weight='1.0',
+	id=288 sid=106 tid=109 weight='1.0',
+	id=289 sid=107 tid=108 weight='1.0',
+	id=290 sid=107 tid=113 weight='10.0',
+	id=291 sid=108 tid=114 weight='10.0',
+	id=292 sid=109 tid=132 weight='1.0',
+	id=293 sid=109 tid=139 weight='1.0',
+	id=294 sid=110 tid=111 weight='18.0',
+	id=295 sid=110 tid=129 weight='1.0',
+	id=296 sid=111 tid=112 weight='1.0',
+	id=297 sid=111 tid=130 weight='1.0',
+	id=298 sid=112 tid=114 weight='1.0',
+	id=299 sid=112 tid=131 weight='1.0',
+	id=300 sid=113 tid=114 weight='1.0',
+	id=301 sid=114 tid=132 weight='1.0',
+	id=302 sid=115 tid=116 weight='18.0',
+	id=303 sid=115 tid=133 weight='1.0',
+	id=304 sid=115 tid=140 weight='1.0',
+	id=305 sid=116 tid=117 weight='1.0',
+	id=306 sid=116 tid=119 weight='1.0',
+	id=307 sid=116 tid=134 weight='1.0',
+	id=308 sid=116 tid=141 weight='1.0',
+	id=309 sid=117 tid=118 weight='1.0',
+	id=310 sid=117 tid=120 weight='1.0',
+	id=311 sid=117 tid=121 weight='1.0',
+	id=312 sid=117 tid=125 weight='1.0',
+	id=313 sid=117 tid=135 weight='1.0',
+	id=314 sid=118 tid=122 weight='1.0',
+	id=315 sid=118 tid=123 weight='1.0',
+	id=316 sid=119 tid=120 weight='1.0',
+	id=317 sid=119 tid=121 weight='1.0',
+	id=318 sid=119 tid=125 weight='1.0',
+	id=319 sid=120 tid=122 weight='1.0',
+	id=320 sid=120 tid=123 weight='1.0',
+	id=321 sid=120 tid=126 weight='1.0',
+	id=322 sid=121 tid=122 weight='1.0',
+	id=323 sid=121 tid=141 weight='1.0',
+	id=324 sid=123 tid=124 weight='1.0',
+	id=325 sid=123 tid=125 weight='1.0',
+	id=326 sid=123 tid=135 weight='1.0',
+	id=327 sid=124 tid=126 weight='1.0',
+	id=328 sid=124 tid=136 weight='1.0',
+	id=329 sid=125 tid=126 weight='1.0',
+	id=330 sid=125 tid=134 weight='1.0',
+	id=331 sid=125 tid=136 weight='1.0',
+	id=332 sid=127 tid=128 weight='18.0',
+	id=333 sid=127 tid=137 weight='1.0',
+	id=334 sid=128 tid=138 weight='1.0',
+	id=335 sid=129 tid=130 weight='18.0',
+	id=336 sid=129 tid=137 weight='1.0',
+	id=337 sid=130 tid=131 weight='1.0',
+	id=338 sid=130 tid=138 weight='1.0',
+	id=339 sid=131 tid=132 weight='1.0',
+	id=340 sid=131 tid=139 weight='1.0',
+	id=341 sid=133 tid=134 weight='18.0',
+	id=342 sid=133 tid=142 weight='1.0',
+	id=343 sid=134 tid=135 weight='1.0',
+	id=344 sid=134 tid=143 weight='1.0',
+	id=345 sid=135 tid=136 weight='1.0',
+	id=346 sid=136 tid=143 weight='1.0',
+	id=347 sid=137 tid=138 weight='18.0',
+	id=348 sid=138 tid=139 weight='1.0',
+	id=349 sid=140 tid=141 weight='18.0',
+	id=350 sid=142 tid=143 weight='18.0'
+;
+END; [NETWORK]
+
+BEGIN ALGORITHM;
+TITLE 'Show Network';
+LINK NETWORK = 'Working Network';
+NAME 'Show Network';
+OPTIONS
+	View = 'Network';
+END; [ALGORITHM]
+
+BEGIN VIEW;
+TITLE 'Network';
+LINK ALGORITHM = 'Show Network';
+NAME 'NetworkView';
+INPUT 'NETWORK';
+OPTIONS
+	Diagram = 'Network',
+	FontScaleFactor = 2.48832,
+	TraitLegend = 'False',
+	TraitSize = 32,
+	SitesStyle = 'None',
+	Edits = 'mn:1:-171.49,-81.59' 'mn:2:-30.27,189.13' 'mn:3:-113.18,-22.42' 'mn:4:147.91,228.34' 'mn:5:69.68,151.86' 'mn:6:330.8,-22.11' 'mn:7:-40.65,-237.31' 'mn:8:71.57,108.33' 'mn:9:-82.32,-142.33' 'mn:10:-93.36,21.08' 'mn:11:-102.6,-125.87' 'mn:12:119.73,132.02' 'mn:13:-36.15,-202.61' 'mn:14:7.39,134.15' 'mn:15:15.88,89.36' 'mn:16:-95.52,-39.43' 'mn:17:-66.93,-1.72' 'mn:18:-148.58,-95.52' 'mn:19:117.36,174.09' 'mn:20:-12.99,138.32' 'mn:21:49.69,143.13' 'mn:22:-91.17,3.82' 'mn:23:55.47,98.17' 'mn:24:90.83,-90.14' 'mn:25:48.64,-30.47' 'mn:26:-41.9,57.65' 'mn:27:30.4,-12.86' 'mn:28:-16.11,32.18' 'mn:29:14.79,54.2' 'mn:30:46.88,96.37' 'mn:31:-1.68,67.45' 'mn:32:34.54,81.18' 'mn:33:-66.41,12.93' 'mn:34:-45.41,38.82' 'mn:35:-43.41,30.19' 'mn:36:-14.13,72.75' 'mn:37:-20.24,54.32' 'mn:38:-1.5,92.74' 'mn:39:-45.54,-7.87' 'mn:40:-22.4,9.38' 'mn:41:11.5,46.29' 'mn:42:8.94,7.87' 'mn:43:-125.36,-110.83' 'mn:44:28.77,137.32' 'mn:45:-98.24,-12.64' 'mn:46:35.59,92.51' 'mn:47:18.51,71.54' 'mn:48:-52.86,22.26' 'mn:49:-29.3,38.12' 'mn:50:64.16,73.54' 'mn:51:-76.67,-32.08' 'mn:52:32.48,55.52' 'mn:53:-31.33,1.33' 'mn:54:-8.26,17.87' 'mn:55:-2.31,30.23' 'mn:56:17.06,85.09' 'mn:57:-21.86,48.03' 'mn:58:6.77,67.94' 'mn:59:-5.2,53.77' 'mn:60:40.15,59.47' 'mn:61:14.02,35.05' 'mn:62:-69,22.02' 'mn:63:-68.08,40.51' 'mn:64:-90.18,-4.63' 'mn:65:-75.89,5.32' 'mn:66:-70.35,-23.98' 'mn:67:-41.91,16.18' 'mn:68:-53.93,-14.91' 'mn:69:-66.6,-18.67' 'mn:70:49.17,62.92' 'mn:71:-21.4,15.05' 'mn:72:3.21,29.44' 'mn:73:27.57,45.28' 'mn:74:-44.76,-1.44' 'mn:75:41.33,-7.63' 'mn:76:23.32,9.74' 'mn:77:31.24,19.08' 'mn:78:-17,-174.89' 'mn:79:-61.45,-115.43' 'mn:80:-82.89,-99.44' 'mn:81:-152.82,-50.32' 'mn:82:-130.03,-66.37' 'mn:83:-106.47,-83.59' 'mn:84:-84.23,-77.88' 'mn:85:-136.29,-27.29' 'mn:86:-113.57,-44.88' 'mn:87:-88,-62.78' 'mn:88:-64.27,-93.5' 'mn:89:-61.89,-80.3' 'mn:90:20.1,-25.1' 'mn:91:0.3,-6.91' 'mn:92:11.76,-0.32' 'mn:93:-77.2,-67.49' 'mn:94:-97.34,-51.46' 'mn:95:-116.89,-2.62' 'mn:96:-91.73,-21.95' 'mn:97:-64.4,-42.93' 'mn:98:-86.18,-39.23' 'mn:99:-64.97,-57.94' 'mn:100:-9.89,-17.85' 'mn:101:232.52,-14.12' 'mn:102:184.51,48.96' 'mn:103:166.41,67.43' 'mn:104:53.96,4.27' 'mn:105:34.99,23.5' 'mn:106:44.89,27.98' 'mn:107:132.54,109' 'mn:108:148.87,87.58' 'mn:109:58.83,38.9' 'mn:110:184.19,-41.98' 'mn:111:138.85,19.51' 'mn:112:121.2,39.89' 'mn:113:86.66,84.09' 'mn:114:103.53,61.39' 'mn:115:45.46,-122.98' 'mn:116:3.65,-64.26' 'mn:117:-16.32,-46.02' 'mn:118:-40.33,-24.97' 'mn:119:-1.7,-42.04' 'mn:120:-22.1,-23.01' 'mn:121:6.93,-29.53' 'mn:122:-16.04,-8.38' 'mn:123:-44.25,-39.92' 'mn:124:-55.12,-50.58' 'mn:125:-23.49,-58.66' 'mn:126:-32.41,-34.4' 'mn:127:114.51,-76.81' 'mn:128:71.5,-17.09' 'mn:129:161.41,-52.86' 'mn:130:116.89,7.04' 'mn:131:98.24,27.79' 'mn:132:81.52,49.82' 'mn:133:23.12,-139.75' 'mn:134:-18.84,-80.99' 'mn:135:-39.35,-62.68' 'mn:136:-44.5,-75.73' 'mn:137:138.18,-64.59' 'mn:138:94.26,-4.92' 'mn:139:76.66,16.13' 'mn:140:68.13,-106.31' 'mn:141:26.3,-47.44' 'mn:142:1.88,-156.83' 'mn:143:-40.68,-98.06' 'ml:79:-489,-213' 'ml:78:-479,-183' 'ml:81:-479,-183' 'ml:80:-479,-183' 'ml:83:-479,-183' 'ml:82:-479,-183' 'ml:85:-542,-163' 'ml:84:-479,-183' 'ml:87:-479,-183' 'ml:86:-479,-183' 'ml:88:-479,-183' 'ml:90:-479,-183' 'ml:89:-479,-183' 'ml:92:-479,-183' 'ml:91:-511,-96' 'ml:94:-479,-196' 'ml:93:-479,-183' 'ml:96:-479,-183' 'ml:95:-479,-183' 'ml:97:-479,-183' 'ml:99:-479,-183' 'ml:98:-563,-188' 'ml:101:-479,-183' 'ml:100:-479,-183' 'ml:103:-479,-183' 'ml:102:-479,-183' 'ml:105:-479,-183' 'ml:104:-479,-183' 'ml:19:-479,-183' 'ml:107:-479,-183' 'ml:18:-479,-183' 'ml:106:-479,-183' 'ml:21:-501,-201' 'ml:20:-479,-183' 'ml:23:-479,-183' 'ml:22:-479,-183' 'ml:25:-479,-183' 'ml:24:-479,-183' 'ml:27:-479,-183' 'ml:110:-479,-183' 'ml:26:-479,-183' 'ml:111:-479,-183' 'ml:108:-479,-183' 'ml:109:-479,-183' 'ml:114:-479,-183' 'ml:115:-479,-183' 'ml:112:-558,-159' 'ml:113:-479,-183' 'ml:116:-479,-183' 'ml:117:-479,-183' 'ml:8:-479,-183' 'ml:9:-479,-183' 'ml:10:-479,-183' 'ml:11:-479,-183' 'ml:12:-479,-183' 'ml:13:-479,-183' 'ml:14:-479,-183' 'ml:15:-479,-183' 'ml:28:-479,-183' 'ml:16:-479,-183' 'ml:17:-479,-183' 'ml:30:-479,-183' 'ml:29:-479,-183' 'ml:32:-447,-217' 'ml:31:-479,-183' 'ml:34:-479,-183' 'ml:33:-479,-183' 'ml:36:-479,-183' 'ml:35:-540,-144' 'ml:37:-479,-183' 'ml:1:0,-22' 'ml:2:0,-1' 'ml:3:15,7' 'ml:4:0,-1' 'ml:5:2,3' 'ml:39:-447,-215' 'ml:38:-479,-183' 'ml:41:-479,-183' 'ml:40:-479,-183' 'ml:43:-479,-183' 'ml:42:-479,-183' 'ml:45:-479,-183' 'ml:128:-479,-183' 'ml:44:-479,-183' 'ml:129:-479,-183' 'ml:47:-479,-183' 'ml:46:-479,-183' 'ml:132:-479,-183' 'ml:133:-479,-183' 'ml:130:-479,-183' 'ml:131:-555,-171' 'ml:136:-479,-183' 'ml:137:-479,-183' 'ml:134:-479,-183' 'ml:135:-479,-183' 'ml:48:-479,-183' 'ml:50:-479,-183' 'ml:49:-479,-183' 'ml:52:-479,-183' 'ml:51:-479,-183' 'ml:54:-479,-183' 'ml:53:-479,-183' 'ml:56:-491,-135' 'ml:55:-479,-183' 'ml:118:-381,-183' 'ml:57:-479,-183' 'ml:121:-479,-183' 'ml:122:-479,-183' 'ml:119:-537,-183' 'ml:120:-479,-183' 'ml:125:-565,-183' 'ml:126:-479,-183' 'ml:123:-401,-190' 'ml:124:-479,-183' 'ml:127:-479,-183' 'ml:59:-492,-165' 'ml:58:-479,-183' 'ml:61:-479,-183' 'ml:60:-479,-183' 'ml:63:-479,-183' 'ml:62:-479,-183' 'ml:65:-479,-183' 'ml:64:-479,-183' 'ml:67:-531,-155' 'ml:66:-479,-183' 'ml:68:-479,-183' 'ml:70:-479,-183' 'ml:69:-526,-204' 'ml:72:-479,-183' 'ml:71:-479,-183' 'ml:74:-479,-183' 'ml:73:-479,-183' 'ml:76:-479,-183' 'ml:75:-479,-183' 'ml:139:-578,-174' 'ml:77:-479,-183' 'ml:140:-479,-183' 'ml:138:-479,-183' 'ml:143:-479,-183' 'ml:141:-479,-183' 'ml:142:-479,-183',
+	LayoutSeed = 1;
+END; [VIEW]

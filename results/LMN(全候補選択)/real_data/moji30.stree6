@@ -1,0 +1,1749 @@
+#nexus [SplitsTree6]
+
+BEGIN SPLITSTREE6;
+DIMENSIONS nDataNodes=6 nAlgorithms=4;
+PROGRAM version='SplitsTree App (version 6.7.2, built 17 Jan 2026)';
+WORKFLOW creationDate='1769258413633'; [Sat Jan 24 21:40:13 JST 2026]
+END; [SPLITSTREE6]
+
+[
+Methods:
+Analysis was performed using SplitsTree App 6.0.0 (Huson and Bryant 2024).
+The original input consisted of 155 taxa and 155 nodes and 361 edges.
+
+References:
+Huson and Bryant 2024: D.H. Huson and D. Bryant. The SplitsTree App: interactive analysis and visualization using phylogenetic trees and networks. Nature Methods, 2024.
+]
+
+BEGIN TAXA;
+TITLE 'Input Taxa';
+LINK ALGORITHM = 'Input Data Loader';
+DIMENSIONS ntax=155;
+TAXLABELS
+	[1] 'm0'
+	[2] 'substance'
+	[3] 'distance'
+	[4] 'instance'
+	[5] 'tensors'
+	[6] 'm5'
+	[7] 'credit'
+	[8] 'reddit'
+	[9] 'm7'
+	[10] 'giraffe'
+	[11] 'metrics'
+	[12] 'm9'
+	[13] 'm10'
+	[14] 'm11'
+	[15] 'tensor'
+	[16] 'm12'
+	[17] 'm14'
+	[18] 'metric'
+	[19] 'm15'
+	[20] 'm16'
+	[21] 'matrix'
+	[22] 'm17'
+	[23] 'vector'
+	[24] 'm18'
+	[25] 'm19'
+	[26] 'sensor'
+	[27] 'm20'
+	[28] 'm21'
+	[29] 'm22'
+	[30] 'freeze'
+	[31] 'frozen'
+	[32] 'm24'
+	[33] 'm25'
+	[34] 'chosen'
+	[35] 'm26'
+	[36] 'm27'
+	[37] 'vertex'
+	[38] 'm28'
+	[39] 'graphs'
+	[40] 'm29'
+	[41] 'm30'
+	[42] 'edit'
+	[43] 'm31'
+	[44] 'm32'
+	[45] 'm33'
+	[46] 'm34'
+	[47] 'graph'
+	[48] 'm35'
+	[49] 'm36'
+	[50] 'm37'
+	[51] 'graft'
+	[52] 'm38'
+	[53] 'm39'
+	[54] 'grasp'
+	[55] 'stance'
+	[56] 'grass'
+	[57] 'm41'
+	[58] 'm42'
+	[59] 'm43'
+	[60] 'm44'
+	[61] 'm45'
+	[62] 'm46'
+	[63] 'm47'
+	[64] 'grady'
+	[65] 'm48'
+	[66] 'm49'
+	[67] 'm50'
+	[68] 'three'
+	[69] 'm51'
+	[70] 'm52'
+	[71] 'm53'
+	[72] 'grade'
+	[73] 'm54'
+	[74] 'm55'
+	[75] 'grain'
+	[76] 'tree'
+	[77] 'm56'
+	[78] 'm57'
+	[79] 'free'
+	[80] 'm58'
+	[81] 'm59'
+	[82] 'm60'
+	[83] 'm61'
+	[84] 'm62'
+	[85] 'm63'
+	[86] 'm64'
+	[87] 'm65'
+	[88] 'm66'
+	[89] 'm67'
+	[90] 'm68'
+	[91] 'm69'
+	[92] 'm70'
+	[93] 'm71'
+	[94] 'm72'
+	[95] 'm73'
+	[96] 'm74'
+	[97] 'm75'
+	[98] 'm76'
+	[99] 'm77'
+	[100] 'm78'
+	[101] 'm79'
+	[102] 'm80'
+	[103] 'm81'
+	[104] 'm82'
+	[105] 'm83'
+	[106] 'm84'
+	[107] 'm85'
+	[108] 'm86'
+	[109] 'm87'
+	[110] 'm88'
+	[111] 'm89'
+	[112] 'm90'
+	[113] 'm91'
+	[114] 'm92'
+	[115] 'm93'
+	[116] 'm94'
+	[117] 'm95'
+	[118] 'm96'
+	[119] 'm97'
+	[120] 'm98'
+	[121] 'm99'
+	[122] 'm100'
+	[123] 'm101'
+	[124] 'm102'
+	[125] 'm103'
+	[126] 'm104'
+	[127] 'm105'
+	[128] 'm106'
+	[129] 'm107'
+	[130] 'm108'
+	[131] 'm109'
+	[132] 'm110'
+	[133] 'm111'
+	[134] 'm112'
+	[135] 'm113'
+	[136] 'm114'
+	[137] 'm115'
+	[138] 'm116'
+	[139] 'm117'
+	[140] 'm118'
+	[141] 'm119'
+	[142] 'm120'
+	[143] 'm121'
+	[144] 'm122'
+	[145] 'm123'
+	[146] 'm124'
+	[147] 'm125'
+	[148] 'm126'
+	[149] 'm127'
+	[150] 'm128'
+	[151] 'm129'
+	[152] 'm130'
+	[153] 'm131'
+	[154] 'm132'
+	[155] 'm133'
+;
+DISPLAYLABELS
+	[1] '<b><c white><size "1.0">m0'
+	[2] '<bg yellow><b>substance'
+	[3] '<bg yellow><b>distance'
+	[4] '<bg yellow><b>instance'
+	[5] '<bg yellow><b>tensors'
+	[6] '<b><c white><size "1.0">m5'
+	[7] '<bg yellow><b>credit'
+	[8] '<bg yellow><b>reddit'
+	[9] '<b><c white><size "1.0">m7'
+	[10] '<bg yellow><b>giraffe'
+	[11] '<bg yellow><b>metrics'
+	[12] '<b><c white><size "1.0">m9'
+	[13] '<b><c white><size "1.0">m10'
+	[14] '<b><c white><size "1.0">m11'
+	[15] '<bg yellow><b>tensor'
+	[16] '<b><c white><size "1.0">m12'
+	[17] '<b><c white><size "1.0">m14'
+	[18] '<bg yellow><b>metric'
+	[19] '<b><c white><size "1.0">m15'
+	[20] '<b><c white><size "1.0">m16'
+	[21] '<bg yellow><b>matrix'
+	[22] '<b><c white><size "1.0">m17'
+	[23] '<bg yellow><b>vector'
+	[24] '<b><c white><size "1.0">m18'
+	[25] '<b><c white><size "1.0">m19'
+	[26] '<bg yellow><b>sensor'
+	[27] '<b><c white><size "1.0">m20'
+	[28] '<b><c white><size "1.0">m21'
+	[29] '<b><c white><size "1.0">m22'
+	[30] '<bg yellow><b>freeze'
+	[31] '<bg yellow><b>frozen'
+	[32] '<b><c white><size "1.0">m24'
+	[33] '<b><c white><size "1.0">m25'
+	[34] '<bg yellow><b>chosen'
+	[35] '<b><c white><size "1.0">m26'
+	[36] '<b><c white><size "1.0">m27'
+	[37] '<bg yellow><b>vertex'
+	[38] '<b><c white><size "1.0">m28'
+	[39] '<bg yellow><b>graphs'
+	[40] '<b><c white><size "1.0">m29'
+	[41] '<b><c white><size "1.0">m30'
+	[42] '<bg yellow><b>edit'
+	[43] '<b><c white><size "1.0">m31'
+	[44] '<b><c white><size "1.0">m32'
+	[45] '<b><c white><size "1.0">m33'
+	[46] '<b><c white><size "1.0">m34'
+	[47] '<bg yellow><b>graph'
+	[48] '<b><c white><size "1.0">m35'
+	[49] '<b><c white><size "1.0">m36'
+	[50] '<b><c white><size "1.0">m37'
+	[51] '<bg yellow><b>graft'
+	[52] '<b><c white><size "1.0">m38'
+	[53] '<b><c white><size "1.0">m39'
+	[54] '<bg yellow><b>grasp'
+	[55] '<bg yellow><b>stance'
+	[56] '<bg yellow><b>grass'
+	[57] '<b><c white><size "1.0">m41'
+	[58] '<b><c white><size "1.0">m42'
+	[59] '<b><c white><size "1.0">m43'
+	[60] '<b><c white><size "1.0">m44'
+	[61] '<b><c white><size "1.0">m45'
+	[62] '<b><c white><size "1.0">m46'
+	[63] '<b><c white><size "1.0">m47'
+	[64] '<bg yellow><b>grady'
+	[65] '<b><c white><size "1.0">m48'
+	[66] '<b><c white><size "1.0">m49'
+	[67] '<b><c white><size "1.0">m50'
+	[68] '<bg yellow><b>three'
+	[69] '<b><c white><size "1.0">m51'
+	[70] '<b><c white><size "1.0">m52'
+	[71] '<b><c white><size "1.0">m53'
+	[72] '<bg yellow><b>grade'
+	[73] '<b><c white><size "1.0">m54'
+	[74] '<b><c white><size "1.0">m55'
+	[75] '<bg yellow><b>grain'
+	[76] '<bg yellow><b>tree'
+	[77] '<b><c white><size "1.0">m56'
+	[78] '<b><c white><size "1.0">m57'
+	[79] '<bg yellow><b>free'
+	[80] '<b><c white><size "1.0">m58'
+	[81] '<b><c white><size "1.0">m59'
+	[82] '<b><c white><size "1.0">m60'
+	[83] '<b><c white><size "1.0">m61'
+	[84] '<b><c white><size "1.0">m62'
+	[85] '<b><c white><size "1.0">m63'
+	[86] '<b><c white><size "1.0">m64'
+	[87] '<b><c white><size "1.0">m65'
+	[88] '<b><c white><size "1.0">m66'
+	[89] '<b><c white><size "1.0">m67'
+	[90] '<b><c white><size "1.0">m68'
+	[91] '<b><c white><size "1.0">m69'
+	[92] '<b><c white><size "1.0">m70'
+	[93] '<b><c white><size "1.0">m71'
+	[94] '<b><c white><size "1.0">m72'
+	[95] '<b><c white><size "1.0">m73'
+	[96] '<b><c white><size "1.0">m74'
+	[97] '<b><c white><size "1.0">m75'
+	[98] '<b><c white><size "1.0">m76'
+	[99] '<b><c white><size "1.0">m77'
+	[100] '<b><c white><size "1.0">m78'
+	[101] '<b><c white><size "1.0">m79'
+	[102] '<b><c white><size "1.0">m80'
+	[103] '<b><c white><size "1.0">m81'
+	[104] '<b><c white><size "1.0">m82'
+	[105] '<b><c white><size "1.0">m83'
+	[106] '<b><c white><size "1.0">m84'
+	[107] '<b><c white><size "1.0">m85'
+	[108] '<b><c white><size "1.0">m86'
+	[109] '<b><c white><size "1.0">m87'
+	[110] '<b><c white><size "1.0">m88'
+	[111] '<b><c white><size "1.0">m89'
+	[112] '<b><c white><size "1.0">m90'
+	[113] '<b><c white><size "1.0">m91'
+	[114] '<b><c white><size "1.0">m92'
+	[115] '<b><c white><size "1.0">m93'
+	[116] '<b><c white><size "1.0">m94'
+	[117] '<b><c white><size "1.0">m95'
+	[118] '<b><c white><size "1.0">m96'
+	[119] '<b><c white><size "1.0">m97'
+	[120] '<b><c white><size "1.0">m98'
+	[121] '<b><c white><size "1.0">m99'
+	[122] '<b><c white><size "1.0">m100'
+	[123] '<b><c white><size "1.0">m101'
+	[124] '<b><c white><size "1.0">m102'
+	[125] '<b><c white><size "1.0">m103'
+	[126] '<b><c white><size "1.0">m104'
+	[127] '<b><c white><size "1.0">m105'
+	[128] '<b><c white><size "1.0">m106'
+	[129] '<b><c white><size "1.0">m107'
+	[130] '<b><c white><size "1.0">m108'
+	[131] '<b><c white><size "1.0">m109'
+	[132] '<b><c white><size "1.0">m110'
+	[133] '<b><c white><size "1.0">m111'
+	[134] '<b><c white><size "1.0">m112'
+	[135] '<b><c white><size "1.0">m113'
+	[136] '<b><c white><size "1.0">m114'
+	[137] '<b><c white><size "1.0">m115'
+	[138] '<b><c white><size "1.0">m116'
+	[139] '<b><c white><size "1.0">m117'
+	[140] '<b><c white><size "1.0">m118'
+	[141] '<b><c white><size "1.0">m119'
+	[142] '<b><c white><size "1.0">m120'
+	[143] '<b><c white><size "1.0">m121'
+	[144] '<b><c white><size "1.0">m122'
+	[145] '<b><c white><size "1.0">m123'
+	[146] '<b><c white><size "1.0">m124'
+	[147] '<b><c white><size "1.0">m125'
+	[148] '<b><c white><size "1.0">m126'
+	[149] '<b><c white><size "1.0">m127'
+	[150] '<b><c white><size "1.0">m128'
+	[151] '<b><c white><size "1.0">m129'
+	[152] '<b><c white><size "1.0">m130'
+	[153] '<b><c white><size "1.0">m131'
+	[154] '<b><c white><size "1.0">m132'
+	[155] '<b><c white><size "1.0">m133'
+;
+[TAXINFO;]
+END; [TAXA]
+
+BEGIN ALGORITHM;
+TITLE 'Taxa Filter';
+LINK ALGORITHM = 'Input Data Loader';
+NAME 'Taxa Filter';
+OPTIONS
+;
+END; [ALGORITHM]
+
+BEGIN TAXA;
+TITLE 'Working Taxa';
+LINK ALGORITHM = 'Taxa Filter';
+DIMENSIONS ntax=155;
+TAXLABELS
+	[1] 'm0'
+	[2] 'substance'
+	[3] 'distance'
+	[4] 'instance'
+	[5] 'tensors'
+	[6] 'm5'
+	[7] 'credit'
+	[8] 'reddit'
+	[9] 'm7'
+	[10] 'giraffe'
+	[11] 'metrics'
+	[12] 'm9'
+	[13] 'm10'
+	[14] 'm11'
+	[15] 'tensor'
+	[16] 'm12'
+	[17] 'm14'
+	[18] 'metric'
+	[19] 'm15'
+	[20] 'm16'
+	[21] 'matrix'
+	[22] 'm17'
+	[23] 'vector'
+	[24] 'm18'
+	[25] 'm19'
+	[26] 'sensor'
+	[27] 'm20'
+	[28] 'm21'
+	[29] 'm22'
+	[30] 'freeze'
+	[31] 'frozen'
+	[32] 'm24'
+	[33] 'm25'
+	[34] 'chosen'
+	[35] 'm26'
+	[36] 'm27'
+	[37] 'vertex'
+	[38] 'm28'
+	[39] 'graphs'
+	[40] 'm29'
+	[41] 'm30'
+	[42] 'edit'
+	[43] 'm31'
+	[44] 'm32'
+	[45] 'm33'
+	[46] 'm34'
+	[47] 'graph'
+	[48] 'm35'
+	[49] 'm36'
+	[50] 'm37'
+	[51] 'graft'
+	[52] 'm38'
+	[53] 'm39'
+	[54] 'grasp'
+	[55] 'stance'
+	[56] 'grass'
+	[57] 'm41'
+	[58] 'm42'
+	[59] 'm43'
+	[60] 'm44'
+	[61] 'm45'
+	[62] 'm46'
+	[63] 'm47'
+	[64] 'grady'
+	[65] 'm48'
+	[66] 'm49'
+	[67] 'm50'
+	[68] 'three'
+	[69] 'm51'
+	[70] 'm52'
+	[71] 'm53'
+	[72] 'grade'
+	[73] 'm54'
+	[74] 'm55'
+	[75] 'grain'
+	[76] 'tree'
+	[77] 'm56'
+	[78] 'm57'
+	[79] 'free'
+	[80] 'm58'
+	[81] 'm59'
+	[82] 'm60'
+	[83] 'm61'
+	[84] 'm62'
+	[85] 'm63'
+	[86] 'm64'
+	[87] 'm65'
+	[88] 'm66'
+	[89] 'm67'
+	[90] 'm68'
+	[91] 'm69'
+	[92] 'm70'
+	[93] 'm71'
+	[94] 'm72'
+	[95] 'm73'
+	[96] 'm74'
+	[97] 'm75'
+	[98] 'm76'
+	[99] 'm77'
+	[100] 'm78'
+	[101] 'm79'
+	[102] 'm80'
+	[103] 'm81'
+	[104] 'm82'
+	[105] 'm83'
+	[106] 'm84'
+	[107] 'm85'
+	[108] 'm86'
+	[109] 'm87'
+	[110] 'm88'
+	[111] 'm89'
+	[112] 'm90'
+	[113] 'm91'
+	[114] 'm92'
+	[115] 'm93'
+	[116] 'm94'
+	[117] 'm95'
+	[118] 'm96'
+	[119] 'm97'
+	[120] 'm98'
+	[121] 'm99'
+	[122] 'm100'
+	[123] 'm101'
+	[124] 'm102'
+	[125] 'm103'
+	[126] 'm104'
+	[127] 'm105'
+	[128] 'm106'
+	[129] 'm107'
+	[130] 'm108'
+	[131] 'm109'
+	[132] 'm110'
+	[133] 'm111'
+	[134] 'm112'
+	[135] 'm113'
+	[136] 'm114'
+	[137] 'm115'
+	[138] 'm116'
+	[139] 'm117'
+	[140] 'm118'
+	[141] 'm119'
+	[142] 'm120'
+	[143] 'm121'
+	[144] 'm122'
+	[145] 'm123'
+	[146] 'm124'
+	[147] 'm125'
+	[148] 'm126'
+	[149] 'm127'
+	[150] 'm128'
+	[151] 'm129'
+	[152] 'm130'
+	[153] 'm131'
+	[154] 'm132'
+	[155] 'm133'
+;
+DISPLAYLABELS
+	[1] '<b><c white><size "1.0">m0'
+	[2] '<bg yellow><b>substance'
+	[3] '<bg yellow><b>distance'
+	[4] '<bg yellow><b>instance'
+	[5] '<bg yellow><b>tensors'
+	[6] '<b><c white><size "1.0">m5'
+	[7] '<bg yellow><b>credit'
+	[8] '<bg yellow><b>reddit'
+	[9] '<b><c white><size "1.0">m7'
+	[10] '<bg yellow><b>giraffe'
+	[11] '<bg yellow><b>metrics'
+	[12] '<b><c white><size "1.0">m9'
+	[13] '<b><c white><size "1.0">m10'
+	[14] '<b><c white><size "1.0">m11'
+	[15] '<bg yellow><b>tensor'
+	[16] '<b><c white><size "1.0">m12'
+	[17] '<b><c white><size "1.0">m14'
+	[18] '<bg yellow><b>metric'
+	[19] '<b><c white><size "1.0">m15'
+	[20] '<b><c white><size "1.0">m16'
+	[21] '<bg yellow><b>matrix'
+	[22] '<b><c white><size "1.0">m17'
+	[23] '<bg yellow><b>vector'
+	[24] '<b><c white><size "1.0">m18'
+	[25] '<b><c white><size "1.0">m19'
+	[26] '<bg yellow><b>sensor'
+	[27] '<b><c white><size "1.0">m20'
+	[28] '<b><c white><size "1.0">m21'
+	[29] '<b><c white><size "1.0">m22'
+	[30] '<bg yellow><b>freeze'
+	[31] '<bg yellow><b>frozen'
+	[32] '<b><c white><size "1.0">m24'
+	[33] '<b><c white><size "1.0">m25'
+	[34] '<bg yellow><b>chosen'
+	[35] '<b><c white><size "1.0">m26'
+	[36] '<b><c white><size "1.0">m27'
+	[37] '<bg yellow><b>vertex'
+	[38] '<b><c white><size "1.0">m28'
+	[39] '<bg yellow><b>graphs'
+	[40] '<b><c white><size "1.0">m29'
+	[41] '<b><c white><size "1.0">m30'
+	[42] '<bg yellow><b>edit'
+	[43] '<b><c white><size "1.0">m31'
+	[44] '<b><c white><size "1.0">m32'
+	[45] '<b><c white><size "1.0">m33'
+	[46] '<b><c white><size "1.0">m34'
+	[47] '<bg yellow><b>graph'
+	[48] '<b><c white><size "1.0">m35'
+	[49] '<b><c white><size "1.0">m36'
+	[50] '<b><c white><size "1.0">m37'
+	[51] '<bg yellow><b>graft'
+	[52] '<b><c white><size "1.0">m38'
+	[53] '<b><c white><size "1.0">m39'
+	[54] '<bg yellow><b>grasp'
+	[55] '<bg yellow><b>stance'
+	[56] '<bg yellow><b>grass'
+	[57] '<b><c white><size "1.0">m41'
+	[58] '<b><c white><size "1.0">m42'
+	[59] '<b><c white><size "1.0">m43'
+	[60] '<b><c white><size "1.0">m44'
+	[61] '<b><c white><size "1.0">m45'
+	[62] '<b><c white><size "1.0">m46'
+	[63] '<b><c white><size "1.0">m47'
+	[64] '<bg yellow><b>grady'
+	[65] '<b><c white><size "1.0">m48'
+	[66] '<b><c white><size "1.0">m49'
+	[67] '<b><c white><size "1.0">m50'
+	[68] '<bg yellow><b>three'
+	[69] '<b><c white><size "1.0">m51'
+	[70] '<b><c white><size "1.0">m52'
+	[71] '<b><c white><size "1.0">m53'
+	[72] '<bg yellow><b>grade'
+	[73] '<b><c white><size "1.0">m54'
+	[74] '<b><c white><size "1.0">m55'
+	[75] '<bg yellow><b>grain'
+	[76] '<bg yellow><b>tree'
+	[77] '<b><c white><size "1.0">m56'
+	[78] '<b><c white><size "1.0">m57'
+	[79] '<bg yellow><b>free'
+	[80] '<b><c white><size "1.0">m58'
+	[81] '<b><c white><size "1.0">m59'
+	[82] '<b><c white><size "1.0">m60'
+	[83] '<b><c white><size "1.0">m61'
+	[84] '<b><c white><size "1.0">m62'
+	[85] '<b><c white><size "1.0">m63'
+	[86] '<b><c white><size "1.0">m64'
+	[87] '<b><c white><size "1.0">m65'
+	[88] '<b><c white><size "1.0">m66'
+	[89] '<b><c white><size "1.0">m67'
+	[90] '<b><c white><size "1.0">m68'
+	[91] '<b><c white><size "1.0">m69'
+	[92] '<b><c white><size "1.0">m70'
+	[93] '<b><c white><size "1.0">m71'
+	[94] '<b><c white><size "1.0">m72'
+	[95] '<b><c white><size "1.0">m73'
+	[96] '<b><c white><size "1.0">m74'
+	[97] '<b><c white><size "1.0">m75'
+	[98] '<b><c white><size "1.0">m76'
+	[99] '<b><c white><size "1.0">m77'
+	[100] '<b><c white><size "1.0">m78'
+	[101] '<b><c white><size "1.0">m79'
+	[102] '<b><c white><size "1.0">m80'
+	[103] '<b><c white><size "1.0">m81'
+	[104] '<b><c white><size "1.0">m82'
+	[105] '<b><c white><size "1.0">m83'
+	[106] '<b><c white><size "1.0">m84'
+	[107] '<b><c white><size "1.0">m85'
+	[108] '<b><c white><size "1.0">m86'
+	[109] '<b><c white><size "1.0">m87'
+	[110] '<b><c white><size "1.0">m88'
+	[111] '<b><c white><size "1.0">m89'
+	[112] '<b><c white><size "1.0">m90'
+	[113] '<b><c white><size "1.0">m91'
+	[114] '<b><c white><size "1.0">m92'
+	[115] '<b><c white><size "1.0">m93'
+	[116] '<b><c white><size "1.0">m94'
+	[117] '<b><c white><size "1.0">m95'
+	[118] '<b><c white><size "1.0">m96'
+	[119] '<b><c white><size "1.0">m97'
+	[120] '<b><c white><size "1.0">m98'
+	[121] '<b><c white><size "1.0">m99'
+	[122] '<b><c white><size "1.0">m100'
+	[123] '<b><c white><size "1.0">m101'
+	[124] '<b><c white><size "1.0">m102'
+	[125] '<b><c white><size "1.0">m103'
+	[126] '<b><c white><size "1.0">m104'
+	[127] '<b><c white><size "1.0">m105'
+	[128] '<b><c white><size "1.0">m106'
+	[129] '<b><c white><size "1.0">m107'
+	[130] '<b><c white><size "1.0">m108'
+	[131] '<b><c white><size "1.0">m109'
+	[132] '<b><c white><size "1.0">m110'
+	[133] '<b><c white><size "1.0">m111'
+	[134] '<b><c white><size "1.0">m112'
+	[135] '<b><c white><size "1.0">m113'
+	[136] '<b><c white><size "1.0">m114'
+	[137] '<b><c white><size "1.0">m115'
+	[138] '<b><c white><size "1.0">m116'
+	[139] '<b><c white><size "1.0">m117'
+	[140] '<b><c white><size "1.0">m118'
+	[141] '<b><c white><size "1.0">m119'
+	[142] '<b><c white><size "1.0">m120'
+	[143] '<b><c white><size "1.0">m121'
+	[144] '<b><c white><size "1.0">m122'
+	[145] '<b><c white><size "1.0">m123'
+	[146] '<b><c white><size "1.0">m124'
+	[147] '<b><c white><size "1.0">m125'
+	[148] '<b><c white><size "1.0">m126'
+	[149] '<b><c white><size "1.0">m127'
+	[150] '<b><c white><size "1.0">m128'
+	[151] '<b><c white><size "1.0">m129'
+	[152] '<b><c white><size "1.0">m130'
+	[153] '<b><c white><size "1.0">m131'
+	[154] '<b><c white><size "1.0">m132'
+	[155] '<b><c white><size "1.0">m133'
+;
+[TAXINFO;]
+END; [TAXA]
+
+BEGIN NETWORK;
+TITLE 'Input Network';
+LINK ALGORITHM = 'Input Data Loader';
+DIMENSIONS nVertices=155 nEdges=361;
+TYPE Other;
+VERTICES
+	id=1 label='m0' label='m0',
+	id=2 label='substance' label='substance',
+	id=3 label='distance' label='distance',
+	id=4 label='instance' label='instance',
+	id=5 label='tensors' label='tensors',
+	id=6 label='m5' label='m5',
+	id=7 label='credit' label='credit',
+	id=8 label='reddit' label='reddit',
+	id=9 label='m7' label='m7',
+	id=10 label='giraffe' label='giraffe',
+	id=11 label='metrics' label='metrics',
+	id=12 label='m9' label='m9',
+	id=13 label='m10' label='m10',
+	id=14 label='m11' label='m11',
+	id=15 label='tensor' label='tensor',
+	id=16 label='m12' label='m12',
+	id=17 label='m14' label='m14',
+	id=18 label='metric' label='metric',
+	id=19 label='m15' label='m15',
+	id=20 label='m16' label='m16',
+	id=21 label='matrix' label='matrix',
+	id=22 label='m17' label='m17',
+	id=23 label='vector' label='vector',
+	id=24 label='m18' label='m18',
+	id=25 label='m19' label='m19',
+	id=26 label='sensor' label='sensor',
+	id=27 label='m20' label='m20',
+	id=28 label='m21' label='m21',
+	id=29 label='m22' label='m22',
+	id=30 label='freeze' label='freeze',
+	id=31 label='frozen' label='frozen',
+	id=32 label='m24' label='m24',
+	id=33 label='m25' label='m25',
+	id=34 label='chosen' label='chosen',
+	id=35 label='m26' label='m26',
+	id=36 label='m27' label='m27',
+	id=37 label='vertex' label='vertex',
+	id=38 label='m28' label='m28',
+	id=39 label='graphs' label='graphs',
+	id=40 label='m29' label='m29',
+	id=41 label='m30' label='m30',
+	id=42 label='edit' label='edit',
+	id=43 label='m31' label='m31',
+	id=44 label='m32' label='m32',
+	id=45 label='m33' label='m33',
+	id=46 label='m34' label='m34',
+	id=47 label='graph' label='graph',
+	id=48 label='m35' label='m35',
+	id=49 label='m36' label='m36',
+	id=50 label='m37' label='m37',
+	id=51 label='graft' label='graft',
+	id=52 label='m38' label='m38',
+	id=53 label='m39' label='m39',
+	id=54 label='grasp' label='grasp',
+	id=55 label='stance' label='stance',
+	id=56 label='grass' label='grass',
+	id=57 label='m41' label='m41',
+	id=58 label='m42' label='m42',
+	id=59 label='m43' label='m43',
+	id=60 label='m44' label='m44',
+	id=61 label='m45' label='m45',
+	id=62 label='m46' label='m46',
+	id=63 label='m47' label='m47',
+	id=64 label='grady' label='grady',
+	id=65 label='m48' label='m48',
+	id=66 label='m49' label='m49',
+	id=67 label='m50' label='m50',
+	id=68 label='three' label='three',
+	id=69 label='m51' label='m51',
+	id=70 label='m52' label='m52',
+	id=71 label='m53' label='m53',
+	id=72 label='grade' label='grade',
+	id=73 label='m54' label='m54',
+	id=74 label='m55' label='m55',
+	id=75 label='grain' label='grain',
+	id=76 label='tree' label='tree',
+	id=77 label='m56' label='m56',
+	id=78 label='m57' label='m57',
+	id=79 label='free' label='free',
+	id=80 label='m58' label='m58',
+	id=81 label='m59' label='m59',
+	id=82 label='m60' label='m60',
+	id=83 label='m61' label='m61',
+	id=84 label='m62' label='m62',
+	id=85 label='m63' label='m63',
+	id=86 label='m64' label='m64',
+	id=87 label='m65' label='m65',
+	id=88 label='m66' label='m66',
+	id=89 label='m67' label='m67',
+	id=90 label='m68' label='m68',
+	id=91 label='m69' label='m69',
+	id=92 label='m70' label='m70',
+	id=93 label='m71' label='m71',
+	id=94 label='m72' label='m72',
+	id=95 label='m73' label='m73',
+	id=96 label='m74' label='m74',
+	id=97 label='m75' label='m75',
+	id=98 label='m76' label='m76',
+	id=99 label='m77' label='m77',
+	id=100 label='m78' label='m78',
+	id=101 label='m79' label='m79',
+	id=102 label='m80' label='m80',
+	id=103 label='m81' label='m81',
+	id=104 label='m82' label='m82',
+	id=105 label='m83' label='m83',
+	id=106 label='m84' label='m84',
+	id=107 label='m85' label='m85',
+	id=108 label='m86' label='m86',
+	id=109 label='m87' label='m87',
+	id=110 label='m88' label='m88',
+	id=111 label='m89' label='m89',
+	id=112 label='m90' label='m90',
+	id=113 label='m91' label='m91',
+	id=114 label='m92' label='m92',
+	id=115 label='m93' label='m93',
+	id=116 label='m94' label='m94',
+	id=117 label='m95' label='m95',
+	id=118 label='m96' label='m96',
+	id=119 label='m97' label='m97',
+	id=120 label='m98' label='m98',
+	id=121 label='m99' label='m99',
+	id=122 label='m100' label='m100',
+	id=123 label='m101' label='m101',
+	id=124 label='m102' label='m102',
+	id=125 label='m103' label='m103',
+	id=126 label='m104' label='m104',
+	id=127 label='m105' label='m105',
+	id=128 label='m106' label='m106',
+	id=129 label='m107' label='m107',
+	id=130 label='m108' label='m108',
+	id=131 label='m109' label='m109',
+	id=132 label='m110' label='m110',
+	id=133 label='m111' label='m111',
+	id=134 label='m112' label='m112',
+	id=135 label='m113' label='m113',
+	id=136 label='m114' label='m114',
+	id=137 label='m115' label='m115',
+	id=138 label='m116' label='m116',
+	id=139 label='m117' label='m117',
+	id=140 label='m118' label='m118',
+	id=141 label='m119' label='m119',
+	id=142 label='m120' label='m120',
+	id=143 label='m121' label='m121',
+	id=144 label='m122' label='m122',
+	id=145 label='m123' label='m123',
+	id=146 label='m124' label='m124',
+	id=147 label='m125' label='m125',
+	id=148 label='m126' label='m126',
+	id=149 label='m127' label='m127',
+	id=150 label='m128' label='m128',
+	id=151 label='m129' label='m129',
+	id=152 label='m130' label='m130',
+	id=153 label='m131' label='m131',
+	id=154 label='m132' label='m132',
+	id=155 label='m133' label='m133'
+;
+EDGES
+	id=1 sid=1 tid=2 w='1.5' weight='1.5',
+	id=2 sid=1 tid=13 w='0.5' weight='0.5',
+	id=3 sid=1 tid=14 w='1.0' weight='1.0',
+	id=4 sid=3 tid=13 w='1.0' weight='1.0',
+	id=5 sid=4 tid=13 w='1.0' weight='1.0',
+	id=6 sid=5 tid=15 w='1.0' weight='1.0',
+	id=7 sid=6 tid=7 w='0.5' weight='0.5',
+	id=8 sid=6 tid=44 w='0.5' weight='0.5',
+	id=9 sid=6 tid=45 w='1.0' weight='1.0',
+	id=10 sid=8 tid=44 w='1.0' weight='1.0',
+	id=11 sid=9 tid=10 w='0.5' weight='0.5',
+	id=12 sid=9 tid=27 w='1.0' weight='1.0',
+	id=13 sid=9 tid=28 w='0.5' weight='0.5',
+	id=14 sid=11 tid=12 w='1.5' weight='1.5',
+	id=15 sid=11 tid=18 w='1.0' weight='1.0',
+	id=16 sid=12 tid=49 w='0.5' weight='0.5',
+	id=17 sid=12 tid=101 w='0.5' weight='0.5',
+	id=18 sid=12 tid=92 w='1.0' weight='1.0',
+	id=19 sid=13 tid=35 w='0.5' weight='0.5',
+	id=20 sid=14 tid=55 w='0.5' weight='0.5',
+	id=21 sid=14 tid=65 w='1.0' weight='1.0',
+	id=22 sid=15 tid=24 w='0.5' weight='0.5',
+	id=23 sid=15 tid=25 w='1.0' weight='1.0',
+	id=24 sid=16 tid=17 w='0.5' weight='0.5',
+	id=25 sid=16 tid=91 w='0.5' weight='0.5',
+	id=26 sid=16 tid=113 w='1.5' weight='1.5',
+	id=27 sid=17 tid=107 w='1.5' weight='1.5',
+	id=28 sid=17 tid=127 w='0.5' weight='0.5',
+	id=29 sid=17 tid=142 w='0.5' weight='0.5',
+	id=30 sid=17 tid=144 w='0.5' weight='0.5',
+	id=31 sid=17 tid=155 w='0.5' weight='0.5',
+	id=32 sid=18 tid=19 w='0.5' weight='0.5',
+	id=33 sid=19 tid=20 w='0.5' weight='0.5',
+	id=34 sid=19 tid=59 w='0.5' weight='0.5',
+	id=35 sid=20 tid=21 w='1.0' weight='1.0',
+	id=36 sid=20 tid=71 w='1.0' weight='1.0',
+	id=37 sid=22 tid=23 w='0.5' weight='0.5',
+	id=38 sid=22 tid=60 w='1.0' weight='1.0',
+	id=39 sid=22 tid=61 w='1.0' weight='1.0',
+	id=40 sid=24 tid=26 w='0.5' weight='0.5',
+	id=41 sid=24 tid=62 w='0.5' weight='0.5',
+	id=42 sid=25 tid=61 w='0.5' weight='0.5',
+	id=43 sid=25 tid=91 w='1.0' weight='1.0',
+	id=44 sid=27 tid=94 w='0.5' weight='0.5',
+	id=45 sid=27 tid=95 w='0.5' weight='0.5',
+	id=46 sid=28 tid=81 w='0.5' weight='0.5',
+	id=47 sid=28 tid=82 w='0.5' weight='0.5',
+	id=48 sid=29 tid=30 w='1.0' weight='1.0',
+	id=49 sid=29 tid=79 w='1.0' weight='1.0',
+	id=50 sid=29 tid=86 w='0.5' weight='0.5',
+	id=51 sid=29 tid=87 w='0.5' weight='0.5',
+	id=52 sid=31 tid=32 w='1.0' weight='1.0',
+	id=53 sid=31 tid=86 w='1.5' weight='1.5',
+	id=54 sid=32 tid=88 w='0.5' weight='0.5',
+	id=55 sid=32 tid=89 w='1.0' weight='1.0',
+	id=56 sid=33 tid=34 w='1.0' weight='1.0',
+	id=57 sid=33 tid=88 w='0.5' weight='0.5',
+	id=58 sid=33 tid=90 w='0.5' weight='0.5',
+	id=59 sid=35 tid=55 w='0.5' weight='0.5',
+	id=60 sid=35 tid=65 w='1.0' weight='1.0',
+	id=61 sid=36 tid=37 w='0.5' weight='0.5',
+	id=62 sid=36 tid=83 w='0.5' weight='0.5',
+	id=63 sid=36 tid=84 w='1.0' weight='1.0',
+	id=64 sid=38 tid=39 w='0.5' weight='0.5',
+	id=65 sid=38 tid=47 w='0.5' weight='0.5',
+	id=66 sid=38 tid=85 w='0.5' weight='0.5',
+	id=67 sid=39 tid=40 w='1.0' weight='1.0',
+	id=68 sid=40 tid=57 w='0.5' weight='0.5',
+	id=69 sid=40 tid=58 w='0.5' weight='0.5',
+	id=70 sid=40 tid=106 w='0.5' weight='0.5',
+	id=71 sid=40 tid=107 w='0.5' weight='0.5',
+	id=72 sid=41 tid=42 w='1.5' weight='1.5',
+	id=73 sid=41 tid=116 w='0.5' weight='0.5',
+	id=74 sid=41 tid=117 w='0.5' weight='0.5',
+	id=75 sid=42 tid=43 w='0.5' weight='0.5',
+	id=76 sid=43 tid=44 w='0.5' weight='0.5',
+	id=77 sid=43 tid=70 w='0.5' weight='0.5',
+	id=78 sid=44 tid=80 w='1.5' weight='1.5',
+	id=79 sid=45 tid=118 w='0.5' weight='0.5',
+	id=80 sid=45 tid=119 w='0.5' weight='0.5',
+	id=81 sid=45 tid=120 w='0.5' weight='0.5',
+	id=82 sid=45 tid=121 w='0.5' weight='0.5',
+	id=83 sid=46 tid=92 w='0.5' weight='0.5',
+	id=84 sid=46 tid=101 w='1.0' weight='1.0',
+	id=85 sid=46 tid=99 w='0.5' weight='0.5',
+	id=86 sid=46 tid=80 w='0.5' weight='0.5',
+	id=87 sid=46 tid=141 w='0.5' weight='0.5',
+	id=88 sid=47 tid=48 w='1.0' weight='1.0',
+	id=89 sid=48 tid=50 w='0.5' weight='0.5',
+	id=90 sid=48 tid=52 w='0.5' weight='0.5',
+	id=91 sid=48 tid=63 w='0.5' weight='0.5',
+	id=92 sid=48 tid=53 w='0.5' weight='0.5',
+	id=93 sid=48 tid=73 w='0.5' weight='0.5',
+	id=94 sid=48 tid=74 w='0.5' weight='0.5',
+	id=95 sid=48 tid=57 w='0.5' weight='0.5',
+	id=96 sid=48 tid=106 w='0.5' weight='0.5',
+	id=97 sid=48 tid=125 w='1.5' weight='1.5',
+	id=98 sid=49 tid=93 w='0.5' weight='0.5',
+	id=99 sid=49 tid=124 w='0.5' weight='0.5',
+	id=100 sid=49 tid=109 w='1.0' weight='1.0',
+	id=101 sid=49 tid=127 w='0.5' weight='0.5',
+	id=102 sid=50 tid=51 w='0.5' weight='0.5',
+	id=103 sid=50 tid=94 w='0.5' weight='0.5',
+	id=104 sid=51 tid=52 w='0.5' weight='0.5',
+	id=105 sid=52 tid=100 w='1.0' weight='1.0',
+	id=106 sid=53 tid=54 w='0.5' weight='0.5',
+	id=107 sid=53 tid=56 w='0.5' weight='0.5',
+	id=108 sid=53 tid=102 w='1.5' weight='1.5',
+	id=109 sid=55 tid=66 w='1.5' weight='1.5',
+	id=110 sid=56 tid=57 w='0.5' weight='0.5',
+	id=111 sid=56 tid=58 w='0.5' weight='0.5',
+	id=112 sid=57 tid=85 w='0.5' weight='0.5',
+	id=113 sid=57 tid=112 w='1.0' weight='1.0',
+	id=114 sid=58 tid=113 w='0.5' weight='0.5',
+	id=115 sid=58 tid=114 w='0.5' weight='0.5',
+	id=116 sid=59 tid=92 w='0.5' weight='0.5',
+	id=117 sid=59 tid=93 w='0.5' weight='0.5',
+	id=118 sid=60 tid=83 w='0.5' weight='0.5',
+	id=119 sid=60 tid=110 w='0.5' weight='0.5',
+	id=120 sid=61 tid=62 w='0.5' weight='0.5',
+	id=121 sid=61 tid=111 w='0.5' weight='0.5',
+	id=122 sid=62 tid=91 w='1.0' weight='1.0',
+	id=123 sid=63 tid=64 w='0.5' weight='0.5',
+	id=124 sid=63 tid=72 w='0.5' weight='0.5',
+	id=125 sid=65 tid=109 w='0.5' weight='0.5',
+	id=126 sid=65 tid=81 w='2.0' weight='2.0',
+	id=127 sid=66 tid=109 w='0.5' weight='0.5',
+	id=128 sid=66 tid=136 w='0.5' weight='0.5',
+	id=129 sid=66 tid=137 w='0.5' weight='0.5',
+	id=130 sid=67 tid=68 w='0.5' weight='0.5',
+	id=131 sid=67 tid=76 w='0.5' weight='0.5',
+	id=132 sid=67 tid=96 w='0.5' weight='0.5',
+	id=133 sid=68 tid=69 w='1.0' weight='1.0',
+	id=134 sid=69 tid=128 w='0.5' weight='0.5',
+	id=135 sid=69 tid=129 w='0.5' weight='0.5',
+	id=136 sid=69 tid=130 w='0.5' weight='0.5',
+	id=137 sid=70 tid=98 w='0.5' weight='0.5',
+	id=138 sid=70 tid=99 w='0.5' weight='0.5',
+	id=139 sid=71 tid=92 w='0.5' weight='0.5',
+	id=140 sid=71 tid=93 w='0.5' weight='0.5',
+	id=141 sid=71 tid=80 w='0.5' weight='0.5',
+	id=142 sid=71 tid=127 w='0.5' weight='0.5',
+	id=143 sid=71 tid=145 w='0.5' weight='0.5',
+	id=144 sid=72 tid=73 w='0.5' weight='0.5',
+	id=145 sid=73 tid=94 w='0.5' weight='0.5',
+	id=146 sid=73 tid=95 w='0.5' weight='0.5',
+	id=147 sid=73 tid=103 w='1.0' weight='1.0',
+	id=148 sid=74 tid=75 w='0.5' weight='0.5',
+	id=149 sid=74 tid=104 w='0.5' weight='0.5',
+	id=150 sid=76 tid=77 w='0.5' weight='0.5',
+	id=151 sid=76 tid=78 w='0.5' weight='0.5',
+	id=152 sid=77 tid=79 w='0.5' weight='0.5',
+	id=153 sid=77 tid=105 w='0.5' weight='0.5',
+	id=154 sid=78 tid=96 w='0.5' weight='0.5',
+	id=155 sid=78 tid=105 w='0.5' weight='0.5',
+	id=156 sid=78 tid=131 w='0.5' weight='0.5',
+	id=157 sid=80 tid=132 w='0.5' weight='0.5',
+	id=158 sid=80 tid=119 w='0.5' weight='0.5',
+	id=159 sid=80 tid=121 w='0.5' weight='0.5',
+	id=160 sid=80 tid=117 w='0.5' weight='0.5',
+	id=161 sid=80 tid=154 w='0.5' weight='0.5',
+	id=162 sid=81 tid=97 w='1.0' weight='1.0',
+	id=163 sid=82 tid=95 w='0.5' weight='0.5',
+	id=164 sid=82 tid=108 w='0.5' weight='0.5',
+	id=165 sid=83 tid=115 w='1.0' weight='1.0',
+	id=166 sid=84 tid=115 w='0.5' weight='0.5',
+	id=167 sid=84 tid=146 w='0.5' weight='0.5',
+	id=168 sid=85 tid=106 w='0.5' weight='0.5',
+	id=169 sid=86 tid=126 w='0.5' weight='0.5',
+	id=170 sid=87 tid=105 w='0.5' weight='0.5',
+	id=171 sid=87 tid=118 w='0.5' weight='0.5',
+	id=172 sid=87 tid=126 w='0.5' weight='0.5',
+	id=173 sid=87 tid=139 w='0.5' weight='0.5',
+	id=174 sid=87 tid=140 w='0.5' weight='0.5',
+	id=175 sid=88 tid=122 w='0.5' weight='0.5',
+	id=176 sid=89 tid=103 w='0.5' weight='0.5',
+	id=177 sid=89 tid=147 w='0.5' weight='0.5',
+	id=178 sid=89 tid=148 w='0.5' weight='0.5',
+	id=179 sid=90 tid=122 w='0.5' weight='0.5',
+	id=180 sid=90 tid=123 w='0.5' weight='0.5',
+	id=181 sid=91 tid=124 w='0.5' weight='0.5',
+	id=182 sid=91 tid=141 w='0.5' weight='0.5',
+	id=183 sid=91 tid=142 w='0.5' weight='0.5',
+	id=184 sid=91 tid=149 w='0.5' weight='0.5',
+	id=185 sid=92 tid=124 w='1.0' weight='1.0',
+	id=186 sid=93 tid=132 w='0.5' weight='0.5',
+	id=187 sid=94 tid=106 w='0.5' weight='0.5',
+	id=188 sid=95 tid=97 w='0.5' weight='0.5',
+	id=189 sid=95 tid=114 w='1.0' weight='1.0',
+	id=190 sid=96 tid=129 w='0.5' weight='0.5',
+	id=191 sid=96 tid=130 w='0.5' weight='0.5',
+	id=192 sid=97 tid=108 w='0.5' weight='0.5',
+	id=193 sid=97 tid=136 w='0.5' weight='0.5',
+	id=194 sid=97 tid=138 w='0.5' weight='0.5',
+	id=195 sid=97 tid=139 w='0.5' weight='0.5',
+	id=196 sid=98 tid=116 w='0.5' weight='0.5',
+	id=197 sid=98 tid=117 w='0.5' weight='0.5',
+	id=198 sid=98 tid=119 w='0.5' weight='0.5',
+	id=199 sid=98 tid=120 w='0.5' weight='0.5',
+	id=200 sid=99 tid=117 w='0.5' weight='0.5',
+	id=201 sid=99 tid=119 w='0.5' weight='0.5',
+	id=202 sid=99 tid=132 w='0.5' weight='0.5',
+	id=203 sid=100 tid=104 w='0.5' weight='0.5',
+	id=204 sid=100 tid=116 w='0.5' weight='0.5',
+	id=205 sid=100 tid=120 w='0.5' weight='0.5',
+	id=206 sid=100 tid=143 w='0.5' weight='0.5',
+	id=207 sid=101 tid=127 w='0.5' weight='0.5',
+	id=208 sid=101 tid=112 w='1.5' weight='1.5',
+	id=209 sid=101 tid=155 w='0.5' weight='0.5',
+	id=210 sid=102 tid=119 w='1.0' weight='1.0',
+	id=211 sid=102 tid=112 w='0.5' weight='0.5',
+	id=212 sid=102 tid=144 w='0.5' weight='0.5',
+	id=213 sid=102 tid=149 w='0.5' weight='0.5',
+	id=214 sid=102 tid=125 w='0.5' weight='0.5',
+	id=215 sid=102 tid=147 w='0.5' weight='0.5',
+	id=216 sid=102 tid=148 w='0.5' weight='0.5',
+	id=217 sid=102 tid=150 w='0.5' weight='0.5',
+	id=218 sid=103 tid=104 w='0.5' weight='0.5',
+	id=219 sid=103 tid=105 w='0.5' weight='0.5',
+	id=220 sid=103 tid=118 w='0.5' weight='0.5',
+	id=221 sid=103 tid=126 w='0.5' weight='0.5',
+	id=222 sid=103 tid=138 w='0.5' weight='0.5',
+	id=223 sid=103 tid=139 w='0.5' weight='0.5',
+	id=224 sid=103 tid=140 w='0.5' weight='0.5',
+	id=225 sid=103 tid=143 w='0.5' weight='0.5',
+	id=226 sid=103 tid=152 w='0.5' weight='0.5',
+	id=227 sid=104 tid=114 w='1.0' weight='1.0',
+	id=228 sid=104 tid=133 w='0.5' weight='0.5',
+	id=229 sid=105 tid=129 w='0.5' weight='0.5',
+	id=230 sid=105 tid=134 w='0.5' weight='0.5',
+	id=231 sid=106 tid=108 w='0.5' weight='0.5',
+	id=232 sid=106 tid=114 w='0.5' weight='0.5',
+	id=233 sid=106 tid=138 w='0.5' weight='0.5',
+	id=234 sid=107 tid=108 w='0.5' weight='0.5',
+	id=235 sid=107 tid=113 w='0.5' weight='0.5',
+	id=236 sid=107 tid=114 w='0.5' weight='0.5',
+	id=237 sid=107 tid=138 w='0.5' weight='0.5',
+	id=238 sid=109 tid=135 w='0.5' weight='0.5',
+	id=239 sid=110 tid=141 w='0.5' weight='0.5',
+	id=240 sid=110 tid=142 w='0.5' weight='0.5',
+	id=241 sid=111 tid=141 w='0.5' weight='0.5',
+	id=242 sid=111 tid=142 w='0.5' weight='0.5',
+	id=243 sid=112 tid=113 w='0.5' weight='0.5',
+	id=244 sid=112 tid=114 w='0.5' weight='0.5',
+	id=245 sid=112 tid=138 w='0.5' weight='0.5',
+	id=246 sid=112 tid=143 w='0.5' weight='0.5',
+	id=247 sid=115 tid=127 w='0.5' weight='0.5',
+	id=248 sid=115 tid=141 w='0.5' weight='0.5',
+	id=249 sid=115 tid=142 w='0.5' weight='0.5',
+	id=250 sid=115 tid=125 w='0.5' weight='0.5',
+	id=251 sid=115 tid=148 w='0.5' weight='0.5',
+	id=252 sid=115 tid=149 w='0.5' weight='0.5',
+	id=253 sid=116 tid=125 w='0.5' weight='0.5',
+	id=254 sid=116 tid=133 w='0.5' weight='0.5',
+	id=255 sid=116 tid=134 w='0.5' weight='0.5',
+	id=256 sid=117 tid=118 w='1.0' weight='1.0',
+	id=257 sid=117 tid=127 w='0.5' weight='0.5',
+	id=258 sid=117 tid=141 w='0.5' weight='0.5',
+	id=259 sid=117 tid=142 w='0.5' weight='0.5',
+	id=260 sid=117 tid=145 w='0.5' weight='0.5',
+	id=261 sid=117 tid=125 w='0.5' weight='0.5',
+	id=262 sid=117 tid=150 w='0.5' weight='0.5',
+	id=263 sid=118 tid=134 w='0.5' weight='0.5',
+	id=264 sid=118 tid=147 w='0.5' weight='0.5',
+	id=265 sid=119 tid=133 w='0.5' weight='0.5',
+	id=266 sid=119 tid=134 w='0.5' weight='0.5',
+	id=267 sid=119 tid=145 w='0.5' weight='0.5',
+	id=268 sid=120 tid=133 w='0.5' weight='0.5',
+	id=269 sid=120 tid=134 w='0.5' weight='0.5',
+	id=270 sid=120 tid=150 w='0.5' weight='0.5',
+	id=271 sid=121 tid=133 w='0.5' weight='0.5',
+	id=272 sid=121 tid=134 w='0.5' weight='0.5',
+	id=273 sid=121 tid=145 w='0.5' weight='0.5',
+	id=274 sid=121 tid=147 w='0.5' weight='0.5',
+	id=275 sid=121 tid=150 w='0.5' weight='0.5',
+	id=276 sid=122 tid=147 w='0.5' weight='0.5',
+	id=277 sid=122 tid=148 w='0.5' weight='0.5',
+	id=278 sid=123 tid=128 w='0.5' weight='0.5',
+	id=279 sid=123 tid=147 w='0.5' weight='0.5',
+	id=280 sid=123 tid=148 w='0.5' weight='0.5',
+	id=281 sid=123 tid=149 w='0.5' weight='0.5',
+	id=282 sid=124 tid=137 w='0.5' weight='0.5',
+	id=283 sid=124 tid=151 w='0.5' weight='0.5',
+	id=284 sid=124 tid=153 w='0.5' weight='0.5',
+	id=285 sid=124 tid=154 w='0.5' weight='0.5',
+	id=286 sid=124 tid=155 w='0.0' weight='0.0',
+	id=287 sid=125 tid=140 w='0.5' weight='0.5',
+	id=288 sid=125 tid=146 w='0.5' weight='0.5',
+	id=289 sid=125 tid=151 w='0.5' weight='0.5',
+	id=290 sid=125 tid=153 w='0.5' weight='0.5',
+	id=291 sid=125 tid=143 w='0.5' weight='0.5',
+	id=292 sid=125 tid=152 w='0.5' weight='0.5',
+	id=293 sid=125 tid=154 w='0.5' weight='0.5',
+	id=294 sid=126 tid=147 w='0.5' weight='0.5',
+	id=295 sid=126 tid=148 w='0.5' weight='0.5',
+	id=296 sid=127 tid=132 w='0.5' weight='0.5',
+	id=297 sid=127 tid=151 w='0.5' weight='0.5',
+	id=298 sid=128 tid=146 w='0.5' weight='0.5',
+	id=299 sid=128 tid=152 w='0.5' weight='0.5',
+	id=300 sid=128 tid=153 w='0.5' weight='0.5',
+	id=301 sid=129 tid=131 w='0.5' weight='0.5',
+	id=302 sid=129 tid=139 w='0.5' weight='0.5',
+	id=303 sid=129 tid=140 w='0.5' weight='0.5',
+	id=304 sid=129 tid=146 w='0.5' weight='0.5',
+	id=305 sid=129 tid=152 w='0.5' weight='0.5',
+	id=306 sid=130 tid=131 w='0.5' weight='0.5',
+	id=307 sid=130 tid=136 w='0.5' weight='0.5',
+	id=308 sid=130 tid=137 w='0.5' weight='0.5',
+	id=309 sid=130 tid=139 w='0.5' weight='0.5',
+	id=310 sid=130 tid=140 w='0.5' weight='0.5',
+	id=311 sid=130 tid=152 w='0.5' weight='0.5',
+	id=312 sid=130 tid=153 w='0.5' weight='0.5',
+	id=313 sid=131 tid=134 w='0.5' weight='0.5',
+	id=314 sid=131 tid=145 w='0.5' weight='0.5',
+	id=315 sid=131 tid=147 w='0.5' weight='0.5',
+	id=316 sid=131 tid=150 w='0.5' weight='0.5',
+	id=317 sid=132 tid=141 w='0.5' weight='0.5',
+	id=318 sid=132 tid=142 w='0.5' weight='0.5',
+	id=319 sid=132 tid=145 w='0.5' weight='0.5',
+	id=320 sid=133 tid=143 w='0.5' weight='0.5',
+	id=321 sid=134 tid=140 w='0.5' weight='0.5',
+	id=322 sid=134 tid=143 w='0.5' weight='0.5',
+	id=323 sid=134 tid=152 w='0.5' weight='0.5',
+	id=324 sid=135 tid=136 w='0.5' weight='0.5',
+	id=325 sid=135 tid=137 w='0.5' weight='0.5',
+	id=326 sid=135 tid=151 w='0.5' weight='0.5',
+	id=327 sid=135 tid=153 w='0.5' weight='0.5',
+	id=328 sid=136 tid=144 w='0.5' weight='0.5',
+	id=329 sid=136 tid=143 w='1.0' weight='1.0',
+	id=330 sid=137 tid=144 w='0.5' weight='0.5',
+	id=331 sid=137 tid=143 w='1.0' weight='1.0',
+	id=332 sid=138 tid=147 w='0.5' weight='0.5',
+	id=333 sid=138 tid=151 w='1.0' weight='1.0',
+	id=334 sid=139 tid=147 w='0.5' weight='0.5',
+	id=335 sid=139 tid=148 w='0.5' weight='0.5',
+	id=336 sid=140 tid=147 w='0.5' weight='0.5',
+	id=337 sid=140 tid=148 w='0.5' weight='0.5',
+	id=338 sid=140 tid=150 w='0.5' weight='0.5',
+	id=339 sid=141 tid=154 w='0.5' weight='0.5',
+	id=340 sid=142 tid=151 w='0.5' weight='0.5',
+	id=341 sid=142 tid=154 w='0.5' weight='0.5',
+	id=342 sid=143 tid=147 w='0.5' weight='0.5',
+	id=343 sid=143 tid=148 w='0.5' weight='0.5',
+	id=344 sid=143 tid=150 w='0.5' weight='0.5',
+	id=345 sid=144 tid=151 w='0.5' weight='0.5',
+	id=346 sid=144 tid=153 w='0.5' weight='0.5',
+	id=347 sid=144 tid=154 w='0.5' weight='0.5',
+	id=348 sid=145 tid=146 w='0.5' weight='0.5',
+	id=349 sid=145 tid=151 w='0.5' weight='0.5',
+	id=350 sid=145 tid=153 w='0.5' weight='0.5',
+	id=351 sid=145 tid=154 w='0.5' weight='0.5',
+	id=352 sid=146 tid=148 w='0.5' weight='0.5',
+	id=353 sid=147 tid=152 w='0.5' weight='0.5',
+	id=354 sid=147 tid=154 w='0.5' weight='0.5',
+	id=355 sid=148 tid=153 w='0.5' weight='0.5',
+	id=356 sid=148 tid=152 w='0.5' weight='0.5',
+	id=357 sid=148 tid=154 w='0.5' weight='0.5',
+	id=358 sid=149 tid=153 w='0.5' weight='0.5',
+	id=359 sid=149 tid=154 w='0.5' weight='0.5',
+	id=360 sid=150 tid=152 w='0.5' weight='0.5',
+	id=361 sid=150 tid=154 w='0.5' weight='0.5'
+;
+END; [NETWORK]
+
+BEGIN ALGORITHM;
+TITLE 'Input Data Filter';
+LINK NETWORK = 'Input Network';
+NAME 'Network Taxa Filter';
+END; [ALGORITHM]
+
+BEGIN NETWORK;
+TITLE 'Working Network';
+LINK ALGORITHM = 'Input Data Filter';
+DIMENSIONS nVertices=155 nEdges=361;
+TYPE Other;
+VERTICES
+	id=1 label='m0' label='m0',
+	id=2 label='substance' label='substance',
+	id=3 label='distance' label='distance',
+	id=4 label='instance' label='instance',
+	id=5 label='tensors' label='tensors',
+	id=6 label='m5' label='m5',
+	id=7 label='credit' label='credit',
+	id=8 label='reddit' label='reddit',
+	id=9 label='m7' label='m7',
+	id=10 label='giraffe' label='giraffe',
+	id=11 label='metrics' label='metrics',
+	id=12 label='m9' label='m9',
+	id=13 label='m10' label='m10',
+	id=14 label='m11' label='m11',
+	id=15 label='tensor' label='tensor',
+	id=16 label='m12' label='m12',
+	id=17 label='m14' label='m14',
+	id=18 label='metric' label='metric',
+	id=19 label='m15' label='m15',
+	id=20 label='m16' label='m16',
+	id=21 label='matrix' label='matrix',
+	id=22 label='m17' label='m17',
+	id=23 label='vector' label='vector',
+	id=24 label='m18' label='m18',
+	id=25 label='m19' label='m19',
+	id=26 label='sensor' label='sensor',
+	id=27 label='m20' label='m20',
+	id=28 label='m21' label='m21',
+	id=29 label='m22' label='m22',
+	id=30 label='freeze' label='freeze',
+	id=31 label='frozen' label='frozen',
+	id=32 label='m24' label='m24',
+	id=33 label='m25' label='m25',
+	id=34 label='chosen' label='chosen',
+	id=35 label='m26' label='m26',
+	id=36 label='m27' label='m27',
+	id=37 label='vertex' label='vertex',
+	id=38 label='m28' label='m28',
+	id=39 label='graphs' label='graphs',
+	id=40 label='m29' label='m29',
+	id=41 label='m30' label='m30',
+	id=42 label='edit' label='edit',
+	id=43 label='m31' label='m31',
+	id=44 label='m32' label='m32',
+	id=45 label='m33' label='m33',
+	id=46 label='m34' label='m34',
+	id=47 label='graph' label='graph',
+	id=48 label='m35' label='m35',
+	id=49 label='m36' label='m36',
+	id=50 label='m37' label='m37',
+	id=51 label='graft' label='graft',
+	id=52 label='m38' label='m38',
+	id=53 label='m39' label='m39',
+	id=54 label='grasp' label='grasp',
+	id=55 label='stance' label='stance',
+	id=56 label='grass' label='grass',
+	id=57 label='m41' label='m41',
+	id=58 label='m42' label='m42',
+	id=59 label='m43' label='m43',
+	id=60 label='m44' label='m44',
+	id=61 label='m45' label='m45',
+	id=62 label='m46' label='m46',
+	id=63 label='m47' label='m47',
+	id=64 label='grady' label='grady',
+	id=65 label='m48' label='m48',
+	id=66 label='m49' label='m49',
+	id=67 label='m50' label='m50',
+	id=68 label='three' label='three',
+	id=69 label='m51' label='m51',
+	id=70 label='m52' label='m52',
+	id=71 label='m53' label='m53',
+	id=72 label='grade' label='grade',
+	id=73 label='m54' label='m54',
+	id=74 label='m55' label='m55',
+	id=75 label='grain' label='grain',
+	id=76 label='tree' label='tree',
+	id=77 label='m56' label='m56',
+	id=78 label='m57' label='m57',
+	id=79 label='free' label='free',
+	id=80 label='m58' label='m58',
+	id=81 label='m59' label='m59',
+	id=82 label='m60' label='m60',
+	id=83 label='m61' label='m61',
+	id=84 label='m62' label='m62',
+	id=85 label='m63' label='m63',
+	id=86 label='m64' label='m64',
+	id=87 label='m65' label='m65',
+	id=88 label='m66' label='m66',
+	id=89 label='m67' label='m67',
+	id=90 label='m68' label='m68',
+	id=91 label='m69' label='m69',
+	id=92 label='m70' label='m70',
+	id=93 label='m71' label='m71',
+	id=94 label='m72' label='m72',
+	id=95 label='m73' label='m73',
+	id=96 label='m74' label='m74',
+	id=97 label='m75' label='m75',
+	id=98 label='m76' label='m76',
+	id=99 label='m77' label='m77',
+	id=100 label='m78' label='m78',
+	id=101 label='m79' label='m79',
+	id=102 label='m80' label='m80',
+	id=103 label='m81' label='m81',
+	id=104 label='m82' label='m82',
+	id=105 label='m83' label='m83',
+	id=106 label='m84' label='m84',
+	id=107 label='m85' label='m85',
+	id=108 label='m86' label='m86',
+	id=109 label='m87' label='m87',
+	id=110 label='m88' label='m88',
+	id=111 label='m89' label='m89',
+	id=112 label='m90' label='m90',
+	id=113 label='m91' label='m91',
+	id=114 label='m92' label='m92',
+	id=115 label='m93' label='m93',
+	id=116 label='m94' label='m94',
+	id=117 label='m95' label='m95',
+	id=118 label='m96' label='m96',
+	id=119 label='m97' label='m97',
+	id=120 label='m98' label='m98',
+	id=121 label='m99' label='m99',
+	id=122 label='m100' label='m100',
+	id=123 label='m101' label='m101',
+	id=124 label='m102' label='m102',
+	id=125 label='m103' label='m103',
+	id=126 label='m104' label='m104',
+	id=127 label='m105' label='m105',
+	id=128 label='m106' label='m106',
+	id=129 label='m107' label='m107',
+	id=130 label='m108' label='m108',
+	id=131 label='m109' label='m109',
+	id=132 label='m110' label='m110',
+	id=133 label='m111' label='m111',
+	id=134 label='m112' label='m112',
+	id=135 label='m113' label='m113',
+	id=136 label='m114' label='m114',
+	id=137 label='m115' label='m115',
+	id=138 label='m116' label='m116',
+	id=139 label='m117' label='m117',
+	id=140 label='m118' label='m118',
+	id=141 label='m119' label='m119',
+	id=142 label='m120' label='m120',
+	id=143 label='m121' label='m121',
+	id=144 label='m122' label='m122',
+	id=145 label='m123' label='m123',
+	id=146 label='m124' label='m124',
+	id=147 label='m125' label='m125',
+	id=148 label='m126' label='m126',
+	id=149 label='m127' label='m127',
+	id=150 label='m128' label='m128',
+	id=151 label='m129' label='m129',
+	id=152 label='m130' label='m130',
+	id=153 label='m131' label='m131',
+	id=154 label='m132' label='m132',
+	id=155 label='m133' label='m133'
+;
+EDGES
+	id=1 sid=1 tid=2 weight='1.5' w='1.5',
+	id=2 sid=1 tid=13 weight='0.5' w='0.5',
+	id=3 sid=1 tid=14 weight='1.0' w='1.0',
+	id=4 sid=3 tid=13 weight='1.0' w='1.0',
+	id=5 sid=4 tid=13 weight='1.0' w='1.0',
+	id=6 sid=5 tid=15 weight='1.0' w='1.0',
+	id=7 sid=6 tid=7 weight='0.5' w='0.5',
+	id=8 sid=6 tid=44 weight='0.5' w='0.5',
+	id=9 sid=6 tid=45 weight='1.0' w='1.0',
+	id=10 sid=8 tid=44 weight='1.0' w='1.0',
+	id=11 sid=9 tid=10 weight='0.5' w='0.5',
+	id=12 sid=9 tid=27 weight='1.0' w='1.0',
+	id=13 sid=9 tid=28 weight='0.5' w='0.5',
+	id=14 sid=11 tid=12 weight='1.5' w='1.5',
+	id=15 sid=11 tid=18 weight='1.0' w='1.0',
+	id=16 sid=12 tid=49 weight='0.5' w='0.5',
+	id=17 sid=12 tid=101 weight='0.5' w='0.5',
+	id=18 sid=12 tid=92 weight='1.0' w='1.0',
+	id=19 sid=13 tid=35 weight='0.5' w='0.5',
+	id=20 sid=14 tid=55 weight='0.5' w='0.5',
+	id=21 sid=14 tid=65 weight='1.0' w='1.0',
+	id=22 sid=15 tid=24 weight='0.5' w='0.5',
+	id=23 sid=15 tid=25 weight='1.0' w='1.0',
+	id=24 sid=16 tid=17 weight='0.5' w='0.5',
+	id=25 sid=16 tid=91 weight='0.5' w='0.5',
+	id=26 sid=16 tid=113 weight='1.5' w='1.5',
+	id=27 sid=17 tid=107 weight='1.5' w='1.5',
+	id=28 sid=17 tid=127 weight='0.5' w='0.5',
+	id=29 sid=17 tid=142 weight='0.5' w='0.5',
+	id=30 sid=17 tid=144 weight='0.5' w='0.5',
+	id=31 sid=17 tid=155 weight='0.5' w='0.5',
+	id=32 sid=18 tid=19 weight='0.5' w='0.5',
+	id=33 sid=19 tid=20 weight='0.5' w='0.5',
+	id=34 sid=19 tid=59 weight='0.5' w='0.5',
+	id=35 sid=20 tid=21 weight='1.0' w='1.0',
+	id=36 sid=20 tid=71 weight='1.0' w='1.0',
+	id=37 sid=22 tid=23 weight='0.5' w='0.5',
+	id=38 sid=22 tid=60 weight='1.0' w='1.0',
+	id=39 sid=22 tid=61 weight='1.0' w='1.0',
+	id=40 sid=24 tid=26 weight='0.5' w='0.5',
+	id=41 sid=24 tid=62 weight='0.5' w='0.5',
+	id=42 sid=25 tid=61 weight='0.5' w='0.5',
+	id=43 sid=25 tid=91 weight='1.0' w='1.0',
+	id=44 sid=27 tid=94 weight='0.5' w='0.5',
+	id=45 sid=27 tid=95 weight='0.5' w='0.5',
+	id=46 sid=28 tid=81 weight='0.5' w='0.5',
+	id=47 sid=28 tid=82 weight='0.5' w='0.5',
+	id=48 sid=29 tid=30 weight='1.0' w='1.0',
+	id=49 sid=29 tid=79 weight='1.0' w='1.0',
+	id=50 sid=29 tid=86 weight='0.5' w='0.5',
+	id=51 sid=29 tid=87 weight='0.5' w='0.5',
+	id=52 sid=31 tid=32 weight='1.0' w='1.0',
+	id=53 sid=31 tid=86 weight='1.5' w='1.5',
+	id=54 sid=32 tid=88 weight='0.5' w='0.5',
+	id=55 sid=32 tid=89 weight='1.0' w='1.0',
+	id=56 sid=33 tid=34 weight='1.0' w='1.0',
+	id=57 sid=33 tid=88 weight='0.5' w='0.5',
+	id=58 sid=33 tid=90 weight='0.5' w='0.5',
+	id=59 sid=35 tid=55 weight='0.5' w='0.5',
+	id=60 sid=35 tid=65 weight='1.0' w='1.0',
+	id=61 sid=36 tid=37 weight='0.5' w='0.5',
+	id=62 sid=36 tid=83 weight='0.5' w='0.5',
+	id=63 sid=36 tid=84 weight='1.0' w='1.0',
+	id=64 sid=38 tid=39 weight='0.5' w='0.5',
+	id=65 sid=38 tid=47 weight='0.5' w='0.5',
+	id=66 sid=38 tid=85 weight='0.5' w='0.5',
+	id=67 sid=39 tid=40 weight='1.0' w='1.0',
+	id=68 sid=40 tid=57 weight='0.5' w='0.5',
+	id=69 sid=40 tid=58 weight='0.5' w='0.5',
+	id=70 sid=40 tid=106 weight='0.5' w='0.5',
+	id=71 sid=40 tid=107 weight='0.5' w='0.5',
+	id=72 sid=41 tid=42 weight='1.5' w='1.5',
+	id=73 sid=41 tid=116 weight='0.5' w='0.5',
+	id=74 sid=41 tid=117 weight='0.5' w='0.5',
+	id=75 sid=42 tid=43 weight='0.5' w='0.5',
+	id=76 sid=43 tid=44 weight='0.5' w='0.5',
+	id=77 sid=43 tid=70 weight='0.5' w='0.5',
+	id=78 sid=44 tid=80 weight='1.5' w='1.5',
+	id=79 sid=45 tid=118 weight='0.5' w='0.5',
+	id=80 sid=45 tid=119 weight='0.5' w='0.5',
+	id=81 sid=45 tid=120 weight='0.5' w='0.5',
+	id=82 sid=45 tid=121 weight='0.5' w='0.5',
+	id=83 sid=46 tid=92 weight='0.5' w='0.5',
+	id=84 sid=46 tid=101 weight='1.0' w='1.0',
+	id=85 sid=46 tid=99 weight='0.5' w='0.5',
+	id=86 sid=46 tid=80 weight='0.5' w='0.5',
+	id=87 sid=46 tid=141 weight='0.5' w='0.5',
+	id=88 sid=47 tid=48 weight='1.0' w='1.0',
+	id=89 sid=48 tid=50 weight='0.5' w='0.5',
+	id=90 sid=48 tid=52 weight='0.5' w='0.5',
+	id=91 sid=48 tid=63 weight='0.5' w='0.5',
+	id=92 sid=48 tid=53 weight='0.5' w='0.5',
+	id=93 sid=48 tid=73 weight='0.5' w='0.5',
+	id=94 sid=48 tid=74 weight='0.5' w='0.5',
+	id=95 sid=48 tid=57 weight='0.5' w='0.5',
+	id=96 sid=48 tid=106 weight='0.5' w='0.5',
+	id=97 sid=48 tid=125 weight='1.5' w='1.5',
+	id=98 sid=49 tid=93 weight='0.5' w='0.5',
+	id=99 sid=49 tid=124 weight='0.5' w='0.5',
+	id=100 sid=49 tid=109 weight='1.0' w='1.0',
+	id=101 sid=49 tid=127 weight='0.5' w='0.5',
+	id=102 sid=50 tid=51 weight='0.5' w='0.5',
+	id=103 sid=50 tid=94 weight='0.5' w='0.5',
+	id=104 sid=51 tid=52 weight='0.5' w='0.5',
+	id=105 sid=52 tid=100 weight='1.0' w='1.0',
+	id=106 sid=53 tid=54 weight='0.5' w='0.5',
+	id=107 sid=53 tid=56 weight='0.5' w='0.5',
+	id=108 sid=53 tid=102 weight='1.5' w='1.5',
+	id=109 sid=55 tid=66 weight='1.5' w='1.5',
+	id=110 sid=56 tid=57 weight='0.5' w='0.5',
+	id=111 sid=56 tid=58 weight='0.5' w='0.5',
+	id=112 sid=57 tid=85 weight='0.5' w='0.5',
+	id=113 sid=57 tid=112 weight='1.0' w='1.0',
+	id=114 sid=58 tid=113 weight='0.5' w='0.5',
+	id=115 sid=58 tid=114 weight='0.5' w='0.5',
+	id=116 sid=59 tid=92 weight='0.5' w='0.5',
+	id=117 sid=59 tid=93 weight='0.5' w='0.5',
+	id=118 sid=60 tid=83 weight='0.5' w='0.5',
+	id=119 sid=60 tid=110 weight='0.5' w='0.5',
+	id=120 sid=61 tid=62 weight='0.5' w='0.5',
+	id=121 sid=61 tid=111 weight='0.5' w='0.5',
+	id=122 sid=62 tid=91 weight='1.0' w='1.0',
+	id=123 sid=63 tid=64 weight='0.5' w='0.5',
+	id=124 sid=63 tid=72 weight='0.5' w='0.5',
+	id=125 sid=65 tid=109 weight='0.5' w='0.5',
+	id=126 sid=65 tid=81 weight='2.0' w='2.0',
+	id=127 sid=66 tid=109 weight='0.5' w='0.5',
+	id=128 sid=66 tid=136 weight='0.5' w='0.5',
+	id=129 sid=66 tid=137 weight='0.5' w='0.5',
+	id=130 sid=67 tid=68 weight='0.5' w='0.5',
+	id=131 sid=67 tid=76 weight='0.5' w='0.5',
+	id=132 sid=67 tid=96 weight='0.5' w='0.5',
+	id=133 sid=68 tid=69 weight='1.0' w='1.0',
+	id=134 sid=69 tid=128 weight='0.5' w='0.5',
+	id=135 sid=69 tid=129 weight='0.5' w='0.5',
+	id=136 sid=69 tid=130 weight='0.5' w='0.5',
+	id=137 sid=70 tid=98 weight='0.5' w='0.5',
+	id=138 sid=70 tid=99 weight='0.5' w='0.5',
+	id=139 sid=71 tid=92 weight='0.5' w='0.5',
+	id=140 sid=71 tid=93 weight='0.5' w='0.5',
+	id=141 sid=71 tid=80 weight='0.5' w='0.5',
+	id=142 sid=71 tid=127 weight='0.5' w='0.5',
+	id=143 sid=71 tid=145 weight='0.5' w='0.5',
+	id=144 sid=72 tid=73 weight='0.5' w='0.5',
+	id=145 sid=73 tid=94 weight='0.5' w='0.5',
+	id=146 sid=73 tid=95 weight='0.5' w='0.5',
+	id=147 sid=73 tid=103 weight='1.0' w='1.0',
+	id=148 sid=74 tid=75 weight='0.5' w='0.5',
+	id=149 sid=74 tid=104 weight='0.5' w='0.5',
+	id=150 sid=76 tid=77 weight='0.5' w='0.5',
+	id=151 sid=76 tid=78 weight='0.5' w='0.5',
+	id=152 sid=77 tid=79 weight='0.5' w='0.5',
+	id=153 sid=77 tid=105 weight='0.5' w='0.5',
+	id=154 sid=78 tid=96 weight='0.5' w='0.5',
+	id=155 sid=78 tid=105 weight='0.5' w='0.5',
+	id=156 sid=78 tid=131 weight='0.5' w='0.5',
+	id=157 sid=80 tid=132 weight='0.5' w='0.5',
+	id=158 sid=80 tid=119 weight='0.5' w='0.5',
+	id=159 sid=80 tid=121 weight='0.5' w='0.5',
+	id=160 sid=80 tid=117 weight='0.5' w='0.5',
+	id=161 sid=80 tid=154 weight='0.5' w='0.5',
+	id=162 sid=81 tid=97 weight='1.0' w='1.0',
+	id=163 sid=82 tid=95 weight='0.5' w='0.5',
+	id=164 sid=82 tid=108 weight='0.5' w='0.5',
+	id=165 sid=83 tid=115 weight='1.0' w='1.0',
+	id=166 sid=84 tid=115 weight='0.5' w='0.5',
+	id=167 sid=84 tid=146 weight='0.5' w='0.5',
+	id=168 sid=85 tid=106 weight='0.5' w='0.5',
+	id=169 sid=86 tid=126 weight='0.5' w='0.5',
+	id=170 sid=87 tid=105 weight='0.5' w='0.5',
+	id=171 sid=87 tid=118 weight='0.5' w='0.5',
+	id=172 sid=87 tid=126 weight='0.5' w='0.5',
+	id=173 sid=87 tid=139 weight='0.5' w='0.5',
+	id=174 sid=87 tid=140 weight='0.5' w='0.5',
+	id=175 sid=88 tid=122 weight='0.5' w='0.5',
+	id=176 sid=89 tid=103 weight='0.5' w='0.5',
+	id=177 sid=89 tid=147 weight='0.5' w='0.5',
+	id=178 sid=89 tid=148 weight='0.5' w='0.5',
+	id=179 sid=90 tid=122 weight='0.5' w='0.5',
+	id=180 sid=90 tid=123 weight='0.5' w='0.5',
+	id=181 sid=91 tid=124 weight='0.5' w='0.5',
+	id=182 sid=91 tid=141 weight='0.5' w='0.5',
+	id=183 sid=91 tid=142 weight='0.5' w='0.5',
+	id=184 sid=91 tid=149 weight='0.5' w='0.5',
+	id=185 sid=92 tid=124 weight='1.0' w='1.0',
+	id=186 sid=93 tid=132 weight='0.5' w='0.5',
+	id=187 sid=94 tid=106 weight='0.5' w='0.5',
+	id=188 sid=95 tid=97 weight='0.5' w='0.5',
+	id=189 sid=95 tid=114 weight='1.0' w='1.0',
+	id=190 sid=96 tid=129 weight='0.5' w='0.5',
+	id=191 sid=96 tid=130 weight='0.5' w='0.5',
+	id=192 sid=97 tid=108 weight='0.5' w='0.5',
+	id=193 sid=97 tid=136 weight='0.5' w='0.5',
+	id=194 sid=97 tid=138 weight='0.5' w='0.5',
+	id=195 sid=97 tid=139 weight='0.5' w='0.5',
+	id=196 sid=98 tid=116 weight='0.5' w='0.5',
+	id=197 sid=98 tid=117 weight='0.5' w='0.5',
+	id=198 sid=98 tid=119 weight='0.5' w='0.5',
+	id=199 sid=98 tid=120 weight='0.5' w='0.5',
+	id=200 sid=99 tid=117 weight='0.5' w='0.5',
+	id=201 sid=99 tid=119 weight='0.5' w='0.5',
+	id=202 sid=99 tid=132 weight='0.5' w='0.5',
+	id=203 sid=100 tid=104 weight='0.5' w='0.5',
+	id=204 sid=100 tid=116 weight='0.5' w='0.5',
+	id=205 sid=100 tid=120 weight='0.5' w='0.5',
+	id=206 sid=100 tid=143 weight='0.5' w='0.5',
+	id=207 sid=101 tid=127 weight='0.5' w='0.5',
+	id=208 sid=101 tid=112 weight='1.5' w='1.5',
+	id=209 sid=101 tid=155 weight='0.5' w='0.5',
+	id=210 sid=102 tid=119 weight='1.0' w='1.0',
+	id=211 sid=102 tid=112 weight='0.5' w='0.5',
+	id=212 sid=102 tid=144 weight='0.5' w='0.5',
+	id=213 sid=102 tid=149 weight='0.5' w='0.5',
+	id=214 sid=102 tid=125 weight='0.5' w='0.5',
+	id=215 sid=102 tid=147 weight='0.5' w='0.5',
+	id=216 sid=102 tid=148 weight='0.5' w='0.5',
+	id=217 sid=102 tid=150 weight='0.5' w='0.5',
+	id=218 sid=103 tid=104 weight='0.5' w='0.5',
+	id=219 sid=103 tid=105 weight='0.5' w='0.5',
+	id=220 sid=103 tid=118 weight='0.5' w='0.5',
+	id=221 sid=103 tid=126 weight='0.5' w='0.5',
+	id=222 sid=103 tid=138 weight='0.5' w='0.5',
+	id=223 sid=103 tid=139 weight='0.5' w='0.5',
+	id=224 sid=103 tid=140 weight='0.5' w='0.5',
+	id=225 sid=103 tid=143 weight='0.5' w='0.5',
+	id=226 sid=103 tid=152 weight='0.5' w='0.5',
+	id=227 sid=104 tid=114 weight='1.0' w='1.0',
+	id=228 sid=104 tid=133 weight='0.5' w='0.5',
+	id=229 sid=105 tid=129 weight='0.5' w='0.5',
+	id=230 sid=105 tid=134 weight='0.5' w='0.5',
+	id=231 sid=106 tid=108 weight='0.5' w='0.5',
+	id=232 sid=106 tid=114 weight='0.5' w='0.5',
+	id=233 sid=106 tid=138 weight='0.5' w='0.5',
+	id=234 sid=107 tid=108 weight='0.5' w='0.5',
+	id=235 sid=107 tid=113 weight='0.5' w='0.5',
+	id=236 sid=107 tid=114 weight='0.5' w='0.5',
+	id=237 sid=107 tid=138 weight='0.5' w='0.5',
+	id=238 sid=109 tid=135 weight='0.5' w='0.5',
+	id=239 sid=110 tid=141 weight='0.5' w='0.5',
+	id=240 sid=110 tid=142 weight='0.5' w='0.5',
+	id=241 sid=111 tid=141 weight='0.5' w='0.5',
+	id=242 sid=111 tid=142 weight='0.5' w='0.5',
+	id=243 sid=112 tid=113 weight='0.5' w='0.5',
+	id=244 sid=112 tid=114 weight='0.5' w='0.5',
+	id=245 sid=112 tid=138 weight='0.5' w='0.5',
+	id=246 sid=112 tid=143 weight='0.5' w='0.5',
+	id=247 sid=115 tid=127 weight='0.5' w='0.5',
+	id=248 sid=115 tid=141 weight='0.5' w='0.5',
+	id=249 sid=115 tid=142 weight='0.5' w='0.5',
+	id=250 sid=115 tid=125 weight='0.5' w='0.5',
+	id=251 sid=115 tid=148 weight='0.5' w='0.5',
+	id=252 sid=115 tid=149 weight='0.5' w='0.5',
+	id=253 sid=116 tid=125 weight='0.5' w='0.5',
+	id=254 sid=116 tid=133 weight='0.5' w='0.5',
+	id=255 sid=116 tid=134 weight='0.5' w='0.5',
+	id=256 sid=117 tid=118 weight='1.0' w='1.0',
+	id=257 sid=117 tid=127 weight='0.5' w='0.5',
+	id=258 sid=117 tid=141 weight='0.5' w='0.5',
+	id=259 sid=117 tid=142 weight='0.5' w='0.5',
+	id=260 sid=117 tid=145 weight='0.5' w='0.5',
+	id=261 sid=117 tid=125 weight='0.5' w='0.5',
+	id=262 sid=117 tid=150 weight='0.5' w='0.5',
+	id=263 sid=118 tid=134 weight='0.5' w='0.5',
+	id=264 sid=118 tid=147 weight='0.5' w='0.5',
+	id=265 sid=119 tid=133 weight='0.5' w='0.5',
+	id=266 sid=119 tid=134 weight='0.5' w='0.5',
+	id=267 sid=119 tid=145 weight='0.5' w='0.5',
+	id=268 sid=120 tid=133 weight='0.5' w='0.5',
+	id=269 sid=120 tid=134 weight='0.5' w='0.5',
+	id=270 sid=120 tid=150 weight='0.5' w='0.5',
+	id=271 sid=121 tid=133 weight='0.5' w='0.5',
+	id=272 sid=121 tid=134 weight='0.5' w='0.5',
+	id=273 sid=121 tid=145 weight='0.5' w='0.5',
+	id=274 sid=121 tid=147 weight='0.5' w='0.5',
+	id=275 sid=121 tid=150 weight='0.5' w='0.5',
+	id=276 sid=122 tid=147 weight='0.5' w='0.5',
+	id=277 sid=122 tid=148 weight='0.5' w='0.5',
+	id=278 sid=123 tid=128 weight='0.5' w='0.5',
+	id=279 sid=123 tid=147 weight='0.5' w='0.5',
+	id=280 sid=123 tid=148 weight='0.5' w='0.5',
+	id=281 sid=123 tid=149 weight='0.5' w='0.5',
+	id=282 sid=124 tid=137 weight='0.5' w='0.5',
+	id=283 sid=124 tid=151 weight='0.5' w='0.5',
+	id=284 sid=124 tid=153 weight='0.5' w='0.5',
+	id=285 sid=124 tid=154 weight='0.5' w='0.5',
+	id=286 sid=124 tid=155 weight='0.0' w='0.0',
+	id=287 sid=125 tid=140 weight='0.5' w='0.5',
+	id=288 sid=125 tid=146 weight='0.5' w='0.5',
+	id=289 sid=125 tid=151 weight='0.5' w='0.5',
+	id=290 sid=125 tid=153 weight='0.5' w='0.5',
+	id=291 sid=125 tid=143 weight='0.5' w='0.5',
+	id=292 sid=125 tid=152 weight='0.5' w='0.5',
+	id=293 sid=125 tid=154 weight='0.5' w='0.5',
+	id=294 sid=126 tid=147 weight='0.5' w='0.5',
+	id=295 sid=126 tid=148 weight='0.5' w='0.5',
+	id=296 sid=127 tid=132 weight='0.5' w='0.5',
+	id=297 sid=127 tid=151 weight='0.5' w='0.5',
+	id=298 sid=128 tid=146 weight='0.5' w='0.5',
+	id=299 sid=128 tid=152 weight='0.5' w='0.5',
+	id=300 sid=128 tid=153 weight='0.5' w='0.5',
+	id=301 sid=129 tid=131 weight='0.5' w='0.5',
+	id=302 sid=129 tid=139 weight='0.5' w='0.5',
+	id=303 sid=129 tid=140 weight='0.5' w='0.5',
+	id=304 sid=129 tid=146 weight='0.5' w='0.5',
+	id=305 sid=129 tid=152 weight='0.5' w='0.5',
+	id=306 sid=130 tid=131 weight='0.5' w='0.5',
+	id=307 sid=130 tid=136 weight='0.5' w='0.5',
+	id=308 sid=130 tid=137 weight='0.5' w='0.5',
+	id=309 sid=130 tid=139 weight='0.5' w='0.5',
+	id=310 sid=130 tid=140 weight='0.5' w='0.5',
+	id=311 sid=130 tid=152 weight='0.5' w='0.5',
+	id=312 sid=130 tid=153 weight='0.5' w='0.5',
+	id=313 sid=131 tid=134 weight='0.5' w='0.5',
+	id=314 sid=131 tid=145 weight='0.5' w='0.5',
+	id=315 sid=131 tid=147 weight='0.5' w='0.5',
+	id=316 sid=131 tid=150 weight='0.5' w='0.5',
+	id=317 sid=132 tid=141 weight='0.5' w='0.5',
+	id=318 sid=132 tid=142 weight='0.5' w='0.5',
+	id=319 sid=132 tid=145 weight='0.5' w='0.5',
+	id=320 sid=133 tid=143 weight='0.5' w='0.5',
+	id=321 sid=134 tid=140 weight='0.5' w='0.5',
+	id=322 sid=134 tid=143 weight='0.5' w='0.5',
+	id=323 sid=134 tid=152 weight='0.5' w='0.5',
+	id=324 sid=135 tid=136 weight='0.5' w='0.5',
+	id=325 sid=135 tid=137 weight='0.5' w='0.5',
+	id=326 sid=135 tid=151 weight='0.5' w='0.5',
+	id=327 sid=135 tid=153 weight='0.5' w='0.5',
+	id=328 sid=136 tid=144 weight='0.5' w='0.5',
+	id=329 sid=136 tid=143 weight='1.0' w='1.0',
+	id=330 sid=137 tid=144 weight='0.5' w='0.5',
+	id=331 sid=137 tid=143 weight='1.0' w='1.0',
+	id=332 sid=138 tid=147 weight='0.5' w='0.5',
+	id=333 sid=138 tid=151 weight='1.0' w='1.0',
+	id=334 sid=139 tid=147 weight='0.5' w='0.5',
+	id=335 sid=139 tid=148 weight='0.5' w='0.5',
+	id=336 sid=140 tid=147 weight='0.5' w='0.5',
+	id=337 sid=140 tid=148 weight='0.5' w='0.5',
+	id=338 sid=140 tid=150 weight='0.5' w='0.5',
+	id=339 sid=141 tid=154 weight='0.5' w='0.5',
+	id=340 sid=142 tid=151 weight='0.5' w='0.5',
+	id=341 sid=142 tid=154 weight='0.5' w='0.5',
+	id=342 sid=143 tid=147 weight='0.5' w='0.5',
+	id=343 sid=143 tid=148 weight='0.5' w='0.5',
+	id=344 sid=143 tid=150 weight='0.5' w='0.5',
+	id=345 sid=144 tid=151 weight='0.5' w='0.5',
+	id=346 sid=144 tid=153 weight='0.5' w='0.5',
+	id=347 sid=144 tid=154 weight='0.5' w='0.5',
+	id=348 sid=145 tid=146 weight='0.5' w='0.5',
+	id=349 sid=145 tid=151 weight='0.5' w='0.5',
+	id=350 sid=145 tid=153 weight='0.5' w='0.5',
+	id=351 sid=145 tid=154 weight='0.5' w='0.5',
+	id=352 sid=146 tid=148 weight='0.5' w='0.5',
+	id=353 sid=147 tid=152 weight='0.5' w='0.5',
+	id=354 sid=147 tid=154 weight='0.5' w='0.5',
+	id=355 sid=148 tid=153 weight='0.5' w='0.5',
+	id=356 sid=148 tid=152 weight='0.5' w='0.5',
+	id=357 sid=148 tid=154 weight='0.5' w='0.5',
+	id=358 sid=149 tid=153 weight='0.5' w='0.5',
+	id=359 sid=149 tid=154 weight='0.5' w='0.5',
+	id=360 sid=150 tid=152 weight='0.5' w='0.5',
+	id=361 sid=150 tid=154 weight='0.5' w='0.5'
+;
+END; [NETWORK]
+
+BEGIN ALGORITHM;
+TITLE 'Show Network';
+LINK NETWORK = 'Working Network';
+NAME 'Show Network';
+OPTIONS
+	View = 'Network';
+END; [ALGORITHM]
+
+BEGIN VIEW;
+TITLE 'Network';
+LINK ALGORITHM = 'Show Network';
+NAME 'NetworkView';
+INPUT 'NETWORK';
+OPTIONS
+	Diagram = 'Network',
+	FontScaleFactor = 1.728,
+	TraitLegend = 'False',
+	TraitSize = 32,
+	SitesStyle = 'None',
+	Edits = 'mn:1:275.81,-157.13' 'mn:2:383.38,-188.07' 'mn:3:300.08,-212.34' 'mn:4:315.08,-194.61' 'mn:5:35.84,-327.33' 'mn:6:-191.37,27.2' 'mn:7:-227.32,23.15' 'mn:8:-277.1,-17.69' 'mn:9:174.32,133.45' 'mn:10:203.21,148.53' 'mn:11:-173.08,-261.24' 'mn:12:-103.09,-125' 'mn:13:246.99,-152.74' 'mn:14:216.74,-106.78' 'mn:15:31.07,-292.44' 'mn:16:25.3,-58.99' 'mn:17:1.16,-48.04' 'mn:18:-178.37,-223.78' 'mn:19:-188.11,-165.48' 'mn:20:-196.36,-136.11' 'mn:21:-267.09,-190.29' 'mn:22:-26.57,-225.97' 'mn:23:-24.47,-263.44' 'mn:24:28.53,-220.54' 'mn:25:9.54,-168.91' 'mn:26:72.63,-240.78' 'mn:27:94.05,127.59' 'mn:28:146.29,111.7' 'mn:29:-97.63,124.45' 'mn:30:-139.22,165.12' 'mn:31:-264.88,129.31' 'mn:32:-246.52,98.52' 'mn:33:-309.82,89.29' 'mn:34:-389.1,76.89' 'mn:35:185.87,-146.21' 'mn:36:-87.82,-179.54' 'mn:37:-92.95,-221.53' 'mn:38:117.39,183.57' 'mn:39:184.01,179.58' 'mn:40:65.31,118.57' 'mn:41:-82.28,-13.2' 'mn:42:-127.5,-4.47' 'mn:43:-163.5,-16.39' 'mn:44:-192.43,-1.33' 'mn:45:-81.42,26.98' 'mn:46:-71.11,-58.35' 'mn:47:130.54,217.26' 'mn:48:3.5,89.68' 'mn:49:-27.26,-82.83' 'mn:50:39.37,168.96' 'mn:51:6.81,213.2' 'mn:52:-30.64,144.54' 'mn:53:-30.41,228.52' 'mn:54:-33.38,245.32' 'mn:55:184.09,-112.69' 'mn:56:5.53,150' 'mn:57:46.57,134.73' 'mn:58:5.08,107.93' 'mn:59:-137.77,-120.95' 'mn:60:-38.96,-172.27' 'mn:61:-9.21,-147.52' 'mn:62:27.53,-185.04' 'mn:63:56.89,188.33' 'mn:64:49.91,249.35' 'mn:65:116.31,-71.16' 'mn:66:54.81,-25.99' 'mn:67:-65.7,77.13' 'mn:68:-69.54,130.88' 'mn:69:-15.09,40.87' 'mn:70:-120.42,-30.47' 'mn:71:-65.21,-60.09' 'mn:72:72.62,196.68' 'mn:73:52.42,129.34' 'mn:74:-48.42,182.43' 'mn:75:-66.23,209.02' 'mn:76:-96.98,78.72' 'mn:77:-101.53,104.08' 'mn:78:-67.74,47.31' 'mn:79:-141.39,123.23' 'mn:80:-62.22,-26.83' 'mn:81:139.54,80.67' 'mn:82:108.49,103.2' 'mn:83:-59.68,-140.66' 'mn:84:-51.48,-41.52' 'mn:85:66.27,149.69' 'mn:86:-13.34,81.78' 'mn:87:-27.32,64.21' 'mn:88:-278.55,91.8' 'mn:89:10.5,37.1' 'mn:90:-265.38,80.62' 'mn:91:-1.83,-73.95' 'mn:92:-81.09,-87.56' 'mn:93:-65.79,-89.9' 'mn:94:64.95,142.33' 'mn:95:73.79,98.25' 'mn:96:-38.01,49.37' 'mn:97:48.71,57.95' 'mn:98:-86.12,-7.84' 'mn:99:-84.8,-30.11' 'mn:100:-50.86,52.5' 'mn:101:-18.88,-84.24' 'mn:102:0.43,11.69' 'mn:103:-16.12,58.92' 'mn:104:-35.03,82.43' 'mn:105:-52.98,66.65' 'mn:106:39.96,103.5' 'mn:107:49.68,85.2' 'mn:108:73.34,89.38' 'mn:109:70.56,-53.82' 'mn:110:-38.31,-97.42' 'mn:111:-21.28,-101.89' 'mn:112:11.04,51.32' 'mn:113:31.65,78.37' 'mn:114:26.54,87.51' 'mn:115:-25.05,-31.45' 'mn:116:-63.27,15.12' 'mn:117:-51.82,-28.61' 'mn:118:-42.71,38.89' 'mn:119:-66.75,3.33' 'mn:120:-66.89,20.5' 'mn:121:-50.2,9.15' 'mn:122:29.49,13.62' 'mn:123:18.92,-0.36' 'mn:124:-7.61,-50.83' 'mn:125:-28.23,1.29' 'mn:126:-7.29,47.73' 'mn:127:-31.99,-54.95' 'mn:128:-11.27,7.81' 'mn:129:-33.34,36.87' 'mn:130:-5.36,16.39' 'mn:131:-41.01,16.81' 'mn:132:-58.97,-54.22' 'mn:133:-53.22,41.2' 'mn:134:-54.05,33.83' 'mn:135:30.91,-29.7' 'mn:136:34.85,9.25' 'mn:137:16.9,-19.73' 'mn:138:20.11,65.73' 'mn:139:4.04,44.42' 'mn:140:-27.09,31.73' 'mn:141:-34.97,-62.58' 'mn:142:-27.5,-60.27' 'mn:143:-23.51,34.06' 'mn:144:10.12,-16.25' 'mn:145:-44.49,-22.68' 'mn:146:-37.45,-3.23' 'mn:147:-8.53,22.43' 'mn:148:-7.58,9.6' 'mn:149:3.16,-30.66' 'mn:150:-35.07,4.42' 'mn:151:-10.43,-29.16' 'mn:152:-26.47,27.06' 'mn:153:-7.01,-17.78' 'mn:154:-22.61,-22.53' 'mn:155:6.97,-77.47' 'ml:26:33,22' 'ml:23:17,27' 'ml:10:-4,-2' 'ml:76:16,10' 'ml:72:-119,-24' 'ml:56:-97,-57' 'ml:47:18,-13' 'ml:64:-4,-45' 'ml:51:21,-25' 'ml:54:4,-31' 'ml:75:3,-11' 'ml:55:60,26' 'ml:5:6,5' 'ml:15:194,32' 'ml:37:28,43' 'ml:18:58,-2' 'ml:11:-3,28' 'ml:21:4,3' 'ml:36:2,-3' 'ml:42:30,19' 'ml:8:-1,-5' 'ml:34:-56,-23' 'ml:31:-63,18' 'ml:30:21,11' 'ml:79:76,-46' 'ml:7:6,-13' 'ml:68:22,-39' 'ml:4:-31,13',
+	LayoutSeed = 22;
+END; [VIEW]

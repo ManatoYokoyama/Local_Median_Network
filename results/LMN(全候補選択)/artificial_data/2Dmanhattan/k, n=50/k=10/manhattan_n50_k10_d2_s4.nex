@@ -1,0 +1,53 @@
+#NEXUS
+
+BEGIN NETWORK;
+DIMENSIONS nVertices=19 nEdges=25;
+VERTICES
+    id=1 label='m0',
+    id=2 label='v1',
+    id=3 label='v7',
+    id=4 label='v9',
+    id=5 label='m1',
+    id=6 label='m2',
+    id=7 label='m3',
+    id=8 label='v4',
+    id=9 label='m4',
+    id=10 label='v8',
+    id=11 label='m5',
+    id=12 label='m6',
+    id=13 label='v6',
+    id=14 label='m7',
+    id=15 label='v10',
+    id=16 label='m8',
+    id=17 label='v2',
+    id=18 label='v3',
+    id=19 label='v5'
+;
+EDGES
+    id=1 sid=1 tid=2 weight=9.0,
+    id=2 sid=1 tid=3 weight=2.0,
+    id=3 sid=1 tid=4 weight=21.0,
+    id=4 sid=3 tid=6 weight=2.0,
+    id=5 sid=4 tid=5 weight=4.0,
+    id=6 sid=5 tid=7 weight=8.0,
+    id=7 sid=5 tid=19 weight=4.0,
+    id=8 sid=6 tid=11 weight=1.0,
+    id=9 sid=6 tid=12 weight=6.0,
+    id=10 sid=7 tid=8 weight=1.0,
+    id=11 sid=7 tid=15 weight=3.0,
+    id=12 sid=7 tid=14 weight=9.0,
+    id=13 sid=9 tid=10 weight=1.0,
+    id=14 sid=9 tid=15 weight=1.0,
+    id=15 sid=9 tid=16 weight=2.0,
+    id=16 sid=11 tid=13 weight=7.0,
+    id=17 sid=11 tid=17 weight=6.0,
+    id=18 sid=12 tid=17 weight=1.0,
+    id=19 sid=12 tid=19 weight=11.0,
+    id=20 sid=13 tid=14 weight=12.0,
+    id=21 sid=14 tid=18 weight=2.0,
+    id=22 sid=14 tid=17 weight=13.0,
+    id=23 sid=14 tid=19 weight=13.0,
+    id=24 sid=16 tid=18 weight=5.0,
+    id=25 sid=16 tid=19 weight=10.0
+;
+END; [NETWORK]
