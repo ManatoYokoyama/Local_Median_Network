@@ -1,2 +1,1 @@
-# Local_Median_Network
-本研究では生成データのシード値は全て42に固定した
+論文内では, generate_manhattan.py による生成データのシード値は全て42に固定した

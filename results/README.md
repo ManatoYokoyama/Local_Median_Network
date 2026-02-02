@@ -1,1 +1,1 @@
-# Local_Median_Network
+resultの見方
