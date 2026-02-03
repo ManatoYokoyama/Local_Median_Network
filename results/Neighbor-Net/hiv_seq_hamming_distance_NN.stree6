@@ -3,7 +3,7 @@
 BEGIN SPLITSTREE6;
 DIMENSIONS nDataNodes=6 nAlgorithms=3;
 PROGRAM version='SplitsTree App (version 6.7.2, built 17 Jan 2026)';
-WORKFLOW creationDate='1769194095129'; [Sat Jan 24 03:48:15 JST 2026]
+WORKFLOW creationDate='1770114277808'; [Tue Feb 03 19:24:37 JST 2026]
 END; [SPLITSTREE6]
 
 [
@@ -263,13 +263,13 @@ NAME 'SplitNetworkView';
 INPUT 'SPLITS';
 OPTIONS
 	Diagram = 'Splits',
-	Orientation = 'Rotate0Deg',
+	Orientation = 'Rotate35Deg',
 	Rooting = 'None',
-	ZoomFactor = 0.7059142,
-	FontScaleFactor = 1,
+	ZoomFactor = 0.48849609,
+	FontScaleFactor = 0.83333333,
 	RootAngle = 160,
 	OutlineFill = 0xc0c0c0ff,
-	Edits = 'a:7:1.54',
+	Edits = 'a:44:-22.79' 'a:40:6.42',
 	LabelSplitsBy = 'None',
 	ShowQRCode = 'false';
 END; [VIEW]

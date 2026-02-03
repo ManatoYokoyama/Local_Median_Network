@@ -1,136 +1,555 @@
-#NEXUS
+#nexus [SplitsTree6]
+
+BEGIN SPLITSTREE6;
+DIMENSIONS nDataNodes=6 nAlgorithms=4;
+PROGRAM version='SplitsTree App (version 6.7.2, built 17 Jan 2026)';
+WORKFLOW creationDate='1770114254469'; [Tue Feb 03 19:24:14 JST 2026]
+END; [SPLITSTREE6]
+
+[
+Methods:
+Analysis was performed using SplitsTree App 6.0.0 (Huson and Bryant 2024).
+The original input consisted of 51 taxa and 51 nodes and 76 edges.
+
+References:
+Huson and Bryant 2024: D.H. Huson and D. Bryant. The SplitsTree App: interactive analysis and visualization using phylogenetic trees and networks. Nature Methods, 2024.
+]
+
+BEGIN TAXA;
+TITLE 'Input Taxa';
+LINK ALGORITHM = 'Input Data Loader';
+DIMENSIONS ntax=51;
+TAXLABELS
+	[1] 'm0'
+	[2] 'v3'
+	[3] 'm1'
+	[4] 'v5'
+	[5] 'm2'
+	[6] 'm3'
+	[7] 'v12'
+	[8] 'm4'
+	[9] 'm5'
+	[10] 'm6'
+	[11] 'v7'
+	[12] 'm7'
+	[13] 'v6'
+	[14] 'v1'
+	[15] 'm8'
+	[16] 'v20'
+	[17] 'm9'
+	[18] 'm10'
+	[19] 'v15'
+	[20] 'm11'
+	[21] 'm12'
+	[22] 'v4'
+	[23] 'm13'
+	[24] 'm14'
+	[25] 'v8'
+	[26] 'm15'
+	[27] 'm16'
+	[28] 'v17'
+	[29] 'm17'
+	[30] 'v13'
+	[31] 'v11'
+	[32] 'v14'
+	[33] 'v2'
+	[34] 'v16'
+	[35] 'm18'
+	[36] 'v18'
+	[37] 'm19'
+	[38] 'm20'
+	[39] 'v19'
+	[40] 'm21'
+	[41] 'm22'
+	[42] 'm23'
+	[43] 'm24'
+	[44] 'm25'
+	[45] 'm26'
+	[46] 'm27'
+	[47] 'm28'
+	[48] 'v9'
+	[49] 'm29'
+	[50] 'v10'
+	[51] 'm30'
+;
+DISPLAYLABELS
+	[1] '<c white><size "1.0">m0'
+	[2] 'v3'
+	[3] '<c white><size "1.0">m1'
+	[4] 'v5'
+	[5] '<c white><size "1.0">m2'
+	[6] '<c white><size "1.0">m3'
+	[7] 'v12'
+	[8] '<c white><size "1.0">m4'
+	[9] '<c white><size "1.0">m5'
+	[10] '<c white><size "1.0">m6'
+	[11] 'v7'
+	[12] '<c white><size "1.0">m7'
+	[13] 'v6'
+	[14] 'v1'
+	[15] '<c white><size "1.0">m8'
+	[16] 'v20'
+	[17] '<c white><size "1.0">m9'
+	[18] '<c white><size "1.0">m10'
+	[19] 'v15'
+	[20] '<c white><size "1.0">m11'
+	[21] '<c white><size "1.0">m12'
+	[22] 'v4'
+	[23] '<c white><size "1.0">m13'
+	[24] '<c white><size "1.0">m14'
+	[25] 'v8'
+	[26] '<c white><size "1.0">m15'
+	[27] '<c white><size "1.0">m16'
+	[28] 'v17'
+	[29] '<c white><size "1.0">m17'
+	[30] 'v13'
+	[31] 'v11'
+	[32] 'v14'
+	[33] 'v2'
+	[34] 'v16'
+	[35] '<c white><size "1.0">m18'
+	[36] 'v18'
+	[37] '<c white><size "1.0">m19'
+	[38] '<c white><size "1.0">m20'
+	[39] 'v19'
+	[40] '<c white><size "1.0">m21'
+	[41] '<c white><size "1.0">m22'
+	[42] '<c white><size "1.0">m23'
+	[43] '<c white><size "1.0">m24'
+	[44] '<c white><size "1.0">m25'
+	[45] '<c white><size "1.0">m26'
+	[46] '<c white><size "1.0">m27'
+	[47] '<c white><size "1.0">m28'
+	[48] 'v9'
+	[49] '<c white><size "1.0">m29'
+	[50] 'v10'
+	[51] '<c white><size "1.0">m30'
+;
+[TAXINFO;]
+END; [TAXA]
+
+BEGIN ALGORITHM;
+TITLE 'Taxa Filter';
+LINK ALGORITHM = 'Input Data Loader';
+NAME 'Taxa Filter';
+OPTIONS
+;
+END; [ALGORITHM]
+
+BEGIN TAXA;
+TITLE 'Working Taxa';
+LINK ALGORITHM = 'Taxa Filter';
+DIMENSIONS ntax=51;
+TAXLABELS
+	[1] 'm0'
+	[2] 'v3'
+	[3] 'm1'
+	[4] 'v5'
+	[5] 'm2'
+	[6] 'm3'
+	[7] 'v12'
+	[8] 'm4'
+	[9] 'm5'
+	[10] 'm6'
+	[11] 'v7'
+	[12] 'm7'
+	[13] 'v6'
+	[14] 'v1'
+	[15] 'm8'
+	[16] 'v20'
+	[17] 'm9'
+	[18] 'm10'
+	[19] 'v15'
+	[20] 'm11'
+	[21] 'm12'
+	[22] 'v4'
+	[23] 'm13'
+	[24] 'm14'
+	[25] 'v8'
+	[26] 'm15'
+	[27] 'm16'
+	[28] 'v17'
+	[29] 'm17'
+	[30] 'v13'
+	[31] 'v11'
+	[32] 'v14'
+	[33] 'v2'
+	[34] 'v16'
+	[35] 'm18'
+	[36] 'v18'
+	[37] 'm19'
+	[38] 'm20'
+	[39] 'v19'
+	[40] 'm21'
+	[41] 'm22'
+	[42] 'm23'
+	[43] 'm24'
+	[44] 'm25'
+	[45] 'm26'
+	[46] 'm27'
+	[47] 'm28'
+	[48] 'v9'
+	[49] 'm29'
+	[50] 'v10'
+	[51] 'm30'
+;
+DISPLAYLABELS
+	[1] '<c white><size "1.0">m0'
+	[2] 'v3'
+	[3] '<c white><size "1.0">m1'
+	[4] 'v5'
+	[5] '<c white><size "1.0">m2'
+	[6] '<c white><size "1.0">m3'
+	[7] 'v12'
+	[8] '<c white><size "1.0">m4'
+	[9] '<c white><size "1.0">m5'
+	[10] '<c white><size "1.0">m6'
+	[11] 'v7'
+	[12] '<c white><size "1.0">m7'
+	[13] 'v6'
+	[14] 'v1'
+	[15] '<c white><size "1.0">m8'
+	[16] 'v20'
+	[17] '<c white><size "1.0">m9'
+	[18] '<c white><size "1.0">m10'
+	[19] 'v15'
+	[20] '<c white><size "1.0">m11'
+	[21] '<c white><size "1.0">m12'
+	[22] 'v4'
+	[23] '<c white><size "1.0">m13'
+	[24] '<c white><size "1.0">m14'
+	[25] 'v8'
+	[26] '<c white><size "1.0">m15'
+	[27] '<c white><size "1.0">m16'
+	[28] 'v17'
+	[29] '<c white><size "1.0">m17'
+	[30] 'v13'
+	[31] 'v11'
+	[32] 'v14'
+	[33] 'v2'
+	[34] 'v16'
+	[35] '<c white><size "1.0">m18'
+	[36] 'v18'
+	[37] '<c white><size "1.0">m19'
+	[38] '<c white><size "1.0">m20'
+	[39] 'v19'
+	[40] '<c white><size "1.0">m21'
+	[41] '<c white><size "1.0">m22'
+	[42] '<c white><size "1.0">m23'
+	[43] '<c white><size "1.0">m24'
+	[44] '<c white><size "1.0">m25'
+	[45] '<c white><size "1.0">m26'
+	[46] '<c white><size "1.0">m27'
+	[47] '<c white><size "1.0">m28'
+	[48] 'v9'
+	[49] '<c white><size "1.0">m29'
+	[50] 'v10'
+	[51] '<c white><size "1.0">m30'
+;
+[TAXINFO;]
+END; [TAXA]
 
 BEGIN NETWORK;
+TITLE 'Input Network';
+LINK ALGORITHM = 'Input Data Loader';
 DIMENSIONS nVertices=51 nEdges=76;
+TYPE Other;
 VERTICES
-    id=1 label='m0',
-    id=2 label='v3',
-    id=3 label='m1',
-    id=4 label='v5',
-    id=5 label='m2',
-    id=6 label='m3',
-    id=7 label='v12',
-    id=8 label='m4',
-    id=9 label='m5',
-    id=10 label='m6',
-    id=11 label='v7',
-    id=12 label='m7',
-    id=13 label='v6',
-    id=14 label='v1',
-    id=15 label='m8',
-    id=16 label='v20',
-    id=17 label='m9',
-    id=18 label='m10',
-    id=19 label='v15',
-    id=20 label='m11',
-    id=21 label='m12',
-    id=22 label='v4',
-    id=23 label='m13',
-    id=24 label='m14',
-    id=25 label='v8',
-    id=26 label='m15',
-    id=27 label='m16',
-    id=28 label='v17',
-    id=29 label='m17',
-    id=30 label='v13',
-    id=31 label='v11',
-    id=32 label='v14',
-    id=33 label='v2',
-    id=34 label='v16',
-    id=35 label='m18',
-    id=36 label='v18',
-    id=37 label='m19',
-    id=38 label='m20',
-    id=39 label='v19',
-    id=40 label='m21',
-    id=41 label='m22',
-    id=42 label='m23',
-    id=43 label='m24',
-    id=44 label='m25',
-    id=45 label='m26',
-    id=46 label='m27',
-    id=47 label='m28',
-    id=48 label='v9',
-    id=49 label='m29',
-    id=50 label='v10',
-    id=51 label='m30'
+	id=1 label='m0' label='m0',
+	id=2 label='v3' label='v3',
+	id=3 label='m1' label='m1',
+	id=4 label='v5' label='v5',
+	id=5 label='m2' label='m2',
+	id=6 label='m3' label='m3',
+	id=7 label='v12' label='v12',
+	id=8 label='m4' label='m4',
+	id=9 label='m5' label='m5',
+	id=10 label='m6' label='m6',
+	id=11 label='v7' label='v7',
+	id=12 label='m7' label='m7',
+	id=13 label='v6' label='v6',
+	id=14 label='v1' label='v1',
+	id=15 label='m8' label='m8',
+	id=16 label='v20' label='v20',
+	id=17 label='m9' label='m9',
+	id=18 label='m10' label='m10',
+	id=19 label='v15' label='v15',
+	id=20 label='m11' label='m11',
+	id=21 label='m12' label='m12',
+	id=22 label='v4' label='v4',
+	id=23 label='m13' label='m13',
+	id=24 label='m14' label='m14',
+	id=25 label='v8' label='v8',
+	id=26 label='m15' label='m15',
+	id=27 label='m16' label='m16',
+	id=28 label='v17' label='v17',
+	id=29 label='m17' label='m17',
+	id=30 label='v13' label='v13',
+	id=31 label='v11' label='v11',
+	id=32 label='v14' label='v14',
+	id=33 label='v2' label='v2',
+	id=34 label='v16' label='v16',
+	id=35 label='m18' label='m18',
+	id=36 label='v18' label='v18',
+	id=37 label='m19' label='m19',
+	id=38 label='m20' label='m20',
+	id=39 label='v19' label='v19',
+	id=40 label='m21' label='m21',
+	id=41 label='m22' label='m22',
+	id=42 label='m23' label='m23',
+	id=43 label='m24' label='m24',
+	id=44 label='m25' label='m25',
+	id=45 label='m26' label='m26',
+	id=46 label='m27' label='m27',
+	id=47 label='m28' label='m28',
+	id=48 label='v9' label='v9',
+	id=49 label='m29' label='m29',
+	id=50 label='v10' label='v10',
+	id=51 label='m30' label='m30'
 ;
 EDGES
-    id=1 sid=1 tid=2 weight=10.0,
-    id=2 sid=1 tid=12 weight=1.0,
-    id=3 sid=1 tid=16 weight=16.0,
-    id=4 sid=3 tid=4 weight=2.0,
-    id=5 sid=3 tid=9 weight=1.0,
-    id=6 sid=3 tid=10 weight=28.0,
-    id=7 sid=4 tid=5 weight=14.0,
-    id=8 sid=5 tid=32 weight=1.0,
-    id=9 sid=5 tid=37 weight=2.0,
-    id=10 sid=6 tid=7 weight=7.0,
-    id=11 sid=6 tid=25 weight=1.0,
-    id=12 sid=6 tid=11 weight=2.0,
-    id=13 sid=7 tid=8 weight=2.0,
-    id=14 sid=8 tid=11 weight=7.0,
-    id=15 sid=8 tid=12 weight=5.0,
-    id=16 sid=9 tid=13 weight=1.0,
-    id=17 sid=9 tid=14 weight=28.0,
-    id=18 sid=10 tid=28 weight=8.0,
-    id=19 sid=10 tid=14 weight=1.0,
-    id=20 sid=10 tid=40 weight=11.0,
-    id=21 sid=11 tid=27 weight=15.0,
-    id=22 sid=12 tid=17 weight=11.0,
-    id=23 sid=13 tid=15 weight=9.0,
-    id=24 sid=14 tid=41 weight=2.0,
-    id=25 sid=15 tid=33 weight=1.0,
-    id=26 sid=15 tid=34 weight=6.0,
-    id=27 sid=16 tid=29 weight=1.0,
-    id=28 sid=17 tid=29 weight=5.0,
-    id=29 sid=17 tid=27 weight=8.0,
-    id=30 sid=18 tid=19 weight=3.0,
-    id=31 sid=18 tid=23 weight=5.0,
-    id=32 sid=18 tid=24 weight=17.0,
-    id=33 sid=19 tid=20 weight=17.0,
-    id=34 sid=20 tid=36 weight=6.0,
-    id=35 sid=20 tid=24 weight=3.0,
-    id=36 sid=20 tid=43 weight=13.0,
-    id=37 sid=21 tid=22 weight=6.0,
-    id=38 sid=21 tid=32 weight=3.0,
-    id=39 sid=21 tid=40 weight=3.0,
-    id=40 sid=23 tid=26 weight=1.0,
-    id=41 sid=23 tid=31 weight=17.0,
-    id=42 sid=24 tid=50 weight=4.0,
-    id=43 sid=24 tid=31 weight=5.0,
-    id=44 sid=25 tid=26 weight=4.0,
-    id=45 sid=26 tid=30 weight=18.0,
-    id=46 sid=27 tid=46 weight=1.0,
-    id=47 sid=27 tid=47 weight=5.0,
-    id=48 sid=28 tid=29 weight=13.0,
-    id=49 sid=29 tid=38 weight=8.0,
-    id=50 sid=30 tid=46 weight=5.0,
-    id=51 sid=30 tid=47 weight=1.0,
-    id=52 sid=30 tid=51 weight=3.0,
-    id=53 sid=31 tid=47 weight=1.0,
-    id=54 sid=33 tid=35 weight=1.0,
-    id=55 sid=34 tid=37 weight=3.0,
-    id=56 sid=34 tid=42 weight=3.0,
-    id=57 sid=34 tid=43 weight=2.0,
-    id=58 sid=35 tid=36 weight=13.0,
-    id=59 sid=35 tid=39 weight=5.0,
-    id=60 sid=37 tid=40 weight=3.0,
-    id=61 sid=38 tid=46 weight=4.0,
-    id=62 sid=38 tid=44 weight=6.0,
-    id=63 sid=38 tid=50 weight=12.0,
-    id=64 sid=39 tid=43 weight=1.0,
-    id=65 sid=40 tid=42 weight=3.0,
-    id=66 sid=41 tid=44 weight=4.0,
-    id=67 sid=41 tid=45 weight=5.0,
-    id=68 sid=42 tid=49 weight=4.0,
-    id=69 sid=42 tid=45 weight=6.0,
-    id=70 sid=43 tid=49 weight=5.0,
-    id=71 sid=44 tid=48 weight=5.0,
-    id=72 sid=45 tid=48 weight=4.0,
-    id=73 sid=48 tid=49 weight=6.0,
-    id=74 sid=48 tid=51 weight=7.0,
-    id=75 sid=49 tid=50 weight=7.0,
-    id=76 sid=50 tid=51 weight=6.0
+	id=1 sid=1 tid=2 weight='10.0',
+	id=2 sid=1 tid=12 weight='1.0',
+	id=3 sid=1 tid=16 weight='16.0',
+	id=4 sid=3 tid=4 weight='2.0',
+	id=5 sid=3 tid=9 weight='1.0',
+	id=6 sid=3 tid=10 weight='28.0',
+	id=7 sid=4 tid=5 weight='14.0',
+	id=8 sid=5 tid=32 weight='1.0',
+	id=9 sid=5 tid=37 weight='2.0',
+	id=10 sid=6 tid=7 weight='7.0',
+	id=11 sid=6 tid=25 weight='1.0',
+	id=12 sid=6 tid=11 weight='2.0',
+	id=13 sid=7 tid=8 weight='2.0',
+	id=14 sid=8 tid=11 weight='7.0',
+	id=15 sid=8 tid=12 weight='5.0',
+	id=16 sid=9 tid=13 weight='1.0',
+	id=17 sid=9 tid=14 weight='28.0',
+	id=18 sid=10 tid=28 weight='8.0',
+	id=19 sid=10 tid=14 weight='1.0',
+	id=20 sid=10 tid=40 weight='11.0',
+	id=21 sid=11 tid=27 weight='15.0',
+	id=22 sid=12 tid=17 weight='11.0',
+	id=23 sid=13 tid=15 weight='9.0',
+	id=24 sid=14 tid=41 weight='2.0',
+	id=25 sid=15 tid=33 weight='1.0',
+	id=26 sid=15 tid=34 weight='6.0',
+	id=27 sid=16 tid=29 weight='1.0',
+	id=28 sid=17 tid=29 weight='5.0',
+	id=29 sid=17 tid=27 weight='8.0',
+	id=30 sid=18 tid=19 weight='3.0',
+	id=31 sid=18 tid=23 weight='5.0',
+	id=32 sid=18 tid=24 weight='17.0',
+	id=33 sid=19 tid=20 weight='17.0',
+	id=34 sid=20 tid=36 weight='6.0',
+	id=35 sid=20 tid=24 weight='3.0',
+	id=36 sid=20 tid=43 weight='13.0',
+	id=37 sid=21 tid=22 weight='6.0',
+	id=38 sid=21 tid=32 weight='3.0',
+	id=39 sid=21 tid=40 weight='3.0',
+	id=40 sid=23 tid=26 weight='1.0',
+	id=41 sid=23 tid=31 weight='17.0',
+	id=42 sid=24 tid=50 weight='4.0',
+	id=43 sid=24 tid=31 weight='5.0',
+	id=44 sid=25 tid=26 weight='4.0',
+	id=45 sid=26 tid=30 weight='18.0',
+	id=46 sid=27 tid=46 weight='1.0',
+	id=47 sid=27 tid=47 weight='5.0',
+	id=48 sid=28 tid=29 weight='13.0',
+	id=49 sid=29 tid=38 weight='8.0',
+	id=50 sid=30 tid=46 weight='5.0',
+	id=51 sid=30 tid=47 weight='1.0',
+	id=52 sid=30 tid=51 weight='3.0',
+	id=53 sid=31 tid=47 weight='1.0',
+	id=54 sid=33 tid=35 weight='1.0',
+	id=55 sid=34 tid=37 weight='3.0',
+	id=56 sid=34 tid=42 weight='3.0',
+	id=57 sid=34 tid=43 weight='2.0',
+	id=58 sid=35 tid=36 weight='13.0',
+	id=59 sid=35 tid=39 weight='5.0',
+	id=60 sid=37 tid=40 weight='3.0',
+	id=61 sid=38 tid=46 weight='4.0',
+	id=62 sid=38 tid=44 weight='6.0',
+	id=63 sid=38 tid=50 weight='12.0',
+	id=64 sid=39 tid=43 weight='1.0',
+	id=65 sid=40 tid=42 weight='3.0',
+	id=66 sid=41 tid=44 weight='4.0',
+	id=67 sid=41 tid=45 weight='5.0',
+	id=68 sid=42 tid=49 weight='4.0',
+	id=69 sid=42 tid=45 weight='6.0',
+	id=70 sid=43 tid=49 weight='5.0',
+	id=71 sid=44 tid=48 weight='5.0',
+	id=72 sid=45 tid=48 weight='4.0',
+	id=73 sid=48 tid=49 weight='6.0',
+	id=74 sid=48 tid=51 weight='7.0',
+	id=75 sid=49 tid=50 weight='7.0',
+	id=76 sid=50 tid=51 weight='6.0'
 ;
 END; [NETWORK]
+
+BEGIN ALGORITHM;
+TITLE 'Input Data Filter';
+LINK NETWORK = 'Input Network';
+NAME 'Network Taxa Filter';
+END; [ALGORITHM]
+
+BEGIN NETWORK;
+TITLE 'Working Network';
+LINK ALGORITHM = 'Input Data Filter';
+DIMENSIONS nVertices=51 nEdges=76;
+TYPE Other;
+VERTICES
+	id=1 label='m0' label='m0',
+	id=2 label='v3' label='v3',
+	id=3 label='m1' label='m1',
+	id=4 label='v5' label='v5',
+	id=5 label='m2' label='m2',
+	id=6 label='m3' label='m3',
+	id=7 label='v12' label='v12',
+	id=8 label='m4' label='m4',
+	id=9 label='m5' label='m5',
+	id=10 label='m6' label='m6',
+	id=11 label='v7' label='v7',
+	id=12 label='m7' label='m7',
+	id=13 label='v6' label='v6',
+	id=14 label='v1' label='v1',
+	id=15 label='m8' label='m8',
+	id=16 label='v20' label='v20',
+	id=17 label='m9' label='m9',
+	id=18 label='m10' label='m10',
+	id=19 label='v15' label='v15',
+	id=20 label='m11' label='m11',
+	id=21 label='m12' label='m12',
+	id=22 label='v4' label='v4',
+	id=23 label='m13' label='m13',
+	id=24 label='m14' label='m14',
+	id=25 label='v8' label='v8',
+	id=26 label='m15' label='m15',
+	id=27 label='m16' label='m16',
+	id=28 label='v17' label='v17',
+	id=29 label='m17' label='m17',
+	id=30 label='v13' label='v13',
+	id=31 label='v11' label='v11',
+	id=32 label='v14' label='v14',
+	id=33 label='v2' label='v2',
+	id=34 label='v16' label='v16',
+	id=35 label='m18' label='m18',
+	id=36 label='v18' label='v18',
+	id=37 label='m19' label='m19',
+	id=38 label='m20' label='m20',
+	id=39 label='v19' label='v19',
+	id=40 label='m21' label='m21',
+	id=41 label='m22' label='m22',
+	id=42 label='m23' label='m23',
+	id=43 label='m24' label='m24',
+	id=44 label='m25' label='m25',
+	id=45 label='m26' label='m26',
+	id=46 label='m27' label='m27',
+	id=47 label='m28' label='m28',
+	id=48 label='v9' label='v9',
+	id=49 label='m29' label='m29',
+	id=50 label='v10' label='v10',
+	id=51 label='m30' label='m30'
+;
+EDGES
+	id=1 sid=1 tid=2 weight='10.0',
+	id=2 sid=1 tid=12 weight='1.0',
+	id=3 sid=1 tid=16 weight='16.0',
+	id=4 sid=3 tid=4 weight='2.0',
+	id=5 sid=3 tid=9 weight='1.0',
+	id=6 sid=3 tid=10 weight='28.0',
+	id=7 sid=4 tid=5 weight='14.0',
+	id=8 sid=5 tid=32 weight='1.0',
+	id=9 sid=5 tid=37 weight='2.0',
+	id=10 sid=6 tid=7 weight='7.0',
+	id=11 sid=6 tid=25 weight='1.0',
+	id=12 sid=6 tid=11 weight='2.0',
+	id=13 sid=7 tid=8 weight='2.0',
+	id=14 sid=8 tid=11 weight='7.0',
+	id=15 sid=8 tid=12 weight='5.0',
+	id=16 sid=9 tid=13 weight='1.0',
+	id=17 sid=9 tid=14 weight='28.0',
+	id=18 sid=10 tid=28 weight='8.0',
+	id=19 sid=10 tid=14 weight='1.0',
+	id=20 sid=10 tid=40 weight='11.0',
+	id=21 sid=11 tid=27 weight='15.0',
+	id=22 sid=12 tid=17 weight='11.0',
+	id=23 sid=13 tid=15 weight='9.0',
+	id=24 sid=14 tid=41 weight='2.0',
+	id=25 sid=15 tid=33 weight='1.0',
+	id=26 sid=15 tid=34 weight='6.0',
+	id=27 sid=16 tid=29 weight='1.0',
+	id=28 sid=17 tid=29 weight='5.0',
+	id=29 sid=17 tid=27 weight='8.0',
+	id=30 sid=18 tid=19 weight='3.0',
+	id=31 sid=18 tid=23 weight='5.0',
+	id=32 sid=18 tid=24 weight='17.0',
+	id=33 sid=19 tid=20 weight='17.0',
+	id=34 sid=20 tid=36 weight='6.0',
+	id=35 sid=20 tid=24 weight='3.0',
+	id=36 sid=20 tid=43 weight='13.0',
+	id=37 sid=21 tid=22 weight='6.0',
+	id=38 sid=21 tid=32 weight='3.0',
+	id=39 sid=21 tid=40 weight='3.0',
+	id=40 sid=23 tid=26 weight='1.0',
+	id=41 sid=23 tid=31 weight='17.0',
+	id=42 sid=24 tid=50 weight='4.0',
+	id=43 sid=24 tid=31 weight='5.0',
+	id=44 sid=25 tid=26 weight='4.0',
+	id=45 sid=26 tid=30 weight='18.0',
+	id=46 sid=27 tid=46 weight='1.0',
+	id=47 sid=27 tid=47 weight='5.0',
+	id=48 sid=28 tid=29 weight='13.0',
+	id=49 sid=29 tid=38 weight='8.0',
+	id=50 sid=30 tid=46 weight='5.0',
+	id=51 sid=30 tid=47 weight='1.0',
+	id=52 sid=30 tid=51 weight='3.0',
+	id=53 sid=31 tid=47 weight='1.0',
+	id=54 sid=33 tid=35 weight='1.0',
+	id=55 sid=34 tid=37 weight='3.0',
+	id=56 sid=34 tid=42 weight='3.0',
+	id=57 sid=34 tid=43 weight='2.0',
+	id=58 sid=35 tid=36 weight='13.0',
+	id=59 sid=35 tid=39 weight='5.0',
+	id=60 sid=37 tid=40 weight='3.0',
+	id=61 sid=38 tid=46 weight='4.0',
+	id=62 sid=38 tid=44 weight='6.0',
+	id=63 sid=38 tid=50 weight='12.0',
+	id=64 sid=39 tid=43 weight='1.0',
+	id=65 sid=40 tid=42 weight='3.0',
+	id=66 sid=41 tid=44 weight='4.0',
+	id=67 sid=41 tid=45 weight='5.0',
+	id=68 sid=42 tid=49 weight='4.0',
+	id=69 sid=42 tid=45 weight='6.0',
+	id=70 sid=43 tid=49 weight='5.0',
+	id=71 sid=44 tid=48 weight='5.0',
+	id=72 sid=45 tid=48 weight='4.0',
+	id=73 sid=48 tid=49 weight='6.0',
+	id=74 sid=48 tid=51 weight='7.0',
+	id=75 sid=49 tid=50 weight='7.0',
+	id=76 sid=50 tid=51 weight='6.0'
+;
+END; [NETWORK]
+
+BEGIN ALGORITHM;
+TITLE 'Show Network';
+LINK NETWORK = 'Working Network';
+NAME 'Show Network';
+OPTIONS
+	View = 'Network';
+END; [ALGORITHM]
+
+BEGIN VIEW;
+TITLE 'Network';
+LINK ALGORITHM = 'Show Network';
+NAME 'NetworkView';
+INPUT 'NETWORK';
+OPTIONS
+	Diagram = 'Network',
+	FontScaleFactor = 1,
+	TraitLegend = 'False',
+	TraitSize = 32,
+	SitesStyle = 'None',
+	Edits = 'mn:1:-202.32,69.61' 'mn:2:-270.83,58.04' 'mn:3:140.59,-179.21' 'mn:4:138.06,-187.81' 'mn:5:94.56,-146.84' 'mn:6:-100.12,191.18' 'mn:7:-165.61,179.85' 'mn:8:-174.29,145.57' 'mn:9:151.11,-161.77' 'mn:10:-23.35,-136.46' 'mn:11:-113.21,158.96' 'mn:12:-187.59,92.17' 'mn:13:166.84,-140.54' 'mn:14:-23.25,-115.21' 'mn:15:168.87,-76.82' 'mn:16:-146.8,-13.91' 'mn:17:-131.17,41.92' 'mn:18:55.4,171.74' 'mn:19:95.81,160.58' 'mn:20:100.23,59.97' 'mn:21:42.24,-160.12' 'mn:22:39.31,-217.86' 'mn:23:2.4,187.5' 'mn:24:59.33,72.6' 'mn:25:-73.02,199.58' 'mn:26:-25.12,185.02' 'mn:27:-74.04,81.76' 'mn:28:-93.12,-103.64' 'mn:29:-120.14,-10.97' 'mn:30:-23.77,78.37' 'mn:31:12.76,101.98' 'mn:32:74.63,-168.31' 'mn:33:164.56,-54.12' 'mn:34:107.92,-69.37' 'mn:35:162.77,-20.02' 'mn:36:141.72,58.21' 'mn:37:92.42,-111.29' 'mn:38:-59.2,11.78' 'mn:39:134.62,-21.07' 'mn:40:49.95,-115' 'mn:41:-27.49,-82.93' 'mn:42:65.26,-71.81' 'mn:43:109.48,-31.21' 'mn:44:-39.27,-37.75' 'mn:45:15.21,-60.18' 'mn:46:-67.74,57.55' 'mn:47:-15.92,99.33' 'mn:48:7.77,-16.26' 'mn:49:61.44,-23.54' 'mn:50:36.89,31.56' 'mn:51:-1.88,45.09' 'ml:13:-1,0' 'ml:11:-1,1' 'ml:25:-1,1' 'ml:48:-1,-10' 'ml:51:-1,1' 'ml:50:-8,0' 'ml:7:-1,2' 'ml:31:33,61' 'ml:32:-1,2' 'ml:30:-4,-3' 'ml:34:4,5' 'ml:19:-1,2' 'ml:36:-3,-4' 'ml:28:-1,2' 'ml:39:-4,-8' 'ml:16:-1,1' 'ml:20:-1,1' 'ml:18:-1,1' 'ml:23:-1,1' 'ml:21:-1,1' 'ml:26:-1,1' 'ml:24:-1,1' 'ml:29:-1,1' 'ml:27:-1,1' 'ml:37:-1,1' 'ml:35:-1,1' 'ml:1:-1,1' 'ml:3:-1,1' 'ml:5:-1,1' 'ml:6:-1,1' 'ml:8:-1,1' 'ml:9:-1,1' 'ml:10:-1,1' 'ml:12:-1,1' 'ml:38:-1,1' 'ml:15:-1,1' 'ml:17:-1,1' 'ml:41:-1,1' 'ml:40:-1,1' 'ml:43:-1,1' 'ml:42:-1,1' 'ml:45:-1,1' 'ml:44:-1,1' 'ml:47:-1,1' 'ml:46:-1,1' 'ml:49:-1,1' 'ml:14:6,10' 'ml:33:-1,0' 'ml:2:24,23' 'ml:22:-1,0' 'ml:4:14,10',
+	LayoutSeed = 1;
+END; [VIEW]
