@@ -3,7 +3,7 @@
 BEGIN SPLITSTREE6;
 DIMENSIONS nDataNodes=7 nAlgorithms=4;
 PROGRAM version='SplitsTree App (version 6.7.2, built 17 Jan 2026)';
-WORKFLOW creationDate='1770114267237'; [Tue Feb 03 19:24:27 JST 2026]
+WORKFLOW creationDate='1770195536492'; [Wed Feb 04 17:58:56 JST 2026]
 END; [SPLITSTREE6]
 
 [
@@ -47,28 +47,28 @@ TAXLABELS
 	[22] 'Transportation'
 ;
 DISPLAYLABELS
-	[1] '<bg yellow><c black><b>SP_500'
-	[2] '<bg blue><c white><b>FactSet_Innovative_Technology'
-	[3] '<bg blue><c white><b>NYSE_Technology'
-	[4] '<bg fuchsia><c white><b>Aerospace_Defense'
-	[5] '<bg red><c white><b>Banks'
-	[6] '<bg green><c white><b>Biotech'
-	[7] '<bg red><c white><b>Capital_Markets'
-	[8] '<bg green><c white><b>Health_Care_Equipment'
-	[9] '<bg green><c white><b>Health_Care_Services'
-	[10] '<bg 0xe6804dff><c white><b>Homebuilders'
-	[11] '<bg red><c white><b>Insurance'
-	[12] '<bg blue><c white><b>Internet'
-	[13] '<bg black><c white><b>Metals_Mining'
-	[14] '<bg black><c white><b>Oil_Gas_Equipment_Services'
-	[15] '<bg black><c white><b>Oil_Gas_Exploration_Production'
-	[16] '<bg green><c white><b>Pharmaceuticals'
-	[17] '<bg red><c white><b>Regional_Banking'
-	[18] '<bg olive><c white><b>Retail'
-	[19] '<bg blue><c white><b>Semiconductor'
-	[20] '<bg blue><c white><b>Software_Services'
-	[21] '<bg aqua><c black><b>Telecom'
-	[22] '<bg purple><c white><b>Transportation'
+	[1] '<size "28.0"><bg yellow><c black><b>SP_500'
+	[2] '<c black><b>FactSet_Innovative_Technology'
+	[3] '<c black><b>NYSE_Technology'
+	[4] '<c black><b>Aerospace_Defense'
+	[5] '<size "28.0"><bg red><c white><b>Banks'
+	[6] '<c black><b>Biotech'
+	[7] '<size "28.0"><bg red><c white><b>Capital_Markets'
+	[8] '<c black><b>Health_Care_Equipment'
+	[9] '<c black><b>Health_Care_Services'
+	[10] '<c black><b>Homebuilders'
+	[11] '<size "28.0"><bg red><c white><b>Insurance'
+	[12] '<c black><b>Internet'
+	[13] '<c black><b>Metals_Mining'
+	[14] '<c black><b>Oil_Gas_Equipment_Services'
+	[15] '<c black><b>Oil_Gas_Exploration_Production'
+	[16] '<c black><b>Pharmaceuticals'
+	[17] '<size "28.0"><bg red><c white><b>Regional_Banking'
+	[18] '<c black><b>Retail'
+	[19] '<c black><b>Semiconductor'
+	[20] '<c black><b>Software_Services'
+	[21] '<c black><b>Telecom'
+	[22] '<size "28.0"><bg purple><c white><b>Transportation'
 ;
 [TAXINFO;]
 END; [TAXA]
@@ -109,28 +109,28 @@ TAXLABELS
 	[22] 'Transportation'
 ;
 DISPLAYLABELS
-	[1] '<bg yellow><c black><b>SP_500'
-	[2] '<bg blue><c white><b>FactSet_Innovative_Technology'
-	[3] '<bg blue><c white><b>NYSE_Technology'
-	[4] '<bg fuchsia><c white><b>Aerospace_Defense'
-	[5] '<bg red><c white><b>Banks'
-	[6] '<bg green><c white><b>Biotech'
-	[7] '<bg red><c white><b>Capital_Markets'
-	[8] '<bg green><c white><b>Health_Care_Equipment'
-	[9] '<bg green><c white><b>Health_Care_Services'
-	[10] '<bg 0xe6804dff><c white><b>Homebuilders'
-	[11] '<bg red><c white><b>Insurance'
-	[12] '<bg blue><c white><b>Internet'
-	[13] '<bg black><c white><b>Metals_Mining'
-	[14] '<bg black><c white><b>Oil_Gas_Equipment_Services'
-	[15] '<bg black><c white><b>Oil_Gas_Exploration_Production'
-	[16] '<bg green><c white><b>Pharmaceuticals'
-	[17] '<bg red><c white><b>Regional_Banking'
-	[18] '<bg olive><c white><b>Retail'
-	[19] '<bg blue><c white><b>Semiconductor'
-	[20] '<bg blue><c white><b>Software_Services'
-	[21] '<bg aqua><c black><b>Telecom'
-	[22] '<bg purple><c white><b>Transportation'
+	[1] '<size "28.0"><bg yellow><c black><b>SP_500'
+	[2] '<c black><b>FactSet_Innovative_Technology'
+	[3] '<c black><b>NYSE_Technology'
+	[4] '<c black><b>Aerospace_Defense'
+	[5] '<size "28.0"><bg red><c white><b>Banks'
+	[6] '<c black><b>Biotech'
+	[7] '<size "28.0"><bg red><c white><b>Capital_Markets'
+	[8] '<c black><b>Health_Care_Equipment'
+	[9] '<c black><b>Health_Care_Services'
+	[10] '<c black><b>Homebuilders'
+	[11] '<size "28.0"><bg red><c white><b>Insurance'
+	[12] '<c black><b>Internet'
+	[13] '<c black><b>Metals_Mining'
+	[14] '<c black><b>Oil_Gas_Equipment_Services'
+	[15] '<c black><b>Oil_Gas_Exploration_Production'
+	[16] '<c black><b>Pharmaceuticals'
+	[17] '<size "28.0"><bg red><c white><b>Regional_Banking'
+	[18] '<c black><b>Retail'
+	[19] '<c black><b>Semiconductor'
+	[20] '<c black><b>Software_Services'
+	[21] '<c black><b>Telecom'
+	[22] '<size "28.0"><bg purple><c white><b>Transportation'
 ;
 [TAXINFO;]
 END; [TAXA]
@@ -301,10 +301,10 @@ NAME 'SplitNetworkView';
 INPUT 'SPLITS';
 OPTIONS
 	Diagram = 'Splits',
-	Orientation = 'Rotate25Deg',
+	Orientation = 'Rotate40Deg',
 	Rooting = 'None',
-	ZoomFactor = 0.62026041,
-	FontScaleFactor = 1,
+	ZoomFactor = 0.40839119,
+	FontScaleFactor = 0.83333333,
 	RootAngle = 160,
 	OutlineFill = 0xc0c0c0ff,
 	LabelSplitsBy = 'None',
