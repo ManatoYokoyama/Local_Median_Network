@@ -1,0 +1,10 @@
+{
+"python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+"python.terminal.activateEnvironment": true,
+"code-runner.runInTerminal": true,
+"code-runner.executorMap": {
+"python": "/Users/yokoyamaedna0215/Library/CloudStorage/Box-Box/Personal/Local_Median_Network/.venv/bin/python -u"
+},
+"code-runner.fileDirectoryAsCwd": false,
+"code-runner.cwd": "/Users/yokoyamaedna0215/Library/CloudStorage/Box-Box/Personal/Local_Median_Network"
+}
